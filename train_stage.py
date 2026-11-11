@@ -12,10 +12,11 @@ os.environ.update(
 )
 
 from instruments import ROOT, LOG, atomic_json, command, gpu_monitor, gpu_snapshot, setup_logging
+from replay import deadline_from_environment
 
 LOGS = ROOT / "logs"
 MODEL = "Qwen/Qwen2.5-1.5B-Instruct"
-DEADLINE_EPOCH = 1794373200  # November 11, 10:00 in Asia/Almaty.
+DEADLINE_EPOCH = deadline_from_environment("SOUP_REPLAY_DEADLINE_EPOCH", 1794373200)
 
 
 def record_failure(name, raw_log, cause, next_step):
@@ -29,7 +30,7 @@ def record_failure(name, raw_log, cause, next_step):
 def run(args, name, *, limit=None, fatal=True):
     available = DEADLINE_EPOCH - time.time()
     if available <= 0:
-        raise TimeoutError("Reached the November 11, 10:00 Astana deadline")
+        raise TimeoutError("Reached the configured stage deadline; use replay.py for a fresh reproduction budget")
     path = LOGS / f"{name}.log"
     status = command(args, path, timeout=min(limit or available, available))
     if status and fatal:

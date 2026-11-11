@@ -1,28 +1,35 @@
-# Agent and AI usage
+# AI tool usage
 
-- Generated the notebook staging code, dataset builder, pre-registration and memory calculator, fallback training, merge and NF4 orchestration, verifiers, probes, and result assembly.
-- Used the signed-in Kaggle website after the connector returned Unauthenticated. The rescore and main work ran as separate private notebook sessions.
-- Regenerated the original 500-row LoRA probe because the bake-off saved correctness flags without generated text. Main training began only after hashing the main-run registration.
-- Trained with peft because Soup rejected the data format (`pre_tokenized row must have 'input_ids'.`). Fixed by converting the same 1,500 rows to strictly validated ChatML after training. All post-training gates are Soup's. The SQL verifier and release thresholds are additional project measurements.
-- The original pre-registration was left intact. The amendment was written after training and before post-training results. Removed eight affected rows from the main evaluation without retraining.
-- Used PEFT for the fp16 and bf16 saves after Soup merge failed, and for the fp32 reference because Soup has no fp32 save format. Retried NF4 export with a compatible TorchAO; all three selected exports use the same Soup command.
-- Replaced incompatible tokenizer metadata with the pinned Qwen files while retaining the exact Soup NF4 weights. Stopped the first core run when generation defaults overrode the requested controls; used the completed rerun. Two shuffled-model parity failures triggered single-row decoding.
-- Soup refused the lr=0 benchmark before training. The initial P12 fixture had empty message lists that Soup counted as valid; the follow-up used 750 type-invalid rows to exercise the threshold.
-- Per-eval peak resets and new training instrumentation could not be added to completed training runs. The post-training phases and separate real benchmark report their own peaks.
-- Reran P11 on CPU after a local reproduction showed the read-only authorizer could block fixture commit. The corrected probe commits the fixture before evaluating either query.
-- Result decisions use the amended gates. Unmeasured criteria count as misses at the deadline.
+I used AI for planning, implementation, execution, and review. My role was to orchestrate the process, review the proposed approach and results, and set the standard of evidence required to call the model meaningfully trained and ready to ship. The coding agent wrote and ran the implementation; I directed the investigation and reviewed its evidence and conclusions.
 
-## Failed or unavailable steps
+## Where AI was used
 
-- bench_placebo recorded exit 1; retain its raw log and distinguish a runtime/input rejection from a measured negative result.
-- quant_check_real recorded exit 3; retain its raw log and distinguish a runtime/input rejection from a measured negative result.
-- quant_check_wrong recorded exit 3; retain its raw log and distinguish a runtime/input rejection from a measured negative result.
-- probe_P11_execution recorded exit 1; retain its raw log and distinguish a runtime/input rejection from a measured negative result.
-- ship_noise_floor_3 recorded exit -15; retain its raw log and distinguish a runtime/input rejection from a measured negative result.
-- quant_check_real recorded exit -15; retain its raw log and distinguish a runtime/input rejection from a measured negative result.
+| Tool | Role |
+|---|---|
+| Claude (chat) | Interpreting the brief and Soup documentation; dataset selection; experiment specifications and revisions; memory estimates; draft verification and release criteria; post-hoc investigation; first report draft |
+| A second AI reviewer | Challenging the experiment design and reviewing the report brief |
+| Codex coding agent | Writing and running Kaggle code for data preparation, training, merging, quantization, verification, failure probes, Soup checks, and packaging |
+| Codex final review | Reviewing the code, saved outputs, and report against the brief; replaying saved-result calculations; identifying remaining limitations; polishing the submission |
 
-## POST-HOC analysis and report
+## My role and decisions
 
-- Reused saved generations for the SQLite compatibility diagnosis, error breakdown, retry estimate and exact paired tests. Ran the requested FP16 sampling, INT8 greedy probe and NF4 repeat in separately recorded Kaggle notebooks.
-- Resolved the report’s placeholders from saved evidence, computed the 191-row table from archived per-row records, and verified the PDF’s page geometry, font size and page count.
-- Prepared the public GitHub evidence package and set the committed Kaggle notebooks to public. The two preregistration files and the official summary were carried over byte for byte.
+I coordinated the planning, implementation, and review stages and used the reviewers' findings to direct follow-up work. I set the checking standard around measurable task improvement, preservation of the learned change through export, and an absolute requirement for usable SQL. A successful run or falling loss was not enough for the release decision.
+
+I accepted additional checks proposed during review: weak-adapter controls, minimum effect sizes, overlap at the individual `CREATE TABLE` level, matching comparison dtypes, batched-versus-single decoding parity, and export-memory estimates. The release criteria included at least 90% retention with an 80% lower confidence bound, and at least 95% valid SQL under the shipped settings.
+
+I kept the proposed “three times quantization noise” comparison as a diagnostic rather than a release gate. I corrected planning that still assumed a live discussion after Soup had cancelled it. I reviewed the distinction between the built-in Soup verdict and the project's stricter release criteria; the final decision remains DON'T SHIP.
+
+## Changes and unreliable suggestions
+
+- Claude predicted that repetition penalty 1.1 would hurt performance. In the isolated greedy comparison, increasing it from 1.0 to 1.1 instead raised lenient match by 4.69 percentage points. Comparing sampling with greedy decoding would not isolate that effect.
+- After the first post-hoc diagnosis, Claude attributed the failure entirely to the checker. Further measurements showed that the NF4 model still failed the SQL-validity requirement after the checker was repaired.
+- The initial split allowed individual `CREATE TABLE` statements to appear in both training and evaluation. Eight overlapping rows were removed before the main artifact verification, leaving 192. This correction occurred after training and its periodic held-out evaluations.
+- The 191-row headline table is separately labeled POST-HOC: it also excludes row 2961, whose gold query names a column missing from the schema. The original results remain archived.
+- The amendment was written after training and before the main merge and verification results. Its rules are described as amended, not as fully result-blind.
+- The report separates the original pre-training memory prediction from amended phase budgets and calculations using observed batch shapes.
+
+The agent made implementation decisions during execution, including using PEFT after Soup rejected the training data format, repairing incompatible tokenizer metadata, implementing the SQL compatibility rules, and switching to single-prompt decoding when parity checks failed. These actions, failures, and limitations are documented in the [agent execution record](ai_usage_agent.md), [evidence notes](EVIDENCE_NOTES.md), and raw logs.
+
+## Scope of my review
+
+My review focused on the experimental design, checking standards, interpretation of results, and release decision. Code implementation, experiment execution, numerical replay, and automated verification were performed with AI assistance. The submission preserves the evidence supporting the conclusions, including failed attempts and the incomplete raw training-console capture.

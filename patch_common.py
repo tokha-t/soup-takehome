@@ -12,11 +12,12 @@ from zoneinfo import ZoneInfo
 os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 
 from instruments import ROOT, atomic_json, command
+from replay import deadline_from_environment
 
 INPUT = Path("/kaggle/input")
 TZ = ZoneInfo("Asia/Almaty")
-DEADLINE = datetime(2026, 11, 11, 10, tzinfo=TZ).timestamp()
-CUTOFF = datetime(2026, 11, 11, 8, 30, tzinfo=TZ).timestamp()
+DEADLINE = deadline_from_environment("SOUP_REPLAY_DEADLINE_EPOCH", datetime(2026, 11, 11, 10, tzinfo=TZ).timestamp())
+CUTOFF = deadline_from_environment("SOUP_REPLAY_OPTIONAL_EPOCH", datetime(2026, 11, 11, 8, 30, tzinfo=TZ).timestamp())
 MODEL = "Qwen/Qwen2.5-1.5B-Instruct"
 REVISION = "989aa7980e4cf806f80c7fef2b1adb7bc71aa306"
 PEFT = ("transformers==4.57.1", "peft==0.18.0", "accelerate==1.11.0", "bitsandbytes==0.48.2", "sqlglot==28.0.0")

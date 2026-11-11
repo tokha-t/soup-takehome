@@ -1,72 +1,74 @@
 # Soup take-home · LoRA → merge → 4-bit
-Qwen2.5-1.5B-Instruct on text-to-SQL [A]
+Qwen2.5-1.5B-Instruct on text-to-SQL
 
-Toktarkhan Karymbayev · 11 Nov 2026 [I] · [GitHub repository](https://github.com/tokha-t/soup-takehome) · **Verdict: DON'T SHIP** (§4)
+Toktarkhan Karymbayev · 11 Nov 2026 · [Evidence repository](https://github.com/tokha-t/soup-takehome) · **Verdict: DON'T SHIP**
 
-**Choices.** Qwen2.5-1.5B-Instruct uses Apache-2.0. The 3B uses Qwen’s research license [I]. The CC BY 4.0 b-mc2/sql-create-context dataset [I] supplies checkable answers that copy identifiers from the prompt and come last, where truncation can cut them. Training used 1,500 rows. The official evaluation retained 192 of 200 held-out rows after removing 8 that shared a CREATE TABLE statement with training [S]. The POST-HOC cohort drops row 2961, whose gold references a missing column, leaving 191 [P]. LoRA used rank 16, α = 32, all 7 linear targets per layer, 2 epochs and learning rate 2e-4, with fp16, gradient checkpointing and one Kaggle T4 [A]. PEFT trained the main runs after Soup rejected the input with “pre_tokenized row must have 'input_ids'.” The same rows passed strict validation as ChatML after training [A].
+**Choices.** Qwen2.5-1.5B-Instruct (Apache-2.0) and the CC BY 4.0 sql-create-context dataset provide a small model and checkable outputs sensitive to identifier copying and truncation [I]. Training used 1,500 rows, rank 16, α = 32, all 7 linear targets per layer, 2 epochs, lr 2e-4, fp16 and checkpointing on one Kaggle T4 [A]. PEFT trained the main runs after Soup rejected the input: “pre_tokenized row must have 'input_ids'.” The same rows later passed strict ChatML validation [A]. Eight overlapping CREATE TABLE rows were excluded after training, leaving 192 for the amended evaluation. POST-HOC comparisons also exclude row 2961's broken gold query, leaving 191 [S, P].
 
-The preregistration was hashed at 2026-11-10 20:57:25.073 UTC, SHA-256 [d2f3781007f309964cb09b6a5f11a96359d37ae5cd76593c0598a2d5d672211f](https://github.com/tokha-t/soup-takehome/blob/main/logs/stages/training/prereg.log). The amendment was hashed at 2026-11-11 03:15:05 UTC+05, after training and before the main merge or verification output [A].
+Original criteria were [hashed before training](https://github.com/tokha-t/soup-takehome/blob/main/logs/stages/training/prereg.log), at 01:57:25 on 11 Nov, Asia/Almaty. The amendment at 03:15:05 followed training and its held-out losses, but preceded main merges and artifact verification. Decisions below use the amended rules [A].
 
-## 1. Memory (GiB)
+## 1. Memory (GiB) [A, M, E]
 
-| Phase | Predicted | Allocated | Reserved | nvidia-smi | Src |
-|---|---:|---:|---:|---:|---|
-| Base load, fp16 | 2.90 | 2.94 | 3.02 | 3.10 | [S, M] |
-| Training, batch 8, max 1,912 padded tokens | 6.17–7.26 | 5.14 | 10.38 | 10.52 | [M, T] |
-| Merge fp16 / fp32 (CPU) | 2.9–5.8 / 5.8–11.5 | — | — | — | [S, M] |
-| Quantize to NF4 | 1.1–1.3 | 1.10 | 1.14 | 1.26 | [S, M] |
-| NF4 decoding, batch 8 | 1.2–1.5 | 1.44 | 1.53 | 1.67 | [S, M, D] |
+| Phase / memory domain | Original prediction | Measured peak | Later amendment |
+|---|---:|---:|---:|
+| Load, GPU | 2.88 | 2.94 | 2.90 |
+| Training incl. eval, GPU | 6.40–7.56 | 5.14 | 6.40–7.60 |
+| Merge fp16 / fp32, GPU | 3.02 / 5.92 | Not run on GPU | 3.0 / 5.8 |
+| Merge fp16 / fp32, CPU | Not estimated | 5.87 / 9.05 | 2.9–5.8 / 5.8–11.5 |
+| NF4 export, GPU | 1.09 | 1.10 | 1.1–1.3 |
+| NF4 export, CPU | Not estimated | 6.36 | ≈2.9 |
+| NF4 decoding, GPU | 1.12 | 1.44 | 1.2–1.5 |
 
-The CPU merge peaked at 5.87 / 9.05 GiB process RSS [M]. The model adds weights (2 bytes × 1.54B parameters), adapter, gradients and AdamW (16 bytes × 18.5M trainable parameters), and full-vocabulary logits (10–14 bytes × 151,936 entries, or 1.45–2.03 MiB per padded token) against about 0.17 MiB per token for checkpointed activations [A, S]. Masking the loss leaves full-position logits allocated. The PEFT fallback projected a suffix containing the answer positions. The estimate followed the bake-off OOMs [A, B]. The checkpointed fit over 3 shapes was 3.103 GiB + 1.828 MiB per padded token, against 3.15 GiB + 1.62–2.20 MiB predicted [G].
+Original estimates precede training; the amendment follows training and precedes these exports. GPU measurements are PyTorch allocated VRAM; CPU measurements are process RSS. The original merge estimates describe device tensors, not CPU RSS. The export's 6.36 GiB host peak exceeded the later 2.9 GiB budget because the implemented phase also merged and loaded CPU tensors [E].
 
-Allocated measures tensor memory. PyTorch’s reserved peak was 5.24 GiB higher, and the device-wide sampled peak was another 0.14 GiB higher. The 200 ms sampler can miss brief peaks, so use the in-process allocator peaks for PyTorch [M, T]. Soup pre-flight predicted 28.7 GB for the bake-off. The checkpointed SQL PEFT run sampled 10.33 GiB [B, T]. The main PEFT trainer reported 737 non-pad tokens/s including evaluation. Step times after warm-up give 974 non-pad tokens/s excluding evaluation, from one shared-GPU run [T].
+The original calculation adds weights (2 bytes × 1.54B), adapter/gradients/AdamW (16 bytes × 18.5M), logits (1.45–2.03 MiB/padded token) and checkpointed activations (≈0.17 MiB/token). Both training estimates use 8 × 256 = 2,048 tokens; the observed maximum was 1,912. PEFT projects an answer-covering suffix, reducing logits memory. Load also initializes 0.069 GiB of adapters omitted from the original base-only estimate. The full-logit grid fit was 3.103 GiB + 1.828 MiB/token over 3 shapes [G, T].
+
+Training peaked at 5.14 allocated, 10.38 reserved and 10.52 device-wide GiB. These have different scopes; 200 ms NVIDIA sampling can miss peaks. Throughput was 737 non-pad tokens/s including evaluation versus 974 excluding warm-up/evaluation [T]. Raw PEFT logs retain launch/exit only; step JSON and GPU traces survive [E].
 
 ## 2. Proof the model trained
 
-Loss can fall as the model learns output format, and a saved artifact can lose an edit. In the bake-off rescore, base strict match was 0%, base lenient match was 52% after SQL extraction, and tuned lenient match was 77% [R]. The shuffled control's first and last step losses were 3.323 and 1.565 [T].
+Loss can fall without useful task learning, and export can lose an edit. In the bake-off rescore, base strict match was 0%, base lenient match 52% after SQL extraction, and tuned lenient match 77% [R]. The shuffled control's step loss fell from 3.323 to 1.565 while its held-out behavior worsened [T, V].
 
-**The check** (`verify.py`) compares weights, behavior and identity. The fp16 merge changed the expected 196 tensors (28 layers × 7 targets). Across modules, the relative error in merged − base versus the scaled B × A was 1.46–5.42% [V]. Behavior uses paired bootstrap answer loss, lenient match and valid SQL. Identity compares the NF4 output distribution with its own tuned fp16 merge and the base. The training label requires a 95% lower bound of at least 10% answer loss reduction and at least 10 points of lenient gain (exact McNemar p < 0.01) [A, V].
+**The check** (`verify.py`) compares weights, behavior and identity. The fp16 merge changed the expected 196 tensors; relative reconstruction error against scaled B × A was 1.46–5.42% across modules [V]. TRAINED requires a 95% lower bound of at least 10% answer-loss reduction and at least 10 points of lenient gain (exact McNemar p < 0.01), against the base [A]. NOT_TRAINED means insufficient meaningful task improvement, not proof that no optimizer ran.
 
 | POST-HOC greedy, 191 rows [H] | Answer NLL | Lenient match | Valid SQL | Closer to tuned | Label [V] |
 |---|---:|---:|---:|---:|---|
-| Base, fp16 | 0.35989 | 39.8% | 94.2% | — | — |
-| Base, NF4 | 0.38726 | 29.8% | 84.3% | not measured | — |
-| Merged, fp16 | 0.07752 | 70.7% | 95.8% | — | TRAINED |
+| Base, fp16 | 0.35989 | 39.8% | 94.2% | n/a | n/a |
+| Base, NF4 | 0.38726 | 29.8% | 84.3% | not measured | n/a |
+| Merged, fp16 | 0.07752 | 70.7% | 95.8% | n/a | TRAINED |
 | Merged, NF4 | 0.10765 | 60.2% | 86.4% | 100% | TRAINED, RETAINED |
 | Placebo, lr = 0 | 0.35989 | 39.8% | 94.2% | not measured | NOT_TRAINED |
 | Weak, B × 0.01 / × 0.1 | 0.34137 / 0.17709 | 42.4% / 58.1% | 94.8% / 95.3% | not measured | NOT_TRAINED / TRAINED |
 | Shuffled, NF4 | 0.71947 | 0.0% | 0.0% | 100% | NOT_TRAINED |
 
-Training gained 30.9 points of lenient match, NF4 cost 10.5, and the net gain was 20.4 [H]. **Official:** S1 loss fell 78.2%, S2 content gain was 0.613 nats/token, S3 retention was 98.7% (lower bound 92.2%), S4 identity was 192/192, and S8 controls met the amended rule [S, V]. The fp16 and NF4 merges agree on 98.44% of teacher-forced next-token choices. At 26.19 mean gold answer tokens, the independence calculation gives 33.74% with at least one differing choice [C]. Complex queries account for 15 of 26 NF4 greedy failures [Dg].
+n/a = not applicable. Training gained 30.9 match points; NF4 cost 10.5, leaving a net 20.4 [H]. **Amended evaluation:** S1 loss fell 78.2%; S2 advantage over mismatched-target training was 0.613 nats/token; S3 retained 98.7% of answer-loss improvement over precision-matched baselines (lower bound 92.2%); S4 identity was 192/192; S8 controls passed [S, V]. Shuffling is not a pure format/content decomposition. Identity and retention can also preserve a harmful change [E].
 
-**What the check does not detect.** Relative retention can pass while absolute accuracy drops by 10.5 points [H, V]. The split checks schema overlap, and lenient string match can miss semantically equivalent SQL. The synthetic execution probe used fixtures with many empty results. Generalization beyond Soup’s 8 suites, training-seed variance and other runtimes remain unmeasured [A, D].
+**Limits.** Relative retention does not establish absolute quality. SQL validity uses documented schema/dialect compatibility repairs and tests planning, not correctness. String match misses equivalent SQL; synthetic execution fixtures often yield empty results. One training seed, small general suites, and one runtime limit generalization [D, E].
 
 ## 3. Silent failures
 
-| Failure | How checked | data doctor | Pre-flight | soup ship | Evidence |
-|---|---|---|---|---|---|
-| Answers cut in 3.47% of rows | Full scan, p96 limit | Truncation check OK | — | — | [D] |
-| Wrong gold and 6 schemas that fail to build | SQLite gold check | — | — | — | [P] |
-| Task system prompt missing | Prompt ablation | — | — | User-only task messages | [Dg, C] |
-| Dead or weak adapter | Placebo and B × 0.01 | — | lr = 0 bench refused | Placebo and weak both DON'T SHIP | [D, C] |
-| Learns format only | Shuffled answers | — | — | DON'T SHIP | [V, C] |
-| NF4 validity drops | 18 vs 0 flips, p = 7.6e-6 | — | — | SHIP | [F, C] |
-| SQLite checker rejects 5.2% of gold | Gold calibration | — | — | — | [P] |
-| 8-bit answers depend on batching | 1 of 10 differs | — | — | — | [F] |
-| Wrong file shipped | Identity test | — | — | `--adapter` scores a live adapter | [D, C] |
+| Failure / own check | Soup check | Observed outcome | Src |
+|---|---|---|---|
+| Answer/stop tokens cut: 52/1,500 | data doctor: tested | Reports 58 truncated rows but rates truncation OK: missed as a gate | [D] |
+| Gold/schema defects; checker calibration | Not tested in Soup | Own gold acceptance: 182/192; repaired: 191/192 | [P] |
+| Missing task system prompt | ship: source reviewed | User-only path; own ablation loses 9.4 validity points | [F, C] |
+| Dead / weak adapter | ship: tested | Caught: both DON'T SHIP | [D, C] |
+| Mismatched-target training | ship: tested | Caught: DON'T SHIP | [V, C] |
+| NF4 validity: 18 regressions, 0 gains | ship: tested | SHIP; missed our absolute quality failure | [F, C] |
+| Wrong NF4; identity 0/192 | ship --tuned: tested | Rejected for no task gain, not identity | [D, C] |
 
-The repetition-penalty prediction missed. In the isolated greedy test, moving from 1.0 to 1.1 raised lenient match by 4.69 points [A, D]. The leak prediction missed too. Match was 57.0% on the deliberately overlapping cohort versus 59.9% on the disjoint cohort, with different category mixes [A, D].
+Unlisted gate/failure pairs were not tested or are not applicable; [E] gives the full matrix. No pre-flight detection claim: lr = 0 was refused at config validation, before its bench ran. Source inspection and our prompt ablation are not a live Soup rejection test.
+
+Predictions failed too: isolated greedy repetition penalty 1.0 → 1.1 raised lenient match by 4.69 points. The deliberately overlapping cohort scored 57.0% versus 59.9% disjoint, with different category mixes [A, D].
 
 ## 4. Verdict: DON'T SHIP
 
-**Official.** Seven of eight preregistered criteria passed [S]. S5 requires at least 99% stopping and 95% valid SQL under the shipped settings. Stopping passed. The validator accepted 182/192 gold answers (94.8%), below the 99% calibration floor. S5 was unmeasured and counts as a miss [S, P].
+**Amended evaluation.** Seven of eight amended criteria passed. S5 requires at least 99% stopping and 95% valid SQL under shipped settings. Stopping passed, but the validator accepted only 182/192 gold queries (94.8%), below its 99% calibration floor. S5 was UNMEASURED and counted as a miss [S, P].
 
-**POST-HOC**, the repaired validator accepts 191/192 gold answers [P]. Shipped NF4 reaches 87.1% valid SQL (499/573) and 99.3% stopping (569/573) on the repaired cohort [P, H]. Soup’s separate gate scored the portable merged NF4 file. Strict task match rose from 0% to 66% and no suite fell more than 0.05, so Soup returned SHIP [C]. Its CLI sends user-only task messages. The greedy ablation with Qwen’s default system message gave 77.0% validity [C, Dg].
+**POST-HOC.** The repaired validator accepts 191/192 gold queries. On those 191 rows, shipped NF4 achieves 87.1% validity (499/573) and 99.3% stopping (569/573) [P, H]. Soup evaluated the portable merged NF4 artifact: strict match rose 0% → 66%, with no suite drop over 0.05, so its gate returned SHIP [C]. Its user-only prompt path differs from training; the default-system greedy ablation gives 77.0% validity [C, Dg].
 
-**What must change in the 4-bit file.** No tested NF4 decoding condition reaches 95% [Dg]. Greedy fp16 reaches 95.8%, and greedy 8-bit reaches 95.3–95.8% depending on SQLite [Dg, F]. Try another quantization method and require the exact file to pass S5, preserve the task system prompt (9.4-point loss without it, p = 0.0014), keep the repaired validator, and fix or drop row 2961 [F, P]. Our NF4 weight file is byte-identical to the repeated `soup merge --save-format 4bit` export [C].
+**Next experiment, not a demonstrated fix.** Repeated NF4 export produced identical weights [C]. Test calibration-based GPTQ INT4 (group size 128) from the fp16 merge, using 128 training-only SQL conversations and no evaluation rows [E]. Preserve the task system prompt; reload and hash the saved package. It must pass the fixed amended S1–S8 rules, with S5's ≥99% stopping and ≥95% valid SQL under shipped settings and ≥99% gold calibration. Use the repaired scorer and the same 191-row POST-HOC cohort/seeds; exclude broken row 2961. No threshold relaxation. No tested NF4 decoder reaches 95%; fp16 and 8-bit results motivate this experiment, not a claim that INT4 will pass [Dg, F, E].
 
-**Not done:** completed `quant-check`, completed `--noise-floor`, fp32-to-NF4, lr = 0 bench, base-model token agreement, GGUF and multiple training seeds [A, C, D].
+**Not completed:** `quant-check`, `--noise-floor`, fp32-to-NF4, lr = 0 bench, base token agreement, GGUF and multiple training seeds [C, D]. **Soup improvements:** preserve task system messages; enforce absolute quality and gold calibration; warn/fail on lost answer or stop tokens. Leg 1 accepts any strict gain; 0.05 on a 40-item suite is two items [C, D].
 
-**What I would change in Soup.** Add system messages and a gold-calibrated executable scorer to tasks. Score the quantized file against an absolute bar with paired tests. Today leg 1 accepts any strict gain, and 0.05 on a 40-item suite is 2 items [C]. Make truncation a full-file scan in `data doctor` [D].
-
-**Sources** · [A] prereg.md, amendment, configs/train_peft.py and timestamped prereg logs · [B] logs/bakeoff/ · [R] results/rescore.json · [P] results/s5_posthoc.json · [Dg] results/s5_diagnosis.json · [F] results/s5_followup.json · [V] results/verify_*.json and probe_P5.json · [M] results/memory_phases.json · [G] results/memory_grid.json · [S] results/summary.json and amendment_split.json · [H] results/report_headline_191.json · [C] results/consistency.json (Soup live_eval.py line 172) · [D] results/probe_P*.json and diagnostic logs · [T] results/report_evidence.json and train_*.json · [I] repository README.
+**Sources** · [A] prereg.md, amendment, training config/logs · [R] results/rescore.json · [P] results/s5_posthoc.json · [Dg] results/s5_diagnosis.json · [F] results/s5_followup.json · [V] results/verify_*.json, probe_P5.json · [M] results/memory_phases.json · [G] results/memory_grid.json · [S] results/summary.json, amendment_split.json · [H] results/report_headline_191.json · [C] results/ship_*.json, consistency.json · [D] results/probe_P*.json, diagnostic logs · [T] results/report_evidence.json, train_*.json · [E] [EVIDENCE_NOTES.md](https://github.com/tokha-t/soup-takehome/blob/main/EVIDENCE_NOTES.md) · [I] README. Reproduction and AI-use details are linked in README.
