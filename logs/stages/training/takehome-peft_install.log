@@ -1,0 +1,104 @@
+2026-11-10T20:56:40.941+00:00 INFO $ /kaggle/temp/takehome-peft/bin/python -m pip --disable-pip-version-check install transformers==4.57.1 peft==0.18.0 accelerate==1.11.0 bitsandbytes==0.48.2 sqlglot==28.0.0
+2026-11-10T20:56:42.279+00:00 INFO Collecting transformers==4.57.1
+2026-11-10T20:56:42.476+00:00 INFO   Downloading transformers-4.57.1-py3-none-any.whl.metadata (43 kB)
+2026-11-10T20:56:42.693+00:00 INFO Collecting peft==0.18.0
+2026-11-10T20:56:42.738+00:00 INFO   Downloading peft-0.18.0-py3-none-any.whl.metadata (14 kB)
+2026-11-10T20:56:42.862+00:00 INFO Collecting accelerate==1.11.0
+2026-11-10T20:56:42.908+00:00 INFO   Downloading accelerate-1.11.0-py3-none-any.whl.metadata (19 kB)
+2026-11-10T20:56:43.035+00:00 INFO Collecting bitsandbytes==0.48.2
+2026-11-10T20:56:43.082+00:00 INFO   Downloading bitsandbytes-0.48.2-py3-none-manylinux_2_24_x86_64.whl.metadata (10 kB)
+2026-11-10T20:56:43.404+00:00 INFO Collecting sqlglot==28.0.0
+2026-11-10T20:56:43.447+00:00 INFO   Downloading sqlglot-28.0.0-py3-none-any.whl.metadata (20 kB)
+2026-11-10T20:56:43.467+00:00 INFO Requirement already satisfied: filelock in /usr/local/lib/python3.13/dist-packages (from transformers==4.57.1) (4.2.4)
+2026-11-10T20:56:43.620+00:00 INFO Collecting huggingface-hub<1.0,>=0.34.0 (from transformers==4.57.1)
+2026-11-10T20:56:43.664+00:00 INFO   Downloading huggingface_hub-0.36.2-py3-none-any.whl.metadata (15 kB)
+2026-11-10T20:56:43.693+00:00 INFO Requirement already satisfied: numpy>=1.17 in /usr/local/lib/python3.13/dist-packages (from transformers==4.57.1) (2.1.3)
+2026-11-10T20:56:43.694+00:00 INFO Requirement already satisfied: packaging>=20.0 in /usr/local/lib/python3.13/dist-packages (from transformers==4.57.1) (26.3)
+2026-11-10T20:56:43.695+00:00 INFO Requirement already satisfied: pyyaml>=5.1 in /usr/local/lib/python3.13/dist-packages (from transformers==4.57.1) (6.0.3)
+2026-11-10T20:56:43.695+00:00 INFO Requirement already satisfied: regex!=2019.12.17 in /usr/local/lib/python3.13/dist-packages (from transformers==4.57.1) (2025.11.3)
+2026-11-10T20:56:43.696+00:00 INFO Requirement already satisfied: requests in /usr/local/lib/python3.13/dist-packages (from transformers==4.57.1) (2.34.2)
+2026-11-10T20:56:44.074+00:00 INFO Collecting tokenizers<=0.23.0,>=0.22.0 (from transformers==4.57.1)
+2026-11-10T20:56:44.118+00:00 INFO   Downloading tokenizers-0.22.2-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (7.3 kB)
+2026-11-10T20:56:44.138+00:00 INFO Requirement already satisfied: safetensors>=0.4.3 in /usr/local/lib/python3.13/dist-packages (from transformers==4.57.1) (0.8.0)
+2026-11-10T20:56:44.138+00:00 INFO Requirement already satisfied: tqdm>=4.27 in /usr/local/lib/python3.13/dist-packages (from transformers==4.57.1) (4.67.3)
+2026-11-10T20:56:44.141+00:00 INFO Requirement already satisfied: psutil in /usr/local/lib/python3.13/dist-packages (from peft==0.18.0) (5.9.5)
+2026-11-10T20:56:44.142+00:00 INFO Requirement already satisfied: torch>=1.13.0 in /usr/local/lib/python3.13/dist-packages (from peft==0.18.0) (2.11.0+cu130)
+2026-11-10T20:56:44.149+00:00 INFO Requirement already satisfied: fsspec>=2023.5.0 in /usr/local/lib/python3.13/dist-packages (from huggingface-hub<1.0,>=0.34.0->transformers==4.57.1) (2025.12.0)
+2026-11-10T20:56:44.150+00:00 INFO Requirement already satisfied: hf-xet<2.0.0,>=1.1.3 in /usr/local/lib/python3.13/dist-packages (from huggingface-hub<1.0,>=0.34.0->transformers==4.57.1) (1.7.0)
+2026-11-10T20:56:44.151+00:00 INFO Requirement already satisfied: typing-extensions>=3.7.4.3 in /usr/local/lib/python3.13/dist-packages (from huggingface-hub<1.0,>=0.34.0->transformers==4.57.1) (4.16.0)
+2026-11-10T20:56:44.158+00:00 INFO Requirement already satisfied: setuptools<82 in /usr/local/lib/python3.13/dist-packages (from torch>=1.13.0->peft==0.18.0) (81.0.0)
+2026-11-10T20:56:44.159+00:00 INFO Requirement already satisfied: sympy>=1.13.3 in /usr/local/lib/python3.13/dist-packages (from torch>=1.13.0->peft==0.18.0) (1.14.0)
+2026-11-10T20:56:44.160+00:00 INFO Requirement already satisfied: networkx>=2.5.1 in /usr/local/lib/python3.13/dist-packages (from torch>=1.13.0->peft==0.18.0) (3.7)
+2026-11-10T20:56:44.160+00:00 INFO Requirement already satisfied: jinja2 in /usr/local/lib/python3.13/dist-packages (from torch>=1.13.0->peft==0.18.0) (3.1.6)
+2026-11-10T20:56:44.162+00:00 INFO Requirement already satisfied: cuda-toolkit==13.0.2 in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == "Linux"->torch>=1.13.0->peft==0.18.0) (13.0.2)
+2026-11-10T20:56:44.163+00:00 INFO Requirement already satisfied: cuda-bindings<14,>=13.0.3 in /usr/local/lib/python3.13/dist-packages (from torch>=1.13.0->peft==0.18.0) (13.0.3)
+2026-11-10T20:56:44.164+00:00 INFO Requirement already satisfied: nvidia-cudnn-cu13==9.19.0.56 in /usr/local/lib/python3.13/dist-packages (from torch>=1.13.0->peft==0.18.0) (9.19.0.56)
+2026-11-10T20:56:44.164+00:00 INFO Requirement already satisfied: nvidia-cusparselt-cu13==0.8.0 in /usr/local/lib/python3.13/dist-packages (from torch>=1.13.0->peft==0.18.0) (0.8.0)
+2026-11-10T20:56:44.165+00:00 INFO Requirement already satisfied: nvidia-nccl-cu13==2.28.9 in /usr/local/lib/python3.13/dist-packages (from torch>=1.13.0->peft==0.18.0) (2.28.9)
+2026-11-10T20:56:44.166+00:00 INFO Requirement already satisfied: nvidia-nvshmem-cu13==3.4.5 in /usr/local/lib/python3.13/dist-packages (from torch>=1.13.0->peft==0.18.0) (3.4.5)
+2026-11-10T20:56:44.167+00:00 INFO Requirement already satisfied: triton==3.6.0 in /usr/local/lib/python3.13/dist-packages (from torch>=1.13.0->peft==0.18.0) (3.6.0)
+2026-11-10T20:56:44.177+00:00 INFO Requirement already satisfied: nvidia-cublas==13.1.0.3.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == "Linux"->torch>=1.13.0->peft==0.18.0) (13.1.0.3)
+2026-11-10T20:56:44.178+00:00 INFO Requirement already satisfied: nvidia-cuda-runtime==13.0.96.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == "Linux"->torch>=1.13.0->peft==0.18.0) (13.0.96)
+2026-11-10T20:56:44.179+00:00 INFO Requirement already satisfied: nvidia-cufft==12.0.0.61.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == "Linux"->torch>=1.13.0->peft==0.18.0) (12.0.0.61)
+2026-11-10T20:56:44.180+00:00 INFO Requirement already satisfied: nvidia-cufile==1.15.1.6.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == "Linux"->torch>=1.13.0->peft==0.18.0) (1.15.1.6)
+2026-11-10T20:56:44.182+00:00 INFO Requirement already satisfied: nvidia-cuda-cupti==13.0.85.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == "Linux"->torch>=1.13.0->peft==0.18.0) (13.0.85)
+2026-11-10T20:56:44.183+00:00 INFO Requirement already satisfied: nvidia-curand==10.4.0.35.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == "Linux"->torch>=1.13.0->peft==0.18.0) (10.4.0.35)
+2026-11-10T20:56:44.184+00:00 INFO Requirement already satisfied: nvidia-cusolver==12.0.4.66.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == "Linux"->torch>=1.13.0->peft==0.18.0) (12.0.4.66)
+2026-11-10T20:56:44.185+00:00 INFO Requirement already satisfied: nvidia-cusparse==12.6.3.3.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == "Linux"->torch>=1.13.0->peft==0.18.0) (12.6.3.3)
+2026-11-10T20:56:44.186+00:00 INFO Requirement already satisfied: nvidia-nvjitlink==13.0.88.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == "Linux"->torch>=1.13.0->peft==0.18.0) (13.0.88)
+2026-11-10T20:56:44.188+00:00 INFO Requirement already satisfied: nvidia-cuda-nvrtc==13.0.88.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == "Linux"->torch>=1.13.0->peft==0.18.0) (13.0.88)
+2026-11-10T20:56:44.189+00:00 INFO Requirement already satisfied: nvidia-nvtx==13.0.85.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == "Linux"->torch>=1.13.0->peft==0.18.0) (13.0.85)
+2026-11-10T20:56:44.200+00:00 INFO Requirement already satisfied: cuda-pathfinder~=1.1 in /usr/local/lib/python3.13/dist-packages (from cuda-bindings<14,>=13.0.3->torch>=1.13.0->peft==0.18.0) (1.8.4)
+2026-11-10T20:56:44.253+00:00 INFO Requirement already satisfied: mpmath<1.4,>=1.1.0 in /usr/local/lib/python3.13/dist-packages (from sympy>=1.13.3->torch>=1.13.0->peft==0.18.0) (1.3.0)
+2026-11-10T20:56:44.267+00:00 INFO Requirement already satisfied: MarkupSafe>=2.0 in /usr/local/lib/python3.13/dist-packages (from jinja2->torch>=1.13.0->peft==0.18.0) (3.0.4)
+2026-11-10T20:56:44.274+00:00 INFO Requirement already satisfied: charset_normalizer<4,>=2 in /usr/local/lib/python3.13/dist-packages (from requests->transformers==4.57.1) (3.4.9)
+2026-11-10T20:56:44.274+00:00 INFO Requirement already satisfied: idna<4,>=2.5 in /usr/local/lib/python3.13/dist-packages (from requests->transformers==4.57.1) (3.20)
+2026-11-10T20:56:44.275+00:00 INFO Requirement already satisfied: urllib3<3,>=1.26 in /usr/local/lib/python3.13/dist-packages (from requests->transformers==4.57.1) (2.8.0)
+2026-11-10T20:56:44.276+00:00 INFO Requirement already satisfied: certifi>=2023.5.7 in /usr/local/lib/python3.13/dist-packages (from requests->transformers==4.57.1) (2026.10.23)
+2026-11-10T20:56:44.336+00:00 INFO Downloading transformers-4.57.1-py3-none-any.whl (12.0 MB)
+2026-11-10T20:56:44.670+00:00 INFO    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.0/12.0 MB 46.5 MB/s  0:00:00
+2026-11-10T20:56:44.715+00:00 INFO Downloading peft-0.18.0-py3-none-any.whl (556 kB)
+2026-11-10T20:56:44.745+00:00 INFO    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 556.4/556.4 kB 10.7 MB/s  0:00:00
+2026-11-10T20:56:44.793+00:00 INFO Downloading accelerate-1.11.0-py3-none-any.whl (375 kB)
+2026-11-10T20:56:44.862+00:00 INFO Downloading bitsandbytes-0.48.2-py3-none-manylinux_2_24_x86_64.whl (59.4 MB)
+2026-11-10T20:56:45.376+00:00 INFO    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 59.4/59.4 MB 115.9 MB/s  0:00:00
+2026-11-10T20:56:45.421+00:00 INFO Downloading sqlglot-28.0.0-py3-none-any.whl (536 kB)
+2026-11-10T20:56:45.441+00:00 INFO    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 536.1/536.1 kB 15.9 MB/s  0:00:00
+2026-11-10T20:56:45.484+00:00 INFO Downloading huggingface_hub-0.36.2-py3-none-any.whl (566 kB)
+2026-11-10T20:56:45.506+00:00 INFO    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 566.4/566.4 kB 15.9 MB/s  0:00:00
+2026-11-10T20:56:45.549+00:00 INFO Downloading tokenizers-0.22.2-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.3 MB)
+2026-11-10T20:56:45.580+00:00 INFO    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.3/3.3 MB 106.8 MB/s  0:00:00
+2026-11-10T20:56:47.741+00:00 INFO Installing collected packages: sqlglot, huggingface-hub, tokenizers, transformers, bitsandbytes, accelerate, peft
+2026-11-10T20:56:47.742+00:00 INFO   Attempting uninstall: sqlglot
+2026-11-10T20:56:47.753+00:00 INFO     Found existing installation: sqlglot 25.20.2
+2026-11-10T20:56:47.753+00:00 INFO     Not uninstalling sqlglot at /usr/local/lib/python3.13/dist-packages, outside environment /kaggle/temp/takehome-peft
+2026-11-10T20:56:47.753+00:00 INFO     Can't uninstall 'sqlglot'. No files were found to uninstall.
+2026-11-10T20:56:48.222+00:00 INFO   Attempting uninstall: huggingface-hub
+2026-11-10T20:56:48.242+00:00 INFO     Found existing installation: huggingface_hub 1.33.0
+2026-11-10T20:56:48.243+00:00 INFO     Not uninstalling huggingface-hub at /usr/local/lib/python3.13/dist-packages, outside environment /kaggle/temp/takehome-peft
+2026-11-10T20:56:48.243+00:00 INFO     Can't uninstall 'huggingface_hub'. No files were found to uninstall.
+2026-11-10T20:56:48.565+00:00 INFO   Attempting uninstall: tokenizers
+2026-11-10T20:56:48.579+00:00 INFO     Found existing installation: tokenizers 0.23.3
+2026-11-10T20:56:48.580+00:00 INFO     Not uninstalling tokenizers at /usr/local/lib/python3.13/dist-packages, outside environment /kaggle/temp/takehome-peft
+2026-11-10T20:56:48.580+00:00 INFO     Can't uninstall 'tokenizers'. No files were found to uninstall.
+2026-11-10T20:56:48.657+00:00 INFO   Attempting uninstall: transformers
+2026-11-10T20:56:48.670+00:00 INFO     Found existing installation: transformers 5.20.2
+2026-11-10T20:56:48.671+00:00 INFO     Not uninstalling transformers at /usr/local/lib/python3.13/dist-packages, outside environment /kaggle/temp/takehome-peft
+2026-11-10T20:56:48.671+00:00 INFO     Can't uninstall 'transformers'. No files were found to uninstall.
+2026-11-10T20:56:57.097+00:00 INFO   Attempting uninstall: accelerate
+2026-11-10T20:56:57.109+00:00 INFO     Found existing installation: accelerate 1.15.0
+2026-11-10T20:56:57.109+00:00 INFO     Not uninstalling accelerate at /usr/local/lib/python3.13/dist-packages, outside environment /kaggle/temp/takehome-peft
+2026-11-10T20:56:57.109+00:00 INFO     Can't uninstall 'accelerate'. No files were found to uninstall.
+2026-11-10T20:56:57.344+00:00 INFO   Attempting uninstall: peft
+2026-11-10T20:56:57.355+00:00 INFO     Found existing installation: peft 0.21.2
+2026-11-10T20:56:57.355+00:00 INFO     Not uninstalling peft at /usr/local/lib/python3.13/dist-packages, outside environment /kaggle/temp/takehome-peft
+2026-11-10T20:56:57.355+00:00 INFO     Can't uninstall 'peft'. No files were found to uninstall.
+2026-11-10T20:56:57.719+00:00 INFO 
+2026-11-10T20:56:57.720+00:00 INFO ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+2026-11-10T20:56:57.720+00:00 INFO ibis-framework 9.5.0 requires sqlglot<25.21,>=23.4, but you have sqlglot 28.0.0 which is incompatible.
+2026-11-10T20:56:57.720+00:00 INFO gradio-client 2.7.2 requires huggingface-hub<3.0,>=1.16.0, but you have huggingface-hub 0.36.2 which is incompatible.
+2026-11-10T20:56:57.720+00:00 INFO gradio 6.30.0 requires huggingface-hub<3.0,>=1.16.0, but you have huggingface-hub 0.36.2 which is incompatible.
+2026-11-10T20:56:57.720+00:00 INFO gradio 6.30.0 requires pillow<13.0,>=8.0, but you have pillow 13.0.0 which is incompatible.
+2026-11-10T20:56:57.721+00:00 INFO diffusers 0.42.0 requires huggingface-hub<3.0,>=1.32.0, but you have huggingface-hub 0.36.2 which is incompatible.
+2026-11-10T20:56:57.722+00:00 INFO Successfully installed accelerate-1.11.0 bitsandbytes-0.48.2 huggingface-hub-0.36.2 peft-0.18.0 sqlglot-28.0.0 tokenizers-0.22.2 transformers-4.57.1
+2026-11-10T20:56:57.882+00:00 INFO Exit status 0

@@ -1,0 +1,35 @@
+2026-11-11T00:35:26.162+00:00 INFO $ /kaggle/temp/soup-patch-ship/bin/soup ship --base /root/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306 --adapter /kaggle/working/soup-takehome/ship-local-r7p2cei9/real --task-eval /kaggle/working/soup-takehome/data/ship_task_amended.jsonl --device cuda --config /kaggle/working/soup-takehome/configs/patch_soup_real.yaml --emit-evidence /kaggle/working/soup-takehome/results/ship_a_evidence.json --output /kaggle/working/soup-takehome/results/ship_a.json
+2026-11-11T00:35:27.389+00:00 INFO Live eval: loading base/tuned at full precision (bfloat16); pass --config to 
+2026-11-11T00:35:27.389+00:00 INFO reuse the training run's own quantization.
+2026-11-11T00:35:40.504+00:00 INFO 
+2026-11-11T00:35:40.605+00:00 INFO Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]
+2026-11-11T00:35:40.629+00:00 INFO Loading weights:  80%|████████  | 271/338 [00:00<00:00, 2702.01it/s]
+2026-11-11T00:35:40.629+00:00 INFO Loading weights: 100%|██████████| 338/338 [00:00<00:00, 2724.40it/s]
+2026-11-11T00:35:42.081+00:00 INFO 
+2026-11-11T00:35:42.182+00:00 INFO Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]
+2026-11-11T00:35:42.204+00:00 INFO Loading weights:  80%|███████▉  | 269/338 [00:00<00:00, 2689.81it/s]
+2026-11-11T00:35:42.204+00:00 INFO Loading weights: 100%|██████████| 338/338 [00:00<00:00, 2763.82it/s]
+2026-11-11T00:55:58.832+00:00 INFO ╭───────────────────────────────── soup ship ──────────────────────────────────╮
+2026-11-11T00:55:58.832+00:00 INFO │ SHIP                                                                         │
+2026-11-11T00:55:58.832+00:00 INFO │ Leg 1 task win (metric): 0.0000 -> 0.6500  [won]                             │
+2026-11-11T00:55:58.832+00:00 INFO │ Judge numerics: bfloat16                                                     │
+2026-11-11T00:55:58.832+00:00 INFO │                                                                              │
+2026-11-11T00:55:58.832+00:00 INFO │ Leg 2 general suite (threshold 5.00%)                                        │
+2026-11-11T00:55:58.832+00:00 INFO │ ┏━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━┳━━━━━━━━━┳━━━━━━━━━┓                  │
+2026-11-11T00:55:58.832+00:00 INFO │ ┃ Benchmark         ┃   Base ┃  Tuned ┃       Δ ┃ Verdict ┃                  │
+2026-11-11T00:55:58.832+00:00 INFO │ ┡━━━━━━━━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━━╇━━━━━━━━━╇━━━━━━━━━┩                  │
+2026-11-11T00:55:58.832+00:00 INFO │ │ mini_arithmetic   │ 0.7750 │ 0.8250 │ +0.0500 │ ok      │                  │
+2026-11-11T00:55:58.832+00:00 INFO │ │ mini_common_sense │ 0.8250 │ 0.8250 │ +0.0000 │ ok      │                  │
+2026-11-11T00:55:58.832+00:00 INFO │ │ mini_format_json  │ 0.9750 │ 1.0000 │ +0.0250 │ ok      │                  │
+2026-11-11T00:55:58.832+00:00 INFO │ │ mini_instruction  │ 1.0000 │ 0.9583 │ -0.0417 │ ok      │                  │
+2026-11-11T00:55:58.832+00:00 INFO │ │ mini_mmlu         │ 0.8500 │ 0.8500 │ +0.0000 │ ok      │                  │
+2026-11-11T00:55:58.832+00:00 INFO │ │ mini_over_refusal │ 0.9250 │ 0.9250 │ +0.0000 │ ok      │                  │
+2026-11-11T00:55:58.832+00:00 INFO │ │ mini_safety       │ 1.0000 │ 1.0000 │ +0.0000 │ ok      │                  │
+2026-11-11T00:55:58.832+00:00 INFO │ │ mini_tool_call    │ 0.7000 │ 0.6500 │ -0.0500 │ ok      │                  │
+2026-11-11T00:55:58.833+00:00 INFO │ └───────────────────┴────────┴────────┴─────────┴─────────┘                  │
+2026-11-11T00:55:58.833+00:00 INFO │                                                                              │
+2026-11-11T00:55:58.833+00:00 INFO │ Task improved AND no general benchmark regressed past 5.00%.                 │
+2026-11-11T00:55:58.833+00:00 INFO ╰──────────────────────────────────────────────────────────────────────────────╯
+2026-11-11T00:55:58.835+00:00 INFO Wrote /kaggle/working/soup-takehome/results/ship_a.json
+2026-11-11T00:55:58.836+00:00 INFO Wrote evidence /kaggle/working/soup-takehome/results/ship_a_evidence.json
+2026-11-11T00:56:00.589+00:00 INFO Exit status 0

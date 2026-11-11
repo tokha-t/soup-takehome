@@ -1,0 +1,60 @@
+2026-11-10T20:58:26.734+00:00 INFO $ /kaggle/temp/takehome-soup/bin/soup data doctor data/train.jsonl --model Qwen/Qwen2.5-1.5B-Instruct --max-length 256 --show-mask 2 --train-on-eot
+2026-11-10T20:58:38.404+00:00 INFO [transformers] return_assistant_tokens_mask==True but chat template does not contain `{% generation %}` keyword.
+2026-11-10T20:58:38.768+00:00 INFO                                 soup data doctor                                
+2026-11-10T20:58:38.768+00:00 INFO ┏━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━┓
+2026-11-10T20:58:38.768+00:00 INFO ┃ Check              ┃ Verdict ┃ Message               ┃ Evidence              ┃
+2026-11-10T20:58:38.768+00:00 INFO ┡━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━┩
+2026-11-10T20:58:38.768+00:00 INFO │ chat_template      │ OK      │ tokenizer has a       │ 2507 chars            │
+2026-11-10T20:58:38.768+00:00 INFO │                    │         │ chat_template         │                       │
+2026-11-10T20:58:38.768+00:00 INFO │ template_render    │ OK      │ 0/200 rows failed to  │                       │
+2026-11-10T20:58:38.768+00:00 INFO │                    │         │ render through the    │                       │
+2026-11-10T20:58:38.768+00:00 INFO │                    │         │ chat template         │                       │
+2026-11-10T20:58:38.768+00:00 INFO │ generation_markers │ MINOR   │ template lacks {%     │                       │
+2026-11-10T20:58:38.768+00:00 INFO │                    │         │ generation %} markers │                       │
+2026-11-10T20:58:38.768+00:00 INFO │                    │         │ — assistant-only      │                       │
+2026-11-10T20:58:38.768+00:00 INFO │                    │         │ masking falls back to │                       │
+2026-11-10T20:58:38.768+00:00 INFO │                    │         │ a heuristic that may  │                       │
+2026-11-10T20:58:38.768+00:00 INFO │                    │         │ include role-prefix   │                       │
+2026-11-10T20:58:38.768+00:00 INFO │                    │         │ tokens in the loss    │                       │
+2026-11-10T20:58:38.768+00:00 INFO │ eos_in_labels      │ OK      │ 0/200 rows (0.0%)     │ eos_token_id=[151645] │
+2026-11-10T20:58:38.768+00:00 INFO │                    │         │ never train an        │                       │
+2026-11-10T20:58:38.768+00:00 INFO │                    │         │ EOS/EOT token — the   │                       │
+2026-11-10T20:58:38.768+00:00 INFO │                    │         │ model will not learn  │                       │
+2026-11-10T20:58:38.768+00:00 INFO │                    │         │ to stop generating    │                       │
+2026-11-10T20:58:38.768+00:00 INFO │ bos_duplication    │ OK      │ tokenizer has no      │                       │
+2026-11-10T20:58:38.768+00:00 INFO │                    │         │ bos_token_id          │                       │
+2026-11-10T20:58:38.768+00:00 INFO │ system_role        │ OK      │ template supports the │                       │
+2026-11-10T20:58:38.768+00:00 INFO │                    │         │ system role (200 rows │                       │
+2026-11-10T20:58:38.768+00:00 INFO │                    │         │ use one)              │                       │
+2026-11-10T20:58:38.768+00:00 INFO │ unknown_roles      │ OK      │ 0/200 rows (0.0%)     │                       │
+2026-11-10T20:58:38.768+00:00 INFO │                    │         │ contain a message     │                       │
+2026-11-10T20:58:38.768+00:00 INFO │                    │         │ role outside          │                       │
+2026-11-10T20:58:38.768+00:00 INFO │                    │         │ ['assistant',         │                       │
+2026-11-10T20:58:38.768+00:00 INFO │                    │         │ 'function', 'system', │                       │
+2026-11-10T20:58:38.768+00:00 INFO │                    │         │ 'tool', 'user']       │                       │
+2026-11-10T20:58:38.768+00:00 INFO │ truncation_risk    │ OK      │ p95 length = 151      │ p50=100, max=240      │
+2026-11-10T20:58:38.768+00:00 INFO │                    │         │ tokens vs             │                       │
+2026-11-10T20:58:38.768+00:00 INFO │                    │         │ max_length=256; 0/200 │                       │
+2026-11-10T20:58:38.768+00:00 INFO │                    │         │ rows (0.0%) would be  │                       │
+2026-11-10T20:58:38.768+00:00 INFO │                    │         │ truncated             │                       │
+2026-11-10T20:58:38.768+00:00 INFO └────────────────────┴─────────┴───────────────────────┴───────────────────────┘
+2026-11-10T20:58:38.768+00:00 INFO ╭─────────── overall ───────────╮
+2026-11-10T20:58:38.768+00:00 INFO │ MINOR — 200/1500 rows scanned │
+2026-11-10T20:58:38.768+00:00 INFO ╰───────────────────────────────╯
+2026-11-10T20:58:38.774+00:00 INFO ╭─────────────────────────── row 0 (assistant_only) ───────────────────────────╮
+2026-11-10T20:58:38.774+00:00 INFO │ <|im_start|>systemĊYouĠtranslateĠquestionsĠintoĠSQL.ĠUseĠtheĠgivenĠtableĠsch │
+2026-11-10T20:58:38.774+00:00 INFO │ ema.ĠReplyĠwithĠoneĠSQLĠqueryĠonly.<|im_end|>Ċ<|im_start|>userĊSchema:ĊCREAT │
+2026-11-10T20:58:38.774+00:00 INFO │ EĠTABLEĠtable_name_24Ġ(riderĠVARCHAR,ĠlapsĠVARCHAR,ĠtimeĠVARCHAR)ĊĊQuestion: │
+2026-11-10T20:58:38.774+00:00 INFO │ ĠWhichĠriderĠwentĠ18ĠlapsĠendingĠ+25.165ĠbehindĠtheĠleader?<|im_end|>Ċ<|im_s │
+2026-11-10T20:58:38.774+00:00 INFO │ tart|>assistantĊSELECTĠriderĠFROMĠtable_name_24ĠWHEREĠlapsĠ=Ġ18ĠANDĠtimeĠ=Ġ" │
+2026-11-10T20:58:38.774+00:00 INFO │ +25.165"<|im_end|>Ċ                                                          │
+2026-11-10T20:58:38.774+00:00 INFO ╰──────────────────────────────────────────────────────────────────────────────╯
+2026-11-10T20:58:38.775+00:00 INFO ╭─────────────────────────── row 1 (assistant_only) ───────────────────────────╮
+2026-11-10T20:58:38.775+00:00 INFO │ <|im_start|>systemĊYouĠtranslateĠquestionsĠintoĠSQL.ĠUseĠtheĠgivenĠtableĠsch │
+2026-11-10T20:58:38.775+00:00 INFO │ ema.ĠReplyĠwithĠoneĠSQLĠqueryĠonly.<|im_end|>Ċ<|im_start|>userĊSchema:ĊCREAT │
+2026-11-10T20:58:38.775+00:00 INFO │ EĠTABLEĠtable_2168295_1Ġ(area__kmÂ²_ĠINTEGER,ĠheadquartersĠVARCHAR)ĊĊQuestio │
+2026-11-10T20:58:38.775+00:00 INFO │ n:ĠIfĠtheĠheadquartersĠisĠBharatpur,ĠwhatĠisĠtheĠmaximumĠarea?<|im_end|>Ċ<|i │
+2026-11-10T20:58:38.775+00:00 INFO │ m_start|>assistantĊSELECTĠMAX(area__kmÂ²_)ĠFROMĠtable_2168295_1ĠWHEREĠheadqu │
+2026-11-10T20:58:38.776+00:00 INFO │ artersĠ=Ġ"Bharatpur"<|im_end|>Ċ                                              │
+2026-11-10T20:58:38.776+00:00 INFO ╰──────────────────────────────────────────────────────────────────────────────╯
+2026-11-10T20:58:39.909+00:00 INFO Exit status 0

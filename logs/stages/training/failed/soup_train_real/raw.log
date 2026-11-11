@@ -1,0 +1,25 @@
+2026-11-10T20:58:43.685+00:00 INFO $ /kaggle/temp/takehome-soup/bin/python /kaggle/working/soup-takehome/configs/soup_observe.py real /kaggle/temp/takehome-soup/bin/soup train --config /kaggle/working/soup-takehome/configs/soup.yaml --yes
+2026-11-10T20:58:59.739+00:00 INFO 2026-11-10T20:58:59.739 INFO Verified preregistration sha256 d2f3781007f309964cb09b6a5f11a96359d37ae5cd76593c0598a2d5d672211f
+2026-11-10T20:59:00.204+00:00 INFO Loading config from /kaggle/working/soup-takehome/configs/soup.yaml...
+2026-11-10T20:59:00.339+00:00 INFO Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-11-10T20:59:00.339+00:00 INFO 2026-11-10T20:59:00.339 WARNING Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-11-10T20:59:00.592+00:00 INFO ╭─────────────────────────────── Training Setup ───────────────────────────────╮
+2026-11-10T20:59:00.592+00:00 INFO │ Device:  Tesla T4                                                            │
+2026-11-10T20:59:00.592+00:00 INFO │ Memory:  14.6 GB                                                             │
+2026-11-10T20:59:00.592+00:00 INFO │ Model:   Qwen/Qwen2.5-1.5B-Instruct                                          │
+2026-11-10T20:59:00.592+00:00 INFO │ Task:    sft                                                                 │
+2026-11-10T20:59:00.592+00:00 INFO │ Backend: transformers                                                        │
+2026-11-10T20:59:00.592+00:00 INFO │ LoRA:    r=16, alpha=32                                                      │
+2026-11-10T20:59:00.592+00:00 INFO │ Quant:   none                                                                │
+2026-11-10T20:59:00.592+00:00 INFO │ Seed:    42, data_seed=42                                                    │
+2026-11-10T20:59:00.592+00:00 INFO ╰──────────────────────────────────────────────────────────────────────────────╯
+2026-11-10T20:59:00.593+00:00 INFO Loading dataset...
+2026-11-10T20:59:00.875+00:00 INFO Warning: 1500 of 1500 rows dropped: they do not convert as 'pre_tokenized'. 
+2026-11-10T20:59:00.875+00:00 INFO First: row 0: pre_tokenized row must have 'input_ids'.
+2026-11-10T20:59:00.875+00:00 INFO   List them all with: soup data validate data/train.jsonl --format pre_tokenized
+2026-11-10T20:59:00.877+00:00 INFO No training rows: data/train.jsonl loaded 0 train samples as format 
+2026-11-10T20:59:00.877+00:00 INFO 'pre_tokenized'.
+2026-11-10T20:59:00.877+00:00 INFO Every row that failed to convert was dropped. First: row 0 (as 'pre_tokenized'):
+2026-11-10T20:59:00.877+00:00 INFO pre_tokenized row must have 'input_ids'.
+2026-11-10T20:59:00.877+00:00 INFO Fix those rows, or set data.format to the format they are in.
+2026-11-10T20:59:02.399+00:00 INFO Exit status 1

@@ -1,0 +1,36 @@
+2026-11-11T01:53:29.302+00:00 INFO $ /kaggle/temp/soup-patch-optional-soup/bin/soup ship --base /root/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306 --adapter /kaggle/working/soup-takehome/ship-control-avkf49gd/weak_001 --task-eval /kaggle/working/soup-takehome/data/ship_task_amended.jsonl --device cuda --config /kaggle/working/soup-takehome/configs/patch_soup_real.yaml --emit-evidence /kaggle/working/soup-takehome/results/ship_weak_001_evidence.json --output /kaggle/working/soup-takehome/results/ship_weak_001.json --baseline /kaggle/working/soup-takehome/results/soup_baseline.json
+2026-11-11T01:53:30.472+00:00 INFO Live eval: loading base/tuned at full precision (bfloat16); pass --config to 
+2026-11-11T01:53:30.472+00:00 INFO reuse the training run's own quantization.
+2026-11-11T01:53:43.222+00:00 INFO 
+2026-11-11T01:53:43.322+00:00 INFO Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]
+2026-11-11T01:53:43.347+00:00 INFO Loading weights:  77%|███████▋  | 261/338 [00:00<00:00, 2604.04it/s]
+2026-11-11T01:53:43.347+00:00 INFO Loading weights: 100%|██████████| 338/338 [00:00<00:00, 2707.19it/s]
+2026-11-11T01:53:44.796+00:00 INFO 
+2026-11-11T01:53:44.897+00:00 INFO Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]
+2026-11-11T01:53:44.925+00:00 INFO Loading weights:  76%|███████▌  | 256/338 [00:00<00:00, 2533.31it/s]
+2026-11-11T01:53:44.925+00:00 INFO Loading weights: 100%|██████████| 338/338 [00:00<00:00, 2611.96it/s]
+2026-11-11T02:12:18.733+00:00 INFO ╭───────────────────────────────── soup ship ──────────────────────────────────╮
+2026-11-11T02:12:18.733+00:00 INFO │ DON'T SHIP                                                                   │
+2026-11-11T02:12:18.733+00:00 INFO │ Leg 1 task win (metric): 0.0000 -> 0.0000  [no win]                          │
+2026-11-11T02:12:18.733+00:00 INFO │ Judge numerics: bfloat16                                                     │
+2026-11-11T02:12:18.733+00:00 INFO │                                                                              │
+2026-11-11T02:12:18.733+00:00 INFO │ Leg 2 general suite (threshold 5.00%)                                        │
+2026-11-11T02:12:18.733+00:00 INFO │ ┏━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━┳━━━━━━━━━┳━━━━━━━━━┓                  │
+2026-11-11T02:12:18.733+00:00 INFO │ ┃ Benchmark         ┃   Base ┃  Tuned ┃       Δ ┃ Verdict ┃                  │
+2026-11-11T02:12:18.733+00:00 INFO │ ┡━━━━━━━━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━━╇━━━━━━━━━╇━━━━━━━━━┩                  │
+2026-11-11T02:12:18.733+00:00 INFO │ │ mini_arithmetic   │ 0.7750 │ 0.7750 │ +0.0000 │ ok      │                  │
+2026-11-11T02:12:18.733+00:00 INFO │ │ mini_common_sense │ 0.8250 │ 0.8250 │ +0.0000 │ ok      │                  │
+2026-11-11T02:12:18.733+00:00 INFO │ │ mini_format_json  │ 0.9750 │ 0.9750 │ +0.0000 │ ok      │                  │
+2026-11-11T02:12:18.733+00:00 INFO │ │ mini_instruction  │ 1.0000 │ 1.0000 │ +0.0000 │ ok      │                  │
+2026-11-11T02:12:18.733+00:00 INFO │ │ mini_mmlu         │ 0.8500 │ 0.8500 │ +0.0000 │ ok      │                  │
+2026-11-11T02:12:18.733+00:00 INFO │ │ mini_over_refusal │ 0.9250 │ 0.9250 │ +0.0000 │ ok      │                  │
+2026-11-11T02:12:18.733+00:00 INFO │ │ mini_safety       │ 1.0000 │ 1.0000 │ +0.0000 │ ok      │                  │
+2026-11-11T02:12:18.733+00:00 INFO │ │ mini_tool_call    │ 0.7000 │ 0.7000 │ +0.0000 │ ok      │                  │
+2026-11-11T02:12:18.733+00:00 INFO │ └───────────────────┴────────┴────────┴─────────┴─────────┘                  │
+2026-11-11T02:12:18.733+00:00 INFO │                                                                              │
+2026-11-11T02:12:18.734+00:00 INFO │ Task did not improve (metric: 0.0000 -> 0.0000, tied). A strict win is       │
+2026-11-11T02:12:18.734+00:00 INFO │ required to ship.                                                            │
+2026-11-11T02:12:18.734+00:00 INFO ╰──────────────────────────────────────────────────────────────────────────────╯
+2026-11-11T02:12:18.736+00:00 INFO Wrote /kaggle/working/soup-takehome/results/ship_weak_001.json
+2026-11-11T02:12:18.737+00:00 INFO Wrote evidence /kaggle/working/soup-takehome/results/ship_weak_001_evidence.json
+2026-11-11T02:12:20.416+00:00 INFO Exit status 2

@@ -1,0 +1,16 @@
+{
+  "system_turn_supplied": false,
+  "template_injects_qwen_default": true,
+  "source": "def _render_prompt_template(\n    tokenizer: object, prompt: str, *, chat_template_kwargs: Optional[dict] = None,\n) -> Tuple[str, bool]:\n    \"\"\"Render a single user turn; also report whether the chat template produced it.\n\n    Falls back to the raw prompt when the tokenizer has no chat template or the\n    template fails to render.\n    \"\"\"\n    chat_template = getattr(tokenizer, \"chat_template\", None)\n    if chat_template:\n        try:\n            text = tokenizer.apply_chat_template(  # type: ignore[attr-defined]\n                [{\"role\": \"user\", \"content\": prompt}],\n                tokenize=False,\n                add_generation_prompt=True,\n                **(chat_template_kwargs or {}),\n            )\n        except Exception as exc:  # noqa: BLE001 — default malformed template → raw prompt\n            if chat_template_kwargs:\n                raise ValueError(\n                    f\"cannot render chat template with chat_template_kwargs: {exc}\"\n                ) from exc\n            return prompt, False\n        return text, True\n    if chat_template_kwargs:\n        raise ValueError(\"chat_template_kwargs requires a tokenizer with a chat template\")\n    return prompt, False\n",
+  "task_rows": 100,
+  "suite_counts": {
+    "mini_mmlu": 40,
+    "mini_common_sense": 40,
+    "mini_instruction": 24,
+    "mini_arithmetic": 40,
+    "mini_tool_call": 40,
+    "mini_format_json": 40,
+    "mini_safety": 40,
+    "mini_over_refusal": 40
+  }
+}

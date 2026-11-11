@@ -1,0 +1,9 @@
+{
+  "adapters_check": {
+    "exit_code": 2,
+    "finished": "2026-11-11T06:11:34+05:00",
+    "log": "logs/stages/7/adapters_check_placebo.log"
+  },
+  "verify": "results/verify_placebo.json",
+  "soup_ship": "results/ship_c.json"
+}

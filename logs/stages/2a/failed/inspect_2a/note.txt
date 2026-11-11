@@ -1,0 +1,2 @@
+2026-11-11T03:23:11+05:00 Exit 1 from inspect_2a.
+Retain the raw log and follow the stage fallback or next check.

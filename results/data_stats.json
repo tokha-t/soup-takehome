@@ -1,0 +1,133 @@
+{
+  "source_rows": 78577,
+  "dedup_dropped": 4,
+  "scope_rows": 78573,
+  "scope_categories": {
+    "agg": 12381,
+    "complex": 3182,
+    "simple": 40816,
+    "multi_cond": 22194
+  },
+  "harder": false,
+  "dataset_revision": "9d80a6a118b838d9defc3798d659a54a2ac2ff37",
+  "train": {
+    "rows": 1500,
+    "counts": {
+      "multi_cond": 375,
+      "agg": 375,
+      "simple": 375,
+      "complex": 375
+    },
+    "shares": {
+      "complex": 0.25,
+      "multi_cond": 0.25,
+      "agg": 0.25,
+      "simple": 0.25
+    },
+    "full_tokens": {
+      "p50": 97,
+      "p95": 142,
+      "p99": 178,
+      "max": 240
+    },
+    "answer_tokens": {
+      "p50": 25,
+      "p95": 50,
+      "p99": 83,
+      "max": 137
+    },
+    "sha256": "3a2ec25929442e9e1bd955ad435429f0539cec6cc9643202dcc3bc0bb2be3c17"
+  },
+  "eval": {
+    "rows": 200,
+    "counts": {
+      "agg": 50,
+      "multi_cond": 50,
+      "complex": 50,
+      "simple": 50
+    },
+    "shares": {
+      "complex": 0.25,
+      "multi_cond": 0.25,
+      "agg": 0.25,
+      "simple": 0.25
+    },
+    "full_tokens": {
+      "p50": 98,
+      "p95": 140,
+      "p99": 177,
+      "max": 198
+    },
+    "answer_tokens": {
+      "p50": 25,
+      "p95": 49,
+      "p99": 63,
+      "max": 89
+    },
+    "sha256": "75237ff27b2c0adf4cf70d8d536668ffd78de126e6ec189c144ddc69dbd1e7b2"
+  },
+  "eval_leaky": {
+    "rows": 100,
+    "counts": {
+      "complex": 39,
+      "agg": 19,
+      "simple": 39,
+      "multi_cond": 3
+    },
+    "shares": {
+      "complex": 0.39,
+      "multi_cond": 0.03,
+      "agg": 0.19,
+      "simple": 0.39
+    },
+    "full_tokens": {
+      "p50": 85,
+      "p95": 125,
+      "p99": 170,
+      "max": 171
+    },
+    "answer_tokens": {
+      "p50": 19,
+      "p95": 43,
+      "p99": 68,
+      "max": 82
+    },
+    "sha256": "b4234874d5f19cf12a3cdfb7ee0b832d6cc3c8bb56cc3b19d677c3816d2b9c1d"
+  },
+  "train_shuffled": {
+    "rows": 1500,
+    "counts": {
+      "multi_cond": 375,
+      "agg": 375,
+      "simple": 375,
+      "complex": 375
+    },
+    "shares": {
+      "complex": 0.25,
+      "multi_cond": 0.25,
+      "agg": 0.25,
+      "simple": 0.25
+    },
+    "full_tokens": {
+      "p50": 98,
+      "p95": 129,
+      "p99": 165,
+      "max": 208
+    },
+    "answer_tokens": {
+      "p50": 25,
+      "p95": 50,
+      "p99": 83,
+      "max": 137
+    },
+    "sha256": "e42c87e6013e045690ced56ec03856cbe67e8c173cb54a890fe8ad7c240b5045"
+  },
+  "max_length": 256,
+  "p96_full_train": 147,
+  "train_eval_schema_overlap": 0,
+  "leaky_schema_overlap": 1.0,
+  "leaky_question_overlap": 0.0,
+  "shuffled_over_max_length": 0,
+  "shuffled_answers_unchanged": 1,
+  "max_new_tokens": 98
+}

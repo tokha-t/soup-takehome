@@ -1,0 +1,72 @@
+2026-11-10T20:58:02.968+00:00 INFO $ /kaggle/temp/takehome-soup/bin/soup doctor --config /kaggle/working/soup-takehome/configs/soup.yaml
+2026-11-10T20:58:03.599+00:00 INFO Soup Doctor - checking your environment...
+2026-11-10T20:58:03.599+00:00 INFO 
+2026-11-10T20:58:03.601+00:00 INFO ╭─────────────────────────────────── System ───────────────────────────────────╮
+2026-11-10T20:58:03.601+00:00 INFO │ Python:   3.13.16                                                            │
+2026-11-10T20:58:03.601+00:00 INFO │ Platform: Linux 6.18.55+                                                     │
+2026-11-10T20:58:03.601+00:00 INFO │ Arch:     x86_64                                                             │
+2026-11-10T20:58:03.601+00:00 INFO │ `soup` runs under /kaggle/temp/takehome-soup/bin/python; `python` on your    │
+2026-11-10T20:58:03.601+00:00 INFO │ PATH is /usr/local/bin/python. site-packages may differ — for any `python    │
+2026-11-10T20:58:03.601+00:00 INFO │ -c` check use the soup interpreter explicitly.                               │
+2026-11-10T20:58:03.601+00:00 INFO ╰──────────────────────────────────────────────────────────────────────────────╯
+2026-11-10T20:58:10.191+00:00 INFO ╭──────────────────────────────────── GPU ─────────────────────────────────────╮
+2026-11-10T20:58:10.191+00:00 INFO │ CUDA:     available (v13.0)                                                  │
+2026-11-10T20:58:10.191+00:00 INFO │ GPUs:     1                                                                  │
+2026-11-10T20:58:10.191+00:00 INFO │   GPU 0: Tesla T4 (14.6 GB) — sm_75 (Turing)                                 │
+2026-11-10T20:58:10.191+00:00 INFO │                                                                              │
+2026-11-10T20:58:10.191+00:00 INFO │ Precision features                                                           │
+2026-11-10T20:58:10.191+00:00 INFO │   BF16: hardware=no                                                          │
+2026-11-10T20:58:10.191+00:00 INFO │   FP8: hardware=no, software=yes                                             │
+2026-11-10T20:58:10.191+00:00 INFO │   NVFP4: hardware=no, software=no                                            │
+2026-11-10T20:58:10.191+00:00 INFO ╰──────────────────────────────────────────────────────────────────────────────╯
+2026-11-10T20:58:10.204+00:00 INFO     System Resources     
+2026-11-10T20:58:10.204+00:00 INFO ┏━━━━━━━━━━┳━━━━━━━━━━━━┓
+2026-11-10T20:58:10.204+00:00 INFO ┃ Resource ┃ Value      ┃
+2026-11-10T20:58:10.204+00:00 INFO ┡━━━━━━━━━━╇━━━━━━━━━━━━┩
+2026-11-10T20:58:10.204+00:00 INFO │ RAM      │ 31 GB      │
+2026-11-10T20:58:10.204+00:00 INFO │ Disk     │ 19 GB free │
+2026-11-10T20:58:10.204+00:00 INFO └──────────┴────────────┘
+2026-11-10T20:58:10.204+00:00 INFO 
+2026-11-10T20:58:25.077+00:00 INFO                                   Dependencies                                  
+2026-11-10T20:58:25.077+00:00 INFO ┏━━━━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━┓
+2026-11-10T20:58:25.077+00:00 INFO ┃ Package      ┃ Required ┃  Installed   ┃ Min Version ┃ Status                ┃
+2026-11-10T20:58:25.077+00:00 INFO ┡━━━━━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━━━━━━╇━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━┩
+2026-11-10T20:58:25.077+00:00 INFO │ pydantic     │   yes    │    2.14.1    │ >=2.0.0     │ OK                    │
+2026-11-10T20:58:25.077+00:00 INFO │ typer        │   yes    │    0.27.3    │ >=0.15.4    │ OK                    │
+2026-11-10T20:58:25.077+00:00 INFO │ rich         │   yes    │    13.9.4    │ >=13.0.0    │ OK                    │
+2026-11-10T20:58:25.077+00:00 INFO │ pyyaml       │   yes    │    6.0.3     │ >=6.0       │ OK                    │
+2026-11-10T20:58:25.077+00:00 INFO │ plotext      │   yes    │    6.1.0     │ >=5.2.0     │ OK                    │
+2026-11-10T20:58:25.077+00:00 INFO │ fastapi      │ optional │   0.141.1    │ >=0.104.0   │ OK                    │
+2026-11-10T20:58:25.077+00:00 INFO │ uvicorn      │ optional │    0.54.0    │ >=0.24.0    │ OK                    │
+2026-11-10T20:58:25.077+00:00 INFO │ datasketch   │ optional │      -       │ >=1.6.0     │ not installed         │
+2026-11-10T20:58:25.077+00:00 INFO │ lm-eval      │ optional │      -       │ >=0.4.0     │ not installed         │
+2026-11-10T20:58:25.077+00:00 INFO │ wandb        │ optional │    0.28.1    │ >=0.15.0    │ OK                    │
+2026-11-10T20:58:25.077+00:00 INFO │ deepspeed    │ optional │      -       │ >=0.12.0    │ not installed         │
+2026-11-10T20:58:25.077+00:00 INFO │ httpx        │ optional │    0.28.1    │ >=0.24.0    │ OK                    │
+2026-11-10T20:58:25.077+00:00 INFO │ unsloth      │ optional │      -       │ >=2024.8    │ not installed         │
+2026-11-10T20:58:25.077+00:00 INFO │ Pillow       │ optional │    13.0.0    │ >=9.0.0     │ OK                    │
+2026-11-10T20:58:25.077+00:00 INFO │ torchao      │ optional │    0.10.0    │ >=0.18.0    │ outdated (need        │
+2026-11-10T20:58:25.077+00:00 INFO │              │          │              │             │ >=0.18.0)             │
+2026-11-10T20:58:25.077+00:00 INFO │ sglang       │ optional │      -       │ >=0.5.1     │ not installed         │
+2026-11-10T20:58:25.077+00:00 INFO │ librosa      │ optional │    0.11.0    │ >=0.10.0    │ OK                    │
+2026-11-10T20:58:25.077+00:00 INFO │ torch        │ [train]  │ 2.11.0+cu130 │ >=2.6.0     │ OK                    │
+2026-11-10T20:58:25.077+00:00 INFO │ transformers │ [train]  │    5.20.2    │ >=5.16.1    │ OK                    │
+2026-11-10T20:58:25.077+00:00 INFO │ peft         │ [train]  │    0.21.2    │ >=0.20.0    │ OK                    │
+2026-11-10T20:58:25.077+00:00 INFO │ trl          │ [train]  │    0.29.1    │ >=0.29.0    │ OK                    │
+2026-11-10T20:58:25.077+00:00 INFO │ datasets     │ [train]  │    4.8.5     │ >=2.14.0    │ OK                    │
+2026-11-10T20:58:25.077+00:00 INFO │ bitsandbytes │ [train]  │    0.50.2    │ >=0.41.0    │ OK                    │
+2026-11-10T20:58:25.077+00:00 INFO │ accelerate   │ [train]  │    1.15.0    │ >=0.27.0    │ OK                    │
+2026-11-10T20:58:25.077+00:00 INFO └──────────────┴──────────┴──────────────┴─────────────┴───────────────────────┘
+2026-11-10T20:58:25.080+00:00 INFO 
+2026-11-10T20:58:25.080+00:00 INFO Found 1 issue(s):
+2026-11-10T20:58:25.080+00:00 INFO   > Upgrade torchao: pip install "torchao>=0.18.0"
+2026-11-10T20:58:25.080+00:00 INFO 
+2026-11-10T20:58:25.080+00:00 INFO Fix all:
+2026-11-10T20:58:25.081+00:00 INFO   pip install "torchao>=0.18.0"
+2026-11-10T20:58:25.090+00:00 INFO 
+2026-11-10T20:58:25.090+00:00 INFO Config check - task=sft backend=transformers
+2026-11-10T20:58:25.091+00:00 INFO   None of the 0 setting(s) known to be unread on task=sft backend=transformers 
+2026-11-10T20:58:25.091+00:00 INFO is switched on in this config.
+2026-11-10T20:58:25.091+00:00 INFO 
+2026-11-10T20:58:25.091+00:00 INFO GitHub: https://github.com/MakazhanAlpamys/Soup
+2026-11-10T20:58:26.733+00:00 INFO Exit status 0

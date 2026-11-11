@@ -1,0 +1,2 @@
+2026-11-10T20:59:02.400+00:00 INFO $ /kaggle/temp/takehome-peft/bin/python /kaggle/working/soup-takehome/configs/train_peft.py real
+2026-11-10T21:06:32.878+00:00 INFO Exit status 0

@@ -1,0 +1,12 @@
+{
+  "status": "partial",
+  "finished": "2026-11-11T08:30:00+05:00",
+  "amendment": "298548aedf93ab81ce182328108d79bed20b7dd54e9e6fc862b956c3797ada02",
+  "commands": {
+    "quant_check_real": {
+      "exit_code": -15,
+      "finished": "2026-11-11T08:30:00+05:00",
+      "log": "logs/stages/8q/quant_check_real.log"
+    }
+  }
+}

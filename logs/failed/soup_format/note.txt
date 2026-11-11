@@ -1,0 +1,2 @@
+Soup rejected all 1,500 rows because pre_tokenized expected input_ids and the source rows had messages.
+The three adapters trained with PEFT. After training, converted those same rows to ChatML for strict validation and the separate Soup bench.

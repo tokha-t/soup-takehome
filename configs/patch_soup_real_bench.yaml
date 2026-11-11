@@ -1,0 +1,39 @@
+base: /root/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306
+task: sft
+data:
+  train: data/train_soup.jsonl
+  format: chatml
+  val_split: 0.0
+  max_length: 256
+  train_on_responses_only: true
+training:
+  epochs: 2
+  lr: 0.0002
+  batch_size: 8
+  lora:
+    r: 16
+    alpha: 32
+    target_modules:
+    - q_proj
+    - k_proj
+    - v_proj
+    - o_proj
+    - gate_proj
+    - up_proj
+    - down_proj
+    dropout: 0.0
+  quantization: none
+  gradient_accumulation_steps: 1
+  optimizer: adamw_torch
+  scheduler: cosine
+  warmup_ratio: 0.49995
+  gradient_checkpointing: full
+  train_on_eot: true
+  seed: 42
+  data_seed: 42
+  weight_decay: 0.0
+  max_grad_norm: 1.0
+  logging_steps: 1
+  rewind_log: false
+output: runs/bench_real
+backend: transformers

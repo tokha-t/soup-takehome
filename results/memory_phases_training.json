@@ -1,0 +1,101 @@
+[
+  {
+    "name": "real_model_load",
+    "state": "complete",
+    "start_epoch": 1794344357.2443938,
+    "end_epoch": 1794344382.204031,
+    "wall_seconds": 24.95963716506958,
+    "torch_peak_allocated_bytes": 3161525760,
+    "torch_peak_reserved_bytes": 3240099840,
+    "peak_process_rss_bytes": 4101586944,
+    "nvidia_smi_peak_mib": 3173
+  },
+  {
+    "name": "real_training",
+    "state": "complete",
+    "start_epoch": 1794344382.601537,
+    "end_epoch": 1794344789.3393774,
+    "wall_seconds": 406.73784041404724,
+    "torch_peak_allocated_bytes": 5519771648,
+    "torch_peak_reserved_bytes": 11144265728,
+    "peak_process_rss_bytes": 2135093248,
+    "nvidia_smi_peak_mib": 10771
+  },
+  {
+    "name": "real_adapter_save",
+    "state": "complete",
+    "start_epoch": 1794344789.7687936,
+    "end_epoch": 1794344790.394125,
+    "wall_seconds": 0.6253314018249512,
+    "torch_peak_allocated_bytes": 3329119744,
+    "torch_peak_reserved_bytes": 11144265728,
+    "peak_process_rss_bytes": 2210066432,
+    "nvidia_smi_peak_mib": 10771
+  },
+  {
+    "name": "placebo_model_load",
+    "state": "complete",
+    "start_epoch": 1794344808.5853393,
+    "end_epoch": 1794344814.4013393,
+    "wall_seconds": 5.815999984741211,
+    "torch_peak_allocated_bytes": 3161525760,
+    "torch_peak_reserved_bytes": 3240099840,
+    "peak_process_rss_bytes": 4191100928,
+    "nvidia_smi_peak_mib": 3209
+  },
+  {
+    "name": "placebo_training",
+    "state": "complete",
+    "start_epoch": 1794344814.8829727,
+    "end_epoch": 1794345221.1920228,
+    "wall_seconds": 406.3090500831604,
+    "torch_peak_allocated_bytes": 5519771648,
+    "torch_peak_reserved_bytes": 11144265728,
+    "peak_process_rss_bytes": 1881350144,
+    "nvidia_smi_peak_mib": 10771
+  },
+  {
+    "name": "placebo_adapter_save",
+    "state": "complete",
+    "start_epoch": 1794345221.6788664,
+    "end_epoch": 1794345222.2766862,
+    "wall_seconds": 0.5978198051452637,
+    "torch_peak_allocated_bytes": 3329119744,
+    "torch_peak_reserved_bytes": 11144265728,
+    "peak_process_rss_bytes": 1956401152,
+    "nvidia_smi_peak_mib": 10771
+  },
+  {
+    "name": "shuffled_model_load",
+    "state": "complete",
+    "start_epoch": 1794345240.6223233,
+    "end_epoch": 1794345246.4303179,
+    "wall_seconds": 5.807994604110718,
+    "torch_peak_allocated_bytes": 3161525760,
+    "torch_peak_reserved_bytes": 3240099840,
+    "peak_process_rss_bytes": 3679395840,
+    "nvidia_smi_peak_mib": 3191
+  },
+  {
+    "name": "shuffled_training",
+    "state": "complete",
+    "start_epoch": 1794345246.9306624,
+    "end_epoch": 1794345639.8738048,
+    "wall_seconds": 392.943142414093,
+    "torch_peak_allocated_bytes": 5483556352,
+    "torch_peak_reserved_bytes": 8581545984,
+    "peak_process_rss_bytes": 1880129536,
+    "nvidia_smi_peak_mib": 8327
+  },
+  {
+    "name": "shuffled_adapter_save",
+    "state": "complete",
+    "start_epoch": 1794345640.3703198,
+    "end_epoch": 1794345640.9425702,
+    "wall_seconds": 0.5722503662109375,
+    "torch_peak_allocated_bytes": 3328144896,
+    "torch_peak_reserved_bytes": 8581545984,
+    "peak_process_rss_bytes": 1955340288,
+    "nvidia_smi_peak_mib": 8327
+  }
+]

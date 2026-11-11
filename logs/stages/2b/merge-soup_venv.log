@@ -1,0 +1,7 @@
+2026-11-10T22:20:04.137+00:00 INFO $ /usr/local/bin/uv venv --seed --system-site-packages --python /usr/bin/python3 /kaggle/temp/soup-patch-merge-soup
+2026-11-10T22:20:04.145+00:00 INFO warning: The `--system` flag has no effect, `uv venv` always ignores virtual environments when finding a Python interpreter; did you mean `--no-managed-python`?
+2026-11-10T22:20:04.146+00:00 INFO Using CPython 3.13.18 interpreter at: /usr/bin/python3
+2026-11-10T22:20:04.146+00:00 INFO Creating virtual environment with seed packages at: /kaggle/temp/soup-patch-merge-soup
+2026-11-10T22:20:04.163+00:00 INFO  + pip==26.3
+2026-11-10T22:20:04.163+00:00 INFO Activate with: source /kaggle/temp/soup-patch-merge-soup/bin/activate
+2026-11-10T22:20:04.166+00:00 INFO Exit status 0

@@ -1,0 +1,58 @@
+{
+  "units": "decimal GB unless labelled bytes",
+  "batch": 8,
+  "max_length": 256,
+  "rank": 16,
+  "parameters": 1543714304,
+  "linear_parameters": 1310195712,
+  "lora_parameters": 18464768,
+  "weights_fp16_gb": 3.087428608,
+  "adapter_gradient_adamw_gb": 0.295436288,
+  "logits_bytes_per_token_range": [
+    1519360,
+    2127104
+  ],
+  "activation_bytes_per_token": {
+    "on": 182784,
+    "off": 2709504
+  },
+  "cuda_context_gb": [
+    0.3,
+    0.6
+  ],
+  "merged_checkpoint_gb": {
+    "fp16": 3.087428608,
+    "fp32": 6.174857216
+  },
+  "nf4_gb": 1.1430981713919999,
+  "training_peak_gb": {
+    "on": [
+      6.868855808,
+      8.11351552
+    ],
+    "off": [
+      12.043578368,
+      13.28823808
+    ]
+  },
+  "other_phase_peak_gb": {
+    "model_load_fp16": 3.087428608,
+    "adapter_save": 3.16128768,
+    "merge_fp32": 6.358816768,
+    "merge_fp16": 3.24386304,
+    "merge_bf16": 3.24386304,
+    "quantize_merged": 1.170623291392,
+    "quantize_base": 1.170623291392,
+    "inference_4bit": 1.206680379392
+  },
+  "training_512_sanity_gb": {
+    "on": [
+      10.35484672,
+      12.844166144
+    ],
+    "off": [
+      20.70429184,
+      23.193611264
+    ]
+  }
+}

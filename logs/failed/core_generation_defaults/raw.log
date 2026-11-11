@@ -1,0 +1,1 @@
+2026-11-10T23:14:04.821+00:00 INFO `generation_config` default values have been modified to match model-specific defaults: {'do_sample': True, 'temperature': 0.7, 'top_k': 20, 'top_p': 0.8, 'repetition_penalty': 1.1, 'bos_token_id': 151643}. If this is not desired, please set these values explicitly.

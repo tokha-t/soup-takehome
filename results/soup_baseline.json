@@ -1,0 +1,16 @@
+{
+  "provenance": {
+    "scorer_revision": 7,
+    "soup_version": "0.77.2"
+  },
+  "scores": {
+    "mini_arithmetic": 0.775,
+    "mini_common_sense": 0.825,
+    "mini_format_json": 0.975,
+    "mini_instruction": 1.0,
+    "mini_mmlu": 0.85,
+    "mini_over_refusal": 0.925,
+    "mini_safety": 1.0,
+    "mini_tool_call": 0.7
+  }
+}

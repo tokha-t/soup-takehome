@@ -1,0 +1,2968 @@
+{
+  "label": "POST-HOC",
+  "official_verdict": "DON'T SHIP",
+  "official_s5_status": "UNMEASURED",
+  "cohort": {
+    "rows": 191,
+    "category_counts": {
+      "agg": 50,
+      "multi_cond": 50,
+      "complex": 41,
+      "simple": 50
+    },
+    "row_ids": [
+      5365,
+      31088,
+      62779,
+      66503,
+      2175,
+      28162,
+      4581,
+      30748,
+      28326,
+      39298,
+      31071,
+      43886,
+      44108,
+      2193,
+      28779,
+      3841,
+      17021,
+      30076,
+      41534,
+      15165,
+      1734,
+      40423,
+      644,
+      573,
+      78036,
+      57371,
+      9891,
+      2752,
+      64775,
+      74623,
+      74611,
+      5684,
+      64063,
+      24446,
+      3940,
+      3118,
+      34016,
+      75462,
+      58837,
+      26876,
+      24536,
+      17443,
+      27803,
+      3606,
+      3025,
+      71496,
+      67970,
+      17550,
+      460,
+      1333,
+      72314,
+      75740,
+      59946,
+      3931,
+      46387,
+      73869,
+      76684,
+      24899,
+      2881,
+      74460,
+      3843,
+      173,
+      22965,
+      70602,
+      49620,
+      41411,
+      54148,
+      62425,
+      14357,
+      67616,
+      368,
+      66230,
+      73994,
+      52507,
+      66188,
+      24587,
+      1124,
+      39679,
+      3701,
+      3119,
+      4429,
+      78571,
+      4122,
+      36594,
+      65045,
+      30037,
+      22243,
+      253,
+      11833,
+      42678,
+      74930,
+      20928,
+      50124,
+      4425,
+      78539,
+      36856,
+      31627,
+      10361,
+      260,
+      443,
+      10140,
+      44587,
+      34525,
+      11567,
+      3500,
+      28496,
+      23607,
+      3441,
+      8870,
+      63894,
+      7407,
+      33508,
+      28164,
+      2130,
+      11895,
+      48448,
+      324,
+      67955,
+      3247,
+      2920,
+      3020,
+      9534,
+      14178,
+      72511,
+      41074,
+      39370,
+      72736,
+      3167,
+      2125,
+      2400,
+      42493,
+      59696,
+      171,
+      21808,
+      38241,
+      6472,
+      54393,
+      72370,
+      259,
+      16575,
+      20176,
+      57893,
+      3282,
+      174,
+      21342,
+      252,
+      77329,
+      70988,
+      62248,
+      13933,
+      4880,
+      49907,
+      15721,
+      9816,
+      13399,
+      2106,
+      9035,
+      29894,
+      71992,
+      30411,
+      8625,
+      42265,
+      23760,
+      35674,
+      25956,
+      20078,
+      38817,
+      66840,
+      31363,
+      20986,
+      56018,
+      2095,
+      73697,
+      68364,
+      22647,
+      3975,
+      25146,
+      61137,
+      68174,
+      258,
+      48972,
+      1810,
+      23857,
+      59656,
+      54937,
+      47210,
+      257,
+      2716,
+      25383,
+      3724,
+      59948
+    ],
+    "excluded_rows": [
+      {
+        "id": 2961,
+        "sqlite_error": "no such column: Firstname"
+      }
+    ]
+  },
+  "method": {
+    "compatibility_validator": "results/s5_posthoc.json",
+    "compatibility_rules": {
+      "scope": "Apply the same rules to gold and model SQL across all 192 rows, without consulting the gold answer when repairing a model query.",
+      "schema": "For schema build failures due to duplicate definitions, merge simple, unconstrained CREATE TABLE declarations by case-insensitive table name. Retain the first spelling of each column and coalesce duplicates only when their declared types agree.",
+      "offset": "After SQLite rejects OFFSET, add LIMIT -1 before a single trailing top-level OFFSET followed by a nonnegative integer, when no top-level LIMIT exists.",
+      "alias": "After SQLite rejects a dollar-prefixed alias token, quote that token when explicitly introduced by AS in a SELECT."
+    },
+    "sqlite_version": "3.50.4",
+    "inputs": "Archived row-level generations from Stage 4 and Stage 5. The original validator and saved lenient flags were reproduced before applying the compatibility check.",
+    "error_grouping": "SQLite syntax errors, incomplete input, and unrecognized tokens are grouped under syntax error. All other errors outside the named categories are grouped under other.",
+    "example_selection": "Up to five saved outputs per condition and error type. Distinct evaluation rows and SQL are preferred. A repeated SQL output from another seed is labeled when used.",
+    "input_sha256": {
+      "data/eval_amended.jsonl": "946b053ffe6b2206ae447ab77168ed56bbd718553f6b9bde7aba6519ef8ecbe3",
+      "results/s5_posthoc.json": "241d7b6cdd6b96ceb97388323df02f6db5cfdf25531b432d0064147b5b987275",
+      "results/summary.json": "b8f1831646c3316e22c398e263548464c12742bda2819b4fc11e9655389428f2",
+      "results/verify_real.json": "2baea9ad7c8a672162270e6eeffdff460a49af4df2ad6bc67456afe5b73f6a72",
+      "results/verify_shuffled.json": "024e72b0a687eb9d6af6b58e65cdc6424a14fca342797ea3ca5513d2ad7285dd",
+      "results/probe_P3.json": "d8e0a779a7df2e3c3d1468ebe77c105fe366414600e6cae4dca717abf39a7763",
+      "results/probe_P4.json": "a3a92e0046965f4b22d900dae0a0571a0b04d1f3f67a056b554e19f36cead978",
+      "sql_metrics.py": "52e4affdcc2b4cc946577c647bc6e957eb6cbfa6327f93e5b184f578f3f17cb4",
+      "patch_stage_decode.py": "9a30dfb951e750cc2ba9223fdfe12aa59ef6f535488002d3ab4ed0e592819d4f",
+      "results/P4_sampling_seed_42.json": "4dc94d7dcd5639afdf183ea61056a232b41c7d1eb16acb74b88518ed063b0f3d",
+      "results/P4_sampling_seed_43.json": "e3a3ffd250374acf342d633c167ffe34dccfe93403868c85389b204b7b6fae39",
+      "results/P4_sampling_seed_44.json": "72e955159d744d9595edd87e2a75014b517320046bbc4f86a8bd425c1bc6a632"
+    }
+  },
+  "conditions": {
+    "base_greedy": {
+      "source": "results/verify_real.json",
+      "json_key": "raw_outputs.base",
+      "valid_sql": {
+        "count": 180,
+        "total": 191,
+        "rate": 0.9424083769633508
+      }
+    },
+    "base_4bit_greedy": {
+      "source": "results/verify_real.json",
+      "json_key": "raw_outputs.base4",
+      "valid_sql": {
+        "count": 161,
+        "total": 191,
+        "rate": 0.8429319371727748
+      }
+    },
+    "merged_fp16_greedy": {
+      "source": "results/verify_real.json",
+      "json_key": "raw_outputs.merged",
+      "valid_sql": {
+        "count": 183,
+        "total": 191,
+        "rate": 0.9581151832460733
+      }
+    },
+    "merged_4bit_greedy": {
+      "source": "results/verify_real.json",
+      "json_key": "raw_outputs.merged4",
+      "valid_sql": {
+        "count": 165,
+        "total": 191,
+        "rate": 0.8638743455497382
+      }
+    },
+    "merged_4bit_without_system_prompt": {
+      "source": "results/probe_P3.json",
+      "json_key": "outputs_without_system",
+      "valid_sql": {
+        "count": 147,
+        "total": 191,
+        "rate": 0.7696335078534031
+      }
+    },
+    "shuffled_4bit_greedy": {
+      "source": "results/verify_real.json",
+      "json_key": "raw_outputs.shuffled4",
+      "valid_sql": {
+        "count": 0,
+        "total": 191,
+        "rate": 0.0
+      }
+    },
+    "merged_4bit_shipped": {
+      "sources": {
+        "42": "results/P4_sampling_seed_42.json",
+        "43": "results/P4_sampling_seed_43.json",
+        "44": "results/P4_sampling_seed_44.json"
+      },
+      "effective_sampling": {
+        "temperature": 0.7,
+        "top_p": 0.8,
+        "top_k": 20,
+        "repetition_penalty": 1.1
+      },
+      "max_new_tokens": 98,
+      "pooled": {
+        "count": 499,
+        "total": 573,
+        "rate": 0.8708551483420593
+      },
+      "per_seed": {
+        "42": {
+          "count": 164,
+          "total": 191,
+          "rate": 0.8586387434554974
+        },
+        "43": {
+          "count": 166,
+          "total": 191,
+          "rate": 0.8691099476439791
+        },
+        "44": {
+          "count": 169,
+          "total": 191,
+          "rate": 0.8848167539267016
+        }
+      }
+    },
+    "merged_4bit_greedy_repetition_penalty_1_1": {
+      "source": "results/probe_P4.json",
+      "json_key": "greedy_1_1.all",
+      "status": "unavailable",
+      "valid_sql": null,
+      "reason": "The Stage 5 code saved aggregate metrics for this condition. The Stage 5 output archive has no per-row generations or validity flags for it.",
+      "original_validator_all_192_reference": {
+        "count": 166,
+        "total": 192,
+        "rate": 0.8645833333333334
+      }
+    }
+  },
+  "invalid_output_diagnosis": {
+    "merged_4bit_greedy": {
+      "invalid_rate": {
+        "count": 26,
+        "total": 191,
+        "rate": 0.13612565445026178
+      },
+      "by_error_type": {
+        "no such column": {
+          "share_of_invalid": {
+            "count": 7,
+            "total": 26,
+            "rate": 0.2692307692307692
+          },
+          "examples": [
+            {
+              "id": 644,
+              "category": "complex",
+              "raw_output": "SELECT T1.Name FROM people AS T1 JOIN body_builder AS T2 ON T1.People_ID = T2.People_ID ORDER BY T2.Body_Weight DESC LIMIT 1",
+              "validated_sql": "SELECT T1.Name FROM people AS T1 JOIN body_builder AS T2 ON T1.People_ID = T2.People_ID ORDER BY T2.Body_Weight DESC LIMIT 1",
+              "sqlite_error": "no such column: T2.Body_Weight",
+              "lenient_match": false,
+              "original_sqlite_error": "no such column: T2.Body_Weight"
+            },
+            {
+              "id": 573,
+              "category": "complex",
+              "raw_output": "SELECT T1.Hardware_Model_name, T2.Model_name FROM phone AS T1 JOIN chip_model AS T2 ON T1.chip_model = T2.Model_name WHERE T1.launch_year = 2002 ORDER BY T2.RAM_MiB DESC LIMIT 1",
+              "validated_sql": "SELECT T1.Hardware_Model_name, T2.Model_name FROM phone AS T1 JOIN chip_model AS T2 ON T1.chip_model = T2.Model_name WHERE T1.launch_year = 2002 ORDER BY T2.RAM_MiB DESC LIMIT 1",
+              "sqlite_error": "no such column: T1.launch_year",
+              "lenient_match": false,
+              "original_sqlite_error": "no such column: T1.launch_year"
+            },
+            {
+              "id": 3118,
+              "category": "complex",
+              "raw_output": "SELECT DISTINCT T1.LName FROM STUDENT AS T1 JOIN VOTING_RECORD AS T2 ON T1.StuID = T2.StuID WHERE T1.Advisor != 2192 AND T1.PRESIDENT_Vote = 1",
+              "validated_sql": "SELECT DISTINCT T1.LName FROM STUDENT AS T1 JOIN VOTING_RECORD AS T2 ON T1.StuID = T2.StuID WHERE T1.Advisor != 2192 AND T1.PRESIDENT_Vote = 1",
+              "sqlite_error": "no such column: T2.StuID",
+              "lenient_match": false,
+              "original_sqlite_error": "table STUDENT already exists"
+            },
+            {
+              "id": 1333,
+              "category": "complex",
+              "raw_output": "SELECT T1.surname, T1.driverid FROM drivers AS T1 JOIN results AS T2 ON T1.driverid = T2.driverid JOIN pitstops AS T3 ON T1.driverid = T3.driverid WHERE T2.resultid > 5 AND T3.pitstopid > 11",
+              "validated_sql": "SELECT T1.surname, T1.driverid FROM drivers AS T1 JOIN results AS T2 ON T1.driverid = T2.driverid JOIN pitstops AS T3 ON T1.driverid = T3.driverid WHERE T2.resultid > 5 AND T3.pitstopid > 11",
+              "sqlite_error": "no such column: T2.resultid",
+              "lenient_match": false,
+              "original_sqlite_error": "no such column: T2.resultid"
+            },
+            {
+              "id": 3119,
+              "category": "complex",
+              "raw_output": "SELECT DISTINCT T1.LName FROM STUDENT AS T1 JOIN VOTING_RECORD AS T2 ON T1.StuID = T2.StuID JOIN STUDENT AS T3 ON T1.Advisor = T3.StuID WHERE T2.President_Vote = 'Yes'",
+              "validated_sql": "SELECT DISTINCT T1.LName FROM STUDENT AS T1 JOIN VOTING_RECORD AS T2 ON T1.StuID = T2.StuID JOIN STUDENT AS T3 ON T1.Advisor = T3.StuID WHERE T2.President_Vote = 'Yes'",
+              "sqlite_error": "no such column: T2.President_Vote",
+              "lenient_match": false,
+              "original_sqlite_error": "table STUDENT already exists"
+            }
+          ]
+        },
+        "no such table": {
+          "share_of_invalid": {
+            "count": 0,
+            "total": 26,
+            "rate": 0.0
+          },
+          "examples": []
+        },
+        "syntax error": {
+          "share_of_invalid": {
+            "count": 15,
+            "total": 26,
+            "rate": 0.5769230769230769
+          },
+          "examples": [
+            {
+              "id": 39298,
+              "category": "multi_cond",
+              "raw_output": "SELECT studio_analyst_s_ FROM table_2724704_5 WHERE network_s_ = \"espn\" AND sideline_reporter_s_ = \"erin andrews\" AND tom rinaldi",
+              "validated_sql": "SELECT studio_analyst_s_ FROM table_2724704_5 WHERE network_s_ = \"espn\" AND sideline_reporter_s_ = \"erin andrews\" AND tom rinaldi",
+              "sqlite_error": "near \"rinaldi\": syntax error",
+              "lenient_match": false,
+              "original_sqlite_error": "near \"rinaldi\": syntax error"
+            },
+            {
+              "id": 27803,
+              "category": "simple",
+              "raw_output": "SELECT player FROM table_11545282_5 WHERE years_for_jazz = 1995-2000, 2004-05",
+              "validated_sql": "SELECT player FROM table_11545282_5 WHERE years_for_jazz = 1995-2000, 2004-05",
+              "sqlite_error": "near \",\": syntax error",
+              "lenient_match": false,
+              "original_sqlite_error": "near \",\": syntax error"
+            },
+            {
+              "id": 76684,
+              "category": "multi_cond",
+              "raw_output": "SELECT mountain_peak FROM table_name_16 WHERE rank < 6 AND location = 81.9083°n 75.0250°w",
+              "validated_sql": "SELECT mountain_peak FROM table_name_16 WHERE rank < 6 AND location = 81.9083°n 75.0250°w",
+              "sqlite_error": "unrecognized token: \"81.9083°n\"",
+              "lenient_match": false,
+              "original_sqlite_error": "unrecognized token: \"81.9083°n\""
+            },
+            {
+              "id": 22965,
+              "category": "agg",
+              "raw_output": "SELECT SUM(rank) FROM table_name_19 WHERE worldwide_gross = \"$183,031,272\" \"",
+              "validated_sql": "SELECT SUM(rank) FROM table_name_19 WHERE worldwide_gross = \"$183,031,272\" \"",
+              "sqlite_error": "unrecognized token: \"\"\"",
+              "lenient_match": false,
+              "original_sqlite_error": "unrecognized token: \"\"\""
+            },
+            {
+              "id": 66230,
+              "category": "simple",
+              "raw_output": "SELECT to_par FROM table_name_19 WHERE money___£__ >= 7 OFFSET 7 OFFSET 500",
+              "validated_sql": "SELECT to_par FROM table_name_19 WHERE money___£__ >= 7 OFFSET 7 OFFSET 500",
+              "sqlite_error": "near \"OFFSET\": syntax error",
+              "lenient_match": false,
+              "original_sqlite_error": "near \"OFFSET\": syntax error"
+            }
+          ]
+        },
+        "ambiguous column": {
+          "share_of_invalid": {
+            "count": 1,
+            "total": 26,
+            "rate": 0.038461538461538464
+          },
+          "examples": [
+            {
+              "id": 2095,
+              "category": "complex",
+              "raw_output": "SELECT artist_name FROM artist WHERE country = 'UK' INTERSECT SELECT artist_name FROM artist JOIN song ON artist.artist_name = song.artist_name WHERE languages = 'English' AND artist.country = 'UK'",
+              "validated_sql": "SELECT artist_name FROM artist WHERE country = 'UK' INTERSECT SELECT artist_name FROM artist JOIN song ON artist.artist_name = song.artist_name WHERE languages = 'English' AND artist.country = 'UK'",
+              "sqlite_error": "ambiguous column name: artist_name",
+              "lenient_match": false,
+              "original_sqlite_error": "ambiguous column name: artist_name"
+            }
+          ]
+        },
+        "other": {
+          "share_of_invalid": {
+            "count": 3,
+            "total": 26,
+            "rate": 0.11538461538461539
+          },
+          "examples": [
+            {
+              "id": 1734,
+              "category": "complex",
+              "raw_output": "SELECT first_name, last_name FROM actor ORDER BY COUNT(*) DESC LIMIT 1",
+              "validated_sql": "SELECT first_name, last_name FROM actor ORDER BY COUNT(*) DESC LIMIT 1",
+              "sqlite_error": "misuse of aggregate: COUNT()",
+              "lenient_match": false,
+              "original_sqlite_error": "misuse of aggregate: COUNT()"
+            },
+            {
+              "id": 3843,
+              "category": "complex",
+              "raw_output": "SELECT T1.fname, T1.lname FROM Faculty AS T1 JOIN Faculty_participates_in AS T2 ON T1.facID = T2.facID ORDER BY COUNT(*) DESC LIMIT 1",
+              "validated_sql": "SELECT T1.fname, T1.lname FROM Faculty AS T1 JOIN Faculty_participates_in AS T2 ON T1.facID = T2.facID ORDER BY COUNT(*) DESC LIMIT 1",
+              "sqlite_error": "misuse of aggregate: COUNT()",
+              "lenient_match": false,
+              "original_sqlite_error": "duplicate column name: facID"
+            },
+            {
+              "id": 4425,
+              "category": "complex",
+              "raw_output": "SELECT Major_Record_Format FROM orchestra ORDER BY COUNT(*)",
+              "validated_sql": "SELECT Major_Record_Format FROM orchestra ORDER BY COUNT(*)",
+              "sqlite_error": "misuse of aggregate: COUNT()",
+              "lenient_match": false,
+              "original_sqlite_error": "misuse of aggregate: COUNT()"
+            }
+          ]
+        }
+      },
+      "by_category": {
+        "simple": {
+          "invalid_rate": {
+            "count": 5,
+            "total": 50,
+            "rate": 0.1
+          },
+          "share_of_all_invalid": {
+            "count": 5,
+            "total": 26,
+            "rate": 0.19230769230769232
+          },
+          "error_counts": {
+            "no such column": 1,
+            "no such table": 0,
+            "syntax error": 4,
+            "ambiguous column": 0,
+            "other": 0
+          }
+        },
+        "agg": {
+          "invalid_rate": {
+            "count": 2,
+            "total": 50,
+            "rate": 0.04
+          },
+          "share_of_all_invalid": {
+            "count": 2,
+            "total": 26,
+            "rate": 0.07692307692307693
+          },
+          "error_counts": {
+            "no such column": 0,
+            "no such table": 0,
+            "syntax error": 2,
+            "ambiguous column": 0,
+            "other": 0
+          }
+        },
+        "multi_cond": {
+          "invalid_rate": {
+            "count": 4,
+            "total": 50,
+            "rate": 0.08
+          },
+          "share_of_all_invalid": {
+            "count": 4,
+            "total": 26,
+            "rate": 0.15384615384615385
+          },
+          "error_counts": {
+            "no such column": 0,
+            "no such table": 0,
+            "syntax error": 4,
+            "ambiguous column": 0,
+            "other": 0
+          }
+        },
+        "complex": {
+          "invalid_rate": {
+            "count": 15,
+            "total": 41,
+            "rate": 0.36585365853658536
+          },
+          "share_of_all_invalid": {
+            "count": 15,
+            "total": 26,
+            "rate": 0.5769230769230769
+          },
+          "error_counts": {
+            "no such column": 6,
+            "no such table": 0,
+            "syntax error": 5,
+            "ambiguous column": 1,
+            "other": 3
+          }
+        }
+      }
+    },
+    "merged_4bit_shipped_pooled": {
+      "invalid_rate": {
+        "count": 74,
+        "total": 573,
+        "rate": 0.12914485165794065
+      },
+      "by_error_type": {
+        "no such column": {
+          "share_of_invalid": {
+            "count": 25,
+            "total": 74,
+            "rate": 0.33783783783783783
+          },
+          "examples": [
+            {
+              "id": 31088,
+              "category": "multi_cond",
+              "seed": 42,
+              "raw_output": "SELECT n FROM table_15887683_5 WHERE content = \"cinema\" AND television_service = \"sky cinema +\" AND package_option = \"+24\"",
+              "validated_sql": "SELECT n FROM table_15887683_5 WHERE content = \"cinema\" AND television_service = \"sky cinema +\" AND package_option = \"+24\"",
+              "sqlite_error": "no such column: n",
+              "lenient_match": false,
+              "original_sqlite_error": "no such column: n"
+            },
+            {
+              "id": 3841,
+              "category": "complex",
+              "seed": 42,
+              "raw_output": "SELECT T2.fname, T2.lname, COUNT(*) FROM Faculty AS T1 JOIN Faculty_participates_in AS T2 ON T1.facID = T2.facID GROUP BY fname, lname",
+              "validated_sql": "SELECT T2.fname, T2.lname, COUNT(*) FROM Faculty AS T1 JOIN Faculty_participates_in AS T2 ON T1.facID = T2.facID GROUP BY fname, lname",
+              "sqlite_error": "no such column: T2.fname",
+              "lenient_match": false,
+              "original_sqlite_error": "duplicate column name: facID"
+            },
+            {
+              "id": 644,
+              "category": "complex",
+              "seed": 42,
+              "raw_output": "SELECT T1.Name FROM people AS T1 JOIN body_builder AS T2 ON T1.People_ID = T2.People_ID ORDER BY T2.Body_Weight DESC LIMIT 1",
+              "validated_sql": "SELECT T1.Name FROM people AS T1 JOIN body_builder AS T2 ON T1.People_ID = T2.People_ID ORDER BY T2.Body_Weight DESC LIMIT 1",
+              "sqlite_error": "no such column: T2.Body_Weight",
+              "lenient_match": false,
+              "original_sqlite_error": "no such column: T2.Body_Weight"
+            },
+            {
+              "id": 3118,
+              "category": "complex",
+              "seed": 42,
+              "raw_output": "SELECT DISTINCT LName FROM STUDENT WHERE Presidnet_Vote = 'yes' AND Advisor != 2192;",
+              "validated_sql": "SELECT DISTINCT LName FROM STUDENT WHERE Presidnet_Vote = 'yes' AND Advisor != 2192;",
+              "sqlite_error": "no such column: Presidnet_Vote",
+              "lenient_match": false,
+              "original_sqlite_error": "table STUDENT already exists"
+            },
+            {
+              "id": 3843,
+              "category": "complex",
+              "seed": 42,
+              "raw_output": "SELECT T2.fname, T2.lname FROM Faculty AS T1 JOIN Faculty_participates_in AS T2 ON T1.facid = T2.facid WHERE T2.facid IN (SELECT facID FROM Faculty_participates_in GROUP BY facID ORDER BY COUNT(*) DESC LIMIT 1)",
+              "validated_sql": "SELECT T2.fname, T2.lname FROM Faculty AS T1 JOIN Faculty_participates_in AS T2 ON T1.facid = T2.facid WHERE T2.facid IN (SELECT facID FROM Faculty_participates_in GROUP BY facID ORDER BY COUNT(*) DESC LIMIT 1)",
+              "sqlite_error": "no such column: T2.fname",
+              "lenient_match": false,
+              "original_sqlite_error": "duplicate column name: facID"
+            }
+          ]
+        },
+        "no such table": {
+          "share_of_invalid": {
+            "count": 2,
+            "total": 74,
+            "rate": 0.02702702702702703
+          },
+          "examples": [
+            {
+              "id": 2130,
+              "category": "complex",
+              "seed": 42,
+              "raw_output": "SELECT T1.duration, T2.file_size, T3.formats FROM files AS T1 JOIN song AS T2 ON T1.f_id = T2.f_id JOIN genres AS T3 ON T2.genre_is = T3.genres",
+              "validated_sql": "SELECT T1.duration, T2.file_size, T3.formats FROM files AS T1 JOIN song AS T2 ON T1.f_id = T2.f_id JOIN genres AS T3 ON T2.genre_is = T3.genres",
+              "sqlite_error": "no such table: genres",
+              "lenient_match": false,
+              "original_sqlite_error": "no such table: genres"
+            },
+            {
+              "id": 3118,
+              "category": "complex",
+              "seed": 44,
+              "raw_output": "SELECT DISTINCT T3.LName FROM VOTING_RECORD AS T1 JOIN STUDENT AS T2 ON T1.Id = T2.StuID JOIN ADVISOR AS T3 ON T2.Advisor = T3.id WHERE T1.President_Vote = 'Yes' AND T3.Advisor <> '2192'",
+              "validated_sql": "SELECT DISTINCT T3.LName FROM VOTING_RECORD AS T1 JOIN STUDENT AS T2 ON T1.Id = T2.StuID JOIN ADVISOR AS T3 ON T2.Advisor = T3.id WHERE T1.President_Vote = 'Yes' AND T3.Advisor <> '2192'",
+              "sqlite_error": "no such table: ADVISOR",
+              "lenient_match": false,
+              "original_sqlite_error": "table STUDENT already exists"
+            }
+          ]
+        },
+        "syntax error": {
+          "share_of_invalid": {
+            "count": 41,
+            "total": 74,
+            "rate": 0.5540540540540541
+          },
+          "examples": [
+            {
+              "id": 1734,
+              "category": "complex",
+              "seed": 42,
+              "raw_output": "SELECT first_name, last_name FROM actor ORDER BY LENGTH(first_name) + length(last_name)) DESC LIMIT 1",
+              "validated_sql": "SELECT first_name, last_name FROM actor ORDER BY LENGTH(first_name) + length(last_name)) DESC LIMIT 1",
+              "sqlite_error": "near \")\": syntax error",
+              "lenient_match": false,
+              "original_sqlite_error": "near \")\": syntax error"
+            },
+            {
+              "id": 2752,
+              "category": "complex",
+              "seed": 42,
+              "raw_output": "SELECT supplier_id FROM Product_Suppliers WHERE total_amount_purchased / AVG(total_amount_purchased) FOR EACH PRODUCT > 50000 OR < 30000",
+              "validated_sql": "SELECT supplier_id FROM Product_Suppliers WHERE total_amount_purchased / AVG(total_amount_purchased) FOR EACH PRODUCT > 50000 OR < 30000",
+              "sqlite_error": "near \"FOR\": syntax error",
+              "lenient_match": false,
+              "original_sqlite_error": "near \"FOR\": syntax error"
+            },
+            {
+              "id": 3025,
+              "category": "complex",
+              "seed": 42,
+              "raw_output": "SELECT name, SUM(revenue)) FROM manufacturers GROUP BY name",
+              "validated_sql": "SELECT name, SUM(revenue)) FROM manufacturers GROUP BY name",
+              "sqlite_error": "near \")\": syntax error",
+              "lenient_match": false,
+              "original_sqlite_error": "near \")\": syntax error"
+            },
+            {
+              "id": 1333,
+              "category": "complex",
+              "seed": 42,
+              "raw_output": "SELECT T3.surname, T2.driverid FROM results AS T2 JOIN drivers AS T3 ON T2.driverid = T3.driverid WHERE T2.resultnum > 5 AND T2.driverid IN (SELECT driverid FROM pitstops GROUP BY driverid HAVING COUNT(*) = 11))",
+              "validated_sql": "SELECT T3.surname, T2.driverid FROM results AS T2 JOIN drivers AS T3 ON T2.driverid = T3.driverid WHERE T2.resultnum > 5 AND T2.driverid IN (SELECT driverid FROM pitstops GROUP BY driverid HAVING COUNT(*) = 11))",
+              "sqlite_error": "near \")\": syntax error",
+              "lenient_match": false,
+              "original_sqlite_error": "near \")\": syntax error"
+            },
+            {
+              "id": 2881,
+              "category": "complex",
+              "seed": 42,
+              "raw_output": "SELECT DISTINCT t1.cName FROM tryout AS t1 JOIN player AS t2 ON t1.pID = t2.pID WHERE LEFT(t2.pName, 1), 1) = 'D'",
+              "validated_sql": "SELECT DISTINCT t1.cName FROM tryout AS t1 JOIN player AS t2 ON t1.pID = t2.pID WHERE LEFT(t2.pName, 1), 1) = 'D'",
+              "sqlite_error": "near \",\": syntax error",
+              "lenient_match": false,
+              "original_sqlite_error": "near \",\": syntax error"
+            }
+          ]
+        },
+        "ambiguous column": {
+          "share_of_invalid": {
+            "count": 0,
+            "total": 74,
+            "rate": 0.0
+          },
+          "examples": []
+        },
+        "other": {
+          "share_of_invalid": {
+            "count": 6,
+            "total": 74,
+            "rate": 0.08108108108108109
+          },
+          "examples": [
+            {
+              "id": 4425,
+              "category": "complex",
+              "seed": 42,
+              "raw_output": "SELECT Major_Record_Format FROM orchestra ORDER BY COUNT(*)",
+              "validated_sql": "SELECT Major_Record_Format FROM orchestra ORDER BY COUNT(*)",
+              "sqlite_error": "misuse of aggregate: COUNT()",
+              "lenient_match": false,
+              "original_sqlite_error": "misuse of aggregate: COUNT()"
+            },
+            {
+              "id": 1734,
+              "category": "complex",
+              "seed": 43,
+              "raw_output": "SELECT first_name, last_name FROM actor ORDER BY COUNT(*) DESC LIMIT 1",
+              "validated_sql": "SELECT first_name, last_name FROM actor ORDER BY COUNT(*) DESC LIMIT 1",
+              "sqlite_error": "misuse of aggregate: COUNT()",
+              "lenient_match": false,
+              "original_sqlite_error": "misuse of aggregate: COUNT()"
+            },
+            {
+              "id": 2752,
+              "category": "complex",
+              "seed": 44,
+              "raw_output": "SELECT supplier_id FROM Product_Suppliers WHERE AVG(total_amount_purchased) / 10000 > 50 OR AVG(total_amount_purchased) / 10000 < 30",
+              "validated_sql": "SELECT supplier_id FROM Product_Suppliers WHERE AVG(total_amount_purchased) / 10000 > 50 OR AVG(total_amount_purchased) / 10000 < 30",
+              "sqlite_error": "misuse of aggregate function AVG()",
+              "lenient_match": false,
+              "original_sqlite_error": "misuse of aggregate function AVG()"
+            },
+            {
+              "id": 3843,
+              "category": "complex",
+              "seed": 44,
+              "raw_output": "SELECT T1.fname, T1.lname FROM Faculty AS T1 JOIN Faculty_participates_in AS T2 ON T1.facID = T2.facID ORDER BY COUNT(*) DESC LIMIT 1",
+              "validated_sql": "SELECT T1.fname, T1.lname FROM Faculty AS T1 JOIN Faculty_participates_in AS T2 ON T1.facID = T2.facID ORDER BY COUNT(*) DESC LIMIT 1",
+              "sqlite_error": "misuse of aggregate: COUNT()",
+              "lenient_match": false,
+              "original_sqlite_error": "duplicate column name: facID"
+            },
+            {
+              "id": 4425,
+              "category": "complex",
+              "seed": 43,
+              "raw_output": "SELECT Major_Record_Format FROM orchestra ORDER BY COUNT(*)",
+              "validated_sql": "SELECT Major_Record_Format FROM orchestra ORDER BY COUNT(*)",
+              "sqlite_error": "misuse of aggregate: COUNT()",
+              "lenient_match": false,
+              "original_sqlite_error": "misuse of aggregate: COUNT()",
+              "repeats_sql_from_seed": 42
+            }
+          ]
+        }
+      },
+      "by_category": {
+        "simple": {
+          "invalid_rate": {
+            "count": 9,
+            "total": 150,
+            "rate": 0.06
+          },
+          "share_of_all_invalid": {
+            "count": 9,
+            "total": 74,
+            "rate": 0.12162162162162163
+          },
+          "error_counts": {
+            "no such column": 1,
+            "no such table": 0,
+            "syntax error": 8,
+            "ambiguous column": 0,
+            "other": 0
+          }
+        },
+        "agg": {
+          "invalid_rate": {
+            "count": 5,
+            "total": 150,
+            "rate": 0.03333333333333333
+          },
+          "share_of_all_invalid": {
+            "count": 5,
+            "total": 74,
+            "rate": 0.06756756756756757
+          },
+          "error_counts": {
+            "no such column": 0,
+            "no such table": 0,
+            "syntax error": 5,
+            "ambiguous column": 0,
+            "other": 0
+          }
+        },
+        "multi_cond": {
+          "invalid_rate": {
+            "count": 7,
+            "total": 150,
+            "rate": 0.04666666666666667
+          },
+          "share_of_all_invalid": {
+            "count": 7,
+            "total": 74,
+            "rate": 0.0945945945945946
+          },
+          "error_counts": {
+            "no such column": 4,
+            "no such table": 0,
+            "syntax error": 3,
+            "ambiguous column": 0,
+            "other": 0
+          }
+        },
+        "complex": {
+          "invalid_rate": {
+            "count": 53,
+            "total": 123,
+            "rate": 0.43089430894308944
+          },
+          "share_of_all_invalid": {
+            "count": 53,
+            "total": 74,
+            "rate": 0.7162162162162162
+          },
+          "error_counts": {
+            "no such column": 20,
+            "no such table": 2,
+            "syntax error": 25,
+            "ambiguous column": 0,
+            "other": 6
+          }
+        }
+      }
+    },
+    "merged_4bit_shipped_per_seed_error_counts": {
+      "42": {
+        "no such column": 10,
+        "no such table": 1,
+        "syntax error": 15,
+        "ambiguous column": 0,
+        "other": 1
+      },
+      "43": {
+        "no such column": 8,
+        "no such table": 0,
+        "syntax error": 15,
+        "ambiguous column": 0,
+        "other": 2
+      },
+      "44": {
+        "no such column": 7,
+        "no such table": 1,
+        "syntax error": 11,
+        "ambiguous column": 0,
+        "other": 3
+      }
+    }
+  },
+  "retry_estimate": {
+    "seed_order": [
+      42,
+      43,
+      44
+    ],
+    "selection": "For each row, choose the first sample accepted by the compatibility validator. Score its saved lenient match against the original gold with the original normalizer.",
+    "at_least_one_valid": {
+      "count": 173,
+      "total": 191,
+      "rate": 0.9057591623036649
+    },
+    "lenient_match_all_rows": {
+      "count": 121,
+      "total": 191,
+      "rate": 0.6335078534031413
+    },
+    "lenient_match_given_valid": {
+      "count": 121,
+      "total": 173,
+      "rate": 0.6994219653179191
+    },
+    "first_valid_by_seed": {
+      "42": 164,
+      "43": 6,
+      "44": 3
+    },
+    "no_valid_sample": 18,
+    "row_selections": [
+      {
+        "id": 5365,
+        "category": "agg",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": false
+      },
+      {
+        "id": 31088,
+        "category": "multi_cond",
+        "valid_seeds": [],
+        "first_valid_seed": null,
+        "lenient_match": null
+      },
+      {
+        "id": 62779,
+        "category": "agg",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 66503,
+        "category": "multi_cond",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 2175,
+        "category": "complex",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": false
+      },
+      {
+        "id": 28162,
+        "category": "agg",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 4581,
+        "category": "agg",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": false
+      },
+      {
+        "id": 30748,
+        "category": "simple",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 28326,
+        "category": "simple",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 39298,
+        "category": "multi_cond",
+        "valid_seeds": [
+          42,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": false
+      },
+      {
+        "id": 31071,
+        "category": "multi_cond",
+        "valid_seeds": [
+          42
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": false
+      },
+      {
+        "id": 43886,
+        "category": "agg",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": false
+      },
+      {
+        "id": 44108,
+        "category": "multi_cond",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 2193,
+        "category": "complex",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 28779,
+        "category": "simple",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": false
+      },
+      {
+        "id": 3841,
+        "category": "complex",
+        "valid_seeds": [
+          44
+        ],
+        "first_valid_seed": 44,
+        "lenient_match": false
+      },
+      {
+        "id": 17021,
+        "category": "simple",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": false
+      },
+      {
+        "id": 30076,
+        "category": "agg",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 41534,
+        "category": "agg",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 15165,
+        "category": "agg",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 1734,
+        "category": "complex",
+        "valid_seeds": [
+          44
+        ],
+        "first_valid_seed": 44,
+        "lenient_match": false
+      },
+      {
+        "id": 40423,
+        "category": "agg",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 644,
+        "category": "complex",
+        "valid_seeds": [],
+        "first_valid_seed": null,
+        "lenient_match": null
+      },
+      {
+        "id": 573,
+        "category": "complex",
+        "valid_seeds": [
+          42
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": false
+      },
+      {
+        "id": 78036,
+        "category": "multi_cond",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": false
+      },
+      {
+        "id": 57371,
+        "category": "multi_cond",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 9891,
+        "category": "simple",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 2752,
+        "category": "complex",
+        "valid_seeds": [
+          43
+        ],
+        "first_valid_seed": 43,
+        "lenient_match": false
+      },
+      {
+        "id": 64775,
+        "category": "multi_cond",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": false
+      },
+      {
+        "id": 74623,
+        "category": "multi_cond",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": false
+      },
+      {
+        "id": 74611,
+        "category": "multi_cond",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 5684,
+        "category": "simple",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 64063,
+        "category": "simple",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 24446,
+        "category": "agg",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 3940,
+        "category": "agg",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 3118,
+        "category": "complex",
+        "valid_seeds": [],
+        "first_valid_seed": null,
+        "lenient_match": null
+      },
+      {
+        "id": 34016,
+        "category": "agg",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": false
+      },
+      {
+        "id": 75462,
+        "category": "simple",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 58837,
+        "category": "simple",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 26876,
+        "category": "simple",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 24536,
+        "category": "simple",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 17443,
+        "category": "simple",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 27803,
+        "category": "simple",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 3606,
+        "category": "complex",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 3025,
+        "category": "complex",
+        "valid_seeds": [
+          43,
+          44
+        ],
+        "first_valid_seed": 43,
+        "lenient_match": false
+      },
+      {
+        "id": 71496,
+        "category": "multi_cond",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": false
+      },
+      {
+        "id": 67970,
+        "category": "multi_cond",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": false
+      },
+      {
+        "id": 17550,
+        "category": "multi_cond",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 460,
+        "category": "complex",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 1333,
+        "category": "complex",
+        "valid_seeds": [],
+        "first_valid_seed": null,
+        "lenient_match": null
+      },
+      {
+        "id": 72314,
+        "category": "simple",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 75740,
+        "category": "multi_cond",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 59946,
+        "category": "simple",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 3931,
+        "category": "complex",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 46387,
+        "category": "simple",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": false
+      },
+      {
+        "id": 73869,
+        "category": "multi_cond",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 76684,
+        "category": "multi_cond",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 24899,
+        "category": "simple",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 2881,
+        "category": "complex",
+        "valid_seeds": [],
+        "first_valid_seed": null,
+        "lenient_match": null
+      },
+      {
+        "id": 74460,
+        "category": "simple",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 3843,
+        "category": "complex",
+        "valid_seeds": [],
+        "first_valid_seed": null,
+        "lenient_match": null
+      },
+      {
+        "id": 173,
+        "category": "complex",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 22965,
+        "category": "agg",
+        "valid_seeds": [],
+        "first_valid_seed": null,
+        "lenient_match": null
+      },
+      {
+        "id": 70602,
+        "category": "agg",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": false
+      },
+      {
+        "id": 49620,
+        "category": "agg",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 41411,
+        "category": "multi_cond",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 54148,
+        "category": "multi_cond",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": false
+      },
+      {
+        "id": 62425,
+        "category": "agg",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": false
+      },
+      {
+        "id": 14357,
+        "category": "agg",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 67616,
+        "category": "multi_cond",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": false
+      },
+      {
+        "id": 368,
+        "category": "complex",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": false
+      },
+      {
+        "id": 66230,
+        "category": "simple",
+        "valid_seeds": [],
+        "first_valid_seed": null,
+        "lenient_match": null
+      },
+      {
+        "id": 73994,
+        "category": "agg",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 52507,
+        "category": "multi_cond",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 66188,
+        "category": "multi_cond",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": false
+      },
+      {
+        "id": 24587,
+        "category": "multi_cond",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 1124,
+        "category": "multi_cond",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 39679,
+        "category": "agg",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 3701,
+        "category": "simple",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": false
+      },
+      {
+        "id": 3119,
+        "category": "complex",
+        "valid_seeds": [],
+        "first_valid_seed": null,
+        "lenient_match": null
+      },
+      {
+        "id": 4429,
+        "category": "multi_cond",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 78571,
+        "category": "multi_cond",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 4122,
+        "category": "complex",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": false
+      },
+      {
+        "id": 36594,
+        "category": "agg",
+        "valid_seeds": [
+          43,
+          44
+        ],
+        "first_valid_seed": 43,
+        "lenient_match": true
+      },
+      {
+        "id": 65045,
+        "category": "simple",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 30037,
+        "category": "agg",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 22243,
+        "category": "multi_cond",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 253,
+        "category": "simple",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 11833,
+        "category": "multi_cond",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 42678,
+        "category": "agg",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 74930,
+        "category": "multi_cond",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": false
+      },
+      {
+        "id": 20928,
+        "category": "agg",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 50124,
+        "category": "multi_cond",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 4425,
+        "category": "complex",
+        "valid_seeds": [],
+        "first_valid_seed": null,
+        "lenient_match": null
+      },
+      {
+        "id": 78539,
+        "category": "simple",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 36856,
+        "category": "agg",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": false
+      },
+      {
+        "id": 31627,
+        "category": "simple",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 10361,
+        "category": "simple",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 260,
+        "category": "complex",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": false
+      },
+      {
+        "id": 443,
+        "category": "complex",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": false
+      },
+      {
+        "id": 10140,
+        "category": "multi_cond",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 44587,
+        "category": "simple",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 34525,
+        "category": "agg",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": false
+      },
+      {
+        "id": 11567,
+        "category": "multi_cond",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 3500,
+        "category": "complex",
+        "valid_seeds": [],
+        "first_valid_seed": null,
+        "lenient_match": null
+      },
+      {
+        "id": 28496,
+        "category": "agg",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 23607,
+        "category": "agg",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 3441,
+        "category": "complex",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 8870,
+        "category": "simple",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 63894,
+        "category": "simple",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 7407,
+        "category": "agg",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 33508,
+        "category": "agg",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": false
+      },
+      {
+        "id": 28164,
+        "category": "simple",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 2130,
+        "category": "complex",
+        "valid_seeds": [],
+        "first_valid_seed": null,
+        "lenient_match": null
+      },
+      {
+        "id": 11895,
+        "category": "multi_cond",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": false
+      },
+      {
+        "id": 48448,
+        "category": "multi_cond",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 324,
+        "category": "complex",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": false
+      },
+      {
+        "id": 67955,
+        "category": "multi_cond",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 3247,
+        "category": "complex",
+        "valid_seeds": [
+          43,
+          44
+        ],
+        "first_valid_seed": 43,
+        "lenient_match": true
+      },
+      {
+        "id": 2920,
+        "category": "simple",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 3020,
+        "category": "complex",
+        "valid_seeds": [],
+        "first_valid_seed": null,
+        "lenient_match": null
+      },
+      {
+        "id": 9534,
+        "category": "multi_cond",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 14178,
+        "category": "simple",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 72511,
+        "category": "multi_cond",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 41074,
+        "category": "agg",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 39370,
+        "category": "simple",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": false
+      },
+      {
+        "id": 72736,
+        "category": "agg",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 3167,
+        "category": "complex",
+        "valid_seeds": [],
+        "first_valid_seed": null,
+        "lenient_match": null
+      },
+      {
+        "id": 2125,
+        "category": "complex",
+        "valid_seeds": [],
+        "first_valid_seed": null,
+        "lenient_match": null
+      },
+      {
+        "id": 2400,
+        "category": "complex",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 42493,
+        "category": "simple",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": false
+      },
+      {
+        "id": 59696,
+        "category": "agg",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": false
+      },
+      {
+        "id": 171,
+        "category": "complex",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 21808,
+        "category": "simple",
+        "valid_seeds": [],
+        "first_valid_seed": null,
+        "lenient_match": null
+      },
+      {
+        "id": 38241,
+        "category": "agg",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 6472,
+        "category": "simple",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 54393,
+        "category": "simple",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 72370,
+        "category": "multi_cond",
+        "valid_seeds": [
+          43,
+          44
+        ],
+        "first_valid_seed": 43,
+        "lenient_match": true
+      },
+      {
+        "id": 259,
+        "category": "complex",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 16575,
+        "category": "multi_cond",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": false
+      },
+      {
+        "id": 20176,
+        "category": "agg",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 57893,
+        "category": "simple",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 3282,
+        "category": "complex",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": false
+      },
+      {
+        "id": 174,
+        "category": "complex",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 21342,
+        "category": "simple",
+        "valid_seeds": [
+          44
+        ],
+        "first_valid_seed": 44,
+        "lenient_match": true
+      },
+      {
+        "id": 252,
+        "category": "agg",
+        "valid_seeds": [
+          42,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": false
+      },
+      {
+        "id": 77329,
+        "category": "simple",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 70988,
+        "category": "agg",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": false
+      },
+      {
+        "id": 62248,
+        "category": "simple",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 13933,
+        "category": "multi_cond",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 4880,
+        "category": "simple",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 49907,
+        "category": "multi_cond",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": false
+      },
+      {
+        "id": 15721,
+        "category": "multi_cond",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 9816,
+        "category": "agg",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 13399,
+        "category": "multi_cond",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 2106,
+        "category": "complex",
+        "valid_seeds": [],
+        "first_valid_seed": null,
+        "lenient_match": null
+      },
+      {
+        "id": 9035,
+        "category": "simple",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 29894,
+        "category": "agg",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 71992,
+        "category": "agg",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 30411,
+        "category": "agg",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 8625,
+        "category": "multi_cond",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 42265,
+        "category": "agg",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 23760,
+        "category": "simple",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 35674,
+        "category": "agg",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 25956,
+        "category": "multi_cond",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": false
+      },
+      {
+        "id": 20078,
+        "category": "simple",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 38817,
+        "category": "agg",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 66840,
+        "category": "multi_cond",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 31363,
+        "category": "agg",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 20986,
+        "category": "agg",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 56018,
+        "category": "simple",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 2095,
+        "category": "complex",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": false
+      },
+      {
+        "id": 73697,
+        "category": "multi_cond",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 68364,
+        "category": "agg",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 22647,
+        "category": "simple",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 3975,
+        "category": "complex",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": false
+      },
+      {
+        "id": 25146,
+        "category": "simple",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": false
+      },
+      {
+        "id": 61137,
+        "category": "agg",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 68174,
+        "category": "simple",
+        "valid_seeds": [
+          42,
+          43
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": false
+      },
+      {
+        "id": 258,
+        "category": "complex",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": false
+      },
+      {
+        "id": 48972,
+        "category": "simple",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 1810,
+        "category": "complex",
+        "valid_seeds": [
+          43,
+          44
+        ],
+        "first_valid_seed": 43,
+        "lenient_match": false
+      },
+      {
+        "id": 23857,
+        "category": "multi_cond",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 59656,
+        "category": "multi_cond",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 54937,
+        "category": "agg",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 47210,
+        "category": "multi_cond",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 257,
+        "category": "agg",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 2716,
+        "category": "complex",
+        "valid_seeds": [],
+        "first_valid_seed": null,
+        "lenient_match": null
+      },
+      {
+        "id": 25383,
+        "category": "simple",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 3724,
+        "category": "multi_cond",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": true
+      },
+      {
+        "id": 59948,
+        "category": "agg",
+        "valid_seeds": [
+          42,
+          43,
+          44
+        ],
+        "first_valid_seed": 42,
+        "lenient_match": false
+      }
+    ]
+  }
+}

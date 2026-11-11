@@ -1,0 +1,15 @@
+{
+  "decision": "DON'T SHIP",
+  "task_win": {
+    "mode": "metric",
+    "base": 0.0,
+    "tuned": 0.0,
+    "won": false
+  },
+  "benchmark_deltas": [],
+  "failed_rule": "adapter_noop",
+  "forgetting_threshold": 0.05,
+  "soup_version": "0.77.2",
+  "noise_floor": null,
+  "numerics": null
+}

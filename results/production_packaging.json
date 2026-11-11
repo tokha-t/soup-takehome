@@ -1,0 +1,12 @@
+{
+  "source": "/kaggle/input/notebooks/toktarkhan/soup-patch-stage-3-nf4-export/soup-takehome/artifacts/merged_4bit",
+  "portable": "/kaggle/working/soup-takehome/artifacts/merged_4bit_portable",
+  "restored_from_pinned_base": [
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "vocab.json",
+    "merges.txt"
+  ],
+  "reason": "Soup's Transformers 5 export wrote list-form extra_special_tokens, which the pinned Transformers 4 loader expects as a mapping.",
+  "nf4_weights_identical": true
+}

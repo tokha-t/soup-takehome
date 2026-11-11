@@ -1,0 +1,2 @@
+2026-11-11T03:21:23+05:00 Exit 1 from soup_merged_fp16.
+Retain the raw log and follow the stage fallback or next check.

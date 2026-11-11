@@ -1,0 +1,6 @@
+{
+  "production_artifact": "artifacts/merged_4bit",
+  "raw_soup_export": "artifacts/merged_4bit_soup_raw",
+  "standalone_proof": "results/standalone.json",
+  "weight_files_identical_to_soup_export": true
+}

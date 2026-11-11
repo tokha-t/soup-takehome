@@ -1,0 +1,4 @@
+2026-11-11T02:37:33.084+00:00 INFO $ /kaggle/temp/soup-patch-execution-probe/bin/python -m pip -q --disable-pip-version-check install sqlglot==28.0.0
+2026-11-11T02:37:38.060+00:00 INFO ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+2026-11-11T02:37:38.060+00:00 INFO ibis-framework 9.5.0 requires sqlglot<25.21,>=23.4, but you have sqlglot 28.0.0 which is incompatible.
+2026-11-11T02:37:38.326+00:00 INFO Exit status 0

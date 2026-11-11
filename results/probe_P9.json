@@ -1,0 +1,16 @@
+{
+  "eval_rows": 192,
+  "nonfinite_rows": 0,
+  "paired_prompts": 20,
+  "max_abs_logit_difference": 0.2796311378479004,
+  "kl_fp32_to_fp16": 6.495327365717349e-06,
+  "scaler_skips": {
+    "real": 0,
+    "placebo": 0,
+    "shuffled": 0
+  },
+  "soup_gate": {
+    "url": "https://trysoup.dev/docs/soup-ship",
+    "coverage": "The two release legs compare task accuracy and benchmark scores; neither compares raw fp16 and fp32 logits."
+  }
+}

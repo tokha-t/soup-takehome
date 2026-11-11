@@ -1,0 +1,57 @@
+{
+  "diagnostic_weights": {
+    "exit_code": 0,
+    "finished": "2026-11-11T06:05:01+05:00",
+    "log": "logs/stages/7/diagnostic_weights.log"
+  },
+  "verify_wrong": {
+    "exit_code": 0,
+    "finished": "2026-11-11T06:11:28+05:00",
+    "log": "logs/stages/7/verify_wrong.log"
+  },
+  "adapters_check_real": {
+    "exit_code": 0,
+    "finished": "2026-11-11T06:11:32+05:00",
+    "log": "logs/stages/7/adapters_check_real.log"
+  },
+  "adapters_check_placebo": {
+    "exit_code": 2,
+    "finished": "2026-11-11T06:11:34+05:00",
+    "log": "logs/stages/7/adapters_check_placebo.log"
+  },
+  "adapters_check_shuffled": {
+    "exit_code": 0,
+    "finished": "2026-11-11T06:11:35+05:00",
+    "log": "logs/stages/7/adapters_check_shuffled.log"
+  },
+  "adapters_check_weak_001": {
+    "exit_code": 0,
+    "finished": "2026-11-11T06:11:36+05:00",
+    "log": "logs/stages/7/adapters_check_weak_001.log"
+  },
+  "adapters_check_weak_01": {
+    "exit_code": 0,
+    "finished": "2026-11-11T06:11:38+05:00",
+    "log": "logs/stages/7/adapters_check_weak_01.log"
+  },
+  "adapters_audit_real": {
+    "exit_code": 0,
+    "finished": "2026-11-11T06:11:38+05:00",
+    "log": "logs/stages/7/adapters_audit_real.log"
+  },
+  "bench_real": {
+    "exit_code": 0,
+    "finished": "2026-11-11T06:12:39+05:00",
+    "log": "logs/stages/7/bench_real.log"
+  },
+  "bench_placebo": {
+    "exit_code": 1,
+    "finished": "2026-11-11T06:12:42+05:00",
+    "log": "logs/stages/7/bench_placebo.log"
+  },
+  "probe_P1_doctor": {
+    "exit_code": 0,
+    "finished": "2026-11-11T06:27:31+05:00",
+    "log": "logs/stages/7/probe_P1_doctor.log"
+  }
+}

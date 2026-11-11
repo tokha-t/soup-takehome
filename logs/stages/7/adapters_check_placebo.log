@@ -1,0 +1,2960 @@
+2026-11-11T01:11:32.924+00:00 INFO $ /kaggle/temp/soup-patch-diagnostic-soup/bin/soup adapters check /kaggle/working/soup-takehome/check-local-5xmoqwd4/placebo --json
+2026-11-11T01:11:33.795+00:00 INFO {
+2026-11-11T01:11:33.795+00:00 INFO   "adapter": "/kaggle/working/soup-takehome/check-local-5xmoqwd4/placebo",
+2026-11-11T01:11:33.795+00:00 INFO   "all_zero_lora_b_layers": [
+2026-11-11T01:11:33.795+00:00 INFO     "base_model.model.model.layers.0.mlp.down_proj.__LORA__.weight",
+2026-11-11T01:11:33.795+00:00 INFO     "base_model.model.model.layers.0.mlp.gate_proj.__LORA__.weight",
+2026-11-11T01:11:33.795+00:00 INFO     "base_model.model.model.layers.0.mlp.up_proj.__LORA__.weight",
+2026-11-11T01:11:33.795+00:00 INFO     "base_model.model.model.layers.0.self_attn.k_proj.__LORA__.weight",
+2026-11-11T01:11:33.795+00:00 INFO     "base_model.model.model.layers.0.self_attn.o_proj.__LORA__.weight",
+2026-11-11T01:11:33.795+00:00 INFO     "base_model.model.model.layers.0.self_attn.q_proj.__LORA__.weight",
+2026-11-11T01:11:33.795+00:00 INFO     "base_model.model.model.layers.0.self_attn.v_proj.__LORA__.weight",
+2026-11-11T01:11:33.795+00:00 INFO     "base_model.model.model.layers.1.mlp.down_proj.__LORA__.weight",
+2026-11-11T01:11:33.795+00:00 INFO     "base_model.model.model.layers.1.mlp.gate_proj.__LORA__.weight",
+2026-11-11T01:11:33.795+00:00 INFO     "base_model.model.model.layers.1.mlp.up_proj.__LORA__.weight",
+2026-11-11T01:11:33.795+00:00 INFO     "base_model.model.model.layers.1.self_attn.k_proj.__LORA__.weight",
+2026-11-11T01:11:33.795+00:00 INFO     "base_model.model.model.layers.1.self_attn.o_proj.__LORA__.weight",
+2026-11-11T01:11:33.796+00:00 INFO     "base_model.model.model.layers.1.self_attn.q_proj.__LORA__.weight",
+2026-11-11T01:11:33.796+00:00 INFO     "base_model.model.model.layers.1.self_attn.v_proj.__LORA__.weight",
+2026-11-11T01:11:33.796+00:00 INFO     "base_model.model.model.layers.10.mlp.down_proj.__LORA__.weight",
+2026-11-11T01:11:33.796+00:00 INFO     "base_model.model.model.layers.10.mlp.gate_proj.__LORA__.weight",
+2026-11-11T01:11:33.796+00:00 INFO     "base_model.model.model.layers.10.mlp.up_proj.__LORA__.weight",
+2026-11-11T01:11:33.796+00:00 INFO     "base_model.model.model.layers.10.self_attn.k_proj.__LORA__.weight",
+2026-11-11T01:11:33.796+00:00 INFO     "base_model.model.model.layers.10.self_attn.o_proj.__LORA__.weight",
+2026-11-11T01:11:33.796+00:00 INFO     "base_model.model.model.layers.10.self_attn.q_proj.__LORA__.weight",
+2026-11-11T01:11:33.796+00:00 INFO     "base_model.model.model.layers.10.self_attn.v_proj.__LORA__.weight",
+2026-11-11T01:11:33.796+00:00 INFO     "base_model.model.model.layers.11.mlp.down_proj.__LORA__.weight",
+2026-11-11T01:11:33.796+00:00 INFO     "base_model.model.model.layers.11.mlp.gate_proj.__LORA__.weight",
+2026-11-11T01:11:33.796+00:00 INFO     "base_model.model.model.layers.11.mlp.up_proj.__LORA__.weight",
+2026-11-11T01:11:33.796+00:00 INFO     "base_model.model.model.layers.11.self_attn.k_proj.__LORA__.weight",
+2026-11-11T01:11:33.796+00:00 INFO     "base_model.model.model.layers.11.self_attn.o_proj.__LORA__.weight",
+2026-11-11T01:11:33.796+00:00 INFO     "base_model.model.model.layers.11.self_attn.q_proj.__LORA__.weight",
+2026-11-11T01:11:33.796+00:00 INFO     "base_model.model.model.layers.11.self_attn.v_proj.__LORA__.weight",
+2026-11-11T01:11:33.796+00:00 INFO     "base_model.model.model.layers.12.mlp.down_proj.__LORA__.weight",
+2026-11-11T01:11:33.796+00:00 INFO     "base_model.model.model.layers.12.mlp.gate_proj.__LORA__.weight",
+2026-11-11T01:11:33.796+00:00 INFO     "base_model.model.model.layers.12.mlp.up_proj.__LORA__.weight",
+2026-11-11T01:11:33.796+00:00 INFO     "base_model.model.model.layers.12.self_attn.k_proj.__LORA__.weight",
+2026-11-11T01:11:33.796+00:00 INFO     "base_model.model.model.layers.12.self_attn.o_proj.__LORA__.weight",
+2026-11-11T01:11:33.796+00:00 INFO     "base_model.model.model.layers.12.self_attn.q_proj.__LORA__.weight",
+2026-11-11T01:11:33.796+00:00 INFO     "base_model.model.model.layers.12.self_attn.v_proj.__LORA__.weight",
+2026-11-11T01:11:33.796+00:00 INFO     "base_model.model.model.layers.13.mlp.down_proj.__LORA__.weight",
+2026-11-11T01:11:33.796+00:00 INFO     "base_model.model.model.layers.13.mlp.gate_proj.__LORA__.weight",
+2026-11-11T01:11:33.796+00:00 INFO     "base_model.model.model.layers.13.mlp.up_proj.__LORA__.weight",
+2026-11-11T01:11:33.796+00:00 INFO     "base_model.model.model.layers.13.self_attn.k_proj.__LORA__.weight",
+2026-11-11T01:11:33.796+00:00 INFO     "base_model.model.model.layers.13.self_attn.o_proj.__LORA__.weight",
+2026-11-11T01:11:33.796+00:00 INFO     "base_model.model.model.layers.13.self_attn.q_proj.__LORA__.weight",
+2026-11-11T01:11:33.796+00:00 INFO     "base_model.model.model.layers.13.self_attn.v_proj.__LORA__.weight",
+2026-11-11T01:11:33.796+00:00 INFO     "base_model.model.model.layers.14.mlp.down_proj.__LORA__.weight",
+2026-11-11T01:11:33.796+00:00 INFO     "base_model.model.model.layers.14.mlp.gate_proj.__LORA__.weight",
+2026-11-11T01:11:33.796+00:00 INFO     "base_model.model.model.layers.14.mlp.up_proj.__LORA__.weight",
+2026-11-11T01:11:33.796+00:00 INFO     "base_model.model.model.layers.14.self_attn.k_proj.__LORA__.weight",
+2026-11-11T01:11:33.796+00:00 INFO     "base_model.model.model.layers.14.self_attn.o_proj.__LORA__.weight",
+2026-11-11T01:11:33.796+00:00 INFO     "base_model.model.model.layers.14.self_attn.q_proj.__LORA__.weight",
+2026-11-11T01:11:33.796+00:00 INFO     "base_model.model.model.layers.14.self_attn.v_proj.__LORA__.weight",
+2026-11-11T01:11:33.796+00:00 INFO     "base_model.model.model.layers.15.mlp.down_proj.__LORA__.weight",
+2026-11-11T01:11:33.796+00:00 INFO     "base_model.model.model.layers.15.mlp.gate_proj.__LORA__.weight",
+2026-11-11T01:11:33.796+00:00 INFO     "base_model.model.model.layers.15.mlp.up_proj.__LORA__.weight",
+2026-11-11T01:11:33.796+00:00 INFO     "base_model.model.model.layers.15.self_attn.k_proj.__LORA__.weight",
+2026-11-11T01:11:33.796+00:00 INFO     "base_model.model.model.layers.15.self_attn.o_proj.__LORA__.weight",
+2026-11-11T01:11:33.796+00:00 INFO     "base_model.model.model.layers.15.self_attn.q_proj.__LORA__.weight",
+2026-11-11T01:11:33.796+00:00 INFO     "base_model.model.model.layers.15.self_attn.v_proj.__LORA__.weight",
+2026-11-11T01:11:33.796+00:00 INFO     "base_model.model.model.layers.16.mlp.down_proj.__LORA__.weight",
+2026-11-11T01:11:33.796+00:00 INFO     "base_model.model.model.layers.16.mlp.gate_proj.__LORA__.weight",
+2026-11-11T01:11:33.796+00:00 INFO     "base_model.model.model.layers.16.mlp.up_proj.__LORA__.weight",
+2026-11-11T01:11:33.796+00:00 INFO     "base_model.model.model.layers.16.self_attn.k_proj.__LORA__.weight",
+2026-11-11T01:11:33.796+00:00 INFO     "base_model.model.model.layers.16.self_attn.o_proj.__LORA__.weight",
+2026-11-11T01:11:33.796+00:00 INFO     "base_model.model.model.layers.16.self_attn.q_proj.__LORA__.weight",
+2026-11-11T01:11:33.797+00:00 INFO     "base_model.model.model.layers.16.self_attn.v_proj.__LORA__.weight",
+2026-11-11T01:11:33.797+00:00 INFO     "base_model.model.model.layers.17.mlp.down_proj.__LORA__.weight",
+2026-11-11T01:11:33.797+00:00 INFO     "base_model.model.model.layers.17.mlp.gate_proj.__LORA__.weight",
+2026-11-11T01:11:33.797+00:00 INFO     "base_model.model.model.layers.17.mlp.up_proj.__LORA__.weight",
+2026-11-11T01:11:33.797+00:00 INFO     "base_model.model.model.layers.17.self_attn.k_proj.__LORA__.weight",
+2026-11-11T01:11:33.797+00:00 INFO     "base_model.model.model.layers.17.self_attn.o_proj.__LORA__.weight",
+2026-11-11T01:11:33.797+00:00 INFO     "base_model.model.model.layers.17.self_attn.q_proj.__LORA__.weight",
+2026-11-11T01:11:33.797+00:00 INFO     "base_model.model.model.layers.17.self_attn.v_proj.__LORA__.weight",
+2026-11-11T01:11:33.797+00:00 INFO     "base_model.model.model.layers.18.mlp.down_proj.__LORA__.weight",
+2026-11-11T01:11:33.797+00:00 INFO     "base_model.model.model.layers.18.mlp.gate_proj.__LORA__.weight",
+2026-11-11T01:11:33.797+00:00 INFO     "base_model.model.model.layers.18.mlp.up_proj.__LORA__.weight",
+2026-11-11T01:11:33.797+00:00 INFO     "base_model.model.model.layers.18.self_attn.k_proj.__LORA__.weight",
+2026-11-11T01:11:33.797+00:00 INFO     "base_model.model.model.layers.18.self_attn.o_proj.__LORA__.weight",
+2026-11-11T01:11:33.797+00:00 INFO     "base_model.model.model.layers.18.self_attn.q_proj.__LORA__.weight",
+2026-11-11T01:11:33.797+00:00 INFO     "base_model.model.model.layers.18.self_attn.v_proj.__LORA__.weight",
+2026-11-11T01:11:33.797+00:00 INFO     "base_model.model.model.layers.19.mlp.down_proj.__LORA__.weight",
+2026-11-11T01:11:33.797+00:00 INFO     "base_model.model.model.layers.19.mlp.gate_proj.__LORA__.weight",
+2026-11-11T01:11:33.797+00:00 INFO     "base_model.model.model.layers.19.mlp.up_proj.__LORA__.weight",
+2026-11-11T01:11:33.797+00:00 INFO     "base_model.model.model.layers.19.self_attn.k_proj.__LORA__.weight",
+2026-11-11T01:11:33.797+00:00 INFO     "base_model.model.model.layers.19.self_attn.o_proj.__LORA__.weight",
+2026-11-11T01:11:33.797+00:00 INFO     "base_model.model.model.layers.19.self_attn.q_proj.__LORA__.weight",
+2026-11-11T01:11:33.797+00:00 INFO     "base_model.model.model.layers.19.self_attn.v_proj.__LORA__.weight",
+2026-11-11T01:11:33.797+00:00 INFO     "base_model.model.model.layers.2.mlp.down_proj.__LORA__.weight",
+2026-11-11T01:11:33.797+00:00 INFO     "base_model.model.model.layers.2.mlp.gate_proj.__LORA__.weight",
+2026-11-11T01:11:33.797+00:00 INFO     "base_model.model.model.layers.2.mlp.up_proj.__LORA__.weight",
+2026-11-11T01:11:33.797+00:00 INFO     "base_model.model.model.layers.2.self_attn.k_proj.__LORA__.weight",
+2026-11-11T01:11:33.797+00:00 INFO     "base_model.model.model.layers.2.self_attn.o_proj.__LORA__.weight",
+2026-11-11T01:11:33.797+00:00 INFO     "base_model.model.model.layers.2.self_attn.q_proj.__LORA__.weight",
+2026-11-11T01:11:33.797+00:00 INFO     "base_model.model.model.layers.2.self_attn.v_proj.__LORA__.weight",
+2026-11-11T01:11:33.798+00:00 INFO     "base_model.model.model.layers.20.mlp.down_proj.__LORA__.weight",
+2026-11-11T01:11:33.798+00:00 INFO     "base_model.model.model.layers.20.mlp.gate_proj.__LORA__.weight",
+2026-11-11T01:11:33.798+00:00 INFO     "base_model.model.model.layers.20.mlp.up_proj.__LORA__.weight",
+2026-11-11T01:11:33.799+00:00 INFO     "base_model.model.model.layers.20.self_attn.k_proj.__LORA__.weight",
+2026-11-11T01:11:33.799+00:00 INFO     "base_model.model.model.layers.20.self_attn.o_proj.__LORA__.weight",
+2026-11-11T01:11:33.799+00:00 INFO     "base_model.model.model.layers.20.self_attn.q_proj.__LORA__.weight",
+2026-11-11T01:11:33.799+00:00 INFO     "base_model.model.model.layers.20.self_attn.v_proj.__LORA__.weight",
+2026-11-11T01:11:33.799+00:00 INFO     "base_model.model.model.layers.21.mlp.down_proj.__LORA__.weight",
+2026-11-11T01:11:33.799+00:00 INFO     "base_model.model.model.layers.21.mlp.gate_proj.__LORA__.weight",
+2026-11-11T01:11:33.799+00:00 INFO     "base_model.model.model.layers.21.mlp.up_proj.__LORA__.weight",
+2026-11-11T01:11:33.799+00:00 INFO     "base_model.model.model.layers.21.self_attn.k_proj.__LORA__.weight",
+2026-11-11T01:11:33.799+00:00 INFO     "base_model.model.model.layers.21.self_attn.o_proj.__LORA__.weight",
+2026-11-11T01:11:33.799+00:00 INFO     "base_model.model.model.layers.21.self_attn.q_proj.__LORA__.weight",
+2026-11-11T01:11:33.799+00:00 INFO     "base_model.model.model.layers.21.self_attn.v_proj.__LORA__.weight",
+2026-11-11T01:11:33.799+00:00 INFO     "base_model.model.model.layers.22.mlp.down_proj.__LORA__.weight",
+2026-11-11T01:11:33.799+00:00 INFO     "base_model.model.model.layers.22.mlp.gate_proj.__LORA__.weight",
+2026-11-11T01:11:33.799+00:00 INFO     "base_model.model.model.layers.22.mlp.up_proj.__LORA__.weight",
+2026-11-11T01:11:33.799+00:00 INFO     "base_model.model.model.layers.22.self_attn.k_proj.__LORA__.weight",
+2026-11-11T01:11:33.799+00:00 INFO     "base_model.model.model.layers.22.self_attn.o_proj.__LORA__.weight",
+2026-11-11T01:11:33.799+00:00 INFO     "base_model.model.model.layers.22.self_attn.q_proj.__LORA__.weight",
+2026-11-11T01:11:33.799+00:00 INFO     "base_model.model.model.layers.22.self_attn.v_proj.__LORA__.weight",
+2026-11-11T01:11:33.799+00:00 INFO     "base_model.model.model.layers.23.mlp.down_proj.__LORA__.weight",
+2026-11-11T01:11:33.799+00:00 INFO     "base_model.model.model.layers.23.mlp.gate_proj.__LORA__.weight",
+2026-11-11T01:11:33.799+00:00 INFO     "base_model.model.model.layers.23.mlp.up_proj.__LORA__.weight",
+2026-11-11T01:11:33.800+00:00 INFO     "base_model.model.model.layers.23.self_attn.k_proj.__LORA__.weight",
+2026-11-11T01:11:33.800+00:00 INFO     "base_model.model.model.layers.23.self_attn.o_proj.__LORA__.weight",
+2026-11-11T01:11:33.800+00:00 INFO     "base_model.model.model.layers.23.self_attn.q_proj.__LORA__.weight",
+2026-11-11T01:11:33.800+00:00 INFO     "base_model.model.model.layers.23.self_attn.v_proj.__LORA__.weight",
+2026-11-11T01:11:33.800+00:00 INFO     "base_model.model.model.layers.24.mlp.down_proj.__LORA__.weight",
+2026-11-11T01:11:33.800+00:00 INFO     "base_model.model.model.layers.24.mlp.gate_proj.__LORA__.weight",
+2026-11-11T01:11:33.800+00:00 INFO     "base_model.model.model.layers.24.mlp.up_proj.__LORA__.weight",
+2026-11-11T01:11:33.800+00:00 INFO     "base_model.model.model.layers.24.self_attn.k_proj.__LORA__.weight",
+2026-11-11T01:11:33.800+00:00 INFO     "base_model.model.model.layers.24.self_attn.o_proj.__LORA__.weight",
+2026-11-11T01:11:33.800+00:00 INFO     "base_model.model.model.layers.24.self_attn.q_proj.__LORA__.weight",
+2026-11-11T01:11:33.800+00:00 INFO     "base_model.model.model.layers.24.self_attn.v_proj.__LORA__.weight",
+2026-11-11T01:11:33.800+00:00 INFO     "base_model.model.model.layers.25.mlp.down_proj.__LORA__.weight",
+2026-11-11T01:11:33.800+00:00 INFO     "base_model.model.model.layers.25.mlp.gate_proj.__LORA__.weight",
+2026-11-11T01:11:33.800+00:00 INFO     "base_model.model.model.layers.25.mlp.up_proj.__LORA__.weight",
+2026-11-11T01:11:33.800+00:00 INFO     "base_model.model.model.layers.25.self_attn.k_proj.__LORA__.weight",
+2026-11-11T01:11:33.800+00:00 INFO     "base_model.model.model.layers.25.self_attn.o_proj.__LORA__.weight",
+2026-11-11T01:11:33.800+00:00 INFO     "base_model.model.model.layers.25.self_attn.q_proj.__LORA__.weight",
+2026-11-11T01:11:33.800+00:00 INFO     "base_model.model.model.layers.25.self_attn.v_proj.__LORA__.weight",
+2026-11-11T01:11:33.800+00:00 INFO     "base_model.model.model.layers.26.mlp.down_proj.__LORA__.weight",
+2026-11-11T01:11:33.800+00:00 INFO     "base_model.model.model.layers.26.mlp.gate_proj.__LORA__.weight",
+2026-11-11T01:11:33.800+00:00 INFO     "base_model.model.model.layers.26.mlp.up_proj.__LORA__.weight",
+2026-11-11T01:11:33.800+00:00 INFO     "base_model.model.model.layers.26.self_attn.k_proj.__LORA__.weight",
+2026-11-11T01:11:33.800+00:00 INFO     "base_model.model.model.layers.26.self_attn.o_proj.__LORA__.weight",
+2026-11-11T01:11:33.800+00:00 INFO     "base_model.model.model.layers.26.self_attn.q_proj.__LORA__.weight",
+2026-11-11T01:11:33.800+00:00 INFO     "base_model.model.model.layers.26.self_attn.v_proj.__LORA__.weight",
+2026-11-11T01:11:33.800+00:00 INFO     "base_model.model.model.layers.27.mlp.down_proj.__LORA__.weight",
+2026-11-11T01:11:33.800+00:00 INFO     "base_model.model.model.layers.27.mlp.gate_proj.__LORA__.weight",
+2026-11-11T01:11:33.800+00:00 INFO     "base_model.model.model.layers.27.mlp.up_proj.__LORA__.weight",
+2026-11-11T01:11:33.800+00:00 INFO     "base_model.model.model.layers.27.self_attn.k_proj.__LORA__.weight",
+2026-11-11T01:11:33.800+00:00 INFO     "base_model.model.model.layers.27.self_attn.o_proj.__LORA__.weight",
+2026-11-11T01:11:33.800+00:00 INFO     "base_model.model.model.layers.27.self_attn.q_proj.__LORA__.weight",
+2026-11-11T01:11:33.800+00:00 INFO     "base_model.model.model.layers.27.self_attn.v_proj.__LORA__.weight",
+2026-11-11T01:11:33.800+00:00 INFO     "base_model.model.model.layers.3.mlp.down_proj.__LORA__.weight",
+2026-11-11T01:11:33.800+00:00 INFO     "base_model.model.model.layers.3.mlp.gate_proj.__LORA__.weight",
+2026-11-11T01:11:33.801+00:00 INFO     "base_model.model.model.layers.3.mlp.up_proj.__LORA__.weight",
+2026-11-11T01:11:33.801+00:00 INFO     "base_model.model.model.layers.3.self_attn.k_proj.__LORA__.weight",
+2026-11-11T01:11:33.801+00:00 INFO     "base_model.model.model.layers.3.self_attn.o_proj.__LORA__.weight",
+2026-11-11T01:11:33.801+00:00 INFO     "base_model.model.model.layers.3.self_attn.q_proj.__LORA__.weight",
+2026-11-11T01:11:33.801+00:00 INFO     "base_model.model.model.layers.3.self_attn.v_proj.__LORA__.weight",
+2026-11-11T01:11:33.801+00:00 INFO     "base_model.model.model.layers.4.mlp.down_proj.__LORA__.weight",
+2026-11-11T01:11:33.801+00:00 INFO     "base_model.model.model.layers.4.mlp.gate_proj.__LORA__.weight",
+2026-11-11T01:11:33.801+00:00 INFO     "base_model.model.model.layers.4.mlp.up_proj.__LORA__.weight",
+2026-11-11T01:11:33.801+00:00 INFO     "base_model.model.model.layers.4.self_attn.k_proj.__LORA__.weight",
+2026-11-11T01:11:33.801+00:00 INFO     "base_model.model.model.layers.4.self_attn.o_proj.__LORA__.weight",
+2026-11-11T01:11:33.801+00:00 INFO     "base_model.model.model.layers.4.self_attn.q_proj.__LORA__.weight",
+2026-11-11T01:11:33.801+00:00 INFO     "base_model.model.model.layers.4.self_attn.v_proj.__LORA__.weight",
+2026-11-11T01:11:33.801+00:00 INFO     "base_model.model.model.layers.5.mlp.down_proj.__LORA__.weight",
+2026-11-11T01:11:33.801+00:00 INFO     "base_model.model.model.layers.5.mlp.gate_proj.__LORA__.weight",
+2026-11-11T01:11:33.801+00:00 INFO     "base_model.model.model.layers.5.mlp.up_proj.__LORA__.weight",
+2026-11-11T01:11:33.801+00:00 INFO     "base_model.model.model.layers.5.self_attn.k_proj.__LORA__.weight",
+2026-11-11T01:11:33.801+00:00 INFO     "base_model.model.model.layers.5.self_attn.o_proj.__LORA__.weight",
+2026-11-11T01:11:33.801+00:00 INFO     "base_model.model.model.layers.5.self_attn.q_proj.__LORA__.weight",
+2026-11-11T01:11:33.801+00:00 INFO     "base_model.model.model.layers.5.self_attn.v_proj.__LORA__.weight",
+2026-11-11T01:11:33.801+00:00 INFO     "base_model.model.model.layers.6.mlp.down_proj.__LORA__.weight",
+2026-11-11T01:11:33.801+00:00 INFO     "base_model.model.model.layers.6.mlp.gate_proj.__LORA__.weight",
+2026-11-11T01:11:33.801+00:00 INFO     "base_model.model.model.layers.6.mlp.up_proj.__LORA__.weight",
+2026-11-11T01:11:33.801+00:00 INFO     "base_model.model.model.layers.6.self_attn.k_proj.__LORA__.weight",
+2026-11-11T01:11:33.801+00:00 INFO     "base_model.model.model.layers.6.self_attn.o_proj.__LORA__.weight",
+2026-11-11T01:11:33.801+00:00 INFO     "base_model.model.model.layers.6.self_attn.q_proj.__LORA__.weight",
+2026-11-11T01:11:33.801+00:00 INFO     "base_model.model.model.layers.6.self_attn.v_proj.__LORA__.weight",
+2026-11-11T01:11:33.801+00:00 INFO     "base_model.model.model.layers.7.mlp.down_proj.__LORA__.weight",
+2026-11-11T01:11:33.801+00:00 INFO     "base_model.model.model.layers.7.mlp.gate_proj.__LORA__.weight",
+2026-11-11T01:11:33.801+00:00 INFO     "base_model.model.model.layers.7.mlp.up_proj.__LORA__.weight",
+2026-11-11T01:11:33.801+00:00 INFO     "base_model.model.model.layers.7.self_attn.k_proj.__LORA__.weight",
+2026-11-11T01:11:33.801+00:00 INFO     "base_model.model.model.layers.7.self_attn.o_proj.__LORA__.weight",
+2026-11-11T01:11:33.801+00:00 INFO     "base_model.model.model.layers.7.self_attn.q_proj.__LORA__.weight",
+2026-11-11T01:11:33.801+00:00 INFO     "base_model.model.model.layers.7.self_attn.v_proj.__LORA__.weight",
+2026-11-11T01:11:33.801+00:00 INFO     "base_model.model.model.layers.8.mlp.down_proj.__LORA__.weight",
+2026-11-11T01:11:33.801+00:00 INFO     "base_model.model.model.layers.8.mlp.gate_proj.__LORA__.weight",
+2026-11-11T01:11:33.801+00:00 INFO     "base_model.model.model.layers.8.mlp.up_proj.__LORA__.weight",
+2026-11-11T01:11:33.801+00:00 INFO     "base_model.model.model.layers.8.self_attn.k_proj.__LORA__.weight",
+2026-11-11T01:11:33.801+00:00 INFO     "base_model.model.model.layers.8.self_attn.o_proj.__LORA__.weight",
+2026-11-11T01:11:33.801+00:00 INFO     "base_model.model.model.layers.8.self_attn.q_proj.__LORA__.weight",
+2026-11-11T01:11:33.802+00:00 INFO     "base_model.model.model.layers.8.self_attn.v_proj.__LORA__.weight",
+2026-11-11T01:11:33.802+00:00 INFO     "base_model.model.model.layers.9.mlp.down_proj.__LORA__.weight",
+2026-11-11T01:11:33.802+00:00 INFO     "base_model.model.model.layers.9.mlp.gate_proj.__LORA__.weight",
+2026-11-11T01:11:33.802+00:00 INFO     "base_model.model.model.layers.9.mlp.up_proj.__LORA__.weight",
+2026-11-11T01:11:33.802+00:00 INFO     "base_model.model.model.layers.9.self_attn.k_proj.__LORA__.weight",
+2026-11-11T01:11:33.802+00:00 INFO     "base_model.model.model.layers.9.self_attn.o_proj.__LORA__.weight",
+2026-11-11T01:11:33.802+00:00 INFO     "base_model.model.model.layers.9.self_attn.q_proj.__LORA__.weight",
+2026-11-11T01:11:33.802+00:00 INFO     "base_model.model.model.layers.9.self_attn.v_proj.__LORA__.weight"
+2026-11-11T01:11:33.803+00:00 INFO   ],
+2026-11-11T01:11:33.803+00:00 INFO   "inner_keys": [],
+2026-11-11T01:11:33.803+00:00 INFO   "live_fraction": 0.0,
+2026-11-11T01:11:33.803+00:00 INFO   "live_layers": 0,
+2026-11-11T01:11:33.803+00:00 INFO   "orphaned_layers": [],
+2026-11-11T01:11:33.803+00:00 INFO   "per_layer": [
+2026-11-11T01:11:33.803+00:00 INFO     {
+2026-11-11T01:11:33.803+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.803+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.803+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.803+00:00 INFO       "name": "base_model.model.model.layers.0.mlp.down_proj.__LORA__.weight",
+2026-11-11T01:11:33.803+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.803+00:00 INFO         16,
+2026-11-11T01:11:33.803+00:00 INFO         8960
+2026-11-11T01:11:33.803+00:00 INFO       ],
+2026-11-11T01:11:33.803+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.803+00:00 INFO         1536,
+2026-11-11T01:11:33.803+00:00 INFO         16
+2026-11-11T01:11:33.803+00:00 INFO       ]
+2026-11-11T01:11:33.803+00:00 INFO     },
+2026-11-11T01:11:33.803+00:00 INFO     {
+2026-11-11T01:11:33.803+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.803+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.804+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.804+00:00 INFO       "name": "base_model.model.model.layers.0.mlp.gate_proj.__LORA__.weight",
+2026-11-11T01:11:33.804+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.804+00:00 INFO         16,
+2026-11-11T01:11:33.804+00:00 INFO         1536
+2026-11-11T01:11:33.804+00:00 INFO       ],
+2026-11-11T01:11:33.804+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.804+00:00 INFO         8960,
+2026-11-11T01:11:33.804+00:00 INFO         16
+2026-11-11T01:11:33.804+00:00 INFO       ]
+2026-11-11T01:11:33.804+00:00 INFO     },
+2026-11-11T01:11:33.804+00:00 INFO     {
+2026-11-11T01:11:33.804+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.804+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.804+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.804+00:00 INFO       "name": "base_model.model.model.layers.0.mlp.up_proj.__LORA__.weight",
+2026-11-11T01:11:33.804+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.804+00:00 INFO         16,
+2026-11-11T01:11:33.804+00:00 INFO         1536
+2026-11-11T01:11:33.804+00:00 INFO       ],
+2026-11-11T01:11:33.804+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.804+00:00 INFO         8960,
+2026-11-11T01:11:33.804+00:00 INFO         16
+2026-11-11T01:11:33.804+00:00 INFO       ]
+2026-11-11T01:11:33.804+00:00 INFO     },
+2026-11-11T01:11:33.804+00:00 INFO     {
+2026-11-11T01:11:33.804+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.804+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.804+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.804+00:00 INFO       "name": "base_model.model.model.layers.0.self_attn.k_proj.__LORA__.weight",
+2026-11-11T01:11:33.804+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.804+00:00 INFO         16,
+2026-11-11T01:11:33.804+00:00 INFO         1536
+2026-11-11T01:11:33.804+00:00 INFO       ],
+2026-11-11T01:11:33.804+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.804+00:00 INFO         256,
+2026-11-11T01:11:33.804+00:00 INFO         16
+2026-11-11T01:11:33.804+00:00 INFO       ]
+2026-11-11T01:11:33.804+00:00 INFO     },
+2026-11-11T01:11:33.804+00:00 INFO     {
+2026-11-11T01:11:33.804+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.805+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.805+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.805+00:00 INFO       "name": "base_model.model.model.layers.0.self_attn.o_proj.__LORA__.weight",
+2026-11-11T01:11:33.805+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.805+00:00 INFO         16,
+2026-11-11T01:11:33.805+00:00 INFO         1536
+2026-11-11T01:11:33.805+00:00 INFO       ],
+2026-11-11T01:11:33.805+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.805+00:00 INFO         1536,
+2026-11-11T01:11:33.805+00:00 INFO         16
+2026-11-11T01:11:33.805+00:00 INFO       ]
+2026-11-11T01:11:33.806+00:00 INFO     },
+2026-11-11T01:11:33.806+00:00 INFO     {
+2026-11-11T01:11:33.806+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.806+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.806+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.806+00:00 INFO       "name": "base_model.model.model.layers.0.self_attn.q_proj.__LORA__.weight",
+2026-11-11T01:11:33.807+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.807+00:00 INFO         16,
+2026-11-11T01:11:33.807+00:00 INFO         1536
+2026-11-11T01:11:33.807+00:00 INFO       ],
+2026-11-11T01:11:33.807+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.807+00:00 INFO         1536,
+2026-11-11T01:11:33.807+00:00 INFO         16
+2026-11-11T01:11:33.807+00:00 INFO       ]
+2026-11-11T01:11:33.807+00:00 INFO     },
+2026-11-11T01:11:33.807+00:00 INFO     {
+2026-11-11T01:11:33.807+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.807+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.807+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.807+00:00 INFO       "name": "base_model.model.model.layers.0.self_attn.v_proj.__LORA__.weight",
+2026-11-11T01:11:33.807+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.807+00:00 INFO         16,
+2026-11-11T01:11:33.807+00:00 INFO         1536
+2026-11-11T01:11:33.807+00:00 INFO       ],
+2026-11-11T01:11:33.807+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.807+00:00 INFO         256,
+2026-11-11T01:11:33.807+00:00 INFO         16
+2026-11-11T01:11:33.807+00:00 INFO       ]
+2026-11-11T01:11:33.807+00:00 INFO     },
+2026-11-11T01:11:33.807+00:00 INFO     {
+2026-11-11T01:11:33.807+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.807+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.807+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.807+00:00 INFO       "name": "base_model.model.model.layers.1.mlp.down_proj.__LORA__.weight",
+2026-11-11T01:11:33.807+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.807+00:00 INFO         16,
+2026-11-11T01:11:33.807+00:00 INFO         8960
+2026-11-11T01:11:33.807+00:00 INFO       ],
+2026-11-11T01:11:33.807+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.807+00:00 INFO         1536,
+2026-11-11T01:11:33.807+00:00 INFO         16
+2026-11-11T01:11:33.807+00:00 INFO       ]
+2026-11-11T01:11:33.807+00:00 INFO     },
+2026-11-11T01:11:33.807+00:00 INFO     {
+2026-11-11T01:11:33.807+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.808+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.808+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.808+00:00 INFO       "name": "base_model.model.model.layers.1.mlp.gate_proj.__LORA__.weight",
+2026-11-11T01:11:33.808+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.808+00:00 INFO         16,
+2026-11-11T01:11:33.808+00:00 INFO         1536
+2026-11-11T01:11:33.808+00:00 INFO       ],
+2026-11-11T01:11:33.808+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.808+00:00 INFO         8960,
+2026-11-11T01:11:33.808+00:00 INFO         16
+2026-11-11T01:11:33.808+00:00 INFO       ]
+2026-11-11T01:11:33.808+00:00 INFO     },
+2026-11-11T01:11:33.808+00:00 INFO     {
+2026-11-11T01:11:33.808+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.808+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.808+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.808+00:00 INFO       "name": "base_model.model.model.layers.1.mlp.up_proj.__LORA__.weight",
+2026-11-11T01:11:33.808+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.808+00:00 INFO         16,
+2026-11-11T01:11:33.808+00:00 INFO         1536
+2026-11-11T01:11:33.808+00:00 INFO       ],
+2026-11-11T01:11:33.808+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.808+00:00 INFO         8960,
+2026-11-11T01:11:33.808+00:00 INFO         16
+2026-11-11T01:11:33.808+00:00 INFO       ]
+2026-11-11T01:11:33.808+00:00 INFO     },
+2026-11-11T01:11:33.808+00:00 INFO     {
+2026-11-11T01:11:33.808+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.808+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.808+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.808+00:00 INFO       "name": "base_model.model.model.layers.1.self_attn.k_proj.__LORA__.weight",
+2026-11-11T01:11:33.808+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.808+00:00 INFO         16,
+2026-11-11T01:11:33.808+00:00 INFO         1536
+2026-11-11T01:11:33.808+00:00 INFO       ],
+2026-11-11T01:11:33.808+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.808+00:00 INFO         256,
+2026-11-11T01:11:33.808+00:00 INFO         16
+2026-11-11T01:11:33.809+00:00 INFO       ]
+2026-11-11T01:11:33.809+00:00 INFO     },
+2026-11-11T01:11:33.809+00:00 INFO     {
+2026-11-11T01:11:33.809+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.809+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.809+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.809+00:00 INFO       "name": "base_model.model.model.layers.1.self_attn.o_proj.__LORA__.weight",
+2026-11-11T01:11:33.809+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.809+00:00 INFO         16,
+2026-11-11T01:11:33.809+00:00 INFO         1536
+2026-11-11T01:11:33.809+00:00 INFO       ],
+2026-11-11T01:11:33.809+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.809+00:00 INFO         1536,
+2026-11-11T01:11:33.809+00:00 INFO         16
+2026-11-11T01:11:33.809+00:00 INFO       ]
+2026-11-11T01:11:33.809+00:00 INFO     },
+2026-11-11T01:11:33.810+00:00 INFO     {
+2026-11-11T01:11:33.810+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.810+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.810+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.810+00:00 INFO       "name": "base_model.model.model.layers.1.self_attn.q_proj.__LORA__.weight",
+2026-11-11T01:11:33.810+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.810+00:00 INFO         16,
+2026-11-11T01:11:33.810+00:00 INFO         1536
+2026-11-11T01:11:33.810+00:00 INFO       ],
+2026-11-11T01:11:33.810+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.810+00:00 INFO         1536,
+2026-11-11T01:11:33.810+00:00 INFO         16
+2026-11-11T01:11:33.810+00:00 INFO       ]
+2026-11-11T01:11:33.810+00:00 INFO     },
+2026-11-11T01:11:33.810+00:00 INFO     {
+2026-11-11T01:11:33.810+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.810+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.810+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.810+00:00 INFO       "name": "base_model.model.model.layers.1.self_attn.v_proj.__LORA__.weight",
+2026-11-11T01:11:33.810+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.810+00:00 INFO         16,
+2026-11-11T01:11:33.810+00:00 INFO         1536
+2026-11-11T01:11:33.810+00:00 INFO       ],
+2026-11-11T01:11:33.810+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.810+00:00 INFO         256,
+2026-11-11T01:11:33.810+00:00 INFO         16
+2026-11-11T01:11:33.810+00:00 INFO       ]
+2026-11-11T01:11:33.810+00:00 INFO     },
+2026-11-11T01:11:33.810+00:00 INFO     {
+2026-11-11T01:11:33.810+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.811+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.811+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.811+00:00 INFO       "name": "base_model.model.model.layers.10.mlp.down_proj.__LORA__.weight",
+2026-11-11T01:11:33.811+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.811+00:00 INFO         16,
+2026-11-11T01:11:33.811+00:00 INFO         8960
+2026-11-11T01:11:33.811+00:00 INFO       ],
+2026-11-11T01:11:33.811+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.811+00:00 INFO         1536,
+2026-11-11T01:11:33.811+00:00 INFO         16
+2026-11-11T01:11:33.811+00:00 INFO       ]
+2026-11-11T01:11:33.811+00:00 INFO     },
+2026-11-11T01:11:33.811+00:00 INFO     {
+2026-11-11T01:11:33.811+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.811+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.811+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.811+00:00 INFO       "name": "base_model.model.model.layers.10.mlp.gate_proj.__LORA__.weight",
+2026-11-11T01:11:33.811+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.811+00:00 INFO         16,
+2026-11-11T01:11:33.811+00:00 INFO         1536
+2026-11-11T01:11:33.811+00:00 INFO       ],
+2026-11-11T01:11:33.811+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.811+00:00 INFO         8960,
+2026-11-11T01:11:33.811+00:00 INFO         16
+2026-11-11T01:11:33.811+00:00 INFO       ]
+2026-11-11T01:11:33.811+00:00 INFO     },
+2026-11-11T01:11:33.811+00:00 INFO     {
+2026-11-11T01:11:33.811+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.811+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.811+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.811+00:00 INFO       "name": "base_model.model.model.layers.10.mlp.up_proj.__LORA__.weight",
+2026-11-11T01:11:33.811+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.811+00:00 INFO         16,
+2026-11-11T01:11:33.811+00:00 INFO         1536
+2026-11-11T01:11:33.811+00:00 INFO       ],
+2026-11-11T01:11:33.811+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.811+00:00 INFO         8960,
+2026-11-11T01:11:33.811+00:00 INFO         16
+2026-11-11T01:11:33.811+00:00 INFO       ]
+2026-11-11T01:11:33.811+00:00 INFO     },
+2026-11-11T01:11:33.811+00:00 INFO     {
+2026-11-11T01:11:33.811+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.811+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.811+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.811+00:00 INFO       "name": "base_model.model.model.layers.10.self_attn.k_proj.__LORA__.weight",
+2026-11-11T01:11:33.811+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.811+00:00 INFO         16,
+2026-11-11T01:11:33.811+00:00 INFO         1536
+2026-11-11T01:11:33.811+00:00 INFO       ],
+2026-11-11T01:11:33.811+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.811+00:00 INFO         256,
+2026-11-11T01:11:33.811+00:00 INFO         16
+2026-11-11T01:11:33.812+00:00 INFO       ]
+2026-11-11T01:11:33.812+00:00 INFO     },
+2026-11-11T01:11:33.812+00:00 INFO     {
+2026-11-11T01:11:33.812+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.812+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.812+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.812+00:00 INFO       "name": "base_model.model.model.layers.10.self_attn.o_proj.__LORA__.weight",
+2026-11-11T01:11:33.812+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.812+00:00 INFO         16,
+2026-11-11T01:11:33.812+00:00 INFO         1536
+2026-11-11T01:11:33.812+00:00 INFO       ],
+2026-11-11T01:11:33.812+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.812+00:00 INFO         1536,
+2026-11-11T01:11:33.812+00:00 INFO         16
+2026-11-11T01:11:33.812+00:00 INFO       ]
+2026-11-11T01:11:33.812+00:00 INFO     },
+2026-11-11T01:11:33.812+00:00 INFO     {
+2026-11-11T01:11:33.812+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.812+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.812+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.812+00:00 INFO       "name": "base_model.model.model.layers.10.self_attn.q_proj.__LORA__.weight",
+2026-11-11T01:11:33.812+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.812+00:00 INFO         16,
+2026-11-11T01:11:33.812+00:00 INFO         1536
+2026-11-11T01:11:33.812+00:00 INFO       ],
+2026-11-11T01:11:33.812+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.812+00:00 INFO         1536,
+2026-11-11T01:11:33.812+00:00 INFO         16
+2026-11-11T01:11:33.812+00:00 INFO       ]
+2026-11-11T01:11:33.812+00:00 INFO     },
+2026-11-11T01:11:33.812+00:00 INFO     {
+2026-11-11T01:11:33.812+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.812+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.812+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.812+00:00 INFO       "name": "base_model.model.model.layers.10.self_attn.v_proj.__LORA__.weight",
+2026-11-11T01:11:33.812+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.812+00:00 INFO         16,
+2026-11-11T01:11:33.812+00:00 INFO         1536
+2026-11-11T01:11:33.812+00:00 INFO       ],
+2026-11-11T01:11:33.812+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.813+00:00 INFO         256,
+2026-11-11T01:11:33.813+00:00 INFO         16
+2026-11-11T01:11:33.813+00:00 INFO       ]
+2026-11-11T01:11:33.813+00:00 INFO     },
+2026-11-11T01:11:33.813+00:00 INFO     {
+2026-11-11T01:11:33.813+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.813+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.813+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.813+00:00 INFO       "name": "base_model.model.model.layers.11.mlp.down_proj.__LORA__.weight",
+2026-11-11T01:11:33.813+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.813+00:00 INFO         16,
+2026-11-11T01:11:33.813+00:00 INFO         8960
+2026-11-11T01:11:33.814+00:00 INFO       ],
+2026-11-11T01:11:33.814+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.814+00:00 INFO         1536,
+2026-11-11T01:11:33.814+00:00 INFO         16
+2026-11-11T01:11:33.814+00:00 INFO       ]
+2026-11-11T01:11:33.814+00:00 INFO     },
+2026-11-11T01:11:33.814+00:00 INFO     {
+2026-11-11T01:11:33.815+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.815+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.815+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.815+00:00 INFO       "name": "base_model.model.model.layers.11.mlp.gate_proj.__LORA__.weight",
+2026-11-11T01:11:33.815+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.815+00:00 INFO         16,
+2026-11-11T01:11:33.815+00:00 INFO         1536
+2026-11-11T01:11:33.815+00:00 INFO       ],
+2026-11-11T01:11:33.815+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.815+00:00 INFO         8960,
+2026-11-11T01:11:33.816+00:00 INFO         16
+2026-11-11T01:11:33.816+00:00 INFO       ]
+2026-11-11T01:11:33.816+00:00 INFO     },
+2026-11-11T01:11:33.816+00:00 INFO     {
+2026-11-11T01:11:33.816+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.816+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.816+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.816+00:00 INFO       "name": "base_model.model.model.layers.11.mlp.up_proj.__LORA__.weight",
+2026-11-11T01:11:33.816+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.816+00:00 INFO         16,
+2026-11-11T01:11:33.816+00:00 INFO         1536
+2026-11-11T01:11:33.816+00:00 INFO       ],
+2026-11-11T01:11:33.816+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.816+00:00 INFO         8960,
+2026-11-11T01:11:33.816+00:00 INFO         16
+2026-11-11T01:11:33.816+00:00 INFO       ]
+2026-11-11T01:11:33.816+00:00 INFO     },
+2026-11-11T01:11:33.816+00:00 INFO     {
+2026-11-11T01:11:33.816+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.816+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.816+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.816+00:00 INFO       "name": "base_model.model.model.layers.11.self_attn.k_proj.__LORA__.weight",
+2026-11-11T01:11:33.816+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.816+00:00 INFO         16,
+2026-11-11T01:11:33.816+00:00 INFO         1536
+2026-11-11T01:11:33.816+00:00 INFO       ],
+2026-11-11T01:11:33.816+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.816+00:00 INFO         256,
+2026-11-11T01:11:33.816+00:00 INFO         16
+2026-11-11T01:11:33.816+00:00 INFO       ]
+2026-11-11T01:11:33.816+00:00 INFO     },
+2026-11-11T01:11:33.816+00:00 INFO     {
+2026-11-11T01:11:33.816+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.816+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.816+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.816+00:00 INFO       "name": "base_model.model.model.layers.11.self_attn.o_proj.__LORA__.weight",
+2026-11-11T01:11:33.816+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.816+00:00 INFO         16,
+2026-11-11T01:11:33.816+00:00 INFO         1536
+2026-11-11T01:11:33.816+00:00 INFO       ],
+2026-11-11T01:11:33.816+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.816+00:00 INFO         1536,
+2026-11-11T01:11:33.816+00:00 INFO         16
+2026-11-11T01:11:33.816+00:00 INFO       ]
+2026-11-11T01:11:33.817+00:00 INFO     },
+2026-11-11T01:11:33.817+00:00 INFO     {
+2026-11-11T01:11:33.817+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.817+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.817+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.817+00:00 INFO       "name": "base_model.model.model.layers.11.self_attn.q_proj.__LORA__.weight",
+2026-11-11T01:11:33.817+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.817+00:00 INFO         16,
+2026-11-11T01:11:33.817+00:00 INFO         1536
+2026-11-11T01:11:33.817+00:00 INFO       ],
+2026-11-11T01:11:33.817+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.817+00:00 INFO         1536,
+2026-11-11T01:11:33.817+00:00 INFO         16
+2026-11-11T01:11:33.817+00:00 INFO       ]
+2026-11-11T01:11:33.817+00:00 INFO     },
+2026-11-11T01:11:33.817+00:00 INFO     {
+2026-11-11T01:11:33.817+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.817+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.817+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.817+00:00 INFO       "name": "base_model.model.model.layers.11.self_attn.v_proj.__LORA__.weight",
+2026-11-11T01:11:33.817+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.817+00:00 INFO         16,
+2026-11-11T01:11:33.817+00:00 INFO         1536
+2026-11-11T01:11:33.817+00:00 INFO       ],
+2026-11-11T01:11:33.817+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.817+00:00 INFO         256,
+2026-11-11T01:11:33.817+00:00 INFO         16
+2026-11-11T01:11:33.817+00:00 INFO       ]
+2026-11-11T01:11:33.817+00:00 INFO     },
+2026-11-11T01:11:33.817+00:00 INFO     {
+2026-11-11T01:11:33.817+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.817+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.817+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.817+00:00 INFO       "name": "base_model.model.model.layers.12.mlp.down_proj.__LORA__.weight",
+2026-11-11T01:11:33.817+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.817+00:00 INFO         16,
+2026-11-11T01:11:33.817+00:00 INFO         8960
+2026-11-11T01:11:33.817+00:00 INFO       ],
+2026-11-11T01:11:33.817+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.817+00:00 INFO         1536,
+2026-11-11T01:11:33.818+00:00 INFO         16
+2026-11-11T01:11:33.818+00:00 INFO       ]
+2026-11-11T01:11:33.818+00:00 INFO     },
+2026-11-11T01:11:33.818+00:00 INFO     {
+2026-11-11T01:11:33.818+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.818+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.818+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.818+00:00 INFO       "name": "base_model.model.model.layers.12.mlp.gate_proj.__LORA__.weight",
+2026-11-11T01:11:33.818+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.818+00:00 INFO         16,
+2026-11-11T01:11:33.818+00:00 INFO         1536
+2026-11-11T01:11:33.818+00:00 INFO       ],
+2026-11-11T01:11:33.818+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.818+00:00 INFO         8960,
+2026-11-11T01:11:33.818+00:00 INFO         16
+2026-11-11T01:11:33.819+00:00 INFO       ]
+2026-11-11T01:11:33.819+00:00 INFO     },
+2026-11-11T01:11:33.819+00:00 INFO     {
+2026-11-11T01:11:33.819+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.819+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.819+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.819+00:00 INFO       "name": "base_model.model.model.layers.12.mlp.up_proj.__LORA__.weight",
+2026-11-11T01:11:33.819+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.819+00:00 INFO         16,
+2026-11-11T01:11:33.819+00:00 INFO         1536
+2026-11-11T01:11:33.819+00:00 INFO       ],
+2026-11-11T01:11:33.819+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.819+00:00 INFO         8960,
+2026-11-11T01:11:33.819+00:00 INFO         16
+2026-11-11T01:11:33.819+00:00 INFO       ]
+2026-11-11T01:11:33.819+00:00 INFO     },
+2026-11-11T01:11:33.819+00:00 INFO     {
+2026-11-11T01:11:33.819+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.819+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.819+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.819+00:00 INFO       "name": "base_model.model.model.layers.12.self_attn.k_proj.__LORA__.weight",
+2026-11-11T01:11:33.819+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.819+00:00 INFO         16,
+2026-11-11T01:11:33.819+00:00 INFO         1536
+2026-11-11T01:11:33.819+00:00 INFO       ],
+2026-11-11T01:11:33.819+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.819+00:00 INFO         256,
+2026-11-11T01:11:33.819+00:00 INFO         16
+2026-11-11T01:11:33.819+00:00 INFO       ]
+2026-11-11T01:11:33.819+00:00 INFO     },
+2026-11-11T01:11:33.819+00:00 INFO     {
+2026-11-11T01:11:33.819+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.819+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.819+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.819+00:00 INFO       "name": "base_model.model.model.layers.12.self_attn.o_proj.__LORA__.weight",
+2026-11-11T01:11:33.819+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.819+00:00 INFO         16,
+2026-11-11T01:11:33.819+00:00 INFO         1536
+2026-11-11T01:11:33.819+00:00 INFO       ],
+2026-11-11T01:11:33.820+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.820+00:00 INFO         1536,
+2026-11-11T01:11:33.820+00:00 INFO         16
+2026-11-11T01:11:33.820+00:00 INFO       ]
+2026-11-11T01:11:33.820+00:00 INFO     },
+2026-11-11T01:11:33.820+00:00 INFO     {
+2026-11-11T01:11:33.820+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.820+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.820+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.820+00:00 INFO       "name": "base_model.model.model.layers.12.self_attn.q_proj.__LORA__.weight",
+2026-11-11T01:11:33.820+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.820+00:00 INFO         16,
+2026-11-11T01:11:33.820+00:00 INFO         1536
+2026-11-11T01:11:33.820+00:00 INFO       ],
+2026-11-11T01:11:33.820+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.820+00:00 INFO         1536,
+2026-11-11T01:11:33.820+00:00 INFO         16
+2026-11-11T01:11:33.820+00:00 INFO       ]
+2026-11-11T01:11:33.820+00:00 INFO     },
+2026-11-11T01:11:33.820+00:00 INFO     {
+2026-11-11T01:11:33.820+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.820+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.820+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.820+00:00 INFO       "name": "base_model.model.model.layers.12.self_attn.v_proj.__LORA__.weight",
+2026-11-11T01:11:33.820+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.820+00:00 INFO         16,
+2026-11-11T01:11:33.820+00:00 INFO         1536
+2026-11-11T01:11:33.820+00:00 INFO       ],
+2026-11-11T01:11:33.820+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.820+00:00 INFO         256,
+2026-11-11T01:11:33.820+00:00 INFO         16
+2026-11-11T01:11:33.820+00:00 INFO       ]
+2026-11-11T01:11:33.820+00:00 INFO     },
+2026-11-11T01:11:33.820+00:00 INFO     {
+2026-11-11T01:11:33.820+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.820+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.820+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.820+00:00 INFO       "name": "base_model.model.model.layers.13.mlp.down_proj.__LORA__.weight",
+2026-11-11T01:11:33.820+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.820+00:00 INFO         16,
+2026-11-11T01:11:33.820+00:00 INFO         8960
+2026-11-11T01:11:33.821+00:00 INFO       ],
+2026-11-11T01:11:33.821+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.821+00:00 INFO         1536,
+2026-11-11T01:11:33.821+00:00 INFO         16
+2026-11-11T01:11:33.821+00:00 INFO       ]
+2026-11-11T01:11:33.821+00:00 INFO     },
+2026-11-11T01:11:33.821+00:00 INFO     {
+2026-11-11T01:11:33.821+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.821+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.821+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.821+00:00 INFO       "name": "base_model.model.model.layers.13.mlp.gate_proj.__LORA__.weight",
+2026-11-11T01:11:33.821+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.821+00:00 INFO         16,
+2026-11-11T01:11:33.821+00:00 INFO         1536
+2026-11-11T01:11:33.821+00:00 INFO       ],
+2026-11-11T01:11:33.821+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.821+00:00 INFO         8960,
+2026-11-11T01:11:33.821+00:00 INFO         16
+2026-11-11T01:11:33.821+00:00 INFO       ]
+2026-11-11T01:11:33.821+00:00 INFO     },
+2026-11-11T01:11:33.821+00:00 INFO     {
+2026-11-11T01:11:33.821+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.821+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.821+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.821+00:00 INFO       "name": "base_model.model.model.layers.13.mlp.up_proj.__LORA__.weight",
+2026-11-11T01:11:33.821+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.821+00:00 INFO         16,
+2026-11-11T01:11:33.821+00:00 INFO         1536
+2026-11-11T01:11:33.821+00:00 INFO       ],
+2026-11-11T01:11:33.821+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.821+00:00 INFO         8960,
+2026-11-11T01:11:33.821+00:00 INFO         16
+2026-11-11T01:11:33.821+00:00 INFO       ]
+2026-11-11T01:11:33.821+00:00 INFO     },
+2026-11-11T01:11:33.821+00:00 INFO     {
+2026-11-11T01:11:33.821+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.821+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.821+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.821+00:00 INFO       "name": "base_model.model.model.layers.13.self_attn.k_proj.__LORA__.weight",
+2026-11-11T01:11:33.821+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.821+00:00 INFO         16,
+2026-11-11T01:11:33.821+00:00 INFO         1536
+2026-11-11T01:11:33.821+00:00 INFO       ],
+2026-11-11T01:11:33.821+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.821+00:00 INFO         256,
+2026-11-11T01:11:33.821+00:00 INFO         16
+2026-11-11T01:11:33.821+00:00 INFO       ]
+2026-11-11T01:11:33.821+00:00 INFO     },
+2026-11-11T01:11:33.821+00:00 INFO     {
+2026-11-11T01:11:33.822+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.822+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.822+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.822+00:00 INFO       "name": "base_model.model.model.layers.13.self_attn.o_proj.__LORA__.weight",
+2026-11-11T01:11:33.822+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.822+00:00 INFO         16,
+2026-11-11T01:11:33.822+00:00 INFO         1536
+2026-11-11T01:11:33.822+00:00 INFO       ],
+2026-11-11T01:11:33.822+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.822+00:00 INFO         1536,
+2026-11-11T01:11:33.822+00:00 INFO         16
+2026-11-11T01:11:33.822+00:00 INFO       ]
+2026-11-11T01:11:33.822+00:00 INFO     },
+2026-11-11T01:11:33.822+00:00 INFO     {
+2026-11-11T01:11:33.822+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.822+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.822+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.822+00:00 INFO       "name": "base_model.model.model.layers.13.self_attn.q_proj.__LORA__.weight",
+2026-11-11T01:11:33.822+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.822+00:00 INFO         16,
+2026-11-11T01:11:33.822+00:00 INFO         1536
+2026-11-11T01:11:33.822+00:00 INFO       ],
+2026-11-11T01:11:33.822+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.822+00:00 INFO         1536,
+2026-11-11T01:11:33.822+00:00 INFO         16
+2026-11-11T01:11:33.822+00:00 INFO       ]
+2026-11-11T01:11:33.822+00:00 INFO     },
+2026-11-11T01:11:33.822+00:00 INFO     {
+2026-11-11T01:11:33.822+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.822+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.822+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.822+00:00 INFO       "name": "base_model.model.model.layers.13.self_attn.v_proj.__LORA__.weight",
+2026-11-11T01:11:33.822+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.822+00:00 INFO         16,
+2026-11-11T01:11:33.822+00:00 INFO         1536
+2026-11-11T01:11:33.822+00:00 INFO       ],
+2026-11-11T01:11:33.822+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.822+00:00 INFO         256,
+2026-11-11T01:11:33.822+00:00 INFO         16
+2026-11-11T01:11:33.822+00:00 INFO       ]
+2026-11-11T01:11:33.822+00:00 INFO     },
+2026-11-11T01:11:33.822+00:00 INFO     {
+2026-11-11T01:11:33.822+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.822+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.822+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.822+00:00 INFO       "name": "base_model.model.model.layers.14.mlp.down_proj.__LORA__.weight",
+2026-11-11T01:11:33.822+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.822+00:00 INFO         16,
+2026-11-11T01:11:33.822+00:00 INFO         8960
+2026-11-11T01:11:33.822+00:00 INFO       ],
+2026-11-11T01:11:33.822+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.823+00:00 INFO         1536,
+2026-11-11T01:11:33.823+00:00 INFO         16
+2026-11-11T01:11:33.823+00:00 INFO       ]
+2026-11-11T01:11:33.823+00:00 INFO     },
+2026-11-11T01:11:33.823+00:00 INFO     {
+2026-11-11T01:11:33.823+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.823+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.823+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.823+00:00 INFO       "name": "base_model.model.model.layers.14.mlp.gate_proj.__LORA__.weight",
+2026-11-11T01:11:33.823+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.823+00:00 INFO         16,
+2026-11-11T01:11:33.823+00:00 INFO         1536
+2026-11-11T01:11:33.823+00:00 INFO       ],
+2026-11-11T01:11:33.823+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.823+00:00 INFO         8960,
+2026-11-11T01:11:33.823+00:00 INFO         16
+2026-11-11T01:11:33.823+00:00 INFO       ]
+2026-11-11T01:11:33.823+00:00 INFO     },
+2026-11-11T01:11:33.823+00:00 INFO     {
+2026-11-11T01:11:33.823+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.823+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.823+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.823+00:00 INFO       "name": "base_model.model.model.layers.14.mlp.up_proj.__LORA__.weight",
+2026-11-11T01:11:33.823+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.823+00:00 INFO         16,
+2026-11-11T01:11:33.823+00:00 INFO         1536
+2026-11-11T01:11:33.823+00:00 INFO       ],
+2026-11-11T01:11:33.823+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.823+00:00 INFO         8960,
+2026-11-11T01:11:33.823+00:00 INFO         16
+2026-11-11T01:11:33.823+00:00 INFO       ]
+2026-11-11T01:11:33.823+00:00 INFO     },
+2026-11-11T01:11:33.823+00:00 INFO     {
+2026-11-11T01:11:33.823+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.823+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.823+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.823+00:00 INFO       "name": "base_model.model.model.layers.14.self_attn.k_proj.__LORA__.weight",
+2026-11-11T01:11:33.823+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.823+00:00 INFO         16,
+2026-11-11T01:11:33.824+00:00 INFO         1536
+2026-11-11T01:11:33.824+00:00 INFO       ],
+2026-11-11T01:11:33.824+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.824+00:00 INFO         256,
+2026-11-11T01:11:33.824+00:00 INFO         16
+2026-11-11T01:11:33.824+00:00 INFO       ]
+2026-11-11T01:11:33.824+00:00 INFO     },
+2026-11-11T01:11:33.825+00:00 INFO     {
+2026-11-11T01:11:33.825+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.825+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.825+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.825+00:00 INFO       "name": "base_model.model.model.layers.14.self_attn.o_proj.__LORA__.weight",
+2026-11-11T01:11:33.825+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.825+00:00 INFO         16,
+2026-11-11T01:11:33.826+00:00 INFO         1536
+2026-11-11T01:11:33.826+00:00 INFO       ],
+2026-11-11T01:11:33.826+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.826+00:00 INFO         1536,
+2026-11-11T01:11:33.826+00:00 INFO         16
+2026-11-11T01:11:33.826+00:00 INFO       ]
+2026-11-11T01:11:33.826+00:00 INFO     },
+2026-11-11T01:11:33.826+00:00 INFO     {
+2026-11-11T01:11:33.826+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.826+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.826+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.826+00:00 INFO       "name": "base_model.model.model.layers.14.self_attn.q_proj.__LORA__.weight",
+2026-11-11T01:11:33.826+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.826+00:00 INFO         16,
+2026-11-11T01:11:33.826+00:00 INFO         1536
+2026-11-11T01:11:33.826+00:00 INFO       ],
+2026-11-11T01:11:33.826+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.826+00:00 INFO         1536,
+2026-11-11T01:11:33.826+00:00 INFO         16
+2026-11-11T01:11:33.826+00:00 INFO       ]
+2026-11-11T01:11:33.826+00:00 INFO     },
+2026-11-11T01:11:33.826+00:00 INFO     {
+2026-11-11T01:11:33.827+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.827+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.827+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.827+00:00 INFO       "name": "base_model.model.model.layers.14.self_attn.v_proj.__LORA__.weight",
+2026-11-11T01:11:33.827+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.827+00:00 INFO         16,
+2026-11-11T01:11:33.827+00:00 INFO         1536
+2026-11-11T01:11:33.827+00:00 INFO       ],
+2026-11-11T01:11:33.827+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.827+00:00 INFO         256,
+2026-11-11T01:11:33.827+00:00 INFO         16
+2026-11-11T01:11:33.827+00:00 INFO       ]
+2026-11-11T01:11:33.827+00:00 INFO     },
+2026-11-11T01:11:33.827+00:00 INFO     {
+2026-11-11T01:11:33.827+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.827+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.827+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.827+00:00 INFO       "name": "base_model.model.model.layers.15.mlp.down_proj.__LORA__.weight",
+2026-11-11T01:11:33.827+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.827+00:00 INFO         16,
+2026-11-11T01:11:33.827+00:00 INFO         8960
+2026-11-11T01:11:33.827+00:00 INFO       ],
+2026-11-11T01:11:33.827+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.827+00:00 INFO         1536,
+2026-11-11T01:11:33.827+00:00 INFO         16
+2026-11-11T01:11:33.827+00:00 INFO       ]
+2026-11-11T01:11:33.827+00:00 INFO     },
+2026-11-11T01:11:33.827+00:00 INFO     {
+2026-11-11T01:11:33.827+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.827+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.827+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.827+00:00 INFO       "name": "base_model.model.model.layers.15.mlp.gate_proj.__LORA__.weight",
+2026-11-11T01:11:33.827+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.827+00:00 INFO         16,
+2026-11-11T01:11:33.827+00:00 INFO         1536
+2026-11-11T01:11:33.827+00:00 INFO       ],
+2026-11-11T01:11:33.827+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.827+00:00 INFO         8960,
+2026-11-11T01:11:33.827+00:00 INFO         16
+2026-11-11T01:11:33.827+00:00 INFO       ]
+2026-11-11T01:11:33.827+00:00 INFO     },
+2026-11-11T01:11:33.827+00:00 INFO     {
+2026-11-11T01:11:33.827+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.827+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.827+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.827+00:00 INFO       "name": "base_model.model.model.layers.15.mlp.up_proj.__LORA__.weight",
+2026-11-11T01:11:33.827+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.827+00:00 INFO         16,
+2026-11-11T01:11:33.827+00:00 INFO         1536
+2026-11-11T01:11:33.828+00:00 INFO       ],
+2026-11-11T01:11:33.828+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.828+00:00 INFO         8960,
+2026-11-11T01:11:33.828+00:00 INFO         16
+2026-11-11T01:11:33.828+00:00 INFO       ]
+2026-11-11T01:11:33.828+00:00 INFO     },
+2026-11-11T01:11:33.828+00:00 INFO     {
+2026-11-11T01:11:33.828+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.828+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.828+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.828+00:00 INFO       "name": "base_model.model.model.layers.15.self_attn.k_proj.__LORA__.weight",
+2026-11-11T01:11:33.828+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.828+00:00 INFO         16,
+2026-11-11T01:11:33.828+00:00 INFO         1536
+2026-11-11T01:11:33.828+00:00 INFO       ],
+2026-11-11T01:11:33.828+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.828+00:00 INFO         256,
+2026-11-11T01:11:33.828+00:00 INFO         16
+2026-11-11T01:11:33.828+00:00 INFO       ]
+2026-11-11T01:11:33.828+00:00 INFO     },
+2026-11-11T01:11:33.828+00:00 INFO     {
+2026-11-11T01:11:33.828+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.828+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.828+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.828+00:00 INFO       "name": "base_model.model.model.layers.15.self_attn.o_proj.__LORA__.weight",
+2026-11-11T01:11:33.828+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.828+00:00 INFO         16,
+2026-11-11T01:11:33.828+00:00 INFO         1536
+2026-11-11T01:11:33.828+00:00 INFO       ],
+2026-11-11T01:11:33.828+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.828+00:00 INFO         1536,
+2026-11-11T01:11:33.828+00:00 INFO         16
+2026-11-11T01:11:33.828+00:00 INFO       ]
+2026-11-11T01:11:33.828+00:00 INFO     },
+2026-11-11T01:11:33.828+00:00 INFO     {
+2026-11-11T01:11:33.828+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.828+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.828+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.828+00:00 INFO       "name": "base_model.model.model.layers.15.self_attn.q_proj.__LORA__.weight",
+2026-11-11T01:11:33.828+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.829+00:00 INFO         16,
+2026-11-11T01:11:33.829+00:00 INFO         1536
+2026-11-11T01:11:33.829+00:00 INFO       ],
+2026-11-11T01:11:33.829+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.829+00:00 INFO         1536,
+2026-11-11T01:11:33.829+00:00 INFO         16
+2026-11-11T01:11:33.830+00:00 INFO       ]
+2026-11-11T01:11:33.830+00:00 INFO     },
+2026-11-11T01:11:33.830+00:00 INFO     {
+2026-11-11T01:11:33.830+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.830+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.830+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.830+00:00 INFO       "name": "base_model.model.model.layers.15.self_attn.v_proj.__LORA__.weight",
+2026-11-11T01:11:33.830+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.830+00:00 INFO         16,
+2026-11-11T01:11:33.830+00:00 INFO         1536
+2026-11-11T01:11:33.830+00:00 INFO       ],
+2026-11-11T01:11:33.830+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.830+00:00 INFO         256,
+2026-11-11T01:11:33.830+00:00 INFO         16
+2026-11-11T01:11:33.830+00:00 INFO       ]
+2026-11-11T01:11:33.830+00:00 INFO     },
+2026-11-11T01:11:33.830+00:00 INFO     {
+2026-11-11T01:11:33.830+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.830+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.830+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.830+00:00 INFO       "name": "base_model.model.model.layers.16.mlp.down_proj.__LORA__.weight",
+2026-11-11T01:11:33.830+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.830+00:00 INFO         16,
+2026-11-11T01:11:33.830+00:00 INFO         8960
+2026-11-11T01:11:33.830+00:00 INFO       ],
+2026-11-11T01:11:33.830+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.830+00:00 INFO         1536,
+2026-11-11T01:11:33.830+00:00 INFO         16
+2026-11-11T01:11:33.830+00:00 INFO       ]
+2026-11-11T01:11:33.830+00:00 INFO     },
+2026-11-11T01:11:33.830+00:00 INFO     {
+2026-11-11T01:11:33.830+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.830+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.830+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.830+00:00 INFO       "name": "base_model.model.model.layers.16.mlp.gate_proj.__LORA__.weight",
+2026-11-11T01:11:33.830+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.830+00:00 INFO         16,
+2026-11-11T01:11:33.830+00:00 INFO         1536
+2026-11-11T01:11:33.830+00:00 INFO       ],
+2026-11-11T01:11:33.830+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.830+00:00 INFO         8960,
+2026-11-11T01:11:33.830+00:00 INFO         16
+2026-11-11T01:11:33.830+00:00 INFO       ]
+2026-11-11T01:11:33.830+00:00 INFO     },
+2026-11-11T01:11:33.830+00:00 INFO     {
+2026-11-11T01:11:33.831+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.831+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.831+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.831+00:00 INFO       "name": "base_model.model.model.layers.16.mlp.up_proj.__LORA__.weight",
+2026-11-11T01:11:33.831+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.831+00:00 INFO         16,
+2026-11-11T01:11:33.831+00:00 INFO         1536
+2026-11-11T01:11:33.831+00:00 INFO       ],
+2026-11-11T01:11:33.831+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.831+00:00 INFO         8960,
+2026-11-11T01:11:33.831+00:00 INFO         16
+2026-11-11T01:11:33.831+00:00 INFO       ]
+2026-11-11T01:11:33.831+00:00 INFO     },
+2026-11-11T01:11:33.831+00:00 INFO     {
+2026-11-11T01:11:33.831+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.831+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.831+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.831+00:00 INFO       "name": "base_model.model.model.layers.16.self_attn.k_proj.__LORA__.weight",
+2026-11-11T01:11:33.831+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.831+00:00 INFO         16,
+2026-11-11T01:11:33.831+00:00 INFO         1536
+2026-11-11T01:11:33.831+00:00 INFO       ],
+2026-11-11T01:11:33.831+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.831+00:00 INFO         256,
+2026-11-11T01:11:33.831+00:00 INFO         16
+2026-11-11T01:11:33.831+00:00 INFO       ]
+2026-11-11T01:11:33.831+00:00 INFO     },
+2026-11-11T01:11:33.831+00:00 INFO     {
+2026-11-11T01:11:33.831+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.831+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.831+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.831+00:00 INFO       "name": "base_model.model.model.layers.16.self_attn.o_proj.__LORA__.weight",
+2026-11-11T01:11:33.831+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.831+00:00 INFO         16,
+2026-11-11T01:11:33.831+00:00 INFO         1536
+2026-11-11T01:11:33.831+00:00 INFO       ],
+2026-11-11T01:11:33.831+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.831+00:00 INFO         1536,
+2026-11-11T01:11:33.831+00:00 INFO         16
+2026-11-11T01:11:33.831+00:00 INFO       ]
+2026-11-11T01:11:33.831+00:00 INFO     },
+2026-11-11T01:11:33.831+00:00 INFO     {
+2026-11-11T01:11:33.831+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.831+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.831+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.831+00:00 INFO       "name": "base_model.model.model.layers.16.self_attn.q_proj.__LORA__.weight",
+2026-11-11T01:11:33.831+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.831+00:00 INFO         16,
+2026-11-11T01:11:33.832+00:00 INFO         1536
+2026-11-11T01:11:33.832+00:00 INFO       ],
+2026-11-11T01:11:33.832+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.832+00:00 INFO         1536,
+2026-11-11T01:11:33.832+00:00 INFO         16
+2026-11-11T01:11:33.832+00:00 INFO       ]
+2026-11-11T01:11:33.832+00:00 INFO     },
+2026-11-11T01:11:33.832+00:00 INFO     {
+2026-11-11T01:11:33.832+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.832+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.832+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.832+00:00 INFO       "name": "base_model.model.model.layers.16.self_attn.v_proj.__LORA__.weight",
+2026-11-11T01:11:33.832+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.832+00:00 INFO         16,
+2026-11-11T01:11:33.832+00:00 INFO         1536
+2026-11-11T01:11:33.832+00:00 INFO       ],
+2026-11-11T01:11:33.832+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.832+00:00 INFO         256,
+2026-11-11T01:11:33.832+00:00 INFO         16
+2026-11-11T01:11:33.832+00:00 INFO       ]
+2026-11-11T01:11:33.832+00:00 INFO     },
+2026-11-11T01:11:33.832+00:00 INFO     {
+2026-11-11T01:11:33.832+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.832+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.832+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.832+00:00 INFO       "name": "base_model.model.model.layers.17.mlp.down_proj.__LORA__.weight",
+2026-11-11T01:11:33.832+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.832+00:00 INFO         16,
+2026-11-11T01:11:33.832+00:00 INFO         8960
+2026-11-11T01:11:33.832+00:00 INFO       ],
+2026-11-11T01:11:33.832+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.832+00:00 INFO         1536,
+2026-11-11T01:11:33.832+00:00 INFO         16
+2026-11-11T01:11:33.832+00:00 INFO       ]
+2026-11-11T01:11:33.832+00:00 INFO     },
+2026-11-11T01:11:33.832+00:00 INFO     {
+2026-11-11T01:11:33.832+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.832+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.832+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.832+00:00 INFO       "name": "base_model.model.model.layers.17.mlp.gate_proj.__LORA__.weight",
+2026-11-11T01:11:33.832+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.832+00:00 INFO         16,
+2026-11-11T01:11:33.832+00:00 INFO         1536
+2026-11-11T01:11:33.832+00:00 INFO       ],
+2026-11-11T01:11:33.832+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.832+00:00 INFO         8960,
+2026-11-11T01:11:33.832+00:00 INFO         16
+2026-11-11T01:11:33.832+00:00 INFO       ]
+2026-11-11T01:11:33.832+00:00 INFO     },
+2026-11-11T01:11:33.833+00:00 INFO     {
+2026-11-11T01:11:33.833+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.833+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.833+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.833+00:00 INFO       "name": "base_model.model.model.layers.17.mlp.up_proj.__LORA__.weight",
+2026-11-11T01:11:33.833+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.833+00:00 INFO         16,
+2026-11-11T01:11:33.833+00:00 INFO         1536
+2026-11-11T01:11:33.833+00:00 INFO       ],
+2026-11-11T01:11:33.833+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.833+00:00 INFO         8960,
+2026-11-11T01:11:33.833+00:00 INFO         16
+2026-11-11T01:11:33.833+00:00 INFO       ]
+2026-11-11T01:11:33.833+00:00 INFO     },
+2026-11-11T01:11:33.833+00:00 INFO     {
+2026-11-11T01:11:33.833+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.833+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.833+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.833+00:00 INFO       "name": "base_model.model.model.layers.17.self_attn.k_proj.__LORA__.weight",
+2026-11-11T01:11:33.833+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.833+00:00 INFO         16,
+2026-11-11T01:11:33.833+00:00 INFO         1536
+2026-11-11T01:11:33.833+00:00 INFO       ],
+2026-11-11T01:11:33.833+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.833+00:00 INFO         256,
+2026-11-11T01:11:33.833+00:00 INFO         16
+2026-11-11T01:11:33.833+00:00 INFO       ]
+2026-11-11T01:11:33.833+00:00 INFO     },
+2026-11-11T01:11:33.833+00:00 INFO     {
+2026-11-11T01:11:33.833+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.833+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.833+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.833+00:00 INFO       "name": "base_model.model.model.layers.17.self_attn.o_proj.__LORA__.weight",
+2026-11-11T01:11:33.833+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.833+00:00 INFO         16,
+2026-11-11T01:11:33.833+00:00 INFO         1536
+2026-11-11T01:11:33.833+00:00 INFO       ],
+2026-11-11T01:11:33.833+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.833+00:00 INFO         1536,
+2026-11-11T01:11:33.833+00:00 INFO         16
+2026-11-11T01:11:33.833+00:00 INFO       ]
+2026-11-11T01:11:33.833+00:00 INFO     },
+2026-11-11T01:11:33.833+00:00 INFO     {
+2026-11-11T01:11:33.833+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.833+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.833+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.833+00:00 INFO       "name": "base_model.model.model.layers.17.self_attn.q_proj.__LORA__.weight",
+2026-11-11T01:11:33.833+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.833+00:00 INFO         16,
+2026-11-11T01:11:33.834+00:00 INFO         1536
+2026-11-11T01:11:33.834+00:00 INFO       ],
+2026-11-11T01:11:33.834+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.834+00:00 INFO         1536,
+2026-11-11T01:11:33.834+00:00 INFO         16
+2026-11-11T01:11:33.834+00:00 INFO       ]
+2026-11-11T01:11:33.834+00:00 INFO     },
+2026-11-11T01:11:33.834+00:00 INFO     {
+2026-11-11T01:11:33.834+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.834+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.834+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.834+00:00 INFO       "name": "base_model.model.model.layers.17.self_attn.v_proj.__LORA__.weight",
+2026-11-11T01:11:33.834+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.834+00:00 INFO         16,
+2026-11-11T01:11:33.834+00:00 INFO         1536
+2026-11-11T01:11:33.834+00:00 INFO       ],
+2026-11-11T01:11:33.834+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.834+00:00 INFO         256,
+2026-11-11T01:11:33.834+00:00 INFO         16
+2026-11-11T01:11:33.834+00:00 INFO       ]
+2026-11-11T01:11:33.834+00:00 INFO     },
+2026-11-11T01:11:33.834+00:00 INFO     {
+2026-11-11T01:11:33.834+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.834+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.834+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.834+00:00 INFO       "name": "base_model.model.model.layers.18.mlp.down_proj.__LORA__.weight",
+2026-11-11T01:11:33.834+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.834+00:00 INFO         16,
+2026-11-11T01:11:33.834+00:00 INFO         8960
+2026-11-11T01:11:33.834+00:00 INFO       ],
+2026-11-11T01:11:33.834+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.834+00:00 INFO         1536,
+2026-11-11T01:11:33.834+00:00 INFO         16
+2026-11-11T01:11:33.834+00:00 INFO       ]
+2026-11-11T01:11:33.834+00:00 INFO     },
+2026-11-11T01:11:33.834+00:00 INFO     {
+2026-11-11T01:11:33.834+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.834+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.834+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.834+00:00 INFO       "name": "base_model.model.model.layers.18.mlp.gate_proj.__LORA__.weight",
+2026-11-11T01:11:33.835+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.835+00:00 INFO         16,
+2026-11-11T01:11:33.835+00:00 INFO         1536
+2026-11-11T01:11:33.835+00:00 INFO       ],
+2026-11-11T01:11:33.835+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.835+00:00 INFO         8960,
+2026-11-11T01:11:33.835+00:00 INFO         16
+2026-11-11T01:11:33.835+00:00 INFO       ]
+2026-11-11T01:11:33.835+00:00 INFO     },
+2026-11-11T01:11:33.835+00:00 INFO     {
+2026-11-11T01:11:33.835+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.835+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.835+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.835+00:00 INFO       "name": "base_model.model.model.layers.18.mlp.up_proj.__LORA__.weight",
+2026-11-11T01:11:33.836+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.836+00:00 INFO         16,
+2026-11-11T01:11:33.836+00:00 INFO         1536
+2026-11-11T01:11:33.836+00:00 INFO       ],
+2026-11-11T01:11:33.836+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.836+00:00 INFO         8960,
+2026-11-11T01:11:33.836+00:00 INFO         16
+2026-11-11T01:11:33.836+00:00 INFO       ]
+2026-11-11T01:11:33.836+00:00 INFO     },
+2026-11-11T01:11:33.836+00:00 INFO     {
+2026-11-11T01:11:33.836+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.836+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.836+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.836+00:00 INFO       "name": "base_model.model.model.layers.18.self_attn.k_proj.__LORA__.weight",
+2026-11-11T01:11:33.836+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.836+00:00 INFO         16,
+2026-11-11T01:11:33.836+00:00 INFO         1536
+2026-11-11T01:11:33.836+00:00 INFO       ],
+2026-11-11T01:11:33.836+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.836+00:00 INFO         256,
+2026-11-11T01:11:33.836+00:00 INFO         16
+2026-11-11T01:11:33.836+00:00 INFO       ]
+2026-11-11T01:11:33.836+00:00 INFO     },
+2026-11-11T01:11:33.836+00:00 INFO     {
+2026-11-11T01:11:33.836+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.836+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.836+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.836+00:00 INFO       "name": "base_model.model.model.layers.18.self_attn.o_proj.__LORA__.weight",
+2026-11-11T01:11:33.836+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.836+00:00 INFO         16,
+2026-11-11T01:11:33.837+00:00 INFO         1536
+2026-11-11T01:11:33.837+00:00 INFO       ],
+2026-11-11T01:11:33.837+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.837+00:00 INFO         1536,
+2026-11-11T01:11:33.837+00:00 INFO         16
+2026-11-11T01:11:33.837+00:00 INFO       ]
+2026-11-11T01:11:33.837+00:00 INFO     },
+2026-11-11T01:11:33.837+00:00 INFO     {
+2026-11-11T01:11:33.837+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.837+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.837+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.837+00:00 INFO       "name": "base_model.model.model.layers.18.self_attn.q_proj.__LORA__.weight",
+2026-11-11T01:11:33.837+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.837+00:00 INFO         16,
+2026-11-11T01:11:33.837+00:00 INFO         1536
+2026-11-11T01:11:33.837+00:00 INFO       ],
+2026-11-11T01:11:33.837+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.837+00:00 INFO         1536,
+2026-11-11T01:11:33.837+00:00 INFO         16
+2026-11-11T01:11:33.837+00:00 INFO       ]
+2026-11-11T01:11:33.837+00:00 INFO     },
+2026-11-11T01:11:33.837+00:00 INFO     {
+2026-11-11T01:11:33.837+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.837+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.837+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.837+00:00 INFO       "name": "base_model.model.model.layers.18.self_attn.v_proj.__LORA__.weight",
+2026-11-11T01:11:33.837+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.837+00:00 INFO         16,
+2026-11-11T01:11:33.837+00:00 INFO         1536
+2026-11-11T01:11:33.837+00:00 INFO       ],
+2026-11-11T01:11:33.837+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.837+00:00 INFO         256,
+2026-11-11T01:11:33.837+00:00 INFO         16
+2026-11-11T01:11:33.837+00:00 INFO       ]
+2026-11-11T01:11:33.837+00:00 INFO     },
+2026-11-11T01:11:33.837+00:00 INFO     {
+2026-11-11T01:11:33.837+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.837+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.837+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.837+00:00 INFO       "name": "base_model.model.model.layers.19.mlp.down_proj.__LORA__.weight",
+2026-11-11T01:11:33.837+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.837+00:00 INFO         16,
+2026-11-11T01:11:33.837+00:00 INFO         8960
+2026-11-11T01:11:33.837+00:00 INFO       ],
+2026-11-11T01:11:33.837+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.837+00:00 INFO         1536,
+2026-11-11T01:11:33.837+00:00 INFO         16
+2026-11-11T01:11:33.837+00:00 INFO       ]
+2026-11-11T01:11:33.837+00:00 INFO     },
+2026-11-11T01:11:33.837+00:00 INFO     {
+2026-11-11T01:11:33.837+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.838+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.838+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.838+00:00 INFO       "name": "base_model.model.model.layers.19.mlp.gate_proj.__LORA__.weight",
+2026-11-11T01:11:33.838+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.838+00:00 INFO         16,
+2026-11-11T01:11:33.838+00:00 INFO         1536
+2026-11-11T01:11:33.838+00:00 INFO       ],
+2026-11-11T01:11:33.838+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.838+00:00 INFO         8960,
+2026-11-11T01:11:33.838+00:00 INFO         16
+2026-11-11T01:11:33.838+00:00 INFO       ]
+2026-11-11T01:11:33.838+00:00 INFO     },
+2026-11-11T01:11:33.838+00:00 INFO     {
+2026-11-11T01:11:33.838+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.838+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.838+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.838+00:00 INFO       "name": "base_model.model.model.layers.19.mlp.up_proj.__LORA__.weight",
+2026-11-11T01:11:33.838+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.838+00:00 INFO         16,
+2026-11-11T01:11:33.838+00:00 INFO         1536
+2026-11-11T01:11:33.838+00:00 INFO       ],
+2026-11-11T01:11:33.838+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.838+00:00 INFO         8960,
+2026-11-11T01:11:33.838+00:00 INFO         16
+2026-11-11T01:11:33.838+00:00 INFO       ]
+2026-11-11T01:11:33.838+00:00 INFO     },
+2026-11-11T01:11:33.838+00:00 INFO     {
+2026-11-11T01:11:33.838+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.838+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.838+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.838+00:00 INFO       "name": "base_model.model.model.layers.19.self_attn.k_proj.__LORA__.weight",
+2026-11-11T01:11:33.838+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.838+00:00 INFO         16,
+2026-11-11T01:11:33.838+00:00 INFO         1536
+2026-11-11T01:11:33.838+00:00 INFO       ],
+2026-11-11T01:11:33.838+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.838+00:00 INFO         256,
+2026-11-11T01:11:33.838+00:00 INFO         16
+2026-11-11T01:11:33.838+00:00 INFO       ]
+2026-11-11T01:11:33.838+00:00 INFO     },
+2026-11-11T01:11:33.838+00:00 INFO     {
+2026-11-11T01:11:33.838+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.838+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.839+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.839+00:00 INFO       "name": "base_model.model.model.layers.19.self_attn.o_proj.__LORA__.weight",
+2026-11-11T01:11:33.839+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.839+00:00 INFO         16,
+2026-11-11T01:11:33.839+00:00 INFO         1536
+2026-11-11T01:11:33.839+00:00 INFO       ],
+2026-11-11T01:11:33.839+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.839+00:00 INFO         1536,
+2026-11-11T01:11:33.839+00:00 INFO         16
+2026-11-11T01:11:33.839+00:00 INFO       ]
+2026-11-11T01:11:33.839+00:00 INFO     },
+2026-11-11T01:11:33.839+00:00 INFO     {
+2026-11-11T01:11:33.839+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.839+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.839+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.839+00:00 INFO       "name": "base_model.model.model.layers.19.self_attn.q_proj.__LORA__.weight",
+2026-11-11T01:11:33.839+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.839+00:00 INFO         16,
+2026-11-11T01:11:33.839+00:00 INFO         1536
+2026-11-11T01:11:33.839+00:00 INFO       ],
+2026-11-11T01:11:33.839+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.839+00:00 INFO         1536,
+2026-11-11T01:11:33.839+00:00 INFO         16
+2026-11-11T01:11:33.839+00:00 INFO       ]
+2026-11-11T01:11:33.839+00:00 INFO     },
+2026-11-11T01:11:33.839+00:00 INFO     {
+2026-11-11T01:11:33.839+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.839+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.839+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.839+00:00 INFO       "name": "base_model.model.model.layers.19.self_attn.v_proj.__LORA__.weight",
+2026-11-11T01:11:33.839+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.839+00:00 INFO         16,
+2026-11-11T01:11:33.839+00:00 INFO         1536
+2026-11-11T01:11:33.839+00:00 INFO       ],
+2026-11-11T01:11:33.839+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.839+00:00 INFO         256,
+2026-11-11T01:11:33.839+00:00 INFO         16
+2026-11-11T01:11:33.839+00:00 INFO       ]
+2026-11-11T01:11:33.839+00:00 INFO     },
+2026-11-11T01:11:33.839+00:00 INFO     {
+2026-11-11T01:11:33.839+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.839+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.839+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.839+00:00 INFO       "name": "base_model.model.model.layers.2.mlp.down_proj.__LORA__.weight",
+2026-11-11T01:11:33.839+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.839+00:00 INFO         16,
+2026-11-11T01:11:33.839+00:00 INFO         8960
+2026-11-11T01:11:33.839+00:00 INFO       ],
+2026-11-11T01:11:33.840+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.840+00:00 INFO         1536,
+2026-11-11T01:11:33.840+00:00 INFO         16
+2026-11-11T01:11:33.840+00:00 INFO       ]
+2026-11-11T01:11:33.840+00:00 INFO     },
+2026-11-11T01:11:33.840+00:00 INFO     {
+2026-11-11T01:11:33.840+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.840+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.840+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.840+00:00 INFO       "name": "base_model.model.model.layers.2.mlp.gate_proj.__LORA__.weight",
+2026-11-11T01:11:33.840+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.840+00:00 INFO         16,
+2026-11-11T01:11:33.840+00:00 INFO         1536
+2026-11-11T01:11:33.840+00:00 INFO       ],
+2026-11-11T01:11:33.840+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.840+00:00 INFO         8960,
+2026-11-11T01:11:33.840+00:00 INFO         16
+2026-11-11T01:11:33.840+00:00 INFO       ]
+2026-11-11T01:11:33.840+00:00 INFO     },
+2026-11-11T01:11:33.840+00:00 INFO     {
+2026-11-11T01:11:33.840+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.840+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.840+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.840+00:00 INFO       "name": "base_model.model.model.layers.2.mlp.up_proj.__LORA__.weight",
+2026-11-11T01:11:33.840+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.840+00:00 INFO         16,
+2026-11-11T01:11:33.840+00:00 INFO         1536
+2026-11-11T01:11:33.840+00:00 INFO       ],
+2026-11-11T01:11:33.840+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.840+00:00 INFO         8960,
+2026-11-11T01:11:33.840+00:00 INFO         16
+2026-11-11T01:11:33.840+00:00 INFO       ]
+2026-11-11T01:11:33.840+00:00 INFO     },
+2026-11-11T01:11:33.840+00:00 INFO     {
+2026-11-11T01:11:33.840+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.840+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.840+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.840+00:00 INFO       "name": "base_model.model.model.layers.2.self_attn.k_proj.__LORA__.weight",
+2026-11-11T01:11:33.840+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.840+00:00 INFO         16,
+2026-11-11T01:11:33.840+00:00 INFO         1536
+2026-11-11T01:11:33.840+00:00 INFO       ],
+2026-11-11T01:11:33.840+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.840+00:00 INFO         256,
+2026-11-11T01:11:33.840+00:00 INFO         16
+2026-11-11T01:11:33.840+00:00 INFO       ]
+2026-11-11T01:11:33.840+00:00 INFO     },
+2026-11-11T01:11:33.840+00:00 INFO     {
+2026-11-11T01:11:33.840+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.840+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.840+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.841+00:00 INFO       "name": "base_model.model.model.layers.2.self_attn.o_proj.__LORA__.weight",
+2026-11-11T01:11:33.841+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.841+00:00 INFO         16,
+2026-11-11T01:11:33.841+00:00 INFO         1536
+2026-11-11T01:11:33.841+00:00 INFO       ],
+2026-11-11T01:11:33.841+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.841+00:00 INFO         1536,
+2026-11-11T01:11:33.841+00:00 INFO         16
+2026-11-11T01:11:33.841+00:00 INFO       ]
+2026-11-11T01:11:33.841+00:00 INFO     },
+2026-11-11T01:11:33.841+00:00 INFO     {
+2026-11-11T01:11:33.841+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.841+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.841+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.841+00:00 INFO       "name": "base_model.model.model.layers.2.self_attn.q_proj.__LORA__.weight",
+2026-11-11T01:11:33.841+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.841+00:00 INFO         16,
+2026-11-11T01:11:33.841+00:00 INFO         1536
+2026-11-11T01:11:33.841+00:00 INFO       ],
+2026-11-11T01:11:33.841+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.841+00:00 INFO         1536,
+2026-11-11T01:11:33.841+00:00 INFO         16
+2026-11-11T01:11:33.841+00:00 INFO       ]
+2026-11-11T01:11:33.841+00:00 INFO     },
+2026-11-11T01:11:33.841+00:00 INFO     {
+2026-11-11T01:11:33.841+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.841+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.841+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.841+00:00 INFO       "name": "base_model.model.model.layers.2.self_attn.v_proj.__LORA__.weight",
+2026-11-11T01:11:33.841+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.841+00:00 INFO         16,
+2026-11-11T01:11:33.841+00:00 INFO         1536
+2026-11-11T01:11:33.841+00:00 INFO       ],
+2026-11-11T01:11:33.841+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.841+00:00 INFO         256,
+2026-11-11T01:11:33.841+00:00 INFO         16
+2026-11-11T01:11:33.841+00:00 INFO       ]
+2026-11-11T01:11:33.841+00:00 INFO     },
+2026-11-11T01:11:33.841+00:00 INFO     {
+2026-11-11T01:11:33.841+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.842+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.842+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.842+00:00 INFO       "name": "base_model.model.model.layers.20.mlp.down_proj.__LORA__.weight",
+2026-11-11T01:11:33.842+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.842+00:00 INFO         16,
+2026-11-11T01:11:33.842+00:00 INFO         8960
+2026-11-11T01:11:33.842+00:00 INFO       ],
+2026-11-11T01:11:33.842+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.842+00:00 INFO         1536,
+2026-11-11T01:11:33.842+00:00 INFO         16
+2026-11-11T01:11:33.842+00:00 INFO       ]
+2026-11-11T01:11:33.842+00:00 INFO     },
+2026-11-11T01:11:33.842+00:00 INFO     {
+2026-11-11T01:11:33.842+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.842+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.842+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.843+00:00 INFO       "name": "base_model.model.model.layers.20.mlp.gate_proj.__LORA__.weight",
+2026-11-11T01:11:33.843+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.843+00:00 INFO         16,
+2026-11-11T01:11:33.843+00:00 INFO         1536
+2026-11-11T01:11:33.843+00:00 INFO       ],
+2026-11-11T01:11:33.843+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.843+00:00 INFO         8960,
+2026-11-11T01:11:33.843+00:00 INFO         16
+2026-11-11T01:11:33.843+00:00 INFO       ]
+2026-11-11T01:11:33.843+00:00 INFO     },
+2026-11-11T01:11:33.843+00:00 INFO     {
+2026-11-11T01:11:33.843+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.843+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.844+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.844+00:00 INFO       "name": "base_model.model.model.layers.20.mlp.up_proj.__LORA__.weight",
+2026-11-11T01:11:33.844+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.844+00:00 INFO         16,
+2026-11-11T01:11:33.844+00:00 INFO         1536
+2026-11-11T01:11:33.844+00:00 INFO       ],
+2026-11-11T01:11:33.844+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.844+00:00 INFO         8960,
+2026-11-11T01:11:33.845+00:00 INFO         16
+2026-11-11T01:11:33.845+00:00 INFO       ]
+2026-11-11T01:11:33.845+00:00 INFO     },
+2026-11-11T01:11:33.845+00:00 INFO     {
+2026-11-11T01:11:33.845+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.845+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.845+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.846+00:00 INFO       "name": "base_model.model.model.layers.20.self_attn.k_proj.__LORA__.weight",
+2026-11-11T01:11:33.846+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.846+00:00 INFO         16,
+2026-11-11T01:11:33.846+00:00 INFO         1536
+2026-11-11T01:11:33.846+00:00 INFO       ],
+2026-11-11T01:11:33.846+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.846+00:00 INFO         256,
+2026-11-11T01:11:33.846+00:00 INFO         16
+2026-11-11T01:11:33.846+00:00 INFO       ]
+2026-11-11T01:11:33.846+00:00 INFO     },
+2026-11-11T01:11:33.846+00:00 INFO     {
+2026-11-11T01:11:33.847+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.847+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.847+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.847+00:00 INFO       "name": "base_model.model.model.layers.20.self_attn.o_proj.__LORA__.weight",
+2026-11-11T01:11:33.847+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.847+00:00 INFO         16,
+2026-11-11T01:11:33.847+00:00 INFO         1536
+2026-11-11T01:11:33.847+00:00 INFO       ],
+2026-11-11T01:11:33.847+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.847+00:00 INFO         1536,
+2026-11-11T01:11:33.847+00:00 INFO         16
+2026-11-11T01:11:33.847+00:00 INFO       ]
+2026-11-11T01:11:33.847+00:00 INFO     },
+2026-11-11T01:11:33.848+00:00 INFO     {
+2026-11-11T01:11:33.848+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.848+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.848+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.848+00:00 INFO       "name": "base_model.model.model.layers.20.self_attn.q_proj.__LORA__.weight",
+2026-11-11T01:11:33.848+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.848+00:00 INFO         16,
+2026-11-11T01:11:33.848+00:00 INFO         1536
+2026-11-11T01:11:33.848+00:00 INFO       ],
+2026-11-11T01:11:33.848+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.848+00:00 INFO         1536,
+2026-11-11T01:11:33.848+00:00 INFO         16
+2026-11-11T01:11:33.848+00:00 INFO       ]
+2026-11-11T01:11:33.848+00:00 INFO     },
+2026-11-11T01:11:33.848+00:00 INFO     {
+2026-11-11T01:11:33.848+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.848+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.848+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.848+00:00 INFO       "name": "base_model.model.model.layers.20.self_attn.v_proj.__LORA__.weight",
+2026-11-11T01:11:33.848+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.848+00:00 INFO         16,
+2026-11-11T01:11:33.848+00:00 INFO         1536
+2026-11-11T01:11:33.848+00:00 INFO       ],
+2026-11-11T01:11:33.848+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.848+00:00 INFO         256,
+2026-11-11T01:11:33.848+00:00 INFO         16
+2026-11-11T01:11:33.848+00:00 INFO       ]
+2026-11-11T01:11:33.848+00:00 INFO     },
+2026-11-11T01:11:33.848+00:00 INFO     {
+2026-11-11T01:11:33.848+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.848+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.848+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.848+00:00 INFO       "name": "base_model.model.model.layers.21.mlp.down_proj.__LORA__.weight",
+2026-11-11T01:11:33.849+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.849+00:00 INFO         16,
+2026-11-11T01:11:33.849+00:00 INFO         8960
+2026-11-11T01:11:33.849+00:00 INFO       ],
+2026-11-11T01:11:33.849+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.849+00:00 INFO         1536,
+2026-11-11T01:11:33.849+00:00 INFO         16
+2026-11-11T01:11:33.849+00:00 INFO       ]
+2026-11-11T01:11:33.849+00:00 INFO     },
+2026-11-11T01:11:33.849+00:00 INFO     {
+2026-11-11T01:11:33.849+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.849+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.849+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.849+00:00 INFO       "name": "base_model.model.model.layers.21.mlp.gate_proj.__LORA__.weight",
+2026-11-11T01:11:33.849+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.849+00:00 INFO         16,
+2026-11-11T01:11:33.849+00:00 INFO         1536
+2026-11-11T01:11:33.849+00:00 INFO       ],
+2026-11-11T01:11:33.849+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.849+00:00 INFO         8960,
+2026-11-11T01:11:33.849+00:00 INFO         16
+2026-11-11T01:11:33.849+00:00 INFO       ]
+2026-11-11T01:11:33.849+00:00 INFO     },
+2026-11-11T01:11:33.849+00:00 INFO     {
+2026-11-11T01:11:33.849+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.849+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.849+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.849+00:00 INFO       "name": "base_model.model.model.layers.21.mlp.up_proj.__LORA__.weight",
+2026-11-11T01:11:33.849+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.849+00:00 INFO         16,
+2026-11-11T01:11:33.849+00:00 INFO         1536
+2026-11-11T01:11:33.849+00:00 INFO       ],
+2026-11-11T01:11:33.849+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.849+00:00 INFO         8960,
+2026-11-11T01:11:33.849+00:00 INFO         16
+2026-11-11T01:11:33.849+00:00 INFO       ]
+2026-11-11T01:11:33.849+00:00 INFO     },
+2026-11-11T01:11:33.849+00:00 INFO     {
+2026-11-11T01:11:33.849+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.849+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.849+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.849+00:00 INFO       "name": "base_model.model.model.layers.21.self_attn.k_proj.__LORA__.weight",
+2026-11-11T01:11:33.849+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.849+00:00 INFO         16,
+2026-11-11T01:11:33.849+00:00 INFO         1536
+2026-11-11T01:11:33.849+00:00 INFO       ],
+2026-11-11T01:11:33.849+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.849+00:00 INFO         256,
+2026-11-11T01:11:33.849+00:00 INFO         16
+2026-11-11T01:11:33.850+00:00 INFO       ]
+2026-11-11T01:11:33.850+00:00 INFO     },
+2026-11-11T01:11:33.850+00:00 INFO     {
+2026-11-11T01:11:33.850+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.850+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.850+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.850+00:00 INFO       "name": "base_model.model.model.layers.21.self_attn.o_proj.__LORA__.weight",
+2026-11-11T01:11:33.850+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.850+00:00 INFO         16,
+2026-11-11T01:11:33.850+00:00 INFO         1536
+2026-11-11T01:11:33.850+00:00 INFO       ],
+2026-11-11T01:11:33.850+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.850+00:00 INFO         1536,
+2026-11-11T01:11:33.850+00:00 INFO         16
+2026-11-11T01:11:33.850+00:00 INFO       ]
+2026-11-11T01:11:33.850+00:00 INFO     },
+2026-11-11T01:11:33.850+00:00 INFO     {
+2026-11-11T01:11:33.850+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.850+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.850+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.850+00:00 INFO       "name": "base_model.model.model.layers.21.self_attn.q_proj.__LORA__.weight",
+2026-11-11T01:11:33.850+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.850+00:00 INFO         16,
+2026-11-11T01:11:33.850+00:00 INFO         1536
+2026-11-11T01:11:33.850+00:00 INFO       ],
+2026-11-11T01:11:33.850+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.850+00:00 INFO         1536,
+2026-11-11T01:11:33.850+00:00 INFO         16
+2026-11-11T01:11:33.850+00:00 INFO       ]
+2026-11-11T01:11:33.850+00:00 INFO     },
+2026-11-11T01:11:33.850+00:00 INFO     {
+2026-11-11T01:11:33.850+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.850+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.850+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.850+00:00 INFO       "name": "base_model.model.model.layers.21.self_attn.v_proj.__LORA__.weight",
+2026-11-11T01:11:33.850+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.850+00:00 INFO         16,
+2026-11-11T01:11:33.850+00:00 INFO         1536
+2026-11-11T01:11:33.850+00:00 INFO       ],
+2026-11-11T01:11:33.850+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.850+00:00 INFO         256,
+2026-11-11T01:11:33.851+00:00 INFO         16
+2026-11-11T01:11:33.851+00:00 INFO       ]
+2026-11-11T01:11:33.851+00:00 INFO     },
+2026-11-11T01:11:33.851+00:00 INFO     {
+2026-11-11T01:11:33.851+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.851+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.851+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.852+00:00 INFO       "name": "base_model.model.model.layers.22.mlp.down_proj.__LORA__.weight",
+2026-11-11T01:11:33.852+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.852+00:00 INFO         16,
+2026-11-11T01:11:33.852+00:00 INFO         8960
+2026-11-11T01:11:33.852+00:00 INFO       ],
+2026-11-11T01:11:33.852+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.852+00:00 INFO         1536,
+2026-11-11T01:11:33.852+00:00 INFO         16
+2026-11-11T01:11:33.853+00:00 INFO       ]
+2026-11-11T01:11:33.853+00:00 INFO     },
+2026-11-11T01:11:33.853+00:00 INFO     {
+2026-11-11T01:11:33.853+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.853+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.853+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.853+00:00 INFO       "name": "base_model.model.model.layers.22.mlp.gate_proj.__LORA__.weight",
+2026-11-11T01:11:33.854+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.854+00:00 INFO         16,
+2026-11-11T01:11:33.854+00:00 INFO         1536
+2026-11-11T01:11:33.854+00:00 INFO       ],
+2026-11-11T01:11:33.854+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.854+00:00 INFO         8960,
+2026-11-11T01:11:33.854+00:00 INFO         16
+2026-11-11T01:11:33.855+00:00 INFO       ]
+2026-11-11T01:11:33.855+00:00 INFO     },
+2026-11-11T01:11:33.855+00:00 INFO     {
+2026-11-11T01:11:33.855+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.855+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.855+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.855+00:00 INFO       "name": "base_model.model.model.layers.22.mlp.up_proj.__LORA__.weight",
+2026-11-11T01:11:33.856+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.856+00:00 INFO         16,
+2026-11-11T01:11:33.856+00:00 INFO         1536
+2026-11-11T01:11:33.856+00:00 INFO       ],
+2026-11-11T01:11:33.856+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.856+00:00 INFO         8960,
+2026-11-11T01:11:33.856+00:00 INFO         16
+2026-11-11T01:11:33.857+00:00 INFO       ]
+2026-11-11T01:11:33.857+00:00 INFO     },
+2026-11-11T01:11:33.857+00:00 INFO     {
+2026-11-11T01:11:33.857+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.857+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.857+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.857+00:00 INFO       "name": "base_model.model.model.layers.22.self_attn.k_proj.__LORA__.weight",
+2026-11-11T01:11:33.858+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.858+00:00 INFO         16,
+2026-11-11T01:11:33.858+00:00 INFO         1536
+2026-11-11T01:11:33.858+00:00 INFO       ],
+2026-11-11T01:11:33.858+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.858+00:00 INFO         256,
+2026-11-11T01:11:33.858+00:00 INFO         16
+2026-11-11T01:11:33.858+00:00 INFO       ]
+2026-11-11T01:11:33.858+00:00 INFO     },
+2026-11-11T01:11:33.858+00:00 INFO     {
+2026-11-11T01:11:33.858+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.858+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.858+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.858+00:00 INFO       "name": "base_model.model.model.layers.22.self_attn.o_proj.__LORA__.weight",
+2026-11-11T01:11:33.858+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.858+00:00 INFO         16,
+2026-11-11T01:11:33.858+00:00 INFO         1536
+2026-11-11T01:11:33.858+00:00 INFO       ],
+2026-11-11T01:11:33.858+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.858+00:00 INFO         1536,
+2026-11-11T01:11:33.858+00:00 INFO         16
+2026-11-11T01:11:33.858+00:00 INFO       ]
+2026-11-11T01:11:33.858+00:00 INFO     },
+2026-11-11T01:11:33.858+00:00 INFO     {
+2026-11-11T01:11:33.858+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.858+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.858+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.858+00:00 INFO       "name": "base_model.model.model.layers.22.self_attn.q_proj.__LORA__.weight",
+2026-11-11T01:11:33.858+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.858+00:00 INFO         16,
+2026-11-11T01:11:33.858+00:00 INFO         1536
+2026-11-11T01:11:33.858+00:00 INFO       ],
+2026-11-11T01:11:33.858+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.858+00:00 INFO         1536,
+2026-11-11T01:11:33.858+00:00 INFO         16
+2026-11-11T01:11:33.858+00:00 INFO       ]
+2026-11-11T01:11:33.858+00:00 INFO     },
+2026-11-11T01:11:33.858+00:00 INFO     {
+2026-11-11T01:11:33.858+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.858+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.858+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.858+00:00 INFO       "name": "base_model.model.model.layers.22.self_attn.v_proj.__LORA__.weight",
+2026-11-11T01:11:33.858+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.858+00:00 INFO         16,
+2026-11-11T01:11:33.858+00:00 INFO         1536
+2026-11-11T01:11:33.858+00:00 INFO       ],
+2026-11-11T01:11:33.858+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.859+00:00 INFO         256,
+2026-11-11T01:11:33.859+00:00 INFO         16
+2026-11-11T01:11:33.859+00:00 INFO       ]
+2026-11-11T01:11:33.859+00:00 INFO     },
+2026-11-11T01:11:33.859+00:00 INFO     {
+2026-11-11T01:11:33.859+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.859+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.859+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.859+00:00 INFO       "name": "base_model.model.model.layers.23.mlp.down_proj.__LORA__.weight",
+2026-11-11T01:11:33.859+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.859+00:00 INFO         16,
+2026-11-11T01:11:33.859+00:00 INFO         8960
+2026-11-11T01:11:33.859+00:00 INFO       ],
+2026-11-11T01:11:33.859+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.859+00:00 INFO         1536,
+2026-11-11T01:11:33.859+00:00 INFO         16
+2026-11-11T01:11:33.859+00:00 INFO       ]
+2026-11-11T01:11:33.859+00:00 INFO     },
+2026-11-11T01:11:33.859+00:00 INFO     {
+2026-11-11T01:11:33.859+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.859+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.859+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.859+00:00 INFO       "name": "base_model.model.model.layers.23.mlp.gate_proj.__LORA__.weight",
+2026-11-11T01:11:33.859+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.859+00:00 INFO         16,
+2026-11-11T01:11:33.859+00:00 INFO         1536
+2026-11-11T01:11:33.859+00:00 INFO       ],
+2026-11-11T01:11:33.859+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.859+00:00 INFO         8960,
+2026-11-11T01:11:33.859+00:00 INFO         16
+2026-11-11T01:11:33.859+00:00 INFO       ]
+2026-11-11T01:11:33.859+00:00 INFO     },
+2026-11-11T01:11:33.859+00:00 INFO     {
+2026-11-11T01:11:33.859+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.859+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.859+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.859+00:00 INFO       "name": "base_model.model.model.layers.23.mlp.up_proj.__LORA__.weight",
+2026-11-11T01:11:33.859+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.859+00:00 INFO         16,
+2026-11-11T01:11:33.859+00:00 INFO         1536
+2026-11-11T01:11:33.859+00:00 INFO       ],
+2026-11-11T01:11:33.860+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.860+00:00 INFO         8960,
+2026-11-11T01:11:33.860+00:00 INFO         16
+2026-11-11T01:11:33.860+00:00 INFO       ]
+2026-11-11T01:11:33.860+00:00 INFO     },
+2026-11-11T01:11:33.860+00:00 INFO     {
+2026-11-11T01:11:33.860+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.860+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.860+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.860+00:00 INFO       "name": "base_model.model.model.layers.23.self_attn.k_proj.__LORA__.weight",
+2026-11-11T01:11:33.860+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.860+00:00 INFO         16,
+2026-11-11T01:11:33.860+00:00 INFO         1536
+2026-11-11T01:11:33.860+00:00 INFO       ],
+2026-11-11T01:11:33.860+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.861+00:00 INFO         256,
+2026-11-11T01:11:33.861+00:00 INFO         16
+2026-11-11T01:11:33.861+00:00 INFO       ]
+2026-11-11T01:11:33.861+00:00 INFO     },
+2026-11-11T01:11:33.861+00:00 INFO     {
+2026-11-11T01:11:33.861+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.861+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.861+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.861+00:00 INFO       "name": "base_model.model.model.layers.23.self_attn.o_proj.__LORA__.weight",
+2026-11-11T01:11:33.861+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.861+00:00 INFO         16,
+2026-11-11T01:11:33.861+00:00 INFO         1536
+2026-11-11T01:11:33.861+00:00 INFO       ],
+2026-11-11T01:11:33.861+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.861+00:00 INFO         1536,
+2026-11-11T01:11:33.861+00:00 INFO         16
+2026-11-11T01:11:33.861+00:00 INFO       ]
+2026-11-11T01:11:33.861+00:00 INFO     },
+2026-11-11T01:11:33.861+00:00 INFO     {
+2026-11-11T01:11:33.861+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.861+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.861+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.861+00:00 INFO       "name": "base_model.model.model.layers.23.self_attn.q_proj.__LORA__.weight",
+2026-11-11T01:11:33.861+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.861+00:00 INFO         16,
+2026-11-11T01:11:33.861+00:00 INFO         1536
+2026-11-11T01:11:33.861+00:00 INFO       ],
+2026-11-11T01:11:33.861+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.862+00:00 INFO         1536,
+2026-11-11T01:11:33.862+00:00 INFO         16
+2026-11-11T01:11:33.862+00:00 INFO       ]
+2026-11-11T01:11:33.862+00:00 INFO     },
+2026-11-11T01:11:33.862+00:00 INFO     {
+2026-11-11T01:11:33.862+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.862+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.862+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.862+00:00 INFO       "name": "base_model.model.model.layers.23.self_attn.v_proj.__LORA__.weight",
+2026-11-11T01:11:33.862+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.862+00:00 INFO         16,
+2026-11-11T01:11:33.862+00:00 INFO         1536
+2026-11-11T01:11:33.862+00:00 INFO       ],
+2026-11-11T01:11:33.862+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.862+00:00 INFO         256,
+2026-11-11T01:11:33.862+00:00 INFO         16
+2026-11-11T01:11:33.862+00:00 INFO       ]
+2026-11-11T01:11:33.862+00:00 INFO     },
+2026-11-11T01:11:33.862+00:00 INFO     {
+2026-11-11T01:11:33.862+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.862+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.862+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.862+00:00 INFO       "name": "base_model.model.model.layers.24.mlp.down_proj.__LORA__.weight",
+2026-11-11T01:11:33.862+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.862+00:00 INFO         16,
+2026-11-11T01:11:33.862+00:00 INFO         8960
+2026-11-11T01:11:33.862+00:00 INFO       ],
+2026-11-11T01:11:33.862+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.862+00:00 INFO         1536,
+2026-11-11T01:11:33.862+00:00 INFO         16
+2026-11-11T01:11:33.862+00:00 INFO       ]
+2026-11-11T01:11:33.862+00:00 INFO     },
+2026-11-11T01:11:33.862+00:00 INFO     {
+2026-11-11T01:11:33.862+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.862+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.862+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.862+00:00 INFO       "name": "base_model.model.model.layers.24.mlp.gate_proj.__LORA__.weight",
+2026-11-11T01:11:33.862+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.862+00:00 INFO         16,
+2026-11-11T01:11:33.862+00:00 INFO         1536
+2026-11-11T01:11:33.862+00:00 INFO       ],
+2026-11-11T01:11:33.862+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.862+00:00 INFO         8960,
+2026-11-11T01:11:33.862+00:00 INFO         16
+2026-11-11T01:11:33.862+00:00 INFO       ]
+2026-11-11T01:11:33.862+00:00 INFO     },
+2026-11-11T01:11:33.862+00:00 INFO     {
+2026-11-11T01:11:33.862+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.862+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.862+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.863+00:00 INFO       "name": "base_model.model.model.layers.24.mlp.up_proj.__LORA__.weight",
+2026-11-11T01:11:33.863+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.863+00:00 INFO         16,
+2026-11-11T01:11:33.863+00:00 INFO         1536
+2026-11-11T01:11:33.863+00:00 INFO       ],
+2026-11-11T01:11:33.863+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.863+00:00 INFO         8960,
+2026-11-11T01:11:33.863+00:00 INFO         16
+2026-11-11T01:11:33.863+00:00 INFO       ]
+2026-11-11T01:11:33.863+00:00 INFO     },
+2026-11-11T01:11:33.863+00:00 INFO     {
+2026-11-11T01:11:33.863+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.863+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.863+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.863+00:00 INFO       "name": "base_model.model.model.layers.24.self_attn.k_proj.__LORA__.weight",
+2026-11-11T01:11:33.863+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.863+00:00 INFO         16,
+2026-11-11T01:11:33.863+00:00 INFO         1536
+2026-11-11T01:11:33.863+00:00 INFO       ],
+2026-11-11T01:11:33.863+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.863+00:00 INFO         256,
+2026-11-11T01:11:33.863+00:00 INFO         16
+2026-11-11T01:11:33.863+00:00 INFO       ]
+2026-11-11T01:11:33.863+00:00 INFO     },
+2026-11-11T01:11:33.863+00:00 INFO     {
+2026-11-11T01:11:33.863+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.863+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.863+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.863+00:00 INFO       "name": "base_model.model.model.layers.24.self_attn.o_proj.__LORA__.weight",
+2026-11-11T01:11:33.863+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.863+00:00 INFO         16,
+2026-11-11T01:11:33.863+00:00 INFO         1536
+2026-11-11T01:11:33.863+00:00 INFO       ],
+2026-11-11T01:11:33.863+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.863+00:00 INFO         1536,
+2026-11-11T01:11:33.863+00:00 INFO         16
+2026-11-11T01:11:33.863+00:00 INFO       ]
+2026-11-11T01:11:33.863+00:00 INFO     },
+2026-11-11T01:11:33.863+00:00 INFO     {
+2026-11-11T01:11:33.863+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.864+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.864+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.864+00:00 INFO       "name": "base_model.model.model.layers.24.self_attn.q_proj.__LORA__.weight",
+2026-11-11T01:11:33.864+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.864+00:00 INFO         16,
+2026-11-11T01:11:33.864+00:00 INFO         1536
+2026-11-11T01:11:33.864+00:00 INFO       ],
+2026-11-11T01:11:33.864+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.864+00:00 INFO         1536,
+2026-11-11T01:11:33.864+00:00 INFO         16
+2026-11-11T01:11:33.864+00:00 INFO       ]
+2026-11-11T01:11:33.864+00:00 INFO     },
+2026-11-11T01:11:33.864+00:00 INFO     {
+2026-11-11T01:11:33.864+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.865+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.865+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.865+00:00 INFO       "name": "base_model.model.model.layers.24.self_attn.v_proj.__LORA__.weight",
+2026-11-11T01:11:33.865+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.865+00:00 INFO         16,
+2026-11-11T01:11:33.865+00:00 INFO         1536
+2026-11-11T01:11:33.865+00:00 INFO       ],
+2026-11-11T01:11:33.865+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.865+00:00 INFO         256,
+2026-11-11T01:11:33.865+00:00 INFO         16
+2026-11-11T01:11:33.865+00:00 INFO       ]
+2026-11-11T01:11:33.865+00:00 INFO     },
+2026-11-11T01:11:33.865+00:00 INFO     {
+2026-11-11T01:11:33.865+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.865+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.865+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.865+00:00 INFO       "name": "base_model.model.model.layers.25.mlp.down_proj.__LORA__.weight",
+2026-11-11T01:11:33.865+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.865+00:00 INFO         16,
+2026-11-11T01:11:33.865+00:00 INFO         8960
+2026-11-11T01:11:33.866+00:00 INFO       ],
+2026-11-11T01:11:33.866+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.866+00:00 INFO         1536,
+2026-11-11T01:11:33.866+00:00 INFO         16
+2026-11-11T01:11:33.866+00:00 INFO       ]
+2026-11-11T01:11:33.866+00:00 INFO     },
+2026-11-11T01:11:33.866+00:00 INFO     {
+2026-11-11T01:11:33.866+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.866+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.866+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.866+00:00 INFO       "name": "base_model.model.model.layers.25.mlp.gate_proj.__LORA__.weight",
+2026-11-11T01:11:33.866+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.866+00:00 INFO         16,
+2026-11-11T01:11:33.866+00:00 INFO         1536
+2026-11-11T01:11:33.866+00:00 INFO       ],
+2026-11-11T01:11:33.866+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.866+00:00 INFO         8960,
+2026-11-11T01:11:33.866+00:00 INFO         16
+2026-11-11T01:11:33.866+00:00 INFO       ]
+2026-11-11T01:11:33.866+00:00 INFO     },
+2026-11-11T01:11:33.866+00:00 INFO     {
+2026-11-11T01:11:33.866+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.866+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.866+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.866+00:00 INFO       "name": "base_model.model.model.layers.25.mlp.up_proj.__LORA__.weight",
+2026-11-11T01:11:33.866+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.866+00:00 INFO         16,
+2026-11-11T01:11:33.866+00:00 INFO         1536
+2026-11-11T01:11:33.866+00:00 INFO       ],
+2026-11-11T01:11:33.866+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.866+00:00 INFO         8960,
+2026-11-11T01:11:33.866+00:00 INFO         16
+2026-11-11T01:11:33.866+00:00 INFO       ]
+2026-11-11T01:11:33.866+00:00 INFO     },
+2026-11-11T01:11:33.866+00:00 INFO     {
+2026-11-11T01:11:33.866+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.866+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.866+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.866+00:00 INFO       "name": "base_model.model.model.layers.25.self_attn.k_proj.__LORA__.weight",
+2026-11-11T01:11:33.866+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.866+00:00 INFO         16,
+2026-11-11T01:11:33.866+00:00 INFO         1536
+2026-11-11T01:11:33.867+00:00 INFO       ],
+2026-11-11T01:11:33.867+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.867+00:00 INFO         256,
+2026-11-11T01:11:33.867+00:00 INFO         16
+2026-11-11T01:11:33.867+00:00 INFO       ]
+2026-11-11T01:11:33.867+00:00 INFO     },
+2026-11-11T01:11:33.867+00:00 INFO     {
+2026-11-11T01:11:33.867+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.867+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.867+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.867+00:00 INFO       "name": "base_model.model.model.layers.25.self_attn.o_proj.__LORA__.weight",
+2026-11-11T01:11:33.867+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.867+00:00 INFO         16,
+2026-11-11T01:11:33.867+00:00 INFO         1536
+2026-11-11T01:11:33.867+00:00 INFO       ],
+2026-11-11T01:11:33.867+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.868+00:00 INFO         1536,
+2026-11-11T01:11:33.868+00:00 INFO         16
+2026-11-11T01:11:33.868+00:00 INFO       ]
+2026-11-11T01:11:33.868+00:00 INFO     },
+2026-11-11T01:11:33.868+00:00 INFO     {
+2026-11-11T01:11:33.868+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.868+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.868+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.868+00:00 INFO       "name": "base_model.model.model.layers.25.self_attn.q_proj.__LORA__.weight",
+2026-11-11T01:11:33.868+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.868+00:00 INFO         16,
+2026-11-11T01:11:33.868+00:00 INFO         1536
+2026-11-11T01:11:33.868+00:00 INFO       ],
+2026-11-11T01:11:33.868+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.868+00:00 INFO         1536,
+2026-11-11T01:11:33.868+00:00 INFO         16
+2026-11-11T01:11:33.868+00:00 INFO       ]
+2026-11-11T01:11:33.868+00:00 INFO     },
+2026-11-11T01:11:33.868+00:00 INFO     {
+2026-11-11T01:11:33.868+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.868+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.868+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.868+00:00 INFO       "name": "base_model.model.model.layers.25.self_attn.v_proj.__LORA__.weight",
+2026-11-11T01:11:33.868+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.868+00:00 INFO         16,
+2026-11-11T01:11:33.869+00:00 INFO         1536
+2026-11-11T01:11:33.869+00:00 INFO       ],
+2026-11-11T01:11:33.869+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.869+00:00 INFO         256,
+2026-11-11T01:11:33.869+00:00 INFO         16
+2026-11-11T01:11:33.869+00:00 INFO       ]
+2026-11-11T01:11:33.869+00:00 INFO     },
+2026-11-11T01:11:33.869+00:00 INFO     {
+2026-11-11T01:11:33.869+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.869+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.869+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.869+00:00 INFO       "name": "base_model.model.model.layers.26.mlp.down_proj.__LORA__.weight",
+2026-11-11T01:11:33.869+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.869+00:00 INFO         16,
+2026-11-11T01:11:33.869+00:00 INFO         8960
+2026-11-11T01:11:33.869+00:00 INFO       ],
+2026-11-11T01:11:33.869+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.869+00:00 INFO         1536,
+2026-11-11T01:11:33.869+00:00 INFO         16
+2026-11-11T01:11:33.869+00:00 INFO       ]
+2026-11-11T01:11:33.869+00:00 INFO     },
+2026-11-11T01:11:33.869+00:00 INFO     {
+2026-11-11T01:11:33.869+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.869+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.869+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.869+00:00 INFO       "name": "base_model.model.model.layers.26.mlp.gate_proj.__LORA__.weight",
+2026-11-11T01:11:33.869+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.869+00:00 INFO         16,
+2026-11-11T01:11:33.869+00:00 INFO         1536
+2026-11-11T01:11:33.869+00:00 INFO       ],
+2026-11-11T01:11:33.869+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.869+00:00 INFO         8960,
+2026-11-11T01:11:33.869+00:00 INFO         16
+2026-11-11T01:11:33.869+00:00 INFO       ]
+2026-11-11T01:11:33.869+00:00 INFO     },
+2026-11-11T01:11:33.869+00:00 INFO     {
+2026-11-11T01:11:33.869+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.869+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.869+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.869+00:00 INFO       "name": "base_model.model.model.layers.26.mlp.up_proj.__LORA__.weight",
+2026-11-11T01:11:33.869+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.869+00:00 INFO         16,
+2026-11-11T01:11:33.869+00:00 INFO         1536
+2026-11-11T01:11:33.869+00:00 INFO       ],
+2026-11-11T01:11:33.869+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.869+00:00 INFO         8960,
+2026-11-11T01:11:33.869+00:00 INFO         16
+2026-11-11T01:11:33.869+00:00 INFO       ]
+2026-11-11T01:11:33.869+00:00 INFO     },
+2026-11-11T01:11:33.870+00:00 INFO     {
+2026-11-11T01:11:33.870+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.870+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.870+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.870+00:00 INFO       "name": "base_model.model.model.layers.26.self_attn.k_proj.__LORA__.weight",
+2026-11-11T01:11:33.870+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.870+00:00 INFO         16,
+2026-11-11T01:11:33.870+00:00 INFO         1536
+2026-11-11T01:11:33.870+00:00 INFO       ],
+2026-11-11T01:11:33.870+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.870+00:00 INFO         256,
+2026-11-11T01:11:33.870+00:00 INFO         16
+2026-11-11T01:11:33.870+00:00 INFO       ]
+2026-11-11T01:11:33.870+00:00 INFO     },
+2026-11-11T01:11:33.870+00:00 INFO     {
+2026-11-11T01:11:33.870+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.870+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.870+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.870+00:00 INFO       "name": "base_model.model.model.layers.26.self_attn.o_proj.__LORA__.weight",
+2026-11-11T01:11:33.870+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.870+00:00 INFO         16,
+2026-11-11T01:11:33.870+00:00 INFO         1536
+2026-11-11T01:11:33.870+00:00 INFO       ],
+2026-11-11T01:11:33.870+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.870+00:00 INFO         1536,
+2026-11-11T01:11:33.870+00:00 INFO         16
+2026-11-11T01:11:33.870+00:00 INFO       ]
+2026-11-11T01:11:33.870+00:00 INFO     },
+2026-11-11T01:11:33.870+00:00 INFO     {
+2026-11-11T01:11:33.870+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.870+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.870+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.870+00:00 INFO       "name": "base_model.model.model.layers.26.self_attn.q_proj.__LORA__.weight",
+2026-11-11T01:11:33.870+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.870+00:00 INFO         16,
+2026-11-11T01:11:33.870+00:00 INFO         1536
+2026-11-11T01:11:33.870+00:00 INFO       ],
+2026-11-11T01:11:33.870+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.871+00:00 INFO         1536,
+2026-11-11T01:11:33.871+00:00 INFO         16
+2026-11-11T01:11:33.871+00:00 INFO       ]
+2026-11-11T01:11:33.871+00:00 INFO     },
+2026-11-11T01:11:33.871+00:00 INFO     {
+2026-11-11T01:11:33.871+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.871+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.871+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.871+00:00 INFO       "name": "base_model.model.model.layers.26.self_attn.v_proj.__LORA__.weight",
+2026-11-11T01:11:33.872+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.872+00:00 INFO         16,
+2026-11-11T01:11:33.872+00:00 INFO         1536
+2026-11-11T01:11:33.872+00:00 INFO       ],
+2026-11-11T01:11:33.872+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.872+00:00 INFO         256,
+2026-11-11T01:11:33.872+00:00 INFO         16
+2026-11-11T01:11:33.872+00:00 INFO       ]
+2026-11-11T01:11:33.873+00:00 INFO     },
+2026-11-11T01:11:33.873+00:00 INFO     {
+2026-11-11T01:11:33.873+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.873+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.873+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.873+00:00 INFO       "name": "base_model.model.model.layers.27.mlp.down_proj.__LORA__.weight",
+2026-11-11T01:11:33.873+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.874+00:00 INFO         16,
+2026-11-11T01:11:33.874+00:00 INFO         8960
+2026-11-11T01:11:33.874+00:00 INFO       ],
+2026-11-11T01:11:33.874+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.874+00:00 INFO         1536,
+2026-11-11T01:11:33.874+00:00 INFO         16
+2026-11-11T01:11:33.874+00:00 INFO       ]
+2026-11-11T01:11:33.874+00:00 INFO     },
+2026-11-11T01:11:33.875+00:00 INFO     {
+2026-11-11T01:11:33.875+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.875+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.875+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.875+00:00 INFO       "name": "base_model.model.model.layers.27.mlp.gate_proj.__LORA__.weight",
+2026-11-11T01:11:33.875+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.875+00:00 INFO         16,
+2026-11-11T01:11:33.876+00:00 INFO         1536
+2026-11-11T01:11:33.876+00:00 INFO       ],
+2026-11-11T01:11:33.876+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.876+00:00 INFO         8960,
+2026-11-11T01:11:33.876+00:00 INFO         16
+2026-11-11T01:11:33.876+00:00 INFO       ]
+2026-11-11T01:11:33.876+00:00 INFO     },
+2026-11-11T01:11:33.876+00:00 INFO     {
+2026-11-11T01:11:33.877+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.877+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.877+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.877+00:00 INFO       "name": "base_model.model.model.layers.27.mlp.up_proj.__LORA__.weight",
+2026-11-11T01:11:33.877+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.877+00:00 INFO         16,
+2026-11-11T01:11:33.877+00:00 INFO         1536
+2026-11-11T01:11:33.877+00:00 INFO       ],
+2026-11-11T01:11:33.877+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.877+00:00 INFO         8960,
+2026-11-11T01:11:33.877+00:00 INFO         16
+2026-11-11T01:11:33.877+00:00 INFO       ]
+2026-11-11T01:11:33.877+00:00 INFO     },
+2026-11-11T01:11:33.877+00:00 INFO     {
+2026-11-11T01:11:33.877+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.877+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.877+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.877+00:00 INFO       "name": "base_model.model.model.layers.27.self_attn.k_proj.__LORA__.weight",
+2026-11-11T01:11:33.877+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.877+00:00 INFO         16,
+2026-11-11T01:11:33.877+00:00 INFO         1536
+2026-11-11T01:11:33.877+00:00 INFO       ],
+2026-11-11T01:11:33.877+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.877+00:00 INFO         256,
+2026-11-11T01:11:33.877+00:00 INFO         16
+2026-11-11T01:11:33.877+00:00 INFO       ]
+2026-11-11T01:11:33.877+00:00 INFO     },
+2026-11-11T01:11:33.877+00:00 INFO     {
+2026-11-11T01:11:33.877+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.877+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.877+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.877+00:00 INFO       "name": "base_model.model.model.layers.27.self_attn.o_proj.__LORA__.weight",
+2026-11-11T01:11:33.877+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.877+00:00 INFO         16,
+2026-11-11T01:11:33.877+00:00 INFO         1536
+2026-11-11T01:11:33.877+00:00 INFO       ],
+2026-11-11T01:11:33.877+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.877+00:00 INFO         1536,
+2026-11-11T01:11:33.877+00:00 INFO         16
+2026-11-11T01:11:33.877+00:00 INFO       ]
+2026-11-11T01:11:33.877+00:00 INFO     },
+2026-11-11T01:11:33.877+00:00 INFO     {
+2026-11-11T01:11:33.877+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.877+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.877+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.877+00:00 INFO       "name": "base_model.model.model.layers.27.self_attn.q_proj.__LORA__.weight",
+2026-11-11T01:11:33.877+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.877+00:00 INFO         16,
+2026-11-11T01:11:33.877+00:00 INFO         1536
+2026-11-11T01:11:33.877+00:00 INFO       ],
+2026-11-11T01:11:33.877+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.878+00:00 INFO         1536,
+2026-11-11T01:11:33.878+00:00 INFO         16
+2026-11-11T01:11:33.878+00:00 INFO       ]
+2026-11-11T01:11:33.878+00:00 INFO     },
+2026-11-11T01:11:33.878+00:00 INFO     {
+2026-11-11T01:11:33.878+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.878+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.878+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.878+00:00 INFO       "name": "base_model.model.model.layers.27.self_attn.v_proj.__LORA__.weight",
+2026-11-11T01:11:33.878+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.878+00:00 INFO         16,
+2026-11-11T01:11:33.878+00:00 INFO         1536
+2026-11-11T01:11:33.878+00:00 INFO       ],
+2026-11-11T01:11:33.878+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.878+00:00 INFO         256,
+2026-11-11T01:11:33.878+00:00 INFO         16
+2026-11-11T01:11:33.878+00:00 INFO       ]
+2026-11-11T01:11:33.878+00:00 INFO     },
+2026-11-11T01:11:33.878+00:00 INFO     {
+2026-11-11T01:11:33.878+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.878+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.878+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.878+00:00 INFO       "name": "base_model.model.model.layers.3.mlp.down_proj.__LORA__.weight",
+2026-11-11T01:11:33.878+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.878+00:00 INFO         16,
+2026-11-11T01:11:33.878+00:00 INFO         8960
+2026-11-11T01:11:33.878+00:00 INFO       ],
+2026-11-11T01:11:33.878+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.878+00:00 INFO         1536,
+2026-11-11T01:11:33.878+00:00 INFO         16
+2026-11-11T01:11:33.878+00:00 INFO       ]
+2026-11-11T01:11:33.878+00:00 INFO     },
+2026-11-11T01:11:33.878+00:00 INFO     {
+2026-11-11T01:11:33.878+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.878+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.878+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.878+00:00 INFO       "name": "base_model.model.model.layers.3.mlp.gate_proj.__LORA__.weight",
+2026-11-11T01:11:33.879+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.879+00:00 INFO         16,
+2026-11-11T01:11:33.879+00:00 INFO         1536
+2026-11-11T01:11:33.879+00:00 INFO       ],
+2026-11-11T01:11:33.879+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.879+00:00 INFO         8960,
+2026-11-11T01:11:33.879+00:00 INFO         16
+2026-11-11T01:11:33.880+00:00 INFO       ]
+2026-11-11T01:11:33.880+00:00 INFO     },
+2026-11-11T01:11:33.880+00:00 INFO     {
+2026-11-11T01:11:33.880+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.880+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.880+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.881+00:00 INFO       "name": "base_model.model.model.layers.3.mlp.up_proj.__LORA__.weight",
+2026-11-11T01:11:33.881+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.881+00:00 INFO         16,
+2026-11-11T01:11:33.881+00:00 INFO         1536
+2026-11-11T01:11:33.881+00:00 INFO       ],
+2026-11-11T01:11:33.881+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.882+00:00 INFO         8960,
+2026-11-11T01:11:33.882+00:00 INFO         16
+2026-11-11T01:11:33.882+00:00 INFO       ]
+2026-11-11T01:11:33.882+00:00 INFO     },
+2026-11-11T01:11:33.882+00:00 INFO     {
+2026-11-11T01:11:33.882+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.882+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.882+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.883+00:00 INFO       "name": "base_model.model.model.layers.3.self_attn.k_proj.__LORA__.weight",
+2026-11-11T01:11:33.883+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.883+00:00 INFO         16,
+2026-11-11T01:11:33.883+00:00 INFO         1536
+2026-11-11T01:11:33.883+00:00 INFO       ],
+2026-11-11T01:11:33.883+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.883+00:00 INFO         256,
+2026-11-11T01:11:33.883+00:00 INFO         16
+2026-11-11T01:11:33.883+00:00 INFO       ]
+2026-11-11T01:11:33.883+00:00 INFO     },
+2026-11-11T01:11:33.883+00:00 INFO     {
+2026-11-11T01:11:33.883+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.883+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.883+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.883+00:00 INFO       "name": "base_model.model.model.layers.3.self_attn.o_proj.__LORA__.weight",
+2026-11-11T01:11:33.883+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.883+00:00 INFO         16,
+2026-11-11T01:11:33.883+00:00 INFO         1536
+2026-11-11T01:11:33.883+00:00 INFO       ],
+2026-11-11T01:11:33.883+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.883+00:00 INFO         1536,
+2026-11-11T01:11:33.883+00:00 INFO         16
+2026-11-11T01:11:33.883+00:00 INFO       ]
+2026-11-11T01:11:33.883+00:00 INFO     },
+2026-11-11T01:11:33.883+00:00 INFO     {
+2026-11-11T01:11:33.883+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.883+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.883+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.883+00:00 INFO       "name": "base_model.model.model.layers.3.self_attn.q_proj.__LORA__.weight",
+2026-11-11T01:11:33.883+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.883+00:00 INFO         16,
+2026-11-11T01:11:33.883+00:00 INFO         1536
+2026-11-11T01:11:33.883+00:00 INFO       ],
+2026-11-11T01:11:33.883+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.883+00:00 INFO         1536,
+2026-11-11T01:11:33.883+00:00 INFO         16
+2026-11-11T01:11:33.883+00:00 INFO       ]
+2026-11-11T01:11:33.883+00:00 INFO     },
+2026-11-11T01:11:33.883+00:00 INFO     {
+2026-11-11T01:11:33.883+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.883+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.883+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.883+00:00 INFO       "name": "base_model.model.model.layers.3.self_attn.v_proj.__LORA__.weight",
+2026-11-11T01:11:33.883+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.883+00:00 INFO         16,
+2026-11-11T01:11:33.883+00:00 INFO         1536
+2026-11-11T01:11:33.883+00:00 INFO       ],
+2026-11-11T01:11:33.883+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.884+00:00 INFO         256,
+2026-11-11T01:11:33.884+00:00 INFO         16
+2026-11-11T01:11:33.884+00:00 INFO       ]
+2026-11-11T01:11:33.884+00:00 INFO     },
+2026-11-11T01:11:33.884+00:00 INFO     {
+2026-11-11T01:11:33.884+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.884+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.884+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.884+00:00 INFO       "name": "base_model.model.model.layers.4.mlp.down_proj.__LORA__.weight",
+2026-11-11T01:11:33.884+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.884+00:00 INFO         16,
+2026-11-11T01:11:33.884+00:00 INFO         8960
+2026-11-11T01:11:33.884+00:00 INFO       ],
+2026-11-11T01:11:33.884+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.884+00:00 INFO         1536,
+2026-11-11T01:11:33.884+00:00 INFO         16
+2026-11-11T01:11:33.884+00:00 INFO       ]
+2026-11-11T01:11:33.884+00:00 INFO     },
+2026-11-11T01:11:33.884+00:00 INFO     {
+2026-11-11T01:11:33.884+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.884+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.884+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.884+00:00 INFO       "name": "base_model.model.model.layers.4.mlp.gate_proj.__LORA__.weight",
+2026-11-11T01:11:33.884+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.884+00:00 INFO         16,
+2026-11-11T01:11:33.884+00:00 INFO         1536
+2026-11-11T01:11:33.884+00:00 INFO       ],
+2026-11-11T01:11:33.884+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.884+00:00 INFO         8960,
+2026-11-11T01:11:33.884+00:00 INFO         16
+2026-11-11T01:11:33.884+00:00 INFO       ]
+2026-11-11T01:11:33.884+00:00 INFO     },
+2026-11-11T01:11:33.884+00:00 INFO     {
+2026-11-11T01:11:33.885+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.885+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.885+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.885+00:00 INFO       "name": "base_model.model.model.layers.4.mlp.up_proj.__LORA__.weight",
+2026-11-11T01:11:33.885+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.885+00:00 INFO         16,
+2026-11-11T01:11:33.885+00:00 INFO         1536
+2026-11-11T01:11:33.885+00:00 INFO       ],
+2026-11-11T01:11:33.885+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.885+00:00 INFO         8960,
+2026-11-11T01:11:33.885+00:00 INFO         16
+2026-11-11T01:11:33.886+00:00 INFO       ]
+2026-11-11T01:11:33.886+00:00 INFO     },
+2026-11-11T01:11:33.886+00:00 INFO     {
+2026-11-11T01:11:33.886+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.886+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.886+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.886+00:00 INFO       "name": "base_model.model.model.layers.4.self_attn.k_proj.__LORA__.weight",
+2026-11-11T01:11:33.886+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.886+00:00 INFO         16,
+2026-11-11T01:11:33.886+00:00 INFO         1536
+2026-11-11T01:11:33.886+00:00 INFO       ],
+2026-11-11T01:11:33.886+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.886+00:00 INFO         256,
+2026-11-11T01:11:33.886+00:00 INFO         16
+2026-11-11T01:11:33.886+00:00 INFO       ]
+2026-11-11T01:11:33.886+00:00 INFO     },
+2026-11-11T01:11:33.886+00:00 INFO     {
+2026-11-11T01:11:33.886+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.886+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.886+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.886+00:00 INFO       "name": "base_model.model.model.layers.4.self_attn.o_proj.__LORA__.weight",
+2026-11-11T01:11:33.886+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.886+00:00 INFO         16,
+2026-11-11T01:11:33.886+00:00 INFO         1536
+2026-11-11T01:11:33.886+00:00 INFO       ],
+2026-11-11T01:11:33.886+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.886+00:00 INFO         1536,
+2026-11-11T01:11:33.886+00:00 INFO         16
+2026-11-11T01:11:33.886+00:00 INFO       ]
+2026-11-11T01:11:33.886+00:00 INFO     },
+2026-11-11T01:11:33.886+00:00 INFO     {
+2026-11-11T01:11:33.886+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.886+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.887+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.887+00:00 INFO       "name": "base_model.model.model.layers.4.self_attn.q_proj.__LORA__.weight",
+2026-11-11T01:11:33.887+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.887+00:00 INFO         16,
+2026-11-11T01:11:33.887+00:00 INFO         1536
+2026-11-11T01:11:33.887+00:00 INFO       ],
+2026-11-11T01:11:33.887+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.887+00:00 INFO         1536,
+2026-11-11T01:11:33.887+00:00 INFO         16
+2026-11-11T01:11:33.887+00:00 INFO       ]
+2026-11-11T01:11:33.887+00:00 INFO     },
+2026-11-11T01:11:33.887+00:00 INFO     {
+2026-11-11T01:11:33.887+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.887+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.887+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.887+00:00 INFO       "name": "base_model.model.model.layers.4.self_attn.v_proj.__LORA__.weight",
+2026-11-11T01:11:33.887+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.887+00:00 INFO         16,
+2026-11-11T01:11:33.887+00:00 INFO         1536
+2026-11-11T01:11:33.887+00:00 INFO       ],
+2026-11-11T01:11:33.887+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.887+00:00 INFO         256,
+2026-11-11T01:11:33.887+00:00 INFO         16
+2026-11-11T01:11:33.887+00:00 INFO       ]
+2026-11-11T01:11:33.887+00:00 INFO     },
+2026-11-11T01:11:33.887+00:00 INFO     {
+2026-11-11T01:11:33.887+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.887+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.887+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.887+00:00 INFO       "name": "base_model.model.model.layers.5.mlp.down_proj.__LORA__.weight",
+2026-11-11T01:11:33.887+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.887+00:00 INFO         16,
+2026-11-11T01:11:33.887+00:00 INFO         8960
+2026-11-11T01:11:33.887+00:00 INFO       ],
+2026-11-11T01:11:33.887+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.887+00:00 INFO         1536,
+2026-11-11T01:11:33.887+00:00 INFO         16
+2026-11-11T01:11:33.888+00:00 INFO       ]
+2026-11-11T01:11:33.888+00:00 INFO     },
+2026-11-11T01:11:33.888+00:00 INFO     {
+2026-11-11T01:11:33.888+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.888+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.888+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.888+00:00 INFO       "name": "base_model.model.model.layers.5.mlp.gate_proj.__LORA__.weight",
+2026-11-11T01:11:33.888+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.888+00:00 INFO         16,
+2026-11-11T01:11:33.888+00:00 INFO         1536
+2026-11-11T01:11:33.888+00:00 INFO       ],
+2026-11-11T01:11:33.888+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.888+00:00 INFO         8960,
+2026-11-11T01:11:33.888+00:00 INFO         16
+2026-11-11T01:11:33.888+00:00 INFO       ]
+2026-11-11T01:11:33.889+00:00 INFO     },
+2026-11-11T01:11:33.889+00:00 INFO     {
+2026-11-11T01:11:33.889+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.889+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.889+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.889+00:00 INFO       "name": "base_model.model.model.layers.5.mlp.up_proj.__LORA__.weight",
+2026-11-11T01:11:33.889+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.889+00:00 INFO         16,
+2026-11-11T01:11:33.889+00:00 INFO         1536
+2026-11-11T01:11:33.889+00:00 INFO       ],
+2026-11-11T01:11:33.889+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.889+00:00 INFO         8960,
+2026-11-11T01:11:33.890+00:00 INFO         16
+2026-11-11T01:11:33.890+00:00 INFO       ]
+2026-11-11T01:11:33.890+00:00 INFO     },
+2026-11-11T01:11:33.890+00:00 INFO     {
+2026-11-11T01:11:33.890+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.890+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.890+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.890+00:00 INFO       "name": "base_model.model.model.layers.5.self_attn.k_proj.__LORA__.weight",
+2026-11-11T01:11:33.890+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.890+00:00 INFO         16,
+2026-11-11T01:11:33.890+00:00 INFO         1536
+2026-11-11T01:11:33.890+00:00 INFO       ],
+2026-11-11T01:11:33.890+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.890+00:00 INFO         256,
+2026-11-11T01:11:33.890+00:00 INFO         16
+2026-11-11T01:11:33.890+00:00 INFO       ]
+2026-11-11T01:11:33.890+00:00 INFO     },
+2026-11-11T01:11:33.890+00:00 INFO     {
+2026-11-11T01:11:33.890+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.890+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.890+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.890+00:00 INFO       "name": "base_model.model.model.layers.5.self_attn.o_proj.__LORA__.weight",
+2026-11-11T01:11:33.890+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.890+00:00 INFO         16,
+2026-11-11T01:11:33.891+00:00 INFO         1536
+2026-11-11T01:11:33.891+00:00 INFO       ],
+2026-11-11T01:11:33.891+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.891+00:00 INFO         1536,
+2026-11-11T01:11:33.891+00:00 INFO         16
+2026-11-11T01:11:33.891+00:00 INFO       ]
+2026-11-11T01:11:33.891+00:00 INFO     },
+2026-11-11T01:11:33.891+00:00 INFO     {
+2026-11-11T01:11:33.891+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.891+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.891+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.891+00:00 INFO       "name": "base_model.model.model.layers.5.self_attn.q_proj.__LORA__.weight",
+2026-11-11T01:11:33.891+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.891+00:00 INFO         16,
+2026-11-11T01:11:33.891+00:00 INFO         1536
+2026-11-11T01:11:33.891+00:00 INFO       ],
+2026-11-11T01:11:33.891+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.891+00:00 INFO         1536,
+2026-11-11T01:11:33.891+00:00 INFO         16
+2026-11-11T01:11:33.891+00:00 INFO       ]
+2026-11-11T01:11:33.891+00:00 INFO     },
+2026-11-11T01:11:33.891+00:00 INFO     {
+2026-11-11T01:11:33.891+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.891+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.891+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.891+00:00 INFO       "name": "base_model.model.model.layers.5.self_attn.v_proj.__LORA__.weight",
+2026-11-11T01:11:33.891+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.891+00:00 INFO         16,
+2026-11-11T01:11:33.891+00:00 INFO         1536
+2026-11-11T01:11:33.891+00:00 INFO       ],
+2026-11-11T01:11:33.891+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.891+00:00 INFO         256,
+2026-11-11T01:11:33.891+00:00 INFO         16
+2026-11-11T01:11:33.891+00:00 INFO       ]
+2026-11-11T01:11:33.891+00:00 INFO     },
+2026-11-11T01:11:33.891+00:00 INFO     {
+2026-11-11T01:11:33.892+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.892+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.892+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.892+00:00 INFO       "name": "base_model.model.model.layers.6.mlp.down_proj.__LORA__.weight",
+2026-11-11T01:11:33.892+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.892+00:00 INFO         16,
+2026-11-11T01:11:33.892+00:00 INFO         8960
+2026-11-11T01:11:33.892+00:00 INFO       ],
+2026-11-11T01:11:33.892+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.892+00:00 INFO         1536,
+2026-11-11T01:11:33.892+00:00 INFO         16
+2026-11-11T01:11:33.892+00:00 INFO       ]
+2026-11-11T01:11:33.892+00:00 INFO     },
+2026-11-11T01:11:33.892+00:00 INFO     {
+2026-11-11T01:11:33.892+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.892+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.892+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.893+00:00 INFO       "name": "base_model.model.model.layers.6.mlp.gate_proj.__LORA__.weight",
+2026-11-11T01:11:33.893+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.893+00:00 INFO         16,
+2026-11-11T01:11:33.893+00:00 INFO         1536
+2026-11-11T01:11:33.893+00:00 INFO       ],
+2026-11-11T01:11:33.893+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.893+00:00 INFO         8960,
+2026-11-11T01:11:33.893+00:00 INFO         16
+2026-11-11T01:11:33.893+00:00 INFO       ]
+2026-11-11T01:11:33.893+00:00 INFO     },
+2026-11-11T01:11:33.893+00:00 INFO     {
+2026-11-11T01:11:33.893+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.893+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.894+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.894+00:00 INFO       "name": "base_model.model.model.layers.6.mlp.up_proj.__LORA__.weight",
+2026-11-11T01:11:33.894+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.894+00:00 INFO         16,
+2026-11-11T01:11:33.894+00:00 INFO         1536
+2026-11-11T01:11:33.894+00:00 INFO       ],
+2026-11-11T01:11:33.894+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.894+00:00 INFO         8960,
+2026-11-11T01:11:33.894+00:00 INFO         16
+2026-11-11T01:11:33.894+00:00 INFO       ]
+2026-11-11T01:11:33.894+00:00 INFO     },
+2026-11-11T01:11:33.894+00:00 INFO     {
+2026-11-11T01:11:33.894+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.894+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.894+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.894+00:00 INFO       "name": "base_model.model.model.layers.6.self_attn.k_proj.__LORA__.weight",
+2026-11-11T01:11:33.895+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.895+00:00 INFO         16,
+2026-11-11T01:11:33.895+00:00 INFO         1536
+2026-11-11T01:11:33.895+00:00 INFO       ],
+2026-11-11T01:11:33.895+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.895+00:00 INFO         256,
+2026-11-11T01:11:33.895+00:00 INFO         16
+2026-11-11T01:11:33.895+00:00 INFO       ]
+2026-11-11T01:11:33.895+00:00 INFO     },
+2026-11-11T01:11:33.895+00:00 INFO     {
+2026-11-11T01:11:33.895+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.895+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.895+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.895+00:00 INFO       "name": "base_model.model.model.layers.6.self_attn.o_proj.__LORA__.weight",
+2026-11-11T01:11:33.895+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.895+00:00 INFO         16,
+2026-11-11T01:11:33.895+00:00 INFO         1536
+2026-11-11T01:11:33.895+00:00 INFO       ],
+2026-11-11T01:11:33.895+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.895+00:00 INFO         1536,
+2026-11-11T01:11:33.895+00:00 INFO         16
+2026-11-11T01:11:33.895+00:00 INFO       ]
+2026-11-11T01:11:33.895+00:00 INFO     },
+2026-11-11T01:11:33.895+00:00 INFO     {
+2026-11-11T01:11:33.895+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.895+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.895+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.895+00:00 INFO       "name": "base_model.model.model.layers.6.self_attn.q_proj.__LORA__.weight",
+2026-11-11T01:11:33.895+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.895+00:00 INFO         16,
+2026-11-11T01:11:33.895+00:00 INFO         1536
+2026-11-11T01:11:33.895+00:00 INFO       ],
+2026-11-11T01:11:33.895+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.895+00:00 INFO         1536,
+2026-11-11T01:11:33.895+00:00 INFO         16
+2026-11-11T01:11:33.895+00:00 INFO       ]
+2026-11-11T01:11:33.895+00:00 INFO     },
+2026-11-11T01:11:33.895+00:00 INFO     {
+2026-11-11T01:11:33.896+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.896+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.896+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.896+00:00 INFO       "name": "base_model.model.model.layers.6.self_attn.v_proj.__LORA__.weight",
+2026-11-11T01:11:33.896+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.896+00:00 INFO         16,
+2026-11-11T01:11:33.896+00:00 INFO         1536
+2026-11-11T01:11:33.896+00:00 INFO       ],
+2026-11-11T01:11:33.896+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.896+00:00 INFO         256,
+2026-11-11T01:11:33.896+00:00 INFO         16
+2026-11-11T01:11:33.896+00:00 INFO       ]
+2026-11-11T01:11:33.896+00:00 INFO     },
+2026-11-11T01:11:33.897+00:00 INFO     {
+2026-11-11T01:11:33.897+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.897+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.897+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.897+00:00 INFO       "name": "base_model.model.model.layers.7.mlp.down_proj.__LORA__.weight",
+2026-11-11T01:11:33.897+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.897+00:00 INFO         16,
+2026-11-11T01:11:33.897+00:00 INFO         8960
+2026-11-11T01:11:33.897+00:00 INFO       ],
+2026-11-11T01:11:33.897+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.897+00:00 INFO         1536,
+2026-11-11T01:11:33.897+00:00 INFO         16
+2026-11-11T01:11:33.897+00:00 INFO       ]
+2026-11-11T01:11:33.897+00:00 INFO     },
+2026-11-11T01:11:33.897+00:00 INFO     {
+2026-11-11T01:11:33.897+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.897+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.897+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.897+00:00 INFO       "name": "base_model.model.model.layers.7.mlp.gate_proj.__LORA__.weight",
+2026-11-11T01:11:33.897+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.897+00:00 INFO         16,
+2026-11-11T01:11:33.897+00:00 INFO         1536
+2026-11-11T01:11:33.897+00:00 INFO       ],
+2026-11-11T01:11:33.897+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.897+00:00 INFO         8960,
+2026-11-11T01:11:33.897+00:00 INFO         16
+2026-11-11T01:11:33.897+00:00 INFO       ]
+2026-11-11T01:11:33.897+00:00 INFO     },
+2026-11-11T01:11:33.897+00:00 INFO     {
+2026-11-11T01:11:33.897+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.897+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.897+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.898+00:00 INFO       "name": "base_model.model.model.layers.7.mlp.up_proj.__LORA__.weight",
+2026-11-11T01:11:33.898+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.898+00:00 INFO         16,
+2026-11-11T01:11:33.898+00:00 INFO         1536
+2026-11-11T01:11:33.898+00:00 INFO       ],
+2026-11-11T01:11:33.898+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.898+00:00 INFO         8960,
+2026-11-11T01:11:33.898+00:00 INFO         16
+2026-11-11T01:11:33.898+00:00 INFO       ]
+2026-11-11T01:11:33.898+00:00 INFO     },
+2026-11-11T01:11:33.898+00:00 INFO     {
+2026-11-11T01:11:33.898+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.898+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.898+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.898+00:00 INFO       "name": "base_model.model.model.layers.7.self_attn.k_proj.__LORA__.weight",
+2026-11-11T01:11:33.898+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.898+00:00 INFO         16,
+2026-11-11T01:11:33.898+00:00 INFO         1536
+2026-11-11T01:11:33.898+00:00 INFO       ],
+2026-11-11T01:11:33.898+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.898+00:00 INFO         256,
+2026-11-11T01:11:33.898+00:00 INFO         16
+2026-11-11T01:11:33.898+00:00 INFO       ]
+2026-11-11T01:11:33.898+00:00 INFO     },
+2026-11-11T01:11:33.898+00:00 INFO     {
+2026-11-11T01:11:33.898+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.898+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.898+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.898+00:00 INFO       "name": "base_model.model.model.layers.7.self_attn.o_proj.__LORA__.weight",
+2026-11-11T01:11:33.898+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.898+00:00 INFO         16,
+2026-11-11T01:11:33.898+00:00 INFO         1536
+2026-11-11T01:11:33.898+00:00 INFO       ],
+2026-11-11T01:11:33.898+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.898+00:00 INFO         1536,
+2026-11-11T01:11:33.898+00:00 INFO         16
+2026-11-11T01:11:33.898+00:00 INFO       ]
+2026-11-11T01:11:33.898+00:00 INFO     },
+2026-11-11T01:11:33.899+00:00 INFO     {
+2026-11-11T01:11:33.899+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.899+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.899+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.899+00:00 INFO       "name": "base_model.model.model.layers.7.self_attn.q_proj.__LORA__.weight",
+2026-11-11T01:11:33.899+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.899+00:00 INFO         16,
+2026-11-11T01:11:33.899+00:00 INFO         1536
+2026-11-11T01:11:33.899+00:00 INFO       ],
+2026-11-11T01:11:33.899+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.899+00:00 INFO         1536,
+2026-11-11T01:11:33.899+00:00 INFO         16
+2026-11-11T01:11:33.899+00:00 INFO       ]
+2026-11-11T01:11:33.899+00:00 INFO     },
+2026-11-11T01:11:33.899+00:00 INFO     {
+2026-11-11T01:11:33.899+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.900+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.900+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.900+00:00 INFO       "name": "base_model.model.model.layers.7.self_attn.v_proj.__LORA__.weight",
+2026-11-11T01:11:33.900+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.900+00:00 INFO         16,
+2026-11-11T01:11:33.900+00:00 INFO         1536
+2026-11-11T01:11:33.900+00:00 INFO       ],
+2026-11-11T01:11:33.900+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.900+00:00 INFO         256,
+2026-11-11T01:11:33.900+00:00 INFO         16
+2026-11-11T01:11:33.900+00:00 INFO       ]
+2026-11-11T01:11:33.901+00:00 INFO     },
+2026-11-11T01:11:33.901+00:00 INFO     {
+2026-11-11T01:11:33.901+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.901+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.901+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.901+00:00 INFO       "name": "base_model.model.model.layers.8.mlp.down_proj.__LORA__.weight",
+2026-11-11T01:11:33.901+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.902+00:00 INFO         16,
+2026-11-11T01:11:33.902+00:00 INFO         8960
+2026-11-11T01:11:33.902+00:00 INFO       ],
+2026-11-11T01:11:33.902+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.902+00:00 INFO         1536,
+2026-11-11T01:11:33.902+00:00 INFO         16
+2026-11-11T01:11:33.902+00:00 INFO       ]
+2026-11-11T01:11:33.902+00:00 INFO     },
+2026-11-11T01:11:33.902+00:00 INFO     {
+2026-11-11T01:11:33.902+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.902+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.902+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.902+00:00 INFO       "name": "base_model.model.model.layers.8.mlp.gate_proj.__LORA__.weight",
+2026-11-11T01:11:33.902+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.902+00:00 INFO         16,
+2026-11-11T01:11:33.902+00:00 INFO         1536
+2026-11-11T01:11:33.902+00:00 INFO       ],
+2026-11-11T01:11:33.902+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.902+00:00 INFO         8960,
+2026-11-11T01:11:33.902+00:00 INFO         16
+2026-11-11T01:11:33.902+00:00 INFO       ]
+2026-11-11T01:11:33.902+00:00 INFO     },
+2026-11-11T01:11:33.902+00:00 INFO     {
+2026-11-11T01:11:33.902+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.902+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.902+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.902+00:00 INFO       "name": "base_model.model.model.layers.8.mlp.up_proj.__LORA__.weight",
+2026-11-11T01:11:33.902+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.902+00:00 INFO         16,
+2026-11-11T01:11:33.902+00:00 INFO         1536
+2026-11-11T01:11:33.902+00:00 INFO       ],
+2026-11-11T01:11:33.902+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.902+00:00 INFO         8960,
+2026-11-11T01:11:33.902+00:00 INFO         16
+2026-11-11T01:11:33.902+00:00 INFO       ]
+2026-11-11T01:11:33.903+00:00 INFO     },
+2026-11-11T01:11:33.903+00:00 INFO     {
+2026-11-11T01:11:33.903+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.903+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.903+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.903+00:00 INFO       "name": "base_model.model.model.layers.8.self_attn.k_proj.__LORA__.weight",
+2026-11-11T01:11:33.903+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.903+00:00 INFO         16,
+2026-11-11T01:11:33.903+00:00 INFO         1536
+2026-11-11T01:11:33.903+00:00 INFO       ],
+2026-11-11T01:11:33.903+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.903+00:00 INFO         256,
+2026-11-11T01:11:33.903+00:00 INFO         16
+2026-11-11T01:11:33.903+00:00 INFO       ]
+2026-11-11T01:11:33.903+00:00 INFO     },
+2026-11-11T01:11:33.903+00:00 INFO     {
+2026-11-11T01:11:33.903+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.903+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.903+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.903+00:00 INFO       "name": "base_model.model.model.layers.8.self_attn.o_proj.__LORA__.weight",
+2026-11-11T01:11:33.903+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.903+00:00 INFO         16,
+2026-11-11T01:11:33.903+00:00 INFO         1536
+2026-11-11T01:11:33.903+00:00 INFO       ],
+2026-11-11T01:11:33.903+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.903+00:00 INFO         1536,
+2026-11-11T01:11:33.903+00:00 INFO         16
+2026-11-11T01:11:33.903+00:00 INFO       ]
+2026-11-11T01:11:33.903+00:00 INFO     },
+2026-11-11T01:11:33.903+00:00 INFO     {
+2026-11-11T01:11:33.903+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.903+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.903+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.903+00:00 INFO       "name": "base_model.model.model.layers.8.self_attn.q_proj.__LORA__.weight",
+2026-11-11T01:11:33.903+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.903+00:00 INFO         16,
+2026-11-11T01:11:33.903+00:00 INFO         1536
+2026-11-11T01:11:33.903+00:00 INFO       ],
+2026-11-11T01:11:33.903+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.903+00:00 INFO         1536,
+2026-11-11T01:11:33.903+00:00 INFO         16
+2026-11-11T01:11:33.903+00:00 INFO       ]
+2026-11-11T01:11:33.904+00:00 INFO     },
+2026-11-11T01:11:33.904+00:00 INFO     {
+2026-11-11T01:11:33.904+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.904+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.904+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.904+00:00 INFO       "name": "base_model.model.model.layers.8.self_attn.v_proj.__LORA__.weight",
+2026-11-11T01:11:33.904+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.904+00:00 INFO         16,
+2026-11-11T01:11:33.904+00:00 INFO         1536
+2026-11-11T01:11:33.904+00:00 INFO       ],
+2026-11-11T01:11:33.904+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.904+00:00 INFO         256,
+2026-11-11T01:11:33.904+00:00 INFO         16
+2026-11-11T01:11:33.904+00:00 INFO       ]
+2026-11-11T01:11:33.904+00:00 INFO     },
+2026-11-11T01:11:33.904+00:00 INFO     {
+2026-11-11T01:11:33.904+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.904+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.904+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.904+00:00 INFO       "name": "base_model.model.model.layers.9.mlp.down_proj.__LORA__.weight",
+2026-11-11T01:11:33.904+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.904+00:00 INFO         16,
+2026-11-11T01:11:33.904+00:00 INFO         8960
+2026-11-11T01:11:33.904+00:00 INFO       ],
+2026-11-11T01:11:33.904+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.904+00:00 INFO         1536,
+2026-11-11T01:11:33.904+00:00 INFO         16
+2026-11-11T01:11:33.904+00:00 INFO       ]
+2026-11-11T01:11:33.904+00:00 INFO     },
+2026-11-11T01:11:33.904+00:00 INFO     {
+2026-11-11T01:11:33.904+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.904+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.904+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.904+00:00 INFO       "name": "base_model.model.model.layers.9.mlp.gate_proj.__LORA__.weight",
+2026-11-11T01:11:33.904+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.904+00:00 INFO         16,
+2026-11-11T01:11:33.904+00:00 INFO         1536
+2026-11-11T01:11:33.904+00:00 INFO       ],
+2026-11-11T01:11:33.904+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.904+00:00 INFO         8960,
+2026-11-11T01:11:33.904+00:00 INFO         16
+2026-11-11T01:11:33.904+00:00 INFO       ]
+2026-11-11T01:11:33.904+00:00 INFO     },
+2026-11-11T01:11:33.904+00:00 INFO     {
+2026-11-11T01:11:33.904+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.904+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.904+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.905+00:00 INFO       "name": "base_model.model.model.layers.9.mlp.up_proj.__LORA__.weight",
+2026-11-11T01:11:33.905+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.905+00:00 INFO         16,
+2026-11-11T01:11:33.905+00:00 INFO         1536
+2026-11-11T01:11:33.905+00:00 INFO       ],
+2026-11-11T01:11:33.905+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.905+00:00 INFO         8960,
+2026-11-11T01:11:33.905+00:00 INFO         16
+2026-11-11T01:11:33.905+00:00 INFO       ]
+2026-11-11T01:11:33.905+00:00 INFO     },
+2026-11-11T01:11:33.905+00:00 INFO     {
+2026-11-11T01:11:33.905+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.905+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.905+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.905+00:00 INFO       "name": "base_model.model.model.layers.9.self_attn.k_proj.__LORA__.weight",
+2026-11-11T01:11:33.905+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.905+00:00 INFO         16,
+2026-11-11T01:11:33.905+00:00 INFO         1536
+2026-11-11T01:11:33.905+00:00 INFO       ],
+2026-11-11T01:11:33.905+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.905+00:00 INFO         256,
+2026-11-11T01:11:33.905+00:00 INFO         16
+2026-11-11T01:11:33.905+00:00 INFO       ]
+2026-11-11T01:11:33.905+00:00 INFO     },
+2026-11-11T01:11:33.905+00:00 INFO     {
+2026-11-11T01:11:33.905+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.905+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.905+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.905+00:00 INFO       "name": "base_model.model.model.layers.9.self_attn.o_proj.__LORA__.weight",
+2026-11-11T01:11:33.905+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.905+00:00 INFO         16,
+2026-11-11T01:11:33.905+00:00 INFO         1536
+2026-11-11T01:11:33.905+00:00 INFO       ],
+2026-11-11T01:11:33.905+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.905+00:00 INFO         1536,
+2026-11-11T01:11:33.905+00:00 INFO         16
+2026-11-11T01:11:33.905+00:00 INFO       ]
+2026-11-11T01:11:33.905+00:00 INFO     },
+2026-11-11T01:11:33.905+00:00 INFO     {
+2026-11-11T01:11:33.905+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.905+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.906+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.906+00:00 INFO       "name": "base_model.model.model.layers.9.self_attn.q_proj.__LORA__.weight",
+2026-11-11T01:11:33.906+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.906+00:00 INFO         16,
+2026-11-11T01:11:33.906+00:00 INFO         1536
+2026-11-11T01:11:33.906+00:00 INFO       ],
+2026-11-11T01:11:33.906+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.906+00:00 INFO         1536,
+2026-11-11T01:11:33.906+00:00 INFO         16
+2026-11-11T01:11:33.906+00:00 INFO       ]
+2026-11-11T01:11:33.906+00:00 INFO     },
+2026-11-11T01:11:33.906+00:00 INFO     {
+2026-11-11T01:11:33.906+00:00 INFO       "frobenius": 0.0,
+2026-11-11T01:11:33.906+00:00 INFO       "has_non_finite": false,
+2026-11-11T01:11:33.906+00:00 INFO       "is_b_zero": true,
+2026-11-11T01:11:33.906+00:00 INFO       "name": "base_model.model.model.layers.9.self_attn.v_proj.__LORA__.weight",
+2026-11-11T01:11:33.907+00:00 INFO       "shape_a": [
+2026-11-11T01:11:33.907+00:00 INFO         16,
+2026-11-11T01:11:33.907+00:00 INFO         1536
+2026-11-11T01:11:33.907+00:00 INFO       ],
+2026-11-11T01:11:33.907+00:00 INFO       "shape_b": [
+2026-11-11T01:11:33.907+00:00 INFO         256,
+2026-11-11T01:11:33.907+00:00 INFO         16
+2026-11-11T01:11:33.907+00:00 INFO       ]
+2026-11-11T01:11:33.907+00:00 INFO     }
+2026-11-11T01:11:33.907+00:00 INFO   ],
+2026-11-11T01:11:33.907+00:00 INFO   "reason": "all lora_B layers are zero (196/196)",
+2026-11-11T01:11:33.908+00:00 INFO   "shape_mismatches": [],
+2026-11-11T01:11:33.908+00:00 INFO   "standalone_tensors": [],
+2026-11-11T01:11:33.908+00:00 INFO   "total_frobenius": 0.0,
+2026-11-11T01:11:33.908+00:00 INFO   "total_layers": 196,
+2026-11-11T01:11:33.908+00:00 INFO   "verdict": "inactive",
+2026-11-11T01:11:33.908+00:00 INFO   "verdict_line": "inactive: all lora_B layers are zero (196/196)"
+2026-11-11T01:11:33.908+00:00 INFO }
+2026-11-11T01:11:34.087+00:00 INFO Exit status 2

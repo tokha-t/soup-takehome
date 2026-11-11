@@ -1,0 +1,16 @@
+2026-11-11T09:14:05.198+00:00 INFO $ /kaggle/temp/soup-patch-consistency-peft/bin/python /kaggle/working/soup-takehome/consistency_nf4.py greedy
+2026-11-11T09:14:17.085+00:00 INFO 2026-11-11T09:14:17.085 INFO NumExpr defaulting to 4 threads.
+2026-11-11T09:14:26.228+00:00 INFO 2026-11-11T09:14:26.228 INFO SHA256 946b053ffe6b2206ae447ab77168ed56bbd718553f6b9bde7aba6519ef8ecbe3  /kaggle/working/soup-takehome/data/eval_amended.jsonl
+2026-11-11T09:14:26.792+00:00 INFO 2026-11-11T09:14:26.792 INFO SHA256 cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f  /kaggle/temp/posthoc-s5-consistency/merged_4bit_repeat/chat_template.jinja
+2026-11-11T09:14:26.792+00:00 INFO 2026-11-11T09:14:26.792 INFO SHA256 0abc094ca5013b5ebaab2597dea4b724769df75ec332d44a0ff7c2cb2a46b798  /kaggle/temp/posthoc-s5-consistency/merged_4bit_repeat/config.json
+2026-11-11T09:14:26.793+00:00 INFO 2026-11-11T09:14:26.792 INFO SHA256 006680c0a21f1e852da11f29d10737a85e9a5765d5566923995b0e812fd6cdc9  /kaggle/temp/posthoc-s5-consistency/merged_4bit_repeat/generation_config.json
+2026-11-11T09:14:29.910+00:00 INFO 2026-11-11T09:14:29.910 INFO SHA256 483fd9ab9ae745da787a627e7c8e3ad23e7343b978a32a3d59976d1874090525  /kaggle/temp/posthoc-s5-consistency/merged_4bit_repeat/model.safetensors
+2026-11-11T09:14:29.940+00:00 INFO 2026-11-11T09:14:29.940 INFO SHA256 3fd169731d2cbde95e10bf356d66d5997fd885dd8dbb6fb4684da3f23b2585d8  /kaggle/temp/posthoc-s5-consistency/merged_4bit_repeat/tokenizer.json
+2026-11-11T09:14:29.941+00:00 INFO 2026-11-11T09:14:29.941 INFO SHA256 2e3bd3cb5055f7a903a54e7062b2fd14d21b70f4174c3ffcd9fc81ec50a25631  /kaggle/temp/posthoc-s5-consistency/merged_4bit_repeat/tokenizer_config.json
+2026-11-11T09:14:30.964+00:00 INFO 2026-11-11T09:14:30.963 INFO Effective decoding request: do_sample=False beams=1 repetition_penalty=1.0 use_model_defaults=False cap=98
+2026-11-11T09:14:40.944+00:00 INFO /kaggle/temp/soup-patch-consistency-peft/lib/python3.13/site-packages/bitsandbytes/backends/cuda/ops.py:464: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+2026-11-11T09:14:40.944+00:00 INFO   torch._check_is_size(blocksize)
+2026-11-11T09:15:00.274+00:00 INFO 2026-11-11T09:15:00.273 INFO Left-padding parity before scoring {'rows': 10, 'equal': True, 'mismatch_ids': [], 'scoring_batch_size': 8}
+2026-11-11T09:16:16.092+00:00 INFO 2026-11-11T09:16:16.092 INFO Memory phase {"name": "posthoc_consistency_nf4_greedy", "device": "CUDA", "state": "complete", "start_epoch": 1794388466.792049, "end_epoch": 1794388575.8613083, "wall_seconds": 109.06925940513611, "torch_peak_allocated_gib": 1.4376959800720215, "torch_peak_reserved_gib": 1.53125, "peak_process_rss_gib": 2.015209197998047, "total_system_ram_gib": 31.346603393554688, "nvidia_smi_peak_mib": 1703, "nvidia_smi_peak_gib": 1.6630859375}
+2026-11-11T09:16:16.223+00:00 INFO 2026-11-11T09:16:16.223 INFO POST-HOC repeated NF4 greedy {'stop': {'count': 191, 'total': 191, 'rate': 1.0}, 'valid_sql': {'count': 165, 'total': 191, 'rate': 0.8638743455497382}}
+2026-11-11T09:16:17.943+00:00 INFO Exit status 0

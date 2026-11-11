@@ -1,0 +1,8 @@
+2026-11-10T22:46:31.873+00:00 INFO $ /kaggle/temp/soup-patch-quant-peft/bin/python -m pip -q --disable-pip-version-check install transformers==4.57.1 peft==0.18.0 accelerate==1.11.0 bitsandbytes==0.48.2 sqlglot==28.0.0
+2026-11-10T22:46:47.887+00:00 INFO ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+2026-11-10T22:46:47.887+00:00 INFO ibis-framework 9.5.0 requires sqlglot<25.21,>=23.4, but you have sqlglot 28.0.0 which is incompatible.
+2026-11-10T22:46:47.887+00:00 INFO gradio-client 2.7.2 requires huggingface-hub<3.0,>=1.16.0, but you have huggingface-hub 0.36.2 which is incompatible.
+2026-11-10T22:46:47.887+00:00 INFO gradio 6.30.0 requires huggingface-hub<3.0,>=1.16.0, but you have huggingface-hub 0.36.2 which is incompatible.
+2026-11-10T22:46:47.887+00:00 INFO gradio 6.30.0 requires pillow<13.0,>=8.0, but you have pillow 13.0.0 which is incompatible.
+2026-11-10T22:46:47.887+00:00 INFO diffusers 0.42.0 requires huggingface-hub<3.0,>=1.32.0, but you have huggingface-hub 0.36.2 which is incompatible.
+2026-11-10T22:46:48.041+00:00 INFO Exit status 0

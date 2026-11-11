@@ -1,0 +1,1775 @@
+{
+  "changed_count": 196,
+  "changed_tensors": [
+    "model.layers.0.mlp.down_proj.weight",
+    "model.layers.0.mlp.gate_proj.weight",
+    "model.layers.0.mlp.up_proj.weight",
+    "model.layers.0.self_attn.k_proj.weight",
+    "model.layers.0.self_attn.o_proj.weight",
+    "model.layers.0.self_attn.q_proj.weight",
+    "model.layers.0.self_attn.v_proj.weight",
+    "model.layers.1.mlp.down_proj.weight",
+    "model.layers.1.mlp.gate_proj.weight",
+    "model.layers.1.mlp.up_proj.weight",
+    "model.layers.1.self_attn.k_proj.weight",
+    "model.layers.1.self_attn.o_proj.weight",
+    "model.layers.1.self_attn.q_proj.weight",
+    "model.layers.1.self_attn.v_proj.weight",
+    "model.layers.10.mlp.down_proj.weight",
+    "model.layers.10.mlp.gate_proj.weight",
+    "model.layers.10.mlp.up_proj.weight",
+    "model.layers.10.self_attn.k_proj.weight",
+    "model.layers.10.self_attn.o_proj.weight",
+    "model.layers.10.self_attn.q_proj.weight",
+    "model.layers.10.self_attn.v_proj.weight",
+    "model.layers.11.mlp.down_proj.weight",
+    "model.layers.11.mlp.gate_proj.weight",
+    "model.layers.11.mlp.up_proj.weight",
+    "model.layers.11.self_attn.k_proj.weight",
+    "model.layers.11.self_attn.o_proj.weight",
+    "model.layers.11.self_attn.q_proj.weight",
+    "model.layers.11.self_attn.v_proj.weight",
+    "model.layers.12.mlp.down_proj.weight",
+    "model.layers.12.mlp.gate_proj.weight",
+    "model.layers.12.mlp.up_proj.weight",
+    "model.layers.12.self_attn.k_proj.weight",
+    "model.layers.12.self_attn.o_proj.weight",
+    "model.layers.12.self_attn.q_proj.weight",
+    "model.layers.12.self_attn.v_proj.weight",
+    "model.layers.13.mlp.down_proj.weight",
+    "model.layers.13.mlp.gate_proj.weight",
+    "model.layers.13.mlp.up_proj.weight",
+    "model.layers.13.self_attn.k_proj.weight",
+    "model.layers.13.self_attn.o_proj.weight",
+    "model.layers.13.self_attn.q_proj.weight",
+    "model.layers.13.self_attn.v_proj.weight",
+    "model.layers.14.mlp.down_proj.weight",
+    "model.layers.14.mlp.gate_proj.weight",
+    "model.layers.14.mlp.up_proj.weight",
+    "model.layers.14.self_attn.k_proj.weight",
+    "model.layers.14.self_attn.o_proj.weight",
+    "model.layers.14.self_attn.q_proj.weight",
+    "model.layers.14.self_attn.v_proj.weight",
+    "model.layers.15.mlp.down_proj.weight",
+    "model.layers.15.mlp.gate_proj.weight",
+    "model.layers.15.mlp.up_proj.weight",
+    "model.layers.15.self_attn.k_proj.weight",
+    "model.layers.15.self_attn.o_proj.weight",
+    "model.layers.15.self_attn.q_proj.weight",
+    "model.layers.15.self_attn.v_proj.weight",
+    "model.layers.16.mlp.down_proj.weight",
+    "model.layers.16.mlp.gate_proj.weight",
+    "model.layers.16.mlp.up_proj.weight",
+    "model.layers.16.self_attn.k_proj.weight",
+    "model.layers.16.self_attn.o_proj.weight",
+    "model.layers.16.self_attn.q_proj.weight",
+    "model.layers.16.self_attn.v_proj.weight",
+    "model.layers.17.mlp.down_proj.weight",
+    "model.layers.17.mlp.gate_proj.weight",
+    "model.layers.17.mlp.up_proj.weight",
+    "model.layers.17.self_attn.k_proj.weight",
+    "model.layers.17.self_attn.o_proj.weight",
+    "model.layers.17.self_attn.q_proj.weight",
+    "model.layers.17.self_attn.v_proj.weight",
+    "model.layers.18.mlp.down_proj.weight",
+    "model.layers.18.mlp.gate_proj.weight",
+    "model.layers.18.mlp.up_proj.weight",
+    "model.layers.18.self_attn.k_proj.weight",
+    "model.layers.18.self_attn.o_proj.weight",
+    "model.layers.18.self_attn.q_proj.weight",
+    "model.layers.18.self_attn.v_proj.weight",
+    "model.layers.19.mlp.down_proj.weight",
+    "model.layers.19.mlp.gate_proj.weight",
+    "model.layers.19.mlp.up_proj.weight",
+    "model.layers.19.self_attn.k_proj.weight",
+    "model.layers.19.self_attn.o_proj.weight",
+    "model.layers.19.self_attn.q_proj.weight",
+    "model.layers.19.self_attn.v_proj.weight",
+    "model.layers.2.mlp.down_proj.weight",
+    "model.layers.2.mlp.gate_proj.weight",
+    "model.layers.2.mlp.up_proj.weight",
+    "model.layers.2.self_attn.k_proj.weight",
+    "model.layers.2.self_attn.o_proj.weight",
+    "model.layers.2.self_attn.q_proj.weight",
+    "model.layers.2.self_attn.v_proj.weight",
+    "model.layers.20.mlp.down_proj.weight",
+    "model.layers.20.mlp.gate_proj.weight",
+    "model.layers.20.mlp.up_proj.weight",
+    "model.layers.20.self_attn.k_proj.weight",
+    "model.layers.20.self_attn.o_proj.weight",
+    "model.layers.20.self_attn.q_proj.weight",
+    "model.layers.20.self_attn.v_proj.weight",
+    "model.layers.21.mlp.down_proj.weight",
+    "model.layers.21.mlp.gate_proj.weight",
+    "model.layers.21.mlp.up_proj.weight",
+    "model.layers.21.self_attn.k_proj.weight",
+    "model.layers.21.self_attn.o_proj.weight",
+    "model.layers.21.self_attn.q_proj.weight",
+    "model.layers.21.self_attn.v_proj.weight",
+    "model.layers.22.mlp.down_proj.weight",
+    "model.layers.22.mlp.gate_proj.weight",
+    "model.layers.22.mlp.up_proj.weight",
+    "model.layers.22.self_attn.k_proj.weight",
+    "model.layers.22.self_attn.o_proj.weight",
+    "model.layers.22.self_attn.q_proj.weight",
+    "model.layers.22.self_attn.v_proj.weight",
+    "model.layers.23.mlp.down_proj.weight",
+    "model.layers.23.mlp.gate_proj.weight",
+    "model.layers.23.mlp.up_proj.weight",
+    "model.layers.23.self_attn.k_proj.weight",
+    "model.layers.23.self_attn.o_proj.weight",
+    "model.layers.23.self_attn.q_proj.weight",
+    "model.layers.23.self_attn.v_proj.weight",
+    "model.layers.24.mlp.down_proj.weight",
+    "model.layers.24.mlp.gate_proj.weight",
+    "model.layers.24.mlp.up_proj.weight",
+    "model.layers.24.self_attn.k_proj.weight",
+    "model.layers.24.self_attn.o_proj.weight",
+    "model.layers.24.self_attn.q_proj.weight",
+    "model.layers.24.self_attn.v_proj.weight",
+    "model.layers.25.mlp.down_proj.weight",
+    "model.layers.25.mlp.gate_proj.weight",
+    "model.layers.25.mlp.up_proj.weight",
+    "model.layers.25.self_attn.k_proj.weight",
+    "model.layers.25.self_attn.o_proj.weight",
+    "model.layers.25.self_attn.q_proj.weight",
+    "model.layers.25.self_attn.v_proj.weight",
+    "model.layers.26.mlp.down_proj.weight",
+    "model.layers.26.mlp.gate_proj.weight",
+    "model.layers.26.mlp.up_proj.weight",
+    "model.layers.26.self_attn.k_proj.weight",
+    "model.layers.26.self_attn.o_proj.weight",
+    "model.layers.26.self_attn.q_proj.weight",
+    "model.layers.26.self_attn.v_proj.weight",
+    "model.layers.27.mlp.down_proj.weight",
+    "model.layers.27.mlp.gate_proj.weight",
+    "model.layers.27.mlp.up_proj.weight",
+    "model.layers.27.self_attn.k_proj.weight",
+    "model.layers.27.self_attn.o_proj.weight",
+    "model.layers.27.self_attn.q_proj.weight",
+    "model.layers.27.self_attn.v_proj.weight",
+    "model.layers.3.mlp.down_proj.weight",
+    "model.layers.3.mlp.gate_proj.weight",
+    "model.layers.3.mlp.up_proj.weight",
+    "model.layers.3.self_attn.k_proj.weight",
+    "model.layers.3.self_attn.o_proj.weight",
+    "model.layers.3.self_attn.q_proj.weight",
+    "model.layers.3.self_attn.v_proj.weight",
+    "model.layers.4.mlp.down_proj.weight",
+    "model.layers.4.mlp.gate_proj.weight",
+    "model.layers.4.mlp.up_proj.weight",
+    "model.layers.4.self_attn.k_proj.weight",
+    "model.layers.4.self_attn.o_proj.weight",
+    "model.layers.4.self_attn.q_proj.weight",
+    "model.layers.4.self_attn.v_proj.weight",
+    "model.layers.5.mlp.down_proj.weight",
+    "model.layers.5.mlp.gate_proj.weight",
+    "model.layers.5.mlp.up_proj.weight",
+    "model.layers.5.self_attn.k_proj.weight",
+    "model.layers.5.self_attn.o_proj.weight",
+    "model.layers.5.self_attn.q_proj.weight",
+    "model.layers.5.self_attn.v_proj.weight",
+    "model.layers.6.mlp.down_proj.weight",
+    "model.layers.6.mlp.gate_proj.weight",
+    "model.layers.6.mlp.up_proj.weight",
+    "model.layers.6.self_attn.k_proj.weight",
+    "model.layers.6.self_attn.o_proj.weight",
+    "model.layers.6.self_attn.q_proj.weight",
+    "model.layers.6.self_attn.v_proj.weight",
+    "model.layers.7.mlp.down_proj.weight",
+    "model.layers.7.mlp.gate_proj.weight",
+    "model.layers.7.mlp.up_proj.weight",
+    "model.layers.7.self_attn.k_proj.weight",
+    "model.layers.7.self_attn.o_proj.weight",
+    "model.layers.7.self_attn.q_proj.weight",
+    "model.layers.7.self_attn.v_proj.weight",
+    "model.layers.8.mlp.down_proj.weight",
+    "model.layers.8.mlp.gate_proj.weight",
+    "model.layers.8.mlp.up_proj.weight",
+    "model.layers.8.self_attn.k_proj.weight",
+    "model.layers.8.self_attn.o_proj.weight",
+    "model.layers.8.self_attn.q_proj.weight",
+    "model.layers.8.self_attn.v_proj.weight",
+    "model.layers.9.mlp.down_proj.weight",
+    "model.layers.9.mlp.gate_proj.weight",
+    "model.layers.9.mlp.up_proj.weight",
+    "model.layers.9.self_attn.k_proj.weight",
+    "model.layers.9.self_attn.o_proj.weight",
+    "model.layers.9.self_attn.q_proj.weight",
+    "model.layers.9.self_attn.v_proj.weight"
+  ],
+  "unexpected_changed_or_missing": [],
+  "modules": {
+    "model.layers.13.self_attn.v_proj": {
+      "expected_delta_norm": 0.0015818963292986155,
+      "actual_delta_norm": 0.001258551375940442,
+      "relative_error": 0.8049792668533261,
+      "expected_nonzero_elements": 393216,
+      "rounded_to_zero_elements": 319208,
+      "changed": true
+    },
+    "model.layers.4.self_attn.q_proj": {
+      "expected_delta_norm": 0.003767160000279546,
+      "actual_delta_norm": 0.002805951051414013,
+      "relative_error": 0.8380958785163922,
+      "expected_nonzero_elements": 2359296,
+      "rounded_to_zero_elements": 1950217,
+      "changed": true
+    },
+    "model.layers.9.self_attn.k_proj": {
+      "expected_delta_norm": 0.001395158120431006,
+      "actual_delta_norm": 0.0009751747129485011,
+      "relative_error": 0.859026092183643,
+      "expected_nonzero_elements": 393216,
+      "rounded_to_zero_elements": 334640,
+      "changed": true
+    },
+    "model.layers.1.self_attn.q_proj": {
+      "expected_delta_norm": 0.004009800497442484,
+      "actual_delta_norm": 0.002939640311524272,
+      "relative_error": 0.8434313697823744,
+      "expected_nonzero_elements": 2359296,
+      "rounded_to_zero_elements": 1960637,
+      "changed": true
+    },
+    "model.layers.21.mlp.up_proj": {
+      "expected_delta_norm": 0.009480725042521954,
+      "actual_delta_norm": 0.0071446457877755165,
+      "relative_error": 0.8345648674032655,
+      "expected_nonzero_elements": 13762560,
+      "rounded_to_zero_elements": 11515453,
+      "changed": true
+    },
+    "model.layers.25.mlp.up_proj": {
+      "expected_delta_norm": 0.009999671019613743,
+      "actual_delta_norm": 0.007386685814708471,
+      "relative_error": 0.8436622112281149,
+      "expected_nonzero_elements": 13762560,
+      "rounded_to_zero_elements": 11515899,
+      "changed": true
+    },
+    "model.layers.27.mlp.down_proj": {
+      "expected_delta_norm": 0.004326104186475277,
+      "actual_delta_norm": 0.0025571491569280624,
+      "relative_error": 0.9058098403937552,
+      "expected_nonzero_elements": 13762560,
+      "rounded_to_zero_elements": 12538726,
+      "changed": true
+    },
+    "model.layers.8.mlp.gate_proj": {
+      "expected_delta_norm": 0.009119526483118534,
+      "actual_delta_norm": 0.00660285260528326,
+      "relative_error": 0.8513529439338188,
+      "expected_nonzero_elements": 13762560,
+      "rounded_to_zero_elements": 11603955,
+      "changed": true
+    },
+    "model.layers.19.self_attn.o_proj": {
+      "expected_delta_norm": 0.003970171324908733,
+      "actual_delta_norm": 0.0031386727932840586,
+      "relative_error": 0.8125095737940421,
+      "expected_nonzero_elements": 2359296,
+      "rounded_to_zero_elements": 1888794,
+      "changed": true
+    },
+    "model.layers.18.self_attn.q_proj": {
+      "expected_delta_norm": 0.00448979577049613,
+      "actual_delta_norm": 0.003792029805481434,
+      "relative_error": 0.7669284134032334,
+      "expected_nonzero_elements": 2359296,
+      "rounded_to_zero_elements": 1816644,
+      "changed": true
+    },
+    "model.layers.13.self_attn.o_proj": {
+      "expected_delta_norm": 0.003929456230252981,
+      "actual_delta_norm": 0.003155844984576106,
+      "relative_error": 0.8015827682903114,
+      "expected_nonzero_elements": 2359296,
+      "rounded_to_zero_elements": 1860692,
+      "changed": true
+    },
+    "model.layers.26.self_attn.k_proj": {
+      "expected_delta_norm": 0.0017108421307057142,
+      "actual_delta_norm": 0.0015152241103351116,
+      "relative_error": 0.7345657892999888,
+      "expected_nonzero_elements": 393216,
+      "rounded_to_zero_elements": 283123,
+      "changed": true
+    },
+    "model.layers.0.mlp.up_proj": {
+      "expected_delta_norm": 0.00926726870238781,
+      "actual_delta_norm": 0.007059463299810886,
+      "relative_error": 0.8297525469180217,
+      "expected_nonzero_elements": 13762560,
+      "rounded_to_zero_elements": 11213687,
+      "changed": true
+    },
+    "model.layers.15.mlp.down_proj": {
+      "expected_delta_norm": 0.00453480938449502,
+      "actual_delta_norm": 0.002726625883951783,
+      "relative_error": 0.9019160071917144,
+      "expected_nonzero_elements": 13762560,
+      "rounded_to_zero_elements": 12534411,
+      "changed": true
+    },
+    "model.layers.11.self_attn.k_proj": {
+      "expected_delta_norm": 0.001599165378138423,
+      "actual_delta_norm": 0.0012152377748861909,
+      "relative_error": 0.8281933409751349,
+      "expected_nonzero_elements": 393216,
+      "rounded_to_zero_elements": 324223,
+      "changed": true
+    },
+    "model.layers.10.self_attn.o_proj": {
+      "expected_delta_norm": 0.003734953934326768,
+      "actual_delta_norm": 0.002879170700907707,
+      "relative_error": 0.8215951059454832,
+      "expected_nonzero_elements": 2359296,
+      "rounded_to_zero_elements": 1906853,
+      "changed": true
+    },
+    "model.layers.20.self_attn.q_proj": {
+      "expected_delta_norm": 0.004297124687582254,
+      "actual_delta_norm": 0.0035914811305701733,
+      "relative_error": 0.7766305393202539,
+      "expected_nonzero_elements": 2359296,
+      "rounded_to_zero_elements": 1842183,
+      "changed": true
+    },
+    "model.layers.16.self_attn.k_proj": {
+      "expected_delta_norm": 0.0016593048349022865,
+      "actual_delta_norm": 0.0013733742525801063,
+      "relative_error": 0.769070855070959,
+      "expected_nonzero_elements": 393216,
+      "rounded_to_zero_elements": 301723,
+      "changed": true
+    },
+    "model.layers.14.self_attn.k_proj": {
+      "expected_delta_norm": 0.0016459255712106824,
+      "actual_delta_norm": 0.0013833519769832492,
+      "relative_error": 0.7604480933582763,
+      "expected_nonzero_elements": 393216,
+      "rounded_to_zero_elements": 298664,
+      "changed": true
+    },
+    "model.layers.16.mlp.up_proj": {
+      "expected_delta_norm": 0.009345274418592453,
+      "actual_delta_norm": 0.007125858683139086,
+      "relative_error": 0.8299807701736783,
+      "expected_nonzero_elements": 13762560,
+      "rounded_to_zero_elements": 11341467,
+      "changed": true
+    },
+    "model.layers.21.self_attn.o_proj": {
+      "expected_delta_norm": 0.003600445343181491,
+      "actual_delta_norm": 0.0026963658165186644,
+      "relative_error": 0.8351989275595026,
+      "expected_nonzero_elements": 2359296,
+      "rounded_to_zero_elements": 1954728,
+      "changed": true
+    },
+    "model.layers.18.self_attn.k_proj": {
+      "expected_delta_norm": 0.0017259633168578148,
+      "actual_delta_norm": 0.00137904763687402,
+      "relative_error": 0.8069345750871852,
+      "expected_nonzero_elements": 393216,
+      "rounded_to_zero_elements": 311358,
+      "changed": true
+    },
+    "model.layers.20.mlp.gate_proj": {
+      "expected_delta_norm": 0.01002791803330183,
+      "actual_delta_norm": 0.007962042465806007,
+      "relative_error": 0.8117813082923028,
+      "expected_nonzero_elements": 13762560,
+      "rounded_to_zero_elements": 11294566,
+      "changed": true
+    },
+    "model.layers.26.mlp.up_proj": {
+      "expected_delta_norm": 0.009976659901440144,
+      "actual_delta_norm": 0.007391543593257666,
+      "relative_error": 0.8423901481251979,
+      "expected_nonzero_elements": 13762560,
+      "rounded_to_zero_elements": 11520841,
+      "changed": true
+    },
+    "model.layers.13.mlp.down_proj": {
+      "expected_delta_norm": 0.004565323702991009,
+      "actual_delta_norm": 0.002645210362970829,
+      "relative_error": 0.9101503698812256,
+      "expected_nonzero_elements": 13762560,
+      "rounded_to_zero_elements": 12499431,
+      "changed": true
+    },
+    "model.layers.2.self_attn.k_proj": {
+      "expected_delta_norm": 0.0016426451038569212,
+      "actual_delta_norm": 0.0011898772791028023,
+      "relative_error": 0.8484738785676815,
+      "expected_nonzero_elements": 393216,
+      "rounded_to_zero_elements": 335285,
+      "changed": true
+    },
+    "model.layers.1.self_attn.k_proj": {
+      "expected_delta_norm": 0.0018132555996999145,
+      "actual_delta_norm": 0.0012698470382019877,
+      "relative_error": 0.8568337043481767,
+      "expected_nonzero_elements": 393216,
+      "rounded_to_zero_elements": 335637,
+      "changed": true
+    },
+    "model.layers.2.self_attn.v_proj": {
+      "expected_delta_norm": 0.001510761445388198,
+      "actual_delta_norm": 0.0012195267481729388,
+      "relative_error": 0.802294414372373,
+      "expected_nonzero_elements": 393216,
+      "rounded_to_zero_elements": 315981,
+      "changed": true
+    },
+    "model.layers.3.self_attn.o_proj": {
+      "expected_delta_norm": 0.0038316671270877123,
+      "actual_delta_norm": 0.0030010491609573364,
+      "relative_error": 0.8173129361966132,
+      "expected_nonzero_elements": 2359296,
+      "rounded_to_zero_elements": 1915106,
+      "changed": true
+    },
+    "model.layers.26.self_attn.q_proj": {
+      "expected_delta_norm": 0.004340050742030144,
+      "actual_delta_norm": 0.0036890474148094654,
+      "relative_error": 0.756266719083349,
+      "expected_nonzero_elements": 2359296,
+      "rounded_to_zero_elements": 1739395,
+      "changed": true
+    },
+    "model.layers.24.self_attn.v_proj": {
+      "expected_delta_norm": 0.0016220747493207455,
+      "actual_delta_norm": 0.001216513686813414,
+      "relative_error": 0.8324969806615933,
+      "expected_nonzero_elements": 393216,
+      "rounded_to_zero_elements": 324337,
+      "changed": true
+    },
+    "model.layers.17.mlp.up_proj": {
+      "expected_delta_norm": 0.009922605007886887,
+      "actual_delta_norm": 0.0076649985276162624,
+      "relative_error": 0.8245630221592827,
+      "expected_nonzero_elements": 13762560,
+      "rounded_to_zero_elements": 11259357,
+      "changed": true
+    },
+    "model.layers.3.mlp.down_proj": {
+      "expected_delta_norm": 0.004472161177545786,
+      "actual_delta_norm": 0.0025307557079941034,
+      "relative_error": 0.9148041320327079,
+      "expected_nonzero_elements": 13762560,
+      "rounded_to_zero_elements": 12506641,
+      "changed": true
+    },
+    "model.layers.14.mlp.gate_proj": {
+      "expected_delta_norm": 0.009447279386222363,
+      "actual_delta_norm": 0.007275672163814306,
+      "relative_error": 0.8265855108158675,
+      "expected_nonzero_elements": 13762560,
+      "rounded_to_zero_elements": 11260983,
+      "changed": true
+    },
+    "model.layers.3.mlp.gate_proj": {
+      "expected_delta_norm": 0.009420285932719707,
+      "actual_delta_norm": 0.006467101164162159,
+      "relative_error": 0.8687404936551868,
+      "expected_nonzero_elements": 13762560,
+      "rounded_to_zero_elements": 11854433,
+      "changed": true
+    },
+    "model.layers.27.mlp.up_proj": {
+      "expected_delta_norm": 0.010058222338557243,
+      "actual_delta_norm": 0.007724734488874674,
+      "relative_error": 0.8269247756514068,
+      "expected_nonzero_elements": 13762560,
+      "rounded_to_zero_elements": 11334119,
+      "changed": true
+    },
+    "model.layers.12.self_attn.o_proj": {
+      "expected_delta_norm": 0.003931095357984304,
+      "actual_delta_norm": 0.003188110888004303,
+      "relative_error": 0.7962010731390318,
+      "expected_nonzero_elements": 2359296,
+      "rounded_to_zero_elements": 1859914,
+      "changed": true
+    },
+    "model.layers.15.self_attn.q_proj": {
+      "expected_delta_norm": 0.004110249690711498,
+      "actual_delta_norm": 0.003312047803774476,
+      "relative_error": 0.7988455813694233,
+      "expected_nonzero_elements": 2359296,
+      "rounded_to_zero_elements": 1899067,
+      "changed": true
+    },
+    "model.layers.8.mlp.up_proj": {
+      "expected_delta_norm": 0.00892744679003954,
+      "actual_delta_norm": 0.006475884933024645,
+      "relative_error": 0.8508042074436772,
+      "expected_nonzero_elements": 13762560,
+      "rounded_to_zero_elements": 11531500,
+      "changed": true
+    },
+    "model.layers.5.self_attn.o_proj": {
+      "expected_delta_norm": 0.003942273557186127,
+      "actual_delta_norm": 0.0031146549154073,
+      "relative_error": 0.8107618644436171,
+      "expected_nonzero_elements": 2359296,
+      "rounded_to_zero_elements": 1885740,
+      "changed": true
+    },
+    "model.layers.27.self_attn.v_proj": {
+      "expected_delta_norm": 0.0016890839906409383,
+      "actual_delta_norm": 0.0011219354346394539,
+      "relative_error": 0.8761213032822595,
+      "expected_nonzero_elements": 393216,
+      "rounded_to_zero_elements": 341353,
+      "changed": true
+    },
+    "model.layers.9.self_attn.q_proj": {
+      "expected_delta_norm": 0.0037408245261758566,
+      "actual_delta_norm": 0.002787112956866622,
+      "relative_error": 0.8355930043962305,
+      "expected_nonzero_elements": 2359296,
+      "rounded_to_zero_elements": 1935569,
+      "changed": true
+    },
+    "model.layers.14.self_attn.q_proj": {
+      "expected_delta_norm": 0.004192758817225695,
+      "actual_delta_norm": 0.0035518996883183718,
+      "relative_error": 0.7602351697007101,
+      "expected_nonzero_elements": 2359296,
+      "rounded_to_zero_elements": 1796971,
+      "changed": true
+    },
+    "model.layers.22.mlp.up_proj": {
+      "expected_delta_norm": 0.009467166848480701,
+      "actual_delta_norm": 0.0070644160732626915,
+      "relative_error": 0.838844979677418,
+      "expected_nonzero_elements": 13762560,
+      "rounded_to_zero_elements": 11495114,
+      "changed": true
+    },
+    "model.layers.25.self_attn.v_proj": {
+      "expected_delta_norm": 0.0015670772409066558,
+      "actual_delta_norm": 0.001192545285448432,
+      "relative_error": 0.8273671131114112,
+      "expected_nonzero_elements": 393216,
+      "rounded_to_zero_elements": 325284,
+      "changed": true
+    },
+    "model.layers.4.mlp.up_proj": {
+      "expected_delta_norm": 0.008751356974244118,
+      "actual_delta_norm": 0.006507528480142355,
+      "relative_error": 0.8405816064323872,
+      "expected_nonzero_elements": 13762560,
+      "rounded_to_zero_elements": 11428858,
+      "changed": true
+    },
+    "model.layers.0.self_attn.o_proj": {
+      "expected_delta_norm": 0.0036565400660037994,
+      "actual_delta_norm": 0.0029775574803352356,
+      "relative_error": 0.7980752920141206,
+      "expected_nonzero_elements": 2359296,
+      "rounded_to_zero_elements": 1854112,
+      "changed": true
+    },
+    "model.layers.2.mlp.down_proj": {
+      "expected_delta_norm": 0.004648175556212664,
+      "actual_delta_norm": 0.0028121815994381905,
+      "relative_error": 0.9004922018204785,
+      "expected_nonzero_elements": 13762560,
+      "rounded_to_zero_elements": 12565667,
+      "changed": true
+    },
+    "model.layers.17.self_attn.q_proj": {
+      "expected_delta_norm": 0.004144260194152594,
+      "actual_delta_norm": 0.0034796788822859526,
+      "relative_error": 0.772777233379301,
+      "expected_nonzero_elements": 2359296,
+      "rounded_to_zero_elements": 1817458,
+      "changed": true
+    },
+    "model.layers.22.self_attn.q_proj": {
+      "expected_delta_norm": 0.004381293896585703,
+      "actual_delta_norm": 0.003567581996321678,
+      "relative_error": 0.7902253719593353,
+      "expected_nonzero_elements": 2359296,
+      "rounded_to_zero_elements": 1852833,
+      "changed": true
+    },
+    "model.layers.3.self_attn.v_proj": {
+      "expected_delta_norm": 0.0016038010362535715,
+      "actual_delta_norm": 0.0013117006747052073,
+      "relative_error": 0.7940377798615125,
+      "expected_nonzero_elements": 393216,
+      "rounded_to_zero_elements": 322349,
+      "changed": true
+    },
+    "model.layers.26.self_attn.v_proj": {
+      "expected_delta_norm": 0.0016263371799141169,
+      "actual_delta_norm": 0.0010336359264329076,
+      "relative_error": 0.886059757496888,
+      "expected_nonzero_elements": 393216,
+      "rounded_to_zero_elements": 345642,
+      "changed": true
+    },
+    "model.layers.12.mlp.up_proj": {
+      "expected_delta_norm": 0.008982646279036999,
+      "actual_delta_norm": 0.0066330311819911,
+      "relative_error": 0.8439237129373088,
+      "expected_nonzero_elements": 13762560,
+      "rounded_to_zero_elements": 11473180,
+      "changed": true
+    },
+    "model.layers.6.self_attn.k_proj": {
+      "expected_delta_norm": 0.0015835358062759042,
+      "actual_delta_norm": 0.0011693346314132214,
+      "relative_error": 0.841632794752188,
+      "expected_nonzero_elements": 393216,
+      "rounded_to_zero_elements": 329810,
+      "changed": true
+    },
+    "model.layers.0.self_attn.v_proj": {
+      "expected_delta_norm": 0.0014571225037798285,
+      "actual_delta_norm": 0.0012328287120908499,
+      "relative_error": 0.7727473152225922,
+      "expected_nonzero_elements": 393216,
+      "rounded_to_zero_elements": 300978,
+      "changed": true
+    },
+    "model.layers.1.mlp.gate_proj": {
+      "expected_delta_norm": 0.00877026654779911,
+      "actual_delta_norm": 0.006092219613492489,
+      "relative_error": 0.8655464870879288,
+      "expected_nonzero_elements": 13762560,
+      "rounded_to_zero_elements": 11935535,
+      "changed": true
+    },
+    "model.layers.19.mlp.up_proj": {
+      "expected_delta_norm": 0.00927602220326662,
+      "actual_delta_norm": 0.006925761699676514,
+      "relative_error": 0.8384055787654945,
+      "expected_nonzero_elements": 13762560,
+      "rounded_to_zero_elements": 11433971,
+      "changed": true
+    },
+    "model.layers.16.mlp.down_proj": {
+      "expected_delta_norm": 0.004553576931357384,
+      "actual_delta_norm": 0.002714293310418725,
+      "relative_error": 0.9039463398731042,
+      "expected_nonzero_elements": 13762560,
+      "rounded_to_zero_elements": 12516572,
+      "changed": true
+    },
+    "model.layers.23.mlp.down_proj": {
+      "expected_delta_norm": 0.004174781963229179,
+      "actual_delta_norm": 0.0022360393777489662,
+      "relative_error": 0.924158553512463,
+      "expected_nonzero_elements": 13762560,
+      "rounded_to_zero_elements": 12711172,
+      "changed": true
+    },
+    "model.layers.20.self_attn.o_proj": {
+      "expected_delta_norm": 0.004160723183304071,
+      "actual_delta_norm": 0.0033074538223445415,
+      "relative_error": 0.8086747915660567,
+      "expected_nonzero_elements": 2359296,
+      "rounded_to_zero_elements": 1889220,
+      "changed": true
+    },
+    "model.layers.23.self_attn.q_proj": {
+      "expected_delta_norm": 0.00500478083267808,
+      "actual_delta_norm": 0.004387922119349241,
+      "relative_error": 0.731187041674556,
+      "expected_nonzero_elements": 2359296,
+      "rounded_to_zero_elements": 1752724,
+      "changed": true
+    },
+    "model.layers.15.self_attn.o_proj": {
+      "expected_delta_norm": 0.0038127340376377106,
+      "actual_delta_norm": 0.0029882106464356184,
+      "relative_error": 0.8134594781689405,
+      "expected_nonzero_elements": 2359296,
+      "rounded_to_zero_elements": 1886537,
+      "changed": true
+    },
+    "model.layers.19.self_attn.q_proj": {
+      "expected_delta_norm": 0.0041294158436357975,
+      "actual_delta_norm": 0.0033674973528832197,
+      "relative_error": 0.7909938854421696,
+      "expected_nonzero_elements": 2359296,
+      "rounded_to_zero_elements": 1843419,
+      "changed": true
+    },
+    "model.layers.0.mlp.down_proj": {
+      "expected_delta_norm": 0.00418492779135704,
+      "actual_delta_norm": 0.0021860257256776094,
+      "relative_error": 0.9281838874186275,
+      "expected_nonzero_elements": 13762560,
+      "rounded_to_zero_elements": 12662205,
+      "changed": true
+    },
+    "model.layers.14.mlp.up_proj": {
+      "expected_delta_norm": 0.009385804645717144,
+      "actual_delta_norm": 0.007142320275306702,
+      "relative_error": 0.8313160707292002,
+      "expected_nonzero_elements": 13762560,
+      "rounded_to_zero_elements": 11325086,
+      "changed": true
+    },
+    "model.layers.22.mlp.gate_proj": {
+      "expected_delta_norm": 0.010232172906398773,
+      "actual_delta_norm": 0.008046897128224373,
+      "relative_error": 0.8160379556686296,
+      "expected_nonzero_elements": 13762560,
+      "rounded_to_zero_elements": 11227900,
+      "changed": true
+    },
+    "model.layers.7.mlp.gate_proj": {
+      "expected_delta_norm": 0.009559066966176033,
+      "actual_delta_norm": 0.007083267904818058,
+      "relative_error": 0.8418574878921119,
+      "expected_nonzero_elements": 13762560,
+      "rounded_to_zero_elements": 11505042,
+      "changed": true
+    },
+    "model.layers.9.mlp.up_proj": {
+      "expected_delta_norm": 0.008794152177870274,
+      "actual_delta_norm": 0.006338124163448811,
+      "relative_error": 0.8529868048679984,
+      "expected_nonzero_elements": 13762560,
+      "rounded_to_zero_elements": 11560472,
+      "changed": true
+    },
+    "model.layers.25.self_attn.k_proj": {
+      "expected_delta_norm": 0.0017438880167901516,
+      "actual_delta_norm": 0.001561084995046258,
+      "relative_error": 0.7280512319054006,
+      "expected_nonzero_elements": 393216,
+      "rounded_to_zero_elements": 283566,
+      "changed": true
+    },
+    "model.layers.8.self_attn.v_proj": {
+      "expected_delta_norm": 0.001549663720652461,
+      "actual_delta_norm": 0.0012206509709358215,
+      "relative_error": 0.8090765810941057,
+      "expected_nonzero_elements": 393216,
+      "rounded_to_zero_elements": 322101,
+      "changed": true
+    },
+    "model.layers.5.self_attn.v_proj": {
+      "expected_delta_norm": 0.001410281052812934,
+      "actual_delta_norm": 0.0010292825754731894,
+      "relative_error": 0.8424517067625144,
+      "expected_nonzero_elements": 393216,
+      "rounded_to_zero_elements": 328680,
+      "changed": true
+    },
+    "model.layers.18.mlp.up_proj": {
+      "expected_delta_norm": 0.009216067381203175,
+      "actual_delta_norm": 0.006977416109293699,
+      "relative_error": 0.8329104719161711,
+      "expected_nonzero_elements": 13762560,
+      "rounded_to_zero_elements": 11439670,
+      "changed": true
+    },
+    "model.layers.20.self_attn.v_proj": {
+      "expected_delta_norm": 0.0013994778273627162,
+      "actual_delta_norm": 0.0009622004581615329,
+      "relative_error": 0.8656504309015663,
+      "expected_nonzero_elements": 393216,
+      "rounded_to_zero_elements": 335899,
+      "changed": true
+    },
+    "model.layers.1.mlp.up_proj": {
+      "expected_delta_norm": 0.009223386645317078,
+      "actual_delta_norm": 0.007026745937764645,
+      "relative_error": 0.8281008419619013,
+      "expected_nonzero_elements": 13762560,
+      "rounded_to_zero_elements": 11535904,
+      "changed": true
+    },
+    "model.layers.6.self_attn.v_proj": {
+      "expected_delta_norm": 0.0015837589744478464,
+      "actual_delta_norm": 0.0012691110605373979,
+      "relative_error": 0.7971499779556387,
+      "expected_nonzero_elements": 393216,
+      "rounded_to_zero_elements": 314846,
+      "changed": true
+    },
+    "model.layers.10.mlp.gate_proj": {
+      "expected_delta_norm": 0.009244956076145172,
+      "actual_delta_norm": 0.006815911270678043,
+      "relative_error": 0.8444697006939671,
+      "expected_nonzero_elements": 13762560,
+      "rounded_to_zero_elements": 11502834,
+      "changed": true
+    },
+    "model.layers.13.self_attn.k_proj": {
+      "expected_delta_norm": 0.0016354979015886784,
+      "actual_delta_norm": 0.0011910329340025783,
+      "relative_error": 0.8448901046493584,
+      "expected_nonzero_elements": 393216,
+      "rounded_to_zero_elements": 328179,
+      "changed": true
+    },
+    "model.layers.11.mlp.up_proj": {
+      "expected_delta_norm": 0.009241212159395218,
+      "actual_delta_norm": 0.006873361766338348,
+      "relative_error": 0.8407558606166321,
+      "expected_nonzero_elements": 13762560,
+      "rounded_to_zero_elements": 11423082,
+      "changed": true
+    },
+    "model.layers.17.mlp.down_proj": {
+      "expected_delta_norm": 0.004518216010183096,
+      "actual_delta_norm": 0.002573904348537326,
+      "relative_error": 0.9135482095622962,
+      "expected_nonzero_elements": 13762560,
+      "rounded_to_zero_elements": 12537880,
+      "changed": true
+    },
+    "model.layers.24.mlp.down_proj": {
+      "expected_delta_norm": 0.004150400869548321,
+      "actual_delta_norm": 0.002190709812566638,
+      "relative_error": 0.9263898198098535,
+      "expected_nonzero_elements": 13762560,
+      "rounded_to_zero_elements": 12738034,
+      "changed": true
+    },
+    "model.layers.17.self_attn.v_proj": {
+      "expected_delta_norm": 0.001586743164807558,
+      "actual_delta_norm": 0.0012185729574412107,
+      "relative_error": 0.8217492710942463,
+      "expected_nonzero_elements": 393216,
+      "rounded_to_zero_elements": 323196,
+      "changed": true
+    },
+    "model.layers.6.self_attn.q_proj": {
+      "expected_delta_norm": 0.0038563504349440336,
+      "actual_delta_norm": 0.0030217471066862345,
+      "relative_error": 0.8074465104206697,
+      "expected_nonzero_elements": 2359296,
+      "rounded_to_zero_elements": 1863490,
+      "changed": true
+    },
+    "model.layers.19.self_attn.k_proj": {
+      "expected_delta_norm": 0.0015560477040708065,
+      "actual_delta_norm": 0.0013234702637419105,
+      "relative_error": 0.7663121594619563,
+      "expected_nonzero_elements": 393216,
+      "rounded_to_zero_elements": 297130,
+      "changed": true
+    },
+    "model.layers.24.mlp.gate_proj": {
+      "expected_delta_norm": 0.010832282714545727,
+      "actual_delta_norm": 0.008711406029760838,
+      "relative_error": 0.8050209460432505,
+      "expected_nonzero_elements": 13762560,
+      "rounded_to_zero_elements": 11258697,
+      "changed": true
+    },
+    "model.layers.5.self_attn.k_proj": {
+      "expected_delta_norm": 0.0013319381978362799,
+      "actual_delta_norm": 0.0009462845628149807,
+      "relative_error": 0.8558892366943437,
+      "expected_nonzero_elements": 393216,
+      "rounded_to_zero_elements": 331438,
+      "changed": true
+    },
+    "model.layers.18.self_attn.o_proj": {
+      "expected_delta_norm": 0.004089374095201492,
+      "actual_delta_norm": 0.003276895498856902,
+      "relative_error": 0.8049030934662619,
+      "expected_nonzero_elements": 2359296,
+      "rounded_to_zero_elements": 1862438,
+      "changed": true
+    },
+    "model.layers.26.mlp.gate_proj": {
+      "expected_delta_norm": 0.010143726132810116,
+      "actual_delta_norm": 0.007906981743872166,
+      "relative_error": 0.8221124020278481,
+      "expected_nonzero_elements": 13762560,
+      "rounded_to_zero_elements": 11253017,
+      "changed": true
+    },
+    "model.layers.12.mlp.down_proj": {
+      "expected_delta_norm": 0.004745022859424353,
+      "actual_delta_norm": 0.0028044083155691624,
+      "relative_error": 0.9059877079751545,
+      "expected_nonzero_elements": 13762560,
+      "rounded_to_zero_elements": 12456839,
+      "changed": true
+    },
+    "model.layers.12.self_attn.q_proj": {
+      "expected_delta_norm": 0.0039995089173316956,
+      "actual_delta_norm": 0.0031468234956264496,
+      "relative_error": 0.812003951621166,
+      "expected_nonzero_elements": 2359296,
+      "rounded_to_zero_elements": 1888255,
+      "changed": true
+    },
+    "model.layers.18.mlp.down_proj": {
+      "expected_delta_norm": 0.004337399732321501,
+      "actual_delta_norm": 0.0024197327438741922,
+      "relative_error": 0.9172748495758493,
+      "expected_nonzero_elements": 13762560,
+      "rounded_to_zero_elements": 12581818,
+      "changed": true
+    },
+    "model.layers.6.self_attn.o_proj": {
+      "expected_delta_norm": 0.003931915387511253,
+      "actual_delta_norm": 0.0032150845509022474,
+      "relative_error": 0.7949591909920315,
+      "expected_nonzero_elements": 2359296,
+      "rounded_to_zero_elements": 1854498,
+      "changed": true
+    },
+    "model.layers.25.self_attn.q_proj": {
+      "expected_delta_norm": 0.004408246837556362,
+      "actual_delta_norm": 0.003699698718264699,
+      "relative_error": 0.764691171247913,
+      "expected_nonzero_elements": 2359296,
+      "rounded_to_zero_elements": 1808857,
+      "changed": true
+    },
+    "model.layers.20.mlp.down_proj": {
+      "expected_delta_norm": 0.004331184085458517,
+      "actual_delta_norm": 0.002395522315055132,
+      "relative_error": 0.919069443800856,
+      "expected_nonzero_elements": 13762560,
+      "rounded_to_zero_elements": 12654502,
+      "changed": true
+    },
+    "model.layers.27.self_attn.o_proj": {
+      "expected_delta_norm": 0.0039034555666148663,
+      "actual_delta_norm": 0.0029216757975518703,
+      "relative_error": 0.8346104022292826,
+      "expected_nonzero_elements": 2359296,
+      "rounded_to_zero_elements": 1948872,
+      "changed": true
+    },
+    "model.layers.10.self_attn.k_proj": {
+      "expected_delta_norm": 0.0014755802694708109,
+      "actual_delta_norm": 0.0011211966630071402,
+      "relative_error": 0.8312621921749491,
+      "expected_nonzero_elements": 393216,
+      "rounded_to_zero_elements": 323895,
+      "changed": true
+    },
+    "model.layers.13.self_attn.q_proj": {
+      "expected_delta_norm": 0.004393075592815876,
+      "actual_delta_norm": 0.0035016692709177732,
+      "relative_error": 0.8068759488228714,
+      "expected_nonzero_elements": 2359296,
+      "rounded_to_zero_elements": 1894382,
+      "changed": true
+    },
+    "model.layers.16.self_attn.q_proj": {
+      "expected_delta_norm": 0.003694604616612196,
+      "actual_delta_norm": 0.002890830859541893,
+      "relative_error": 0.814801496779157,
+      "expected_nonzero_elements": 2359296,
+      "rounded_to_zero_elements": 1918588,
+      "changed": true
+    },
+    "model.layers.17.self_attn.k_proj": {
+      "expected_delta_norm": 0.0016103232046589255,
+      "actual_delta_norm": 0.0013829503441229463,
+      "relative_error": 0.7580501123037793,
+      "expected_nonzero_elements": 393216,
+      "rounded_to_zero_elements": 297758,
+      "changed": true
+    },
+    "model.layers.7.mlp.up_proj": {
+      "expected_delta_norm": 0.009057988412678242,
+      "actual_delta_norm": 0.006674464326351881,
+      "relative_error": 0.8438611749752544,
+      "expected_nonzero_elements": 13762560,
+      "rounded_to_zero_elements": 11538829,
+      "changed": true
+    },
+    "model.layers.7.self_attn.v_proj": {
+      "expected_delta_norm": 0.0015420111594721675,
+      "actual_delta_norm": 0.0011824043467640877,
+      "relative_error": 0.8274108536495599,
+      "expected_nonzero_elements": 393216,
+      "rounded_to_zero_elements": 323561,
+      "changed": true
+    },
+    "model.layers.4.self_attn.k_proj": {
+      "expected_delta_norm": 0.0016035917215049267,
+      "actual_delta_norm": 0.0011845834087580442,
+      "relative_error": 0.842319874018748,
+      "expected_nonzero_elements": 393216,
+      "rounded_to_zero_elements": 333136,
+      "changed": true
+    },
+    "model.layers.19.mlp.gate_proj": {
+      "expected_delta_norm": 0.010610757395625114,
+      "actual_delta_norm": 0.008706965483725071,
+      "relative_error": 0.7920795659591754,
+      "expected_nonzero_elements": 13762560,
+      "rounded_to_zero_elements": 10984916,
+      "changed": true
+    },
+    "model.layers.23.self_attn.o_proj": {
+      "expected_delta_norm": 0.004049697425216436,
+      "actual_delta_norm": 0.0031850538216531277,
+      "relative_error": 0.8142192306263819,
+      "expected_nonzero_elements": 2359296,
+      "rounded_to_zero_elements": 1929467,
+      "changed": true
+    },
+    "model.layers.9.self_attn.o_proj": {
+      "expected_delta_norm": 0.003628604346886277,
+      "actual_delta_norm": 0.002813433762639761,
+      "relative_error": 0.8201621881716707,
+      "expected_nonzero_elements": 2359296,
+      "rounded_to_zero_elements": 1904613,
+      "changed": true
+    },
+    "model.layers.16.self_attn.o_proj": {
+      "expected_delta_norm": 0.003926869481801987,
+      "actual_delta_norm": 0.0031806540209800005,
+      "relative_error": 0.797345286691819,
+      "expected_nonzero_elements": 2359296,
+      "rounded_to_zero_elements": 1863169,
+      "changed": true
+    },
+    "model.layers.0.self_attn.k_proj": {
+      "expected_delta_norm": 0.0014817301416769624,
+      "actual_delta_norm": 0.0008264319621957839,
+      "relative_error": 0.9156359245173914,
+      "expected_nonzero_elements": 393216,
+      "rounded_to_zero_elements": 358089,
+      "changed": true
+    },
+    "model.layers.23.self_attn.k_proj": {
+      "expected_delta_norm": 0.001585833728313446,
+      "actual_delta_norm": 0.0013516918988898396,
+      "relative_error": 0.7621833406155595,
+      "expected_nonzero_elements": 393216,
+      "rounded_to_zero_elements": 294622,
+      "changed": true
+    },
+    "model.layers.14.self_attn.v_proj": {
+      "expected_delta_norm": 0.0015883351443335414,
+      "actual_delta_norm": 0.0012932585086673498,
+      "relative_error": 0.7917457844081094,
+      "expected_nonzero_elements": 393216,
+      "rounded_to_zero_elements": 311382,
+      "changed": true
+    },
+    "model.layers.23.self_attn.v_proj": {
+      "expected_delta_norm": 0.0016280146082863212,
+      "actual_delta_norm": 0.001317030400969088,
+      "relative_error": 0.7919570319765278,
+      "expected_nonzero_elements": 393216,
+      "rounded_to_zero_elements": 309926,
+      "changed": true
+    },
+    "model.layers.4.self_attn.v_proj": {
+      "expected_delta_norm": 0.0015274477191269398,
+      "actual_delta_norm": 0.0011715551372617483,
+      "relative_error": 0.8246604062168748,
+      "expected_nonzero_elements": 393216,
+      "rounded_to_zero_elements": 327868,
+      "changed": true
+    },
+    "model.layers.23.mlp.gate_proj": {
+      "expected_delta_norm": 0.010078958235681057,
+      "actual_delta_norm": 0.007749895565211773,
+      "relative_error": 0.827369742507969,
+      "expected_nonzero_elements": 13762560,
+      "rounded_to_zero_elements": 11327917,
+      "changed": true
+    },
+    "model.layers.27.self_attn.q_proj": {
+      "expected_delta_norm": 0.004424023441970348,
+      "actual_delta_norm": 0.00383113999851048,
+      "relative_error": 0.7399488112121887,
+      "expected_nonzero_elements": 2359296,
+      "rounded_to_zero_elements": 1732660,
+      "changed": true
+    },
+    "model.layers.24.self_attn.k_proj": {
+      "expected_delta_norm": 0.0018470025388523936,
+      "actual_delta_norm": 0.0016083181835711002,
+      "relative_error": 0.749203797819324,
+      "expected_nonzero_elements": 393216,
+      "rounded_to_zero_elements": 292197,
+      "changed": true
+    },
+    "model.layers.9.mlp.gate_proj": {
+      "expected_delta_norm": 0.009010346606373787,
+      "actual_delta_norm": 0.006548041012138128,
+      "relative_error": 0.8499569912967584,
+      "expected_nonzero_elements": 13762560,
+      "rounded_to_zero_elements": 11567275,
+      "changed": true
+    },
+    "model.layers.1.mlp.down_proj": {
+      "expected_delta_norm": 0.004581881687045097,
+      "actual_delta_norm": 0.0028529036790132523,
+      "relative_error": 0.8941558710814638,
+      "expected_nonzero_elements": 13762560,
+      "rounded_to_zero_elements": 12704296,
+      "changed": true
+    },
+    "model.layers.2.mlp.up_proj": {
+      "expected_delta_norm": 0.009281324222683907,
+      "actual_delta_norm": 0.007252083625644445,
+      "relative_error": 0.8184278929043546,
+      "expected_nonzero_elements": 13762560,
+      "rounded_to_zero_elements": 11379858,
+      "changed": true
+    },
+    "model.layers.21.mlp.down_proj": {
+      "expected_delta_norm": 0.00433345278725028,
+      "actual_delta_norm": 0.00243238708935678,
+      "relative_error": 0.9159020629551691,
+      "expected_nonzero_elements": 13762560,
+      "rounded_to_zero_elements": 12651655,
+      "changed": true
+    },
+    "model.layers.7.self_attn.k_proj": {
+      "expected_delta_norm": 0.0015397683018818498,
+      "actual_delta_norm": 0.0011510254116728902,
+      "relative_error": 0.8347003733184621,
+      "expected_nonzero_elements": 393216,
+      "rounded_to_zero_elements": 331278,
+      "changed": true
+    },
+    "model.layers.4.self_attn.o_proj": {
+      "expected_delta_norm": 0.003974090330302715,
+      "actual_delta_norm": 0.0031093317084014416,
+      "relative_error": 0.8170140963036896,
+      "expected_nonzero_elements": 2359296,
+      "rounded_to_zero_elements": 1901896,
+      "changed": true
+    },
+    "model.layers.1.self_attn.o_proj": {
+      "expected_delta_norm": 0.003885093377903104,
+      "actual_delta_norm": 0.003239603480324149,
+      "relative_error": 0.7828163009175944,
+      "expected_nonzero_elements": 2359296,
+      "rounded_to_zero_elements": 1895326,
+      "changed": true
+    },
+    "model.layers.10.mlp.up_proj": {
+      "expected_delta_norm": 0.008850038051605225,
+      "actual_delta_norm": 0.006439688615500927,
+      "relative_error": 0.8492725086544225,
+      "expected_nonzero_elements": 13762560,
+      "rounded_to_zero_elements": 11547184,
+      "changed": true
+    },
+    "model.layers.20.self_attn.k_proj": {
+      "expected_delta_norm": 0.0016861952608451247,
+      "actual_delta_norm": 0.0014235384296625853,
+      "relative_error": 0.7713923075505097,
+      "expected_nonzero_elements": 393216,
+      "rounded_to_zero_elements": 299254,
+      "changed": true
+    },
+    "model.layers.0.self_attn.q_proj": {
+      "expected_delta_norm": 0.0042634992860257626,
+      "actual_delta_norm": 0.003141056979075074,
+      "relative_error": 0.833672062338661,
+      "expected_nonzero_elements": 2359296,
+      "rounded_to_zero_elements": 1985929,
+      "changed": true
+    },
+    "model.layers.15.self_attn.k_proj": {
+      "expected_delta_norm": 0.0015841578133404255,
+      "actual_delta_norm": 0.0012055395636707544,
+      "relative_error": 0.8298809536757269,
+      "expected_nonzero_elements": 393216,
+      "rounded_to_zero_elements": 321451,
+      "changed": true
+    },
+    "model.layers.16.self_attn.v_proj": {
+      "expected_delta_norm": 0.0016304960008710623,
+      "actual_delta_norm": 0.0012853138614445925,
+      "relative_error": 0.8104818885017651,
+      "expected_nonzero_elements": 393216,
+      "rounded_to_zero_elements": 316266,
+      "changed": true
+    },
+    "model.layers.7.self_attn.o_proj": {
+      "expected_delta_norm": 0.003727670991793275,
+      "actual_delta_norm": 0.0029196147806942463,
+      "relative_error": 0.8155203939982105,
+      "expected_nonzero_elements": 2359296,
+      "rounded_to_zero_elements": 1909170,
+      "changed": true
+    },
+    "model.layers.24.mlp.up_proj": {
+      "expected_delta_norm": 0.010080046020448208,
+      "actual_delta_norm": 0.007517040707170963,
+      "relative_error": 0.8401140791031109,
+      "expected_nonzero_elements": 13762560,
+      "rounded_to_zero_elements": 11471353,
+      "changed": true
+    },
+    "model.layers.11.self_attn.q_proj": {
+      "expected_delta_norm": 0.0036680526100099087,
+      "actual_delta_norm": 0.002785866381600499,
+      "relative_error": 0.827489693837173,
+      "expected_nonzero_elements": 2359296,
+      "rounded_to_zero_elements": 1916765,
+      "changed": true
+    },
+    "model.layers.10.mlp.down_proj": {
+      "expected_delta_norm": 0.004563015419989824,
+      "actual_delta_norm": 0.002593826735392213,
+      "relative_error": 0.9135845582626229,
+      "expected_nonzero_elements": 13762560,
+      "rounded_to_zero_elements": 12525018,
+      "changed": true
+    },
+    "model.layers.15.mlp.gate_proj": {
+      "expected_delta_norm": 0.009355667047202587,
+      "actual_delta_norm": 0.007116231601685286,
+      "relative_error": 0.8313111818133584,
+      "expected_nonzero_elements": 13762560,
+      "rounded_to_zero_elements": 11338960,
+      "changed": true
+    },
+    "model.layers.22.self_attn.v_proj": {
+      "expected_delta_norm": 0.0021167530212551355,
+      "actual_delta_norm": 0.001873895525932312,
+      "relative_error": 0.7243558049736096,
+      "expected_nonzero_elements": 393216,
+      "rounded_to_zero_elements": 299118,
+      "changed": true
+    },
+    "model.layers.22.self_attn.k_proj": {
+      "expected_delta_norm": 0.0018499386496841908,
+      "actual_delta_norm": 0.0015490049263462424,
+      "relative_error": 0.779120150385895,
+      "expected_nonzero_elements": 393216,
+      "rounded_to_zero_elements": 303196,
+      "changed": true
+    },
+    "model.layers.9.self_attn.v_proj": {
+      "expected_delta_norm": 0.0013928505359217525,
+      "actual_delta_norm": 0.001029542530886829,
+      "relative_error": 0.8404903006771285,
+      "expected_nonzero_elements": 393216,
+      "rounded_to_zero_elements": 327318,
+      "changed": true
+    },
+    "model.layers.6.mlp.down_proj": {
+      "expected_delta_norm": 0.005148407071828842,
+      "actual_delta_norm": 0.0031172214075922966,
+      "relative_error": 0.9009916679630829,
+      "expected_nonzero_elements": 13762560,
+      "rounded_to_zero_elements": 12453357,
+      "changed": true
+    },
+    "model.layers.7.mlp.down_proj": {
+      "expected_delta_norm": 0.004951447248458862,
+      "actual_delta_norm": 0.002904064953327179,
+      "relative_error": 0.9075902422912792,
+      "expected_nonzero_elements": 13762560,
+      "rounded_to_zero_elements": 12485224,
+      "changed": true
+    },
+    "model.layers.24.self_attn.q_proj": {
+      "expected_delta_norm": 0.004137562587857246,
+      "actual_delta_norm": 0.00337752653285861,
+      "relative_error": 0.7880707092170166,
+      "expected_nonzero_elements": 2359296,
+      "rounded_to_zero_elements": 1830760,
+      "changed": true
+    },
+    "model.layers.6.mlp.gate_proj": {
+      "expected_delta_norm": 0.009966650046408176,
+      "actual_delta_norm": 0.007473936770111322,
+      "relative_error": 0.8373453935758632,
+      "expected_nonzero_elements": 13762560,
+      "rounded_to_zero_elements": 11516122,
+      "changed": true
+    },
+    "model.layers.4.mlp.down_proj": {
+      "expected_delta_norm": 0.004448389634490013,
+      "actual_delta_norm": 0.002514045452699065,
+      "relative_error": 0.9149142391522357,
+      "expected_nonzero_elements": 13762560,
+      "rounded_to_zero_elements": 12531385,
+      "changed": true
+    },
+    "model.layers.12.self_attn.v_proj": {
+      "expected_delta_norm": 0.001552631496451795,
+      "actual_delta_norm": 0.0012121042236685753,
+      "relative_error": 0.8159396830007462,
+      "expected_nonzero_elements": 393216,
+      "rounded_to_zero_elements": 316397,
+      "changed": true
+    },
+    "model.layers.17.mlp.gate_proj": {
+      "expected_delta_norm": 0.010369420051574707,
+      "actual_delta_norm": 0.008339430205523968,
+      "relative_error": 0.8043072261022015,
+      "expected_nonzero_elements": 13762560,
+      "rounded_to_zero_elements": 11093961,
+      "changed": true
+    },
+    "model.layers.8.mlp.down_proj": {
+      "expected_delta_norm": 0.004730690736323595,
+      "actual_delta_norm": 0.002716452581807971,
+      "relative_error": 0.9117639676265993,
+      "expected_nonzero_elements": 13762560,
+      "rounded_to_zero_elements": 12534621,
+      "changed": true
+    },
+    "model.layers.2.self_attn.q_proj": {
+      "expected_delta_norm": 0.003987032454460859,
+      "actual_delta_norm": 0.0030802912078797817,
+      "relative_error": 0.8209951615768445,
+      "expected_nonzero_elements": 2359296,
+      "rounded_to_zero_elements": 1925882,
+      "changed": true
+    },
+    "model.layers.21.self_attn.v_proj": {
+      "expected_delta_norm": 0.0015425147721543908,
+      "actual_delta_norm": 0.0010986007982864976,
+      "relative_error": 0.8551174062748653,
+      "expected_nonzero_elements": 393216,
+      "rounded_to_zero_elements": 334532,
+      "changed": true
+    },
+    "model.layers.5.mlp.down_proj": {
+      "expected_delta_norm": 0.00547581585124135,
+      "actual_delta_norm": 0.00356331467628479,
+      "relative_error": 0.8836443728221886,
+      "expected_nonzero_elements": 13762560,
+      "rounded_to_zero_elements": 12276364,
+      "changed": true
+    },
+    "model.layers.18.self_attn.v_proj": {
+      "expected_delta_norm": 0.0016180278034880757,
+      "actual_delta_norm": 0.0012344422284513712,
+      "relative_error": 0.8299501401312765,
+      "expected_nonzero_elements": 393216,
+      "rounded_to_zero_elements": 323611,
+      "changed": true
+    },
+    "model.layers.18.mlp.gate_proj": {
+      "expected_delta_norm": 0.01010920386761427,
+      "actual_delta_norm": 0.008087990805506706,
+      "relative_error": 0.8060572057661791,
+      "expected_nonzero_elements": 13762560,
+      "rounded_to_zero_elements": 11137801,
+      "changed": true
+    },
+    "model.layers.6.mlp.up_proj": {
+      "expected_delta_norm": 0.009038811549544334,
+      "actual_delta_norm": 0.0066318269819021225,
+      "relative_error": 0.8459402288428547,
+      "expected_nonzero_elements": 13762560,
+      "rounded_to_zero_elements": 11501212,
+      "changed": true
+    },
+    "model.layers.14.mlp.down_proj": {
+      "expected_delta_norm": 0.004541747737675905,
+      "actual_delta_norm": 0.002696617739275098,
+      "relative_error": 0.9049479413644306,
+      "expected_nonzero_elements": 13762560,
+      "rounded_to_zero_elements": 12501059,
+      "changed": true
+    },
+    "model.layers.19.mlp.down_proj": {
+      "expected_delta_norm": 0.004305021371692419,
+      "actual_delta_norm": 0.0024047456681728363,
+      "relative_error": 0.9168481258389027,
+      "expected_nonzero_elements": 13762560,
+      "rounded_to_zero_elements": 12612653,
+      "changed": true
+    },
+    "model.layers.7.self_attn.q_proj": {
+      "expected_delta_norm": 0.0037364999298006296,
+      "actual_delta_norm": 0.002861052518710494,
+      "relative_error": 0.8218455154785802,
+      "expected_nonzero_elements": 2359296,
+      "rounded_to_zero_elements": 1916686,
+      "changed": true
+    },
+    "model.layers.17.self_attn.o_proj": {
+      "expected_delta_norm": 0.004052376374602318,
+      "actual_delta_norm": 0.003223096951842308,
+      "relative_error": 0.8066112015841126,
+      "expected_nonzero_elements": 2359296,
+      "rounded_to_zero_elements": 1881445,
+      "changed": true
+    },
+    "model.layers.2.self_attn.o_proj": {
+      "expected_delta_norm": 0.003720890497788787,
+      "actual_delta_norm": 0.002870717318728566,
+      "relative_error": 0.8258206583112567,
+      "expected_nonzero_elements": 2359296,
+      "rounded_to_zero_elements": 1920405,
+      "changed": true
+    },
+    "model.layers.25.self_attn.o_proj": {
+      "expected_delta_norm": 0.0039895083755254745,
+      "actual_delta_norm": 0.0031445228960365057,
+      "relative_error": 0.8093591127487393,
+      "expected_nonzero_elements": 2359296,
+      "rounded_to_zero_elements": 1888110,
+      "changed": true
+    },
+    "model.layers.4.mlp.gate_proj": {
+      "expected_delta_norm": 0.009557866491377354,
+      "actual_delta_norm": 0.0067777629010379314,
+      "relative_error": 0.8578854784631813,
+      "expected_nonzero_elements": 13762560,
+      "rounded_to_zero_elements": 11705333,
+      "changed": true
+    },
+    "model.layers.27.self_attn.k_proj": {
+      "expected_delta_norm": 0.0016719322884455323,
+      "actual_delta_norm": 0.0015316264471039176,
+      "relative_error": 0.6970143482820977,
+      "expected_nonzero_elements": 393216,
+      "rounded_to_zero_elements": 266538,
+      "changed": true
+    },
+    "model.layers.12.mlp.gate_proj": {
+      "expected_delta_norm": 0.009492332115769386,
+      "actual_delta_norm": 0.0071893795393407345,
+      "relative_error": 0.8325879677568804,
+      "expected_nonzero_elements": 13762560,
+      "rounded_to_zero_elements": 11401280,
+      "changed": true
+    },
+    "model.layers.24.self_attn.o_proj": {
+      "expected_delta_norm": 0.0038672047667205334,
+      "actual_delta_norm": 0.0028673901688307524,
+      "relative_error": 0.8394410361577018,
+      "expected_nonzero_elements": 2359296,
+      "rounded_to_zero_elements": 1978540,
+      "changed": true
+    },
+    "model.layers.21.self_attn.k_proj": {
+      "expected_delta_norm": 0.0017363792285323143,
+      "actual_delta_norm": 0.0015289178118109703,
+      "relative_error": 0.7369179365412248,
+      "expected_nonzero_elements": 393216,
+      "rounded_to_zero_elements": 294094,
+      "changed": true
+    },
+    "model.layers.3.self_attn.k_proj": {
+      "expected_delta_norm": 0.0017894570482894778,
+      "actual_delta_norm": 0.0013602065155282617,
+      "relative_error": 0.8267502613145951,
+      "expected_nonzero_elements": 393216,
+      "rounded_to_zero_elements": 330189,
+      "changed": true
+    },
+    "model.layers.26.self_attn.o_proj": {
+      "expected_delta_norm": 0.0039959559217095375,
+      "actual_delta_norm": 0.0028337975963950157,
+      "relative_error": 0.8569603495994174,
+      "expected_nonzero_elements": 2359296,
+      "rounded_to_zero_elements": 2001540,
+      "changed": true
+    },
+    "model.layers.2.mlp.gate_proj": {
+      "expected_delta_norm": 0.00920580979436636,
+      "actual_delta_norm": 0.006302846595644951,
+      "relative_error": 0.8697514523256888,
+      "expected_nonzero_elements": 13762560,
+      "rounded_to_zero_elements": 11861374,
+      "changed": true
+    },
+    "model.layers.8.self_attn.q_proj": {
+      "expected_delta_norm": 0.003750863019376993,
+      "actual_delta_norm": 0.002885621041059494,
+      "relative_error": 0.8219429200822305,
+      "expected_nonzero_elements": 2359296,
+      "rounded_to_zero_elements": 1908528,
+      "changed": true
+    },
+    "model.layers.9.mlp.down_proj": {
+      "expected_delta_norm": 0.004434450529515743,
+      "actual_delta_norm": 0.0024698227643966675,
+      "relative_error": 0.9172731864524605,
+      "expected_nonzero_elements": 13762560,
+      "rounded_to_zero_elements": 12591251,
+      "changed": true
+    },
+    "model.layers.14.self_attn.o_proj": {
+      "expected_delta_norm": 0.004016869235783815,
+      "actual_delta_norm": 0.0033391709439456463,
+      "relative_error": 0.7797690652887188,
+      "expected_nonzero_elements": 2359296,
+      "rounded_to_zero_elements": 1820365,
+      "changed": true
+    },
+    "model.layers.10.self_attn.q_proj": {
+      "expected_delta_norm": 0.003712802892550826,
+      "actual_delta_norm": 0.0028224922716617584,
+      "relative_error": 0.8290609390841187,
+      "expected_nonzero_elements": 2359296,
+      "rounded_to_zero_elements": 1943255,
+      "changed": true
+    },
+    "model.layers.13.mlp.gate_proj": {
+      "expected_delta_norm": 0.009178824722766876,
+      "actual_delta_norm": 0.006865848787128925,
+      "relative_error": 0.8382340228302682,
+      "expected_nonzero_elements": 13762560,
+      "rounded_to_zero_elements": 11426410,
+      "changed": true
+    },
+    "model.layers.21.mlp.gate_proj": {
+      "expected_delta_norm": 0.01083278190344572,
+      "actual_delta_norm": 0.008851652964949608,
+      "relative_error": 0.7950773972754075,
+      "expected_nonzero_elements": 13762560,
+      "rounded_to_zero_elements": 11085483,
+      "changed": true
+    },
+    "model.layers.3.self_attn.q_proj": {
+      "expected_delta_norm": 0.0037177465856075287,
+      "actual_delta_norm": 0.002702840603888035,
+      "relative_error": 0.8472933941230992,
+      "expected_nonzero_elements": 2359296,
+      "rounded_to_zero_elements": 1980654,
+      "changed": true
+    },
+    "model.layers.25.mlp.gate_proj": {
+      "expected_delta_norm": 0.01091987919062376,
+      "actual_delta_norm": 0.008753589354455471,
+      "relative_error": 0.8078353239720734,
+      "expected_nonzero_elements": 13762560,
+      "rounded_to_zero_elements": 11159780,
+      "changed": true
+    },
+    "model.layers.3.mlp.up_proj": {
+      "expected_delta_norm": 0.009656871668994427,
+      "actual_delta_norm": 0.0076513695530593395,
+      "relative_error": 0.8113716412220403,
+      "expected_nonzero_elements": 13762560,
+      "rounded_to_zero_elements": 11239289,
+      "changed": true
+    },
+    "model.layers.11.mlp.gate_proj": {
+      "expected_delta_norm": 0.009097257629036903,
+      "actual_delta_norm": 0.006680547725409269,
+      "relative_error": 0.8456458703457969,
+      "expected_nonzero_elements": 13762560,
+      "rounded_to_zero_elements": 11533140,
+      "changed": true
+    },
+    "model.layers.23.mlp.up_proj": {
+      "expected_delta_norm": 0.009490076452493668,
+      "actual_delta_norm": 0.006995505653321743,
+      "relative_error": 0.8445326996596235,
+      "expected_nonzero_elements": 13762560,
+      "rounded_to_zero_elements": 11555561,
+      "changed": true
+    },
+    "model.layers.1.self_attn.v_proj": {
+      "expected_delta_norm": 0.0017583630979061127,
+      "actual_delta_norm": 0.001571614877320826,
+      "relative_error": 0.729378881033544,
+      "expected_nonzero_elements": 393216,
+      "rounded_to_zero_elements": 296549,
+      "changed": true
+    },
+    "model.layers.11.mlp.down_proj": {
+      "expected_delta_norm": 0.004476569127291441,
+      "actual_delta_norm": 0.0025542783550918102,
+      "relative_error": 0.9128582423687703,
+      "expected_nonzero_elements": 13762560,
+      "rounded_to_zero_elements": 12522099,
+      "changed": true
+    },
+    "model.layers.11.self_attn.v_proj": {
+      "expected_delta_norm": 0.0014605015749111772,
+      "actual_delta_norm": 0.0011143318843096495,
+      "relative_error": 0.8290292391451897,
+      "expected_nonzero_elements": 393216,
+      "rounded_to_zero_elements": 324466,
+      "changed": true
+    },
+    "model.layers.13.mlp.up_proj": {
+      "expected_delta_norm": 0.009128686971962452,
+      "actual_delta_norm": 0.006787201855331659,
+      "relative_error": 0.8409203341449826,
+      "expected_nonzero_elements": 13762560,
+      "rounded_to_zero_elements": 11432381,
+      "changed": true
+    },
+    "model.layers.15.self_attn.v_proj": {
+      "expected_delta_norm": 0.0015012730145826936,
+      "actual_delta_norm": 0.0011265885550528765,
+      "relative_error": 0.8341373266426987,
+      "expected_nonzero_elements": 393216,
+      "rounded_to_zero_elements": 324058,
+      "changed": true
+    },
+    "model.layers.20.mlp.up_proj": {
+      "expected_delta_norm": 0.009354475885629654,
+      "actual_delta_norm": 0.007020074874162674,
+      "relative_error": 0.8364431261058519,
+      "expected_nonzero_elements": 13762560,
+      "rounded_to_zero_elements": 11550954,
+      "changed": true
+    },
+    "model.layers.12.self_attn.k_proj": {
+      "expected_delta_norm": 0.0016441047191619873,
+      "actual_delta_norm": 0.0013022992061451077,
+      "relative_error": 0.8011551856182137,
+      "expected_nonzero_elements": 393216,
+      "rounded_to_zero_elements": 310506,
+      "changed": true
+    },
+    "model.layers.5.mlp.up_proj": {
+      "expected_delta_norm": 0.00932218786329031,
+      "actual_delta_norm": 0.007175934035331011,
+      "relative_error": 0.8258011315710891,
+      "expected_nonzero_elements": 13762560,
+      "rounded_to_zero_elements": 11343827,
+      "changed": true
+    },
+    "model.layers.8.self_attn.o_proj": {
+      "expected_delta_norm": 0.0037041394971311092,
+      "actual_delta_norm": 0.0028785935137420893,
+      "relative_error": 0.8200474845997506,
+      "expected_nonzero_elements": 2359296,
+      "rounded_to_zero_elements": 1903580,
+      "changed": true
+    },
+    "model.layers.5.self_attn.q_proj": {
+      "expected_delta_norm": 0.0037178387865424156,
+      "actual_delta_norm": 0.0028434100095182657,
+      "relative_error": 0.8235257573962318,
+      "expected_nonzero_elements": 2359296,
+      "rounded_to_zero_elements": 1915656,
+      "changed": true
+    },
+    "model.layers.22.self_attn.o_proj": {
+      "expected_delta_norm": 0.004288728814572096,
+      "actual_delta_norm": 0.0034060124307870865,
+      "relative_error": 0.8114077942665425,
+      "expected_nonzero_elements": 2359296,
+      "rounded_to_zero_elements": 1883642,
+      "changed": true
+    },
+    "model.layers.11.self_attn.o_proj": {
+      "expected_delta_norm": 0.0038069598376750946,
+      "actual_delta_norm": 0.0030159226153045893,
+      "relative_error": 0.8072947399168039,
+      "expected_nonzero_elements": 2359296,
+      "rounded_to_zero_elements": 1885129,
+      "changed": true
+    },
+    "model.layers.21.self_attn.q_proj": {
+      "expected_delta_norm": 0.004040117841213942,
+      "actual_delta_norm": 0.0032874152529984713,
+      "relative_error": 0.7932254482925309,
+      "expected_nonzero_elements": 2359296,
+      "rounded_to_zero_elements": 1848250,
+      "changed": true
+    },
+    "model.layers.26.mlp.down_proj": {
+      "expected_delta_norm": 0.00439429422840476,
+      "actual_delta_norm": 0.0023366636596620083,
+      "relative_error": 0.9251535101081684,
+      "expected_nonzero_elements": 13762560,
+      "rounded_to_zero_elements": 12710974,
+      "changed": true
+    },
+    "model.layers.25.mlp.down_proj": {
+      "expected_delta_norm": 0.004283561836928129,
+      "actual_delta_norm": 0.0022657671943306923,
+      "relative_error": 0.9260919727284161,
+      "expected_nonzero_elements": 13762560,
+      "rounded_to_zero_elements": 12706752,
+      "changed": true
+    },
+    "model.layers.5.mlp.gate_proj": {
+      "expected_delta_norm": 0.009611785411834717,
+      "actual_delta_norm": 0.0067852698266506195,
+      "relative_error": 0.859192839624455,
+      "expected_nonzero_elements": 13762560,
+      "rounded_to_zero_elements": 11751855,
+      "changed": true
+    },
+    "model.layers.27.mlp.gate_proj": {
+      "expected_delta_norm": 0.010591376572847366,
+      "actual_delta_norm": 0.008486912585794926,
+      "relative_error": 0.8071854464544173,
+      "expected_nonzero_elements": 13762560,
+      "rounded_to_zero_elements": 11171152,
+      "changed": true
+    },
+    "model.layers.10.self_attn.v_proj": {
+      "expected_delta_norm": 0.0013892848510295153,
+      "actual_delta_norm": 0.0010161407990381122,
+      "relative_error": 0.8459167381299573,
+      "expected_nonzero_elements": 393216,
+      "rounded_to_zero_elements": 328476,
+      "changed": true
+    },
+    "model.layers.15.mlp.up_proj": {
+      "expected_delta_norm": 0.00908920168876648,
+      "actual_delta_norm": 0.006815457250922918,
+      "relative_error": 0.837224226432293,
+      "expected_nonzero_elements": 13762560,
+      "rounded_to_zero_elements": 11432436,
+      "changed": true
+    },
+    "model.layers.0.mlp.gate_proj": {
+      "expected_delta_norm": 0.009027115069329739,
+      "actual_delta_norm": 0.006351733114570379,
+      "relative_error": 0.8598434651072121,
+      "expected_nonzero_elements": 13762560,
+      "rounded_to_zero_elements": 11637398,
+      "changed": true
+    },
+    "model.layers.19.self_attn.v_proj": {
+      "expected_delta_norm": 0.0016275019152089953,
+      "actual_delta_norm": 0.0012943712063133717,
+      "relative_error": 0.8071618049468049,
+      "expected_nonzero_elements": 393216,
+      "rounded_to_zero_elements": 315418,
+      "changed": true
+    },
+    "model.layers.16.mlp.gate_proj": {
+      "expected_delta_norm": 0.009612240828573704,
+      "actual_delta_norm": 0.007539100479334593,
+      "relative_error": 0.8166651406613562,
+      "expected_nonzero_elements": 13762560,
+      "rounded_to_zero_elements": 11272039,
+      "changed": true
+    },
+    "model.layers.8.self_attn.k_proj": {
+      "expected_delta_norm": 0.0015833342913538218,
+      "actual_delta_norm": 0.001191132003441453,
+      "relative_error": 0.8330062677481178,
+      "expected_nonzero_elements": 393216,
+      "rounded_to_zero_elements": 325195,
+      "changed": true
+    },
+    "model.layers.22.mlp.down_proj": {
+      "expected_delta_norm": 0.004378901328891516,
+      "actual_delta_norm": 0.0024437522515654564,
+      "relative_error": 0.9169570779079842,
+      "expected_nonzero_elements": 13762560,
+      "rounded_to_zero_elements": 12633554,
+      "changed": true
+    }
+  },
+  "expected_module_count": 196,
+  "expected_delta_norm": 0.08211811872862142,
+  "rounded_to_zero_share": 0.8512838507900718
+}

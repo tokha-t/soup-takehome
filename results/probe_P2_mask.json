@@ -1,0 +1,6 @@
+{
+  "rows": 1500,
+  "eos_supervised_before": 1500,
+  "eos_masked_by_token_id": 1500,
+  "eos_masked_by_attention_mask": 0
+}

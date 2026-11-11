@@ -1,0 +1,4549 @@
+{
+  "models": {
+    "base": {
+      "total": 192,
+      "usable": 182,
+      "execution_match": 0.8186813186813187,
+      "lenient_on_same_rows": 0.4175824175824176,
+      "both_empty": 76,
+      "rows": [
+        {
+          "source_index": 5365,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 31088,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 62779,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 66503,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 2175,
+          "lenient": false,
+          "matched": false,
+          "gold_rows": 14,
+          "output_rows": 14,
+          "both_empty": false
+        },
+        {
+          "source_index": 28162,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 4581,
+          "lenient": false,
+          "matched": false,
+          "gold_rows": 1,
+          "output_rows": 0,
+          "both_empty": false
+        },
+        {
+          "source_index": 30748,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 28326,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 39298,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 31071,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 43886,
+          "lenient": false,
+          "matched": false,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 44108,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 2193,
+          "lenient": false,
+          "matched": false,
+          "gold_rows": 1,
+          "output_rows": 2,
+          "both_empty": false
+        },
+        {
+          "source_index": 28779,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 3841,
+          "lenient": false,
+          "matched": null,
+          "gold_error": "duplicate column name: facID"
+        },
+        {
+          "source_index": 17021,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 30076,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 41534,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 15165,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 1734,
+          "lenient": false,
+          "matched": false,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 40423,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 644,
+          "lenient": false,
+          "matched": false,
+          "error": "no such column: Weight",
+          "gold_rows": 1
+        },
+        {
+          "source_index": 573,
+          "lenient": false,
+          "matched": false,
+          "error": "no such column: p.Launch_year",
+          "gold_rows": 1
+        },
+        {
+          "source_index": 78036,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 57371,
+          "lenient": false,
+          "matched": false,
+          "error": "no such column: Year",
+          "gold_rows": 1
+        },
+        {
+          "source_index": 9891,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 2752,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 7,
+          "output_rows": 7,
+          "both_empty": false
+        },
+        {
+          "source_index": 64775,
+          "lenient": false,
+          "matched": false,
+          "gold_rows": 1,
+          "output_rows": 0,
+          "both_empty": false
+        },
+        {
+          "source_index": 74623,
+          "lenient": false,
+          "matched": false,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 74611,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 2,
+          "output_rows": 2,
+          "both_empty": false
+        },
+        {
+          "source_index": 5684,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 64063,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 24446,
+          "lenient": false,
+          "matched": false,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 3940,
+          "lenient": false,
+          "matched": false,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 3118,
+          "lenient": false,
+          "matched": null,
+          "gold_error": "table STUDENT already exists"
+        },
+        {
+          "source_index": 34016,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 75462,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 58837,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 26876,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 24536,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 17443,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 27803,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 3606,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 3025,
+          "lenient": false,
+          "matched": false,
+          "gold_rows": 7,
+          "output_rows": 7,
+          "both_empty": false
+        },
+        {
+          "source_index": 2961,
+          "lenient": false,
+          "matched": null,
+          "gold_error": "no such column: Firstname"
+        },
+        {
+          "source_index": 71496,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 67970,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 17550,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 460,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 1333,
+          "lenient": false,
+          "matched": false,
+          "error": "no such column: T3.pitstops",
+          "gold_rows": 0
+        },
+        {
+          "source_index": 72314,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 75740,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 59946,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 2,
+          "output_rows": 2,
+          "both_empty": false
+        },
+        {
+          "source_index": 3931,
+          "lenient": false,
+          "matched": false,
+          "error": "no such column: b.id",
+          "gold_rows": 7
+        },
+        {
+          "source_index": 46387,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 73869,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 76684,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 24899,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 2881,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 2,
+          "output_rows": 2,
+          "both_empty": false
+        },
+        {
+          "source_index": 74460,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 3843,
+          "lenient": false,
+          "matched": null,
+          "gold_error": "duplicate column name: facID"
+        },
+        {
+          "source_index": 173,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 14,
+          "output_rows": 14,
+          "both_empty": false
+        },
+        {
+          "source_index": 22965,
+          "lenient": false,
+          "matched": false,
+          "gold_rows": 1,
+          "output_rows": 0,
+          "both_empty": false
+        },
+        {
+          "source_index": 70602,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 49620,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 41411,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 54148,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 62425,
+          "lenient": false,
+          "matched": false,
+          "gold_rows": 1,
+          "output_rows": 2,
+          "both_empty": false
+        },
+        {
+          "source_index": 14357,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 67616,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 368,
+          "lenient": false,
+          "matched": null,
+          "gold_error": "duplicate column name: Editor_ID"
+        },
+        {
+          "source_index": 66230,
+          "lenient": false,
+          "matched": null,
+          "gold_error": "near \"OFFSET\": syntax error"
+        },
+        {
+          "source_index": 73994,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 52507,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 66188,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 24587,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 1124,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 5,
+          "output_rows": 5,
+          "both_empty": false
+        },
+        {
+          "source_index": 39679,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 3701,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 3119,
+          "lenient": false,
+          "matched": null,
+          "gold_error": "table STUDENT already exists"
+        },
+        {
+          "source_index": 4429,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 78571,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 4122,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 36594,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 65045,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 30037,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 22243,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 253,
+          "lenient": false,
+          "matched": false,
+          "gold_rows": 7,
+          "output_rows": 14,
+          "both_empty": false
+        },
+        {
+          "source_index": 11833,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 42678,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 74930,
+          "lenient": false,
+          "matched": false,
+          "gold_rows": 0,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 20928,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 50124,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 4425,
+          "lenient": false,
+          "matched": false,
+          "error": "misuse of aggregate: COUNT()",
+          "gold_rows": 7
+        },
+        {
+          "source_index": 78539,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 36856,
+          "lenient": false,
+          "matched": false,
+          "gold_rows": 1,
+          "output_rows": 2,
+          "both_empty": false
+        },
+        {
+          "source_index": 31627,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 10361,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 260,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 443,
+          "lenient": false,
+          "matched": false,
+          "gold_rows": 6,
+          "output_rows": 14,
+          "both_empty": false
+        },
+        {
+          "source_index": 10140,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 44587,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 34525,
+          "lenient": false,
+          "matched": false,
+          "gold_rows": 1,
+          "output_rows": 0,
+          "both_empty": false
+        },
+        {
+          "source_index": 11567,
+          "lenient": false,
+          "matched": false,
+          "gold_rows": 1,
+          "output_rows": 0,
+          "both_empty": false
+        },
+        {
+          "source_index": 3500,
+          "lenient": false,
+          "matched": false,
+          "gold_rows": 16,
+          "output_rows": 6,
+          "both_empty": false
+        },
+        {
+          "source_index": 28496,
+          "lenient": false,
+          "matched": false,
+          "gold_rows": 1,
+          "output_rows": 0,
+          "both_empty": false
+        },
+        {
+          "source_index": 23607,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 3441,
+          "lenient": false,
+          "matched": false,
+          "gold_rows": 7,
+          "output_rows": 14,
+          "both_empty": false
+        },
+        {
+          "source_index": 8870,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 63894,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 7407,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 33508,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 28164,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 2130,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 11895,
+          "lenient": false,
+          "matched": null,
+          "gold_error": "near \"$_\": syntax error"
+        },
+        {
+          "source_index": 48448,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 324,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 67955,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 3247,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 2920,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 14,
+          "output_rows": 14,
+          "both_empty": false
+        },
+        {
+          "source_index": 3020,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 6,
+          "output_rows": 6,
+          "both_empty": false
+        },
+        {
+          "source_index": 9534,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 14178,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 72511,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 41074,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 39370,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 72736,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 3167,
+          "lenient": false,
+          "matched": null,
+          "gold_error": "table CHARACTERISTICS already exists"
+        },
+        {
+          "source_index": 2125,
+          "lenient": true,
+          "matched": false,
+          "gold_rows": 10,
+          "output_rows": 0,
+          "both_empty": false
+        },
+        {
+          "source_index": 2400,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 24,
+          "output_rows": 24,
+          "both_empty": false
+        },
+        {
+          "source_index": 42493,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 2,
+          "output_rows": 2,
+          "both_empty": false
+        },
+        {
+          "source_index": 59696,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 171,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 21808,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 38241,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 6472,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 54393,
+          "lenient": false,
+          "matched": false,
+          "error": "unrecognized token: \"2007_08_season\"",
+          "gold_rows": 0
+        },
+        {
+          "source_index": 72370,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 259,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 16575,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 20176,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 57893,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 3282,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 2,
+          "output_rows": 2,
+          "both_empty": false
+        },
+        {
+          "source_index": 174,
+          "lenient": false,
+          "matched": false,
+          "gold_rows": 5,
+          "output_rows": 10,
+          "both_empty": false
+        },
+        {
+          "source_index": 21342,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 252,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 77329,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 2,
+          "output_rows": 2,
+          "both_empty": false
+        },
+        {
+          "source_index": 70988,
+          "lenient": false,
+          "matched": false,
+          "gold_rows": 1,
+          "output_rows": 2,
+          "both_empty": false
+        },
+        {
+          "source_index": 62248,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 13933,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 4880,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 2,
+          "output_rows": 2,
+          "both_empty": false
+        },
+        {
+          "source_index": 49907,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 15721,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 9816,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 13399,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 2106,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 9035,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 29894,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 71992,
+          "lenient": false,
+          "matched": null,
+          "gold_error": "near \"OFFSET\": syntax error"
+        },
+        {
+          "source_index": 30411,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 8625,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 42265,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 23760,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 35674,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 25956,
+          "lenient": false,
+          "matched": false,
+          "gold_rows": 1,
+          "output_rows": 0,
+          "both_empty": false
+        },
+        {
+          "source_index": 20078,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 38817,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 66840,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 31363,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 20986,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 56018,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 2095,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 73697,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 68364,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 22647,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 3975,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 25146,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 2,
+          "output_rows": 2,
+          "both_empty": false
+        },
+        {
+          "source_index": 61137,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 68174,
+          "lenient": false,
+          "matched": false,
+          "error": "no such column: player_name",
+          "gold_rows": 2
+        },
+        {
+          "source_index": 258,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 7,
+          "output_rows": 7,
+          "both_empty": false
+        },
+        {
+          "source_index": 48972,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 4,
+          "output_rows": 4,
+          "both_empty": false
+        },
+        {
+          "source_index": 1810,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 23857,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 59656,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 54937,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 47210,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 257,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 2716,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 25383,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 3724,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 7,
+          "output_rows": 7,
+          "both_empty": false
+        },
+        {
+          "source_index": 59948,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        }
+      ]
+    },
+    "merged": {
+      "total": 192,
+      "usable": 182,
+      "execution_match": 0.8901098901098901,
+      "lenient_on_same_rows": 0.7252747252747253,
+      "both_empty": 75,
+      "rows": [
+        {
+          "source_index": 5365,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 31088,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 62779,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 66503,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 2175,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 14,
+          "output_rows": 14,
+          "both_empty": false
+        },
+        {
+          "source_index": 28162,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 4581,
+          "lenient": false,
+          "matched": false,
+          "gold_rows": 1,
+          "output_rows": 0,
+          "both_empty": false
+        },
+        {
+          "source_index": 30748,
+          "lenient": false,
+          "matched": false,
+          "gold_rows": 0,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 28326,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 39298,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 31071,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 43886,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 44108,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 2193,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 28779,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 3841,
+          "lenient": false,
+          "matched": null,
+          "gold_error": "duplicate column name: facID"
+        },
+        {
+          "source_index": 17021,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 30076,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 41534,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 15165,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 1734,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 40423,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 644,
+          "lenient": false,
+          "matched": false,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 573,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 78036,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 57371,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 9891,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 2752,
+          "lenient": false,
+          "matched": false,
+          "gold_rows": 7,
+          "output_rows": 5,
+          "both_empty": false
+        },
+        {
+          "source_index": 64775,
+          "lenient": false,
+          "matched": false,
+          "gold_rows": 1,
+          "output_rows": 0,
+          "both_empty": false
+        },
+        {
+          "source_index": 74623,
+          "lenient": false,
+          "matched": false,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 74611,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 2,
+          "output_rows": 2,
+          "both_empty": false
+        },
+        {
+          "source_index": 5684,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 64063,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 24446,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 3940,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 3118,
+          "lenient": false,
+          "matched": null,
+          "gold_error": "table STUDENT already exists"
+        },
+        {
+          "source_index": 34016,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 75462,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 58837,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 26876,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 24536,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 17443,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 27803,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 3606,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 3025,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 7,
+          "output_rows": 7,
+          "both_empty": false
+        },
+        {
+          "source_index": 2961,
+          "lenient": false,
+          "matched": null,
+          "gold_error": "no such column: Firstname"
+        },
+        {
+          "source_index": 71496,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 67970,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 17550,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 460,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 1333,
+          "lenient": false,
+          "matched": false,
+          "error": "no such column: T3.pitstops",
+          "gold_rows": 0
+        },
+        {
+          "source_index": 72314,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 75740,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 59946,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 2,
+          "output_rows": 2,
+          "both_empty": false
+        },
+        {
+          "source_index": 3931,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 7,
+          "output_rows": 7,
+          "both_empty": false
+        },
+        {
+          "source_index": 46387,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 73869,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 76684,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 24899,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 2881,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 2,
+          "output_rows": 2,
+          "both_empty": false
+        },
+        {
+          "source_index": 74460,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 3843,
+          "lenient": true,
+          "matched": null,
+          "gold_error": "duplicate column name: facID"
+        },
+        {
+          "source_index": 173,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 14,
+          "output_rows": 14,
+          "both_empty": false
+        },
+        {
+          "source_index": 22965,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 70602,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 49620,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 41411,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 54148,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 62425,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 14357,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 67616,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 368,
+          "lenient": true,
+          "matched": null,
+          "gold_error": "duplicate column name: Editor_ID"
+        },
+        {
+          "source_index": 66230,
+          "lenient": false,
+          "matched": null,
+          "gold_error": "near \"OFFSET\": syntax error"
+        },
+        {
+          "source_index": 73994,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 52507,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 66188,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 24587,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 1124,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 5,
+          "output_rows": 5,
+          "both_empty": false
+        },
+        {
+          "source_index": 39679,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 3701,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 3119,
+          "lenient": false,
+          "matched": null,
+          "gold_error": "table STUDENT already exists"
+        },
+        {
+          "source_index": 4429,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 78571,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 4122,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 36594,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 65045,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 30037,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 22243,
+          "lenient": false,
+          "matched": false,
+          "gold_rows": 1,
+          "output_rows": 0,
+          "both_empty": false
+        },
+        {
+          "source_index": 253,
+          "lenient": false,
+          "matched": false,
+          "gold_rows": 7,
+          "output_rows": 14,
+          "both_empty": false
+        },
+        {
+          "source_index": 11833,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 42678,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 74930,
+          "lenient": false,
+          "matched": false,
+          "gold_rows": 0,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 20928,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 50124,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 4425,
+          "lenient": false,
+          "matched": false,
+          "error": "misuse of aggregate: COUNT()",
+          "gold_rows": 7
+        },
+        {
+          "source_index": 78539,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 36856,
+          "lenient": false,
+          "matched": false,
+          "gold_rows": 1,
+          "output_rows": 2,
+          "both_empty": false
+        },
+        {
+          "source_index": 31627,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 10361,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 260,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 443,
+          "lenient": true,
+          "matched": false,
+          "gold_rows": 6,
+          "output_rows": 8,
+          "both_empty": false
+        },
+        {
+          "source_index": 10140,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 44587,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 34525,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 11567,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 3500,
+          "lenient": false,
+          "matched": false,
+          "error": "no such column: T1.Volume_ID",
+          "gold_rows": 16
+        },
+        {
+          "source_index": 28496,
+          "lenient": false,
+          "matched": false,
+          "gold_rows": 1,
+          "output_rows": 0,
+          "both_empty": false
+        },
+        {
+          "source_index": 23607,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 3441,
+          "lenient": false,
+          "matched": false,
+          "gold_rows": 7,
+          "output_rows": 14,
+          "both_empty": false
+        },
+        {
+          "source_index": 8870,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 63894,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 7407,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 33508,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 28164,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 2130,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 11895,
+          "lenient": false,
+          "matched": null,
+          "gold_error": "near \"$_\": syntax error"
+        },
+        {
+          "source_index": 48448,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 324,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 67955,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 3247,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 2920,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 14,
+          "output_rows": 14,
+          "both_empty": false
+        },
+        {
+          "source_index": 3020,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 6,
+          "output_rows": 6,
+          "both_empty": false
+        },
+        {
+          "source_index": 9534,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 14178,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 72511,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 41074,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 39370,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 72736,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 3167,
+          "lenient": false,
+          "matched": null,
+          "gold_error": "table CHARACTERISTICS already exists"
+        },
+        {
+          "source_index": 2125,
+          "lenient": false,
+          "matched": false,
+          "gold_rows": 10,
+          "output_rows": 0,
+          "both_empty": false
+        },
+        {
+          "source_index": 2400,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 24,
+          "output_rows": 24,
+          "both_empty": false
+        },
+        {
+          "source_index": 42493,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 2,
+          "output_rows": 2,
+          "both_empty": false
+        },
+        {
+          "source_index": 59696,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 171,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 21808,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 38241,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 6472,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 54393,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 72370,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 259,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 16575,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 20176,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 57893,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 3282,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 2,
+          "output_rows": 2,
+          "both_empty": false
+        },
+        {
+          "source_index": 174,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 5,
+          "output_rows": 5,
+          "both_empty": false
+        },
+        {
+          "source_index": 21342,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 252,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 77329,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 2,
+          "output_rows": 2,
+          "both_empty": false
+        },
+        {
+          "source_index": 70988,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 62248,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 13933,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 4880,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 2,
+          "output_rows": 2,
+          "both_empty": false
+        },
+        {
+          "source_index": 49907,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 15721,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 9816,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 13399,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 2106,
+          "lenient": false,
+          "matched": false,
+          "error": "no such function: MONTH",
+          "gold_rows": 0
+        },
+        {
+          "source_index": 9035,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 29894,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 71992,
+          "lenient": true,
+          "matched": null,
+          "gold_error": "near \"OFFSET\": syntax error"
+        },
+        {
+          "source_index": 30411,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 8625,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 42265,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 23760,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 35674,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 25956,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 20078,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 38817,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 66840,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 31363,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 20986,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 56018,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 2095,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 73697,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 68364,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 22647,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 3975,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 25146,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 2,
+          "output_rows": 2,
+          "both_empty": false
+        },
+        {
+          "source_index": 61137,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 68174,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 2,
+          "output_rows": 2,
+          "both_empty": false
+        },
+        {
+          "source_index": 258,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 7,
+          "output_rows": 7,
+          "both_empty": false
+        },
+        {
+          "source_index": 48972,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 4,
+          "output_rows": 4,
+          "both_empty": false
+        },
+        {
+          "source_index": 1810,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 23857,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 59656,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 54937,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 47210,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 257,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 2716,
+          "lenient": false,
+          "matched": false,
+          "error": "no such column: T1.StuID",
+          "gold_rows": 1
+        },
+        {
+          "source_index": 25383,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 3724,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 7,
+          "output_rows": 7,
+          "both_empty": false
+        },
+        {
+          "source_index": 59948,
+          "lenient": false,
+          "matched": false,
+          "gold_rows": 1,
+          "output_rows": 2,
+          "both_empty": false
+        }
+      ]
+    },
+    "merged4": {
+      "total": 192,
+      "usable": 182,
+      "execution_match": 0.8131868131868132,
+      "lenient_on_same_rows": 0.6208791208791209,
+      "both_empty": 68,
+      "rows": [
+        {
+          "source_index": 5365,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 31088,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 62779,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 66503,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 2175,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 14,
+          "output_rows": 14,
+          "both_empty": false
+        },
+        {
+          "source_index": 28162,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 4581,
+          "lenient": false,
+          "matched": false,
+          "gold_rows": 1,
+          "output_rows": 0,
+          "both_empty": false
+        },
+        {
+          "source_index": 30748,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 28326,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 39298,
+          "lenient": false,
+          "matched": false,
+          "error": "near \"rinaldi\": syntax error",
+          "gold_rows": 0
+        },
+        {
+          "source_index": 31071,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 43886,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 44108,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 2193,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 28779,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 3841,
+          "lenient": false,
+          "matched": null,
+          "gold_error": "duplicate column name: facID"
+        },
+        {
+          "source_index": 17021,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 30076,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 41534,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 15165,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 1734,
+          "lenient": false,
+          "matched": false,
+          "error": "misuse of aggregate: COUNT()",
+          "gold_rows": 1
+        },
+        {
+          "source_index": 40423,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 644,
+          "lenient": false,
+          "matched": false,
+          "error": "no such column: T2.Body_Weight",
+          "gold_rows": 1
+        },
+        {
+          "source_index": 573,
+          "lenient": false,
+          "matched": false,
+          "error": "no such column: T1.launch_year",
+          "gold_rows": 1
+        },
+        {
+          "source_index": 78036,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 57371,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 9891,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 2752,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 7,
+          "output_rows": 7,
+          "both_empty": false
+        },
+        {
+          "source_index": 64775,
+          "lenient": false,
+          "matched": false,
+          "gold_rows": 1,
+          "output_rows": 0,
+          "both_empty": false
+        },
+        {
+          "source_index": 74623,
+          "lenient": false,
+          "matched": false,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 74611,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 2,
+          "output_rows": 2,
+          "both_empty": false
+        },
+        {
+          "source_index": 5684,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 64063,
+          "lenient": false,
+          "matched": false,
+          "error": "near \"OFFSET\": syntax error",
+          "gold_rows": 0
+        },
+        {
+          "source_index": 24446,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 3940,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 3118,
+          "lenient": false,
+          "matched": null,
+          "gold_error": "table STUDENT already exists"
+        },
+        {
+          "source_index": 34016,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 75462,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 58837,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 26876,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 24536,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 17443,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 27803,
+          "lenient": false,
+          "matched": false,
+          "error": "near \",\": syntax error",
+          "gold_rows": 0
+        },
+        {
+          "source_index": 3606,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 3025,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 7,
+          "output_rows": 7,
+          "both_empty": false
+        },
+        {
+          "source_index": 2961,
+          "lenient": false,
+          "matched": null,
+          "gold_error": "no such column: Firstname"
+        },
+        {
+          "source_index": 71496,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 67970,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 17550,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 460,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 1333,
+          "lenient": false,
+          "matched": false,
+          "error": "no such column: T2.resultid",
+          "gold_rows": 0
+        },
+        {
+          "source_index": 72314,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 75740,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 59946,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 2,
+          "output_rows": 2,
+          "both_empty": false
+        },
+        {
+          "source_index": 3931,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 7,
+          "output_rows": 7,
+          "both_empty": false
+        },
+        {
+          "source_index": 46387,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 73869,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 76684,
+          "lenient": false,
+          "matched": false,
+          "error": "unrecognized token: \"81.9083°n\"",
+          "gold_rows": 0
+        },
+        {
+          "source_index": 24899,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 2881,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 2,
+          "output_rows": 2,
+          "both_empty": false
+        },
+        {
+          "source_index": 74460,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 3843,
+          "lenient": false,
+          "matched": null,
+          "gold_error": "duplicate column name: facID"
+        },
+        {
+          "source_index": 173,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 14,
+          "output_rows": 14,
+          "both_empty": false
+        },
+        {
+          "source_index": 22965,
+          "lenient": false,
+          "matched": false,
+          "error": "unrecognized token: \"\"\"",
+          "gold_rows": 1
+        },
+        {
+          "source_index": 70602,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 49620,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 41411,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 54148,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 62425,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 14357,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 67616,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 368,
+          "lenient": true,
+          "matched": null,
+          "gold_error": "duplicate column name: Editor_ID"
+        },
+        {
+          "source_index": 66230,
+          "lenient": false,
+          "matched": null,
+          "gold_error": "near \"OFFSET\": syntax error"
+        },
+        {
+          "source_index": 73994,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 52507,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 66188,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 24587,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 1124,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 5,
+          "output_rows": 5,
+          "both_empty": false
+        },
+        {
+          "source_index": 39679,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 3701,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 3119,
+          "lenient": false,
+          "matched": null,
+          "gold_error": "table STUDENT already exists"
+        },
+        {
+          "source_index": 4429,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 78571,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 4122,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 36594,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 65045,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 30037,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 22243,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 253,
+          "lenient": false,
+          "matched": false,
+          "gold_rows": 7,
+          "output_rows": 14,
+          "both_empty": false
+        },
+        {
+          "source_index": 11833,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 42678,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 74930,
+          "lenient": false,
+          "matched": false,
+          "gold_rows": 0,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 20928,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 50124,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 4425,
+          "lenient": false,
+          "matched": false,
+          "error": "misuse of aggregate: COUNT()",
+          "gold_rows": 7
+        },
+        {
+          "source_index": 78539,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 36856,
+          "lenient": false,
+          "matched": false,
+          "gold_rows": 1,
+          "output_rows": 2,
+          "both_empty": false
+        },
+        {
+          "source_index": 31627,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 10361,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 260,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 443,
+          "lenient": false,
+          "matched": false,
+          "gold_rows": 6,
+          "output_rows": 14,
+          "both_empty": false
+        },
+        {
+          "source_index": 10140,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 44587,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 34525,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 11567,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 3500,
+          "lenient": false,
+          "matched": false,
+          "error": "no such column: T1.Volume_ID",
+          "gold_rows": 16
+        },
+        {
+          "source_index": 28496,
+          "lenient": false,
+          "matched": false,
+          "gold_rows": 1,
+          "output_rows": 0,
+          "both_empty": false
+        },
+        {
+          "source_index": 23607,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 3441,
+          "lenient": false,
+          "matched": false,
+          "gold_rows": 7,
+          "output_rows": 14,
+          "both_empty": false
+        },
+        {
+          "source_index": 8870,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 63894,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 7407,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 33508,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 28164,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 2130,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 11895,
+          "lenient": false,
+          "matched": null,
+          "gold_error": "near \"$_\": syntax error"
+        },
+        {
+          "source_index": 48448,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 324,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 67955,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 3247,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 2920,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 14,
+          "output_rows": 14,
+          "both_empty": false
+        },
+        {
+          "source_index": 3020,
+          "lenient": false,
+          "matched": false,
+          "error": "near \"FROM\": syntax error",
+          "gold_rows": 6
+        },
+        {
+          "source_index": 9534,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 14178,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 72511,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 41074,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 39370,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 72736,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 3167,
+          "lenient": false,
+          "matched": null,
+          "gold_error": "table CHARACTERISTICS already exists"
+        },
+        {
+          "source_index": 2125,
+          "lenient": false,
+          "matched": false,
+          "error": "near \"FROM\": syntax error",
+          "gold_rows": 10
+        },
+        {
+          "source_index": 2400,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 24,
+          "output_rows": 24,
+          "both_empty": false
+        },
+        {
+          "source_index": 42493,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 2,
+          "output_rows": 2,
+          "both_empty": false
+        },
+        {
+          "source_index": 59696,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 171,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 21808,
+          "lenient": false,
+          "matched": false,
+          "error": "near \"isbn\": syntax error",
+          "gold_rows": 0
+        },
+        {
+          "source_index": 38241,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 6472,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 54393,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 72370,
+          "lenient": false,
+          "matched": false,
+          "error": "unrecognized token: \"\"\"",
+          "gold_rows": 0
+        },
+        {
+          "source_index": 259,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 16575,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 20176,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 57893,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 3282,
+          "lenient": false,
+          "matched": false,
+          "gold_rows": 2,
+          "output_rows": 4,
+          "both_empty": false
+        },
+        {
+          "source_index": 174,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 5,
+          "output_rows": 5,
+          "both_empty": false
+        },
+        {
+          "source_index": 21342,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 252,
+          "lenient": false,
+          "matched": false,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 77329,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 2,
+          "output_rows": 2,
+          "both_empty": false
+        },
+        {
+          "source_index": 70988,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 62248,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 13933,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 4880,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 2,
+          "output_rows": 2,
+          "both_empty": false
+        },
+        {
+          "source_index": 49907,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 15721,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 9816,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 13399,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 2106,
+          "lenient": false,
+          "matched": false,
+          "error": "near \")\": syntax error",
+          "gold_rows": 0
+        },
+        {
+          "source_index": 9035,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 29894,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 71992,
+          "lenient": true,
+          "matched": null,
+          "gold_error": "near \"OFFSET\": syntax error"
+        },
+        {
+          "source_index": 30411,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 8625,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 42265,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 23760,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 35674,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 25956,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 20078,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 38817,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 66840,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 31363,
+          "lenient": false,
+          "matched": false,
+          "error": "unrecognized token: \"59th\"",
+          "gold_rows": 1
+        },
+        {
+          "source_index": 20986,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 56018,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 2095,
+          "lenient": false,
+          "matched": false,
+          "error": "ambiguous column name: artist_name",
+          "gold_rows": 0
+        },
+        {
+          "source_index": 73697,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 68364,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 22647,
+          "lenient": false,
+          "matched": false,
+          "error": "near \":00\": syntax error",
+          "gold_rows": 0
+        },
+        {
+          "source_index": 3975,
+          "lenient": false,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 25146,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 2,
+          "output_rows": 2,
+          "both_empty": false
+        },
+        {
+          "source_index": 61137,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 68174,
+          "lenient": false,
+          "matched": false,
+          "error": "no such column: winner",
+          "gold_rows": 2
+        },
+        {
+          "source_index": 258,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 7,
+          "output_rows": 7,
+          "both_empty": false
+        },
+        {
+          "source_index": 48972,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 4,
+          "output_rows": 4,
+          "both_empty": false
+        },
+        {
+          "source_index": 1810,
+          "lenient": false,
+          "matched": false,
+          "error": "near \")\": syntax error",
+          "gold_rows": 1
+        },
+        {
+          "source_index": 23857,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 59656,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 54937,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 47210,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 257,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 1,
+          "output_rows": 1,
+          "both_empty": false
+        },
+        {
+          "source_index": 2716,
+          "lenient": false,
+          "matched": false,
+          "error": "near \")\": syntax error",
+          "gold_rows": 1
+        },
+        {
+          "source_index": 25383,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 0,
+          "output_rows": 0,
+          "both_empty": true
+        },
+        {
+          "source_index": 3724,
+          "lenient": true,
+          "matched": true,
+          "gold_rows": 7,
+          "output_rows": 7,
+          "both_empty": false
+        },
+        {
+          "source_index": 59948,
+          "lenient": false,
+          "matched": false,
+          "gold_rows": 1,
+          "output_rows": 2,
+          "both_empty": false
+        }
+      ]
+    }
+  },
+  "soup_gate": {
+    "url": "https://trysoup.dev/docs/soup-ship",
+    "coverage": "Soup's metric leg uses the configured task scorer; these task rows use exact matching and do not execute SQL against the synthetic fixtures."
+  },
+  "limitation": "A finite synthetic fixture can give false execution matches, especially when both results are empty."
+}

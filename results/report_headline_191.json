@@ -1,0 +1,176 @@
+{
+  "label": "POST-HOC",
+  "official_verdict": "DON'T SHIP",
+  "rows": 191,
+  "excluded_row": 2961,
+  "sqlite_version": "3.50.4",
+  "answer_loss_unit": "nats per gold answer token, excluding stop, token-weighted",
+  "closer_to_tuned_definition": "Candidate is closer to its own fp16 tuned merge than to fp16 base. Only recorded for tuned NF4 candidates.",
+  "greedy": {
+    "base_fp16": {
+      "source": "results/verify_real.json",
+      "answer_loss": 0.3598921551841681,
+      "lenient_match": {
+        "count": 76,
+        "total": 191,
+        "rate": 0.39790575916230364
+      },
+      "valid_sql": {
+        "count": 180,
+        "total": 191,
+        "rate": 0.9424083769633508
+      },
+      "original_flag_disagreements_between_sqlite_versions": [],
+      "closer_to_tuned": null,
+      "training_label": null,
+      "quantization_label": null
+    },
+    "base_nf4": {
+      "source": "results/verify_real.json",
+      "answer_loss": 0.3872611951418087,
+      "lenient_match": {
+        "count": 57,
+        "total": 191,
+        "rate": 0.29842931937172773
+      },
+      "valid_sql": {
+        "count": 161,
+        "total": 191,
+        "rate": 0.8429319371727748
+      },
+      "original_flag_disagreements_between_sqlite_versions": [],
+      "closer_to_tuned": null,
+      "training_label": null,
+      "quantization_label": null
+    },
+    "merged_fp16": {
+      "source": "results/verify_real.json",
+      "answer_loss": 0.0775226114018195,
+      "lenient_match": {
+        "count": 135,
+        "total": 191,
+        "rate": 0.7068062827225131
+      },
+      "valid_sql": {
+        "count": 183,
+        "total": 191,
+        "rate": 0.9581151832460733
+      },
+      "original_flag_disagreements_between_sqlite_versions": [],
+      "closer_to_tuned": null,
+      "training_label": "TRAINED",
+      "quantization_label": null
+    },
+    "merged_nf4": {
+      "source": "results/verify_real.json",
+      "answer_loss": 0.10765227593346739,
+      "lenient_match": {
+        "count": 115,
+        "total": 191,
+        "rate": 0.6020942408376964
+      },
+      "valid_sql": {
+        "count": 165,
+        "total": 191,
+        "rate": 0.8638743455497382
+      },
+      "original_flag_disagreements_between_sqlite_versions": [],
+      "closer_to_tuned": {
+        "count": 191,
+        "total": 191,
+        "rate": 1.0
+      },
+      "training_label": "TRAINED",
+      "quantization_label": "RETAINED"
+    },
+    "placebo_fp16": {
+      "source": "results/verify_placebo.json",
+      "answer_loss": 0.3598921551841681,
+      "lenient_match": {
+        "count": 76,
+        "total": 191,
+        "rate": 0.39790575916230364
+      },
+      "valid_sql": {
+        "count": 180,
+        "total": 191,
+        "rate": 0.9424083769633508
+      },
+      "original_flag_disagreements_between_sqlite_versions": [],
+      "closer_to_tuned": null,
+      "training_label": "NOT_TRAINED",
+      "quantization_label": null
+    },
+    "weak_001_fp16": {
+      "source": "results/verify_weak_001.json",
+      "answer_loss": 0.3413696133437418,
+      "lenient_match": {
+        "count": 81,
+        "total": 191,
+        "rate": 0.42408376963350786
+      },
+      "valid_sql": {
+        "count": 181,
+        "total": 191,
+        "rate": 0.9476439790575916
+      },
+      "original_flag_disagreements_between_sqlite_versions": [],
+      "closer_to_tuned": null,
+      "training_label": "NOT_TRAINED",
+      "quantization_label": null
+    },
+    "weak_01_fp16": {
+      "source": "results/verify_weak_01.json",
+      "answer_loss": 0.17709055292538878,
+      "lenient_match": {
+        "count": 111,
+        "total": 191,
+        "rate": 0.581151832460733
+      },
+      "valid_sql": {
+        "count": 182,
+        "total": 191,
+        "rate": 0.9528795811518325
+      },
+      "original_flag_disagreements_between_sqlite_versions": [
+        {
+          "id": 54393,
+          "sql": "SELECT 2007_08 FROM table_name_60 WHERE city = \"marcianise\"",
+          "local_sqlite_error": null,
+          "local_original_valid": true,
+          "kaggle_original_valid": false
+        }
+      ],
+      "closer_to_tuned": null,
+      "training_label": "TRAINED",
+      "quantization_label": null
+    },
+    "shuffled_nf4": {
+      "source": "results/verify_shuffled.json",
+      "answer_loss": 0.719469841743936,
+      "lenient_match": {
+        "count": 0,
+        "total": 191,
+        "rate": 0.0
+      },
+      "valid_sql": {
+        "count": 0,
+        "total": 191,
+        "rate": 0.0
+      },
+      "original_flag_disagreements_between_sqlite_versions": [],
+      "closer_to_tuned": {
+        "count": 191,
+        "total": 191,
+        "rate": 1.0
+      },
+      "training_label": "NOT_TRAINED",
+      "quantization_label": "RETAINED"
+    }
+  },
+  "shipped_stop": {
+    "count": 569,
+    "total": 573,
+    "rate": 0.9930191972076788
+  }
+}

@@ -1,0 +1,10 @@
+2026-11-11T02:14:50.406+00:00 INFO $ /kaggle/temp/soup-patch-optional-peft/bin/python /kaggle/working/soup-takehome/probes/execution_match.py
+2026-11-11T02:14:50.687+00:00 INFO Traceback (most recent call last):
+2026-11-11T02:14:50.688+00:00 INFO   File "/kaggle/working/soup-takehome/probes/execution_match.py", line 96, in <module>
+2026-11-11T02:14:50.688+00:00 INFO     main()
+2026-11-11T02:14:50.688+00:00 INFO     ~~~~^^
+2026-11-11T02:14:50.688+00:00 INFO   File "/kaggle/working/soup-takehome/probes/execution_match.py", line 84, in main
+2026-11-11T02:14:50.688+00:00 INFO     "execution_match": sum(item["matched"] for item in usable) / len(usable),
+2026-11-11T02:14:50.688+00:00 INFO                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+2026-11-11T02:14:50.688+00:00 INFO ZeroDivisionError: division by zero
+2026-11-11T02:14:50.711+00:00 INFO Exit status 1

@@ -1,0 +1,45 @@
+2026-11-11T02:14:00.217+00:00 INFO $ /kaggle/temp/soup-patch-optional-soup/bin/soup data doctor /kaggle/working/soup-takehome/data/train_soup.jsonl --model /kaggle/working/soup-takehome/artifacts/pad_equals_eos_tokenizer --sample 1500 --max-length 256 --train-on-eot --output /kaggle/working/soup-takehome/results/probe_P2_soup.json
+2026-11-11T02:14:11.695+00:00 INFO [transformers] return_assistant_tokens_mask==True but chat template does not contain `{% generation %}` keyword.
+2026-11-11T02:14:14.391+00:00 INFO                                 soup data doctor                                
+2026-11-11T02:14:14.391+00:00 INFO ┏━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━┓
+2026-11-11T02:14:14.391+00:00 INFO ┃ Check              ┃ Verdict ┃ Message               ┃ Evidence              ┃
+2026-11-11T02:14:14.391+00:00 INFO ┡━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━┩
+2026-11-11T02:14:14.391+00:00 INFO │ chat_template      │ OK      │ tokenizer has a       │ 2507 chars            │
+2026-11-11T02:14:14.391+00:00 INFO │                    │         │ chat_template         │                       │
+2026-11-11T02:14:14.391+00:00 INFO │ template_render    │ OK      │ 0/1500 rows failed to │                       │
+2026-11-11T02:14:14.391+00:00 INFO │                    │         │ render through the    │                       │
+2026-11-11T02:14:14.391+00:00 INFO │                    │         │ chat template         │                       │
+2026-11-11T02:14:14.391+00:00 INFO │ generation_markers │ MINOR   │ template lacks {%     │                       │
+2026-11-11T02:14:14.391+00:00 INFO │                    │         │ generation %} markers │                       │
+2026-11-11T02:14:14.391+00:00 INFO │                    │         │ — assistant-only      │                       │
+2026-11-11T02:14:14.391+00:00 INFO │                    │         │ masking falls back to │                       │
+2026-11-11T02:14:14.391+00:00 INFO │                    │         │ a heuristic that may  │                       │
+2026-11-11T02:14:14.391+00:00 INFO │                    │         │ include role-prefix   │                       │
+2026-11-11T02:14:14.391+00:00 INFO │                    │         │ tokens in the loss    │                       │
+2026-11-11T02:14:14.391+00:00 INFO │ eos_in_labels      │ OK      │ 0/1500 rows (0.0%)    │ eos_token_id=[151645] │
+2026-11-11T02:14:14.391+00:00 INFO │                    │         │ never train an        │                       │
+2026-11-11T02:14:14.391+00:00 INFO │                    │         │ EOS/EOT token — the   │                       │
+2026-11-11T02:14:14.391+00:00 INFO │                    │         │ model will not learn  │                       │
+2026-11-11T02:14:14.391+00:00 INFO │                    │         │ to stop generating    │                       │
+2026-11-11T02:14:14.391+00:00 INFO │ bos_duplication    │ OK      │ tokenizer has no      │                       │
+2026-11-11T02:14:14.391+00:00 INFO │                    │         │ bos_token_id          │                       │
+2026-11-11T02:14:14.391+00:00 INFO │ system_role        │ OK      │ template supports the │                       │
+2026-11-11T02:14:14.391+00:00 INFO │                    │         │ system role (1500     │                       │
+2026-11-11T02:14:14.391+00:00 INFO │                    │         │ rows use one)         │                       │
+2026-11-11T02:14:14.391+00:00 INFO │ unknown_roles      │ OK      │ 0/1500 rows (0.0%)    │                       │
+2026-11-11T02:14:14.391+00:00 INFO │                    │         │ contain a message     │                       │
+2026-11-11T02:14:14.391+00:00 INFO │                    │         │ role outside          │                       │
+2026-11-11T02:14:14.392+00:00 INFO │                    │         │ ['assistant',         │                       │
+2026-11-11T02:14:14.392+00:00 INFO │                    │         │ 'function', 'system', │                       │
+2026-11-11T02:14:14.392+00:00 INFO │                    │         │ 'tool', 'user']       │                       │
+2026-11-11T02:14:14.392+00:00 INFO │ truncation_risk    │ OK      │ p95 length = 142      │ p50=97, max=240       │
+2026-11-11T02:14:14.392+00:00 INFO │                    │         │ tokens vs             │                       │
+2026-11-11T02:14:14.392+00:00 INFO │                    │         │ max_length=256;       │                       │
+2026-11-11T02:14:14.392+00:00 INFO │                    │         │ 0/1500 rows (0.0%)    │                       │
+2026-11-11T02:14:14.392+00:00 INFO │                    │         │ would be truncated    │                       │
+2026-11-11T02:14:14.392+00:00 INFO └────────────────────┴─────────┴───────────────────────┴───────────────────────┘
+2026-11-11T02:14:14.392+00:00 INFO ╭─────────── overall ────────────╮
+2026-11-11T02:14:14.392+00:00 INFO │ MINOR — 1500/1500 rows scanned │
+2026-11-11T02:14:14.392+00:00 INFO ╰────────────────────────────────╯
+2026-11-11T02:14:14.395+00:00 INFO Wrote /kaggle/working/soup-takehome/results/probe_P2_soup.json
+2026-11-11T02:14:15.531+00:00 INFO Exit status 0

@@ -1,0 +1,10 @@
+2026-11-10T22:23:06.143+00:00 INFO $ /kaggle/temp/soup-patch-merge-peft/bin/python /kaggle/working/soup-takehome/patch_stage_merge.py inspect 2a /kaggle/working/soup-takehome/artifacts/merged_fp16 /kaggle/working/soup-takehome/artifacts/merged_fp32 /kaggle/working/soup-takehome/artifacts/merged_bf16
+2026-11-10T22:23:10.793+00:00 INFO Traceback (most recent call last):
+2026-11-10T22:23:10.793+00:00 INFO   File "/kaggle/working/soup-takehome/patch_stage_merge.py", line 86, in <module>
+2026-11-10T22:23:10.793+00:00 INFO     atomic_json(ROOT / f"results/artifact_hashes_{group}.json", {Path(path).name: inspect_artifact(path) for path in paths})
+2026-11-10T22:23:10.793+00:00 INFO                                                                                   ~~~~~~~~~~~~~~~~^^^^^^
+2026-11-10T22:23:10.793+00:00 INFO   File "/kaggle/working/soup-takehome/patch_stage_merge.py", line 25, in inspect_artifact
+2026-11-10T22:23:10.793+00:00 INFO     print(f"Saved artifact {path.name}: {json.dumps(output)}", flush=True)
+2026-11-10T22:23:10.793+00:00 INFO                             ^^^^^^^^^
+2026-11-10T22:23:10.793+00:00 INFO AttributeError: 'str' object has no attribute 'name'
+2026-11-10T22:23:11.215+00:00 INFO Exit status 1

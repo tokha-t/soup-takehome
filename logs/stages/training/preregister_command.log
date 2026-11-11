@@ -1,0 +1,3 @@
+2026-11-10T20:57:24.927+00:00 INFO $ /kaggle/temp/takehome-peft/bin/python /kaggle/working/soup-takehome/preregister.py /kaggle/working/soup-takehome/pipeline_spec.md /kaggle/working/soup-takehome/configs/base_config.json
+2026-11-10T20:57:25.073+00:00 INFO 2026-11-10T20:57:25.073+00:00 INFO sha256sum prereg.md = d2f3781007f309964cb09b6a5f11a96359d37ae5cd76593c0598a2d5d672211f
+2026-11-10T20:57:25.085+00:00 INFO Exit status 0

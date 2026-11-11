@@ -1,0 +1,55 @@
+2026-11-11T01:31:44.794+00:00 INFO $ /kaggle/temp/soup-patch-optional-peft/bin/python /kaggle/working/soup-takehome/mem_grid.py
+2026-11-11T01:32:08.237+00:00 INFO 2026-11-11T01:32:08.237 INFO transformers loss source def ForCausalLMLoss(
+2026-11-11T01:32:08.237+00:00 INFO 2026-11-11T01:32:08.237 INFO transformers loss source     logits,
+2026-11-11T01:32:08.237+00:00 INFO 2026-11-11T01:32:08.237 INFO transformers loss source     labels,
+2026-11-11T01:32:08.237+00:00 INFO 2026-11-11T01:32:08.237 INFO transformers loss source     vocab_size: int,
+2026-11-11T01:32:08.237+00:00 INFO 2026-11-11T01:32:08.237 INFO transformers loss source     num_items_in_batch: Optional[torch.Tensor] = None,
+2026-11-11T01:32:08.237+00:00 INFO 2026-11-11T01:32:08.237 INFO transformers loss source     ignore_index: int = -100,
+2026-11-11T01:32:08.237+00:00 INFO 2026-11-11T01:32:08.237 INFO transformers loss source     shift_labels: Optional[torch.Tensor] = None,
+2026-11-11T01:32:08.237+00:00 INFO 2026-11-11T01:32:08.237 INFO transformers loss source     **kwargs,
+2026-11-11T01:32:08.237+00:00 INFO 2026-11-11T01:32:08.237 INFO transformers loss source ) -> torch.Tensor:
+2026-11-11T01:32:08.237+00:00 INFO 2026-11-11T01:32:08.237 INFO transformers loss source     # Upcast to float if we need to compute the loss to avoid potential precision issues
+2026-11-11T01:32:08.237+00:00 INFO 2026-11-11T01:32:08.237 INFO transformers loss source     logits = logits.float()
+2026-11-11T01:32:08.237+00:00 INFO 2026-11-11T01:32:08.237 INFO transformers loss source 
+2026-11-11T01:32:08.238+00:00 INFO 2026-11-11T01:32:08.237 INFO transformers loss source     if shift_labels is None:
+2026-11-11T01:32:08.238+00:00 INFO 2026-11-11T01:32:08.238 INFO transformers loss source         # Shift so that tokens < n predict n
+2026-11-11T01:32:08.238+00:00 INFO 2026-11-11T01:32:08.238 INFO transformers loss source         labels = nn.functional.pad(labels, (0, 1), value=ignore_index)
+2026-11-11T01:32:08.238+00:00 INFO 2026-11-11T01:32:08.238 INFO transformers loss source         shift_labels = labels[..., 1:].contiguous()
+2026-11-11T01:32:08.238+00:00 INFO 2026-11-11T01:32:08.238 INFO transformers loss source 
+2026-11-11T01:32:08.238+00:00 INFO 2026-11-11T01:32:08.238 INFO transformers loss source     # Flatten the tokens
+2026-11-11T01:32:08.238+00:00 INFO 2026-11-11T01:32:08.238 INFO transformers loss source     logits = logits.view(-1, vocab_size)
+2026-11-11T01:32:08.238+00:00 INFO 2026-11-11T01:32:08.238 INFO transformers loss source     shift_labels = shift_labels.view(-1)
+2026-11-11T01:32:08.238+00:00 INFO 2026-11-11T01:32:08.238 INFO transformers loss source     # Enable model parallelism
+2026-11-11T01:32:08.238+00:00 INFO 2026-11-11T01:32:08.238 INFO transformers loss source     shift_labels = shift_labels.to(logits.device)
+2026-11-11T01:32:08.238+00:00 INFO 2026-11-11T01:32:08.238 INFO transformers loss source     loss = fixed_cross_entropy(logits, shift_labels, num_items_in_batch, ignore_index, **kwargs)
+2026-11-11T01:32:08.238+00:00 INFO 2026-11-11T01:32:08.238 INFO transformers loss source     return loss
+2026-11-11T01:32:08.238+00:00 INFO 2026-11-11T01:32:08.238 INFO transformers loss source def fixed_cross_entropy(
+2026-11-11T01:32:08.238+00:00 INFO 2026-11-11T01:32:08.238 INFO transformers loss source     source: torch.Tensor,
+2026-11-11T01:32:08.238+00:00 INFO 2026-11-11T01:32:08.238 INFO transformers loss source     target: torch.Tensor,
+2026-11-11T01:32:08.239+00:00 INFO 2026-11-11T01:32:08.238 INFO transformers loss source     num_items_in_batch: Optional[torch.Tensor] = None,
+2026-11-11T01:32:08.239+00:00 INFO 2026-11-11T01:32:08.238 INFO transformers loss source     ignore_index: int = -100,
+2026-11-11T01:32:08.239+00:00 INFO 2026-11-11T01:32:08.238 INFO transformers loss source     **kwargs,
+2026-11-11T01:32:08.239+00:00 INFO 2026-11-11T01:32:08.239 INFO transformers loss source ) -> torch.Tensor:
+2026-11-11T01:32:08.239+00:00 INFO 2026-11-11T01:32:08.239 INFO transformers loss source     reduction = "sum" if num_items_in_batch is not None else "mean"
+2026-11-11T01:32:08.239+00:00 INFO 2026-11-11T01:32:08.239 INFO transformers loss source     loss = nn.functional.cross_entropy(source, target, ignore_index=ignore_index, reduction=reduction)
+2026-11-11T01:32:08.239+00:00 INFO 2026-11-11T01:32:08.239 INFO transformers loss source     if reduction == "sum":
+2026-11-11T01:32:08.239+00:00 INFO 2026-11-11T01:32:08.239 INFO transformers loss source         # just in case users pass an int for num_items_in_batch, which could be the case for custom trainer
+2026-11-11T01:32:08.239+00:00 INFO 2026-11-11T01:32:08.239 INFO transformers loss source         if torch.is_tensor(num_items_in_batch):
+2026-11-11T01:32:08.239+00:00 INFO 2026-11-11T01:32:08.239 INFO transformers loss source             num_items_in_batch = num_items_in_batch.to(loss.device)
+2026-11-11T01:32:08.239+00:00 INFO 2026-11-11T01:32:08.239 INFO transformers loss source         loss = loss / num_items_in_batch
+2026-11-11T01:32:08.239+00:00 INFO 2026-11-11T01:32:08.239 INFO transformers loss source     return loss
+2026-11-11T01:32:12.049+00:00 INFO 2026-11-11T01:32:12.049 INFO Memory phase {"name": "memory_grid_model_load", "device": "CUDA", "state": "complete", "start_epoch": 1794360730.386859, "end_epoch": 1794360731.8268511, "wall_seconds": 1.4399921894073486, "torch_peak_allocated_gib": 2.890763282775879, "torch_peak_reserved_gib": 2.9609375, "peak_process_rss_gib": 3.567707061767578, "total_system_ram_gib": 31.346599578857422, "nvidia_smi_peak_mib": 3121, "nvidia_smi_peak_gib": 3.0478515625}
+2026-11-11T01:32:21.530+00:00 INFO 2026-11-11T01:32:21.529 INFO Memory phase {"name": "grid_on_1_256_steps2_3", "device": "CUDA", "state": "complete", "start_epoch": 1794360740.5912116, "end_epoch": 1794360741.36615, "wall_seconds": 0.7749383449554443, "torch_peak_allocated_gib": 3.55667781829834, "torch_peak_reserved_gib": 3.818359375, "peak_process_rss_gib": 1.6494255065917969, "total_system_ram_gib": 31.346599578857422, "nvidia_smi_peak_mib": 4051, "nvidia_smi_peak_gib": 3.9560546875}
+2026-11-11T01:32:21.872+00:00 INFO /kaggle/temp/soup-patch-optional-peft/lib/python3.13/site-packages/peft/tuners/tuners_utils.py:282: UserWarning: Already found a `peft_config` attribute in the model. This will lead to having multiple adapters in the model. Make sure to know what you are doing!
+2026-11-11T01:32:21.872+00:00 INFO   warnings.warn(
+2026-11-11T01:32:24.836+00:00 INFO 2026-11-11T01:32:24.836 INFO Memory phase {"name": "grid_on_4_256_steps2_3", "device": "CUDA", "state": "complete", "start_epoch": 1794360743.2311869, "end_epoch": 1794360744.6175134, "wall_seconds": 1.386326551437378, "torch_peak_allocated_gib": 4.936153411865234, "torch_peak_reserved_gib": 5.498046875, "peak_process_rss_gib": 1.6504974365234375, "total_system_ram_gib": 31.346599578857422, "nvidia_smi_peak_mib": 5773, "nvidia_smi_peak_gib": 5.6376953125}
+2026-11-11T01:32:25.219+00:00 INFO /kaggle/temp/soup-patch-optional-peft/lib/python3.13/site-packages/peft/tuners/tuners_utils.py:282: UserWarning: Already found a `peft_config` attribute in the model. This will lead to having multiple adapters in the model. Make sure to know what you are doing!
+2026-11-11T01:32:25.219+00:00 INFO   warnings.warn(
+2026-11-11T01:32:30.107+00:00 INFO 2026-11-11T01:32:30.107 INFO Memory phase {"name": "grid_on_8_256_steps2_3", "device": "CUDA", "state": "complete", "start_epoch": 1794360747.2095432, "end_epoch": 1794360749.8891933, "wall_seconds": 2.679650068283081, "torch_peak_allocated_gib": 6.756492614746094, "torch_peak_reserved_gib": 7.71484375, "peak_process_rss_gib": 1.6511154174804688, "total_system_ram_gib": 31.346599578857422, "nvidia_smi_peak_mib": 8043, "nvidia_smi_peak_gib": 7.8544921875}
+2026-11-11T01:32:30.538+00:00 INFO /kaggle/temp/soup-patch-optional-peft/lib/python3.13/site-packages/peft/tuners/tuners_utils.py:282: UserWarning: Already found a `peft_config` attribute in the model. This will lead to having multiple adapters in the model. Make sure to know what you are doing!
+2026-11-11T01:32:30.539+00:00 INFO   warnings.warn(
+2026-11-11T01:32:32.099+00:00 INFO 2026-11-11T01:32:32.099 INFO Memory phase {"name": "grid_off_1_256_steps2_3", "device": "CUDA", "state": "complete", "start_epoch": 1794360751.4537568, "end_epoch": 1794360751.882661, "wall_seconds": 0.42890429496765137, "torch_peak_allocated_gib": 4.375209808349609, "torch_peak_reserved_gib": 4.55078125, "peak_process_rss_gib": 1.6519660949707031, "total_system_ram_gib": 31.346599578857422, "nvidia_smi_peak_mib": 4803, "nvidia_smi_peak_gib": 4.6904296875}
+2026-11-11T01:32:32.463+00:00 INFO /kaggle/temp/soup-patch-optional-peft/lib/python3.13/site-packages/peft/tuners/tuners_utils.py:282: UserWarning: Already found a `peft_config` attribute in the model. This will lead to having multiple adapters in the model. Make sure to know what you are doing!
+2026-11-11T01:32:32.463+00:00 INFO   warnings.warn(
+2026-11-11T01:32:34.095+00:00 INFO 2026-11-11T01:32:34.095 INFO Memory phase {"name": "grid_off_2_256_steps2_3", "device": "CUDA", "state": "complete", "start_epoch": 1794360753.4006953, "end_epoch": 1794360753.9374955, "wall_seconds": 0.5368001461029053, "torch_peak_allocated_gib": 5.625009536743164, "torch_peak_reserved_gib": 5.96484375, "peak_process_rss_gib": 1.6527099609375, "total_system_ram_gib": 31.346599578857422, "nvidia_smi_peak_mib": 6251, "nvidia_smi_peak_gib": 6.1044921875}
+2026-11-11T01:32:38.918+00:00 INFO Exit status 0

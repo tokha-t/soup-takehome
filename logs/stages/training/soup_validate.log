@@ -1,0 +1,5 @@
+2026-11-10T20:58:02.119+00:00 INFO $ /kaggle/temp/takehome-soup/bin/soup data validate data/train.jsonl --format chatml --min-valid-fraction 1
+2026-11-10T20:58:02.796+00:00 INFO Dataset is valid!
+2026-11-10T20:58:02.797+00:00 INFO 
+2026-11-10T20:58:02.797+00:00 INFO 1500/1500 rows valid for chatml format
+2026-11-10T20:58:02.967+00:00 INFO Exit status 0

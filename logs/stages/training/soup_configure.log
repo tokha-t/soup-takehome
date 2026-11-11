@@ -1,0 +1,27 @@
+2026-11-10T20:57:36.539+00:00 INFO $ /kaggle/temp/takehome-soup/bin/python /kaggle/working/soup-takehome/configs/configure_soup.py
+2026-11-10T20:57:57.129+00:00 INFO Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-11-10T20:57:59.068+00:00 INFO 
+2026-11-10T20:57:59.081+00:00 INFO Saving the dataset (0/1 shards):   0%|          | 0/1500 [00:00<?, ? examples/s]
+2026-11-10T20:57:59.081+00:00 INFO Saving the dataset (1/1 shards): 100%|██████████| 1500/1500 [00:00<00:00, 119021.11 examples/s]
+2026-11-10T20:57:59.081+00:00 INFO Saving the dataset (1/1 shards): 100%|██████████| 1500/1500 [00:00<00:00, 117286.01 examples/s]
+2026-11-10T20:57:59.082+00:00 INFO 
+2026-11-10T20:57:59.086+00:00 INFO Saving the dataset (0/1 shards):   0%|          | 0/200 [00:00<?, ? examples/s]
+2026-11-10T20:57:59.086+00:00 INFO Saving the dataset (1/1 shards): 100%|██████████| 200/200 [00:00<00:00, 60245.68 examples/s]
+2026-11-10T20:57:59.086+00:00 INFO Saving the dataset (1/1 shards): 100%|██████████| 200/200 [00:00<00:00, 58072.74 examples/s]
+2026-11-10T20:58:00.095+00:00 INFO 
+2026-11-10T20:58:00.100+00:00 INFO Saving the dataset (0/1 shards):   0%|          | 0/1500 [00:00<?, ? examples/s]
+2026-11-10T20:58:00.100+00:00 INFO Saving the dataset (1/1 shards): 100%|██████████| 1500/1500 [00:00<00:00, 288877.18 examples/s]
+2026-11-10T20:58:00.100+00:00 INFO Saving the dataset (1/1 shards): 100%|██████████| 1500/1500 [00:00<00:00, 280918.74 examples/s]
+2026-11-10T20:58:00.102+00:00 INFO 
+2026-11-10T20:58:00.105+00:00 INFO Saving the dataset (0/1 shards):   0%|          | 0/200 [00:00<?, ? examples/s]
+2026-11-10T20:58:00.105+00:00 INFO Saving the dataset (1/1 shards): 100%|██████████| 200/200 [00:00<00:00, 60558.82 examples/s]
+2026-11-10T20:58:00.105+00:00 INFO Saving the dataset (1/1 shards): 100%|██████████| 200/200 [00:00<00:00, 58371.78 examples/s]
+2026-11-10T20:58:01.070+00:00 INFO 
+2026-11-10T20:58:01.075+00:00 INFO Saving the dataset (0/1 shards):   0%|          | 0/1500 [00:00<?, ? examples/s]
+2026-11-10T20:58:01.075+00:00 INFO Saving the dataset (1/1 shards): 100%|██████████| 1500/1500 [00:00<00:00, 325408.92 examples/s]
+2026-11-10T20:58:01.075+00:00 INFO Saving the dataset (1/1 shards): 100%|██████████| 1500/1500 [00:00<00:00, 315646.00 examples/s]
+2026-11-10T20:58:01.076+00:00 INFO 
+2026-11-10T20:58:01.079+00:00 INFO Saving the dataset (0/1 shards):   0%|          | 0/200 [00:00<?, ? examples/s]
+2026-11-10T20:58:01.079+00:00 INFO Saving the dataset (1/1 shards): 100%|██████████| 200/200 [00:00<00:00, 62996.46 examples/s]
+2026-11-10T20:58:01.079+00:00 INFO Saving the dataset (1/1 shards): 100%|██████████| 200/200 [00:00<00:00, 60694.65 examples/s]
+2026-11-10T20:58:02.118+00:00 INFO Exit status 0

@@ -1,0 +1,89 @@
+{
+  "source": "logs/stages/7/adapters_audit_real.log",
+  "result": {
+    "record_kind": "peft",
+    "diverged_count": 0,
+    "unknown_count": 9,
+    "checked_count": 2,
+    "rows": [
+      {
+        "setting": "optimizer",
+        "asked": "adamw_torch",
+        "ran": null,
+        "status": "unknown",
+        "detail": "not in the record"
+      },
+      {
+        "setting": "learning_rate",
+        "asked": 0.0002,
+        "ran": null,
+        "status": "unknown",
+        "detail": "effective learning rate was not checked: PEFT's adapter_config.json does not record the optimizer schedule or its peak learning rate on the transformers backend"
+      },
+      {
+        "setting": "scheduler",
+        "asked": "cosine",
+        "ran": null,
+        "status": "unknown",
+        "detail": "not in the record"
+      },
+      {
+        "setting": "warmup_ratio",
+        "asked": 0.02659308510638298,
+        "ran": null,
+        "status": "unknown",
+        "detail": "not in the record"
+      },
+      {
+        "setting": "weight_decay",
+        "asked": 0.0,
+        "ran": null,
+        "status": "unknown",
+        "detail": "not in the record"
+      },
+      {
+        "setting": "max_grad_norm",
+        "asked": 1.0,
+        "ran": null,
+        "status": "unknown",
+        "detail": "not in the record"
+      },
+      {
+        "setting": "gradient_accumulation_steps",
+        "asked": 1,
+        "ran": null,
+        "status": "unknown",
+        "detail": "not in the record"
+      },
+      {
+        "setting": "gradient_checkpointing",
+        "asked": true,
+        "ran": null,
+        "status": "unknown",
+        "detail": "not in the record"
+      },
+      {
+        "setting": "data.train_on_responses_only",
+        "asked": true,
+        "ran": null,
+        "status": "unknown",
+        "detail": "the record does not carry mask_prompt or response_token_mask, so it cannot say whether masking took effect (adapter predates #683)"
+      },
+      {
+        "setting": "lora.r",
+        "asked": 16,
+        "ran": 16,
+        "status": "ok",
+        "detail": ""
+      },
+      {
+        "setting": "lora.alpha",
+        "asked": 32,
+        "ran": 32,
+        "status": "ok",
+        "detail": ""
+      }
+    ],
+    "unknown_reason": "This adapter carries PEFT's own adapter_config.json, which records LoRA shape and nothing about the effective learning rate, optimizer, schedule or masking. Those settings were not checked on the transformers path."
+  }
+}

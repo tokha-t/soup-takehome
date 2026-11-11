@@ -1,0 +1,619 @@
+{
+  "label": "POST-HOC",
+  "official_verdict": "DON'T SHIP",
+  "official_s5_status": "UNMEASURED",
+  "method": {
+    "model_outputs": "Reused archived sampled generations and the original extract_sql method.",
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "effective_sampling": {
+      "temperature": 0.7,
+      "top_p": 0.8,
+      "top_k": 20,
+      "repetition_penalty": 1.1
+    },
+    "max_new_tokens": 98,
+    "validation": "SQLite EXPLAIN QUERY PLAN with the existing read-only query authorizer.",
+    "sqlite_version": "3.50.4",
+    "official_sqlite_version": "3.45.1",
+    "baseline_verified": "All 10 gold error strings and all 576 saved model validity flags reproduced.",
+    "compatibility_rules": {
+      "scope": "Apply the same rules to gold and model SQL across all 192 rows, without consulting the gold answer when repairing a model query.",
+      "schema": "For schema build failures due to duplicate definitions, merge simple, unconstrained CREATE TABLE declarations by case-insensitive table name. Retain the first spelling of each column and coalesce duplicates only when their declared types agree.",
+      "offset": "After SQLite rejects OFFSET, add LIMIT -1 before a single trailing top-level OFFSET followed by a nonnegative integer, when no top-level LIMIT exists.",
+      "alias": "After SQLite rejects a dollar-prefixed alias token, quote that token when explicitly introduced by AS in a SELECT."
+    },
+    "limitation": "Schema union assumes repeated declarations describe the same logical table. Compilation measures SQLite acceptance only.",
+    "references": [
+      "https://www.sqlite.org/lang_select.html#the_limit_clause",
+      "https://www.sqlite.org/lang_keywords.html",
+      "https://www.sqlite.org/lang_createtable.html"
+    ],
+    "input_sha256": {
+      "data/eval_amended.jsonl": "946b053ffe6b2206ae447ab77168ed56bbd718553f6b9bde7aba6519ef8ecbe3",
+      "results/verify_real.json": "2baea9ad7c8a672162270e6eeffdff460a49af4df2ad6bc67456afe5b73f6a72",
+      "results/probe_P4.json": "a3a92e0046965f4b22d900dae0a0571a0b04d1f3f67a056b554e19f36cead978",
+      "results/summary.json": "b8f1831646c3316e22c398e263548464c12742bda2819b4fc11e9655389428f2",
+      "results/P4_sampling_seed_42.json": "4dc94d7dcd5639afdf183ea61056a232b41c7d1eb16acb74b88518ed063b0f3d",
+      "results/P4_sampling_seed_43.json": "e3a3ffd250374acf342d633c167ffe34dccfe93403868c85389b204b7b6fae39",
+      "results/P4_sampling_seed_44.json": "72e955159d744d9595edd87e2a75014b517320046bbc4f86a8bd425c1bc6a632",
+      "sql_metrics.py": "52e4affdcc2b4cc946577c647bc6e957eb6cbfa6327f93e5b184f578f3f17cb4"
+    }
+  },
+  "gold_failure_class_counts": {
+    "a": 6,
+    "b": 3,
+    "c": 1
+  },
+  "gold_failures": [
+    {
+      "id": 3841,
+      "schema": "CREATE TABLE Faculty_participates_in (facID VARCHAR); CREATE TABLE Faculty (fname VARCHAR, lname VARCHAR, FacID VARCHAR, facID VARCHAR)",
+      "gold_sql": "SELECT T1.fname, T1.lname, COUNT(*), T1.FacID FROM Faculty AS T1 JOIN Faculty_participates_in AS T2 ON T1.facID = T2.facID GROUP BY T1.FacID",
+      "sqlite_error": "duplicate column name: facID",
+      "schema_build_error": "duplicate column name: facID",
+      "class": "a",
+      "class_description": "schema fails to build",
+      "compatibility_check": {
+        "schema_rules": [
+          "deduplicate_case_insensitive_column_declarations"
+        ],
+        "schema_after_repair": "CREATE TABLE Faculty_participates_in (facID VARCHAR); CREATE TABLE Faculty (fname VARCHAR, lname VARCHAR, FacID VARCHAR)",
+        "query_rule": null,
+        "query_after_repair": null,
+        "sqlite_error": null,
+        "valid": true
+      }
+    },
+    {
+      "id": 3118,
+      "schema": "CREATE TABLE STUDENT (LName VARCHAR, PRESIDENT_Vote VARCHAR, Advisor VARCHAR); CREATE TABLE STUDENT (LName VARCHAR, StuID VARCHAR); CREATE TABLE VOTING_RECORD (Id VARCHAR)",
+      "gold_sql": "SELECT DISTINCT T1.LName FROM STUDENT AS T1 JOIN VOTING_RECORD AS T2 ON T1.StuID = PRESIDENT_Vote EXCEPT SELECT DISTINCT LName FROM STUDENT WHERE Advisor = \"2192\"",
+      "sqlite_error": "table STUDENT already exists",
+      "schema_build_error": "table STUDENT already exists",
+      "class": "a",
+      "class_description": "schema fails to build",
+      "compatibility_check": {
+        "schema_rules": [
+          "deduplicate_case_insensitive_column_declarations",
+          "merge_repeated_table_declarations"
+        ],
+        "schema_after_repair": "CREATE TABLE STUDENT (LName VARCHAR, PRESIDENT_Vote VARCHAR, Advisor VARCHAR, StuID VARCHAR); CREATE TABLE VOTING_RECORD (Id VARCHAR)",
+        "query_rule": null,
+        "query_after_repair": null,
+        "sqlite_error": null,
+        "valid": true
+      }
+    },
+    {
+      "id": 2961,
+      "schema": "CREATE TABLE Band (id VARCHAR); CREATE TABLE Performance (stageposition VARCHAR, bandmate VARCHAR)",
+      "gold_sql": "SELECT DISTINCT T1.stageposition FROM Performance AS T1 JOIN Band AS T2 ON T1.bandmate = T2.id WHERE Firstname = \"Solveig\"",
+      "sqlite_error": "no such column: Firstname",
+      "schema_build_error": null,
+      "class": "c",
+      "class_description": "gold references a missing table or column (dataset error)",
+      "compatibility_check": {
+        "schema_rules": [],
+        "schema_after_repair": null,
+        "query_rule": null,
+        "query_after_repair": null,
+        "sqlite_error": "no such column: Firstname",
+        "valid": false
+      }
+    },
+    {
+      "id": 3843,
+      "schema": "CREATE TABLE Faculty_participates_in (facID VARCHAR); CREATE TABLE Faculty (fname VARCHAR, lname VARCHAR, FacID VARCHAR, facID VARCHAR)",
+      "gold_sql": "SELECT T1.fname, T1.lname FROM Faculty AS T1 JOIN Faculty_participates_in AS T2 ON T1.facID = T2.facID GROUP BY T1.FacID ORDER BY COUNT(*) DESC LIMIT 1",
+      "sqlite_error": "duplicate column name: facID",
+      "schema_build_error": "duplicate column name: facID",
+      "class": "a",
+      "class_description": "schema fails to build",
+      "compatibility_check": {
+        "schema_rules": [
+          "deduplicate_case_insensitive_column_declarations"
+        ],
+        "schema_after_repair": "CREATE TABLE Faculty_participates_in (facID VARCHAR); CREATE TABLE Faculty (fname VARCHAR, lname VARCHAR, FacID VARCHAR)",
+        "query_rule": null,
+        "query_after_repair": null,
+        "sqlite_error": null,
+        "valid": true
+      }
+    },
+    {
+      "id": 368,
+      "schema": "CREATE TABLE editor (editor_id VARCHAR, Name VARCHAR, Editor_ID VARCHAR); CREATE TABLE journal_committee (Editor_ID VARCHAR)",
+      "gold_sql": "SELECT T1.editor_id, T1.Name, COUNT(*) FROM editor AS T1 JOIN journal_committee AS T2 ON T1.Editor_ID = T2.Editor_ID GROUP BY T1.editor_id",
+      "sqlite_error": "duplicate column name: Editor_ID",
+      "schema_build_error": "duplicate column name: Editor_ID",
+      "class": "a",
+      "class_description": "schema fails to build",
+      "compatibility_check": {
+        "schema_rules": [
+          "deduplicate_case_insensitive_column_declarations"
+        ],
+        "schema_after_repair": "CREATE TABLE editor (editor_id VARCHAR, Name VARCHAR); CREATE TABLE journal_committee (Editor_ID VARCHAR)",
+        "query_rule": null,
+        "query_after_repair": null,
+        "sqlite_error": null,
+        "valid": true
+      }
+    },
+    {
+      "id": 66230,
+      "schema": "CREATE TABLE table_name_19 (to_par VARCHAR, money___£__ INTEGER)",
+      "gold_sql": "SELECT to_par FROM table_name_19 WHERE money___£__ > 7 OFFSET 750",
+      "sqlite_error": "near \"OFFSET\": syntax error",
+      "schema_build_error": null,
+      "class": "b",
+      "class_description": "valid schema, SQLite rejects query dialect",
+      "compatibility_check": {
+        "schema_rules": [],
+        "schema_after_repair": null,
+        "query_rule": "add_unbounded_limit_before_bare_offset",
+        "query_after_repair": "SELECT to_par FROM table_name_19 WHERE money___£__ > 7 LIMIT -1 OFFSET 750",
+        "sqlite_error": null,
+        "valid": true
+      }
+    },
+    {
+      "id": 3119,
+      "schema": "CREATE TABLE STUDENT (LName VARCHAR, PRESIDENT_Vote VARCHAR, Advisor VARCHAR); CREATE TABLE STUDENT (LName VARCHAR, StuID VARCHAR); CREATE TABLE VOTING_RECORD (Id VARCHAR)",
+      "gold_sql": "SELECT DISTINCT T1.LName FROM STUDENT AS T1 JOIN VOTING_RECORD AS T2 ON T1.StuID = PRESIDENT_Vote INTERSECT SELECT DISTINCT LName FROM STUDENT WHERE Advisor = \"8741\"",
+      "sqlite_error": "table STUDENT already exists",
+      "schema_build_error": "table STUDENT already exists",
+      "class": "a",
+      "class_description": "schema fails to build",
+      "compatibility_check": {
+        "schema_rules": [
+          "deduplicate_case_insensitive_column_declarations",
+          "merge_repeated_table_declarations"
+        ],
+        "schema_after_repair": "CREATE TABLE STUDENT (LName VARCHAR, PRESIDENT_Vote VARCHAR, Advisor VARCHAR, StuID VARCHAR); CREATE TABLE VOTING_RECORD (Id VARCHAR)",
+        "query_rule": null,
+        "query_after_repair": null,
+        "sqlite_error": null,
+        "valid": true
+      }
+    },
+    {
+      "id": 11895,
+      "schema": "CREATE TABLE table_name_18 (sales__billion_ INTEGER, market_value__billion_$_ VARCHAR, profits__billion_$_ VARCHAR)",
+      "gold_sql": "SELECT AVG(sales__billion_) AS $_ FROM table_name_18 WHERE market_value__billion_$_ = 204.9 AND profits__billion_$_ < 20.6",
+      "sqlite_error": "near \"$_\": syntax error",
+      "schema_build_error": null,
+      "class": "b",
+      "class_description": "valid schema, SQLite rejects query dialect",
+      "compatibility_check": {
+        "schema_rules": [],
+        "schema_after_repair": null,
+        "query_rule": "quote_dollar_prefixed_alias",
+        "query_after_repair": "SELECT AVG(sales__billion_) AS \"$_\" FROM table_name_18 WHERE market_value__billion_$_ = 204.9 AND profits__billion_$_ < 20.6",
+        "sqlite_error": null,
+        "valid": true
+      }
+    },
+    {
+      "id": 3167,
+      "schema": "CREATE TABLE CHARACTERISTICS (characteristic_name VARCHAR, other_characteristic_details VARCHAR, characteristic_data_type VARCHAR, characteristic_id VARCHAR); CREATE TABLE product_characteristics (characteristic_id VARCHAR); CREATE TABLE CHARACTERISTICS (characteristic_name VARCHAR, other_characteristic_details VARCHAR, characteristic_data_type VARCHAR)",
+      "gold_sql": "SELECT characteristic_name, other_characteristic_details, characteristic_data_type FROM CHARACTERISTICS EXCEPT SELECT t1.characteristic_name, t1.other_characteristic_details, t1.characteristic_data_type FROM CHARACTERISTICS AS t1 JOIN product_characteristics AS t2 ON t1.characteristic_id = t2.characteristic_id",
+      "sqlite_error": "table CHARACTERISTICS already exists",
+      "schema_build_error": "table CHARACTERISTICS already exists",
+      "class": "a",
+      "class_description": "schema fails to build",
+      "compatibility_check": {
+        "schema_rules": [
+          "deduplicate_case_insensitive_column_declarations",
+          "merge_repeated_table_declarations"
+        ],
+        "schema_after_repair": "CREATE TABLE CHARACTERISTICS (characteristic_name VARCHAR, other_characteristic_details VARCHAR, characteristic_data_type VARCHAR, characteristic_id VARCHAR); CREATE TABLE product_characteristics (characteristic_id VARCHAR)",
+        "query_rule": null,
+        "query_after_repair": null,
+        "sqlite_error": null,
+        "valid": true
+      }
+    },
+    {
+      "id": 71992,
+      "schema": "CREATE TABLE table_name_65 (female VARCHAR, total_population INTEGER)",
+      "gold_sql": "SELECT COUNT(female) FROM table_name_65 WHERE total_population < 2 OFFSET 195",
+      "sqlite_error": "near \"OFFSET\": syntax error",
+      "schema_build_error": null,
+      "class": "b",
+      "class_description": "valid schema, SQLite rejects query dialect",
+      "compatibility_check": {
+        "schema_rules": [],
+        "schema_after_repair": null,
+        "query_rule": "add_unbounded_limit_before_bare_offset",
+        "query_after_repair": "SELECT COUNT(female) FROM table_name_65 WHERE total_population < 2 LIMIT -1 OFFSET 195",
+        "sqlite_error": null,
+        "valid": true
+      }
+    }
+  ],
+  "gold_validity": {
+    "original": {
+      "valid": 182,
+      "total": 192,
+      "rate": 0.9479166666666666
+    },
+    "compatibility": {
+      "valid": 191,
+      "total": 192,
+      "rate": 0.9947916666666666
+    }
+  },
+  "model_validity": {
+    "all_192": {
+      "original": {
+        "pooled": {
+          "valid": 492,
+          "total": 576,
+          "rate": 0.8541666666666666
+        },
+        "by_seed": {
+          "42": {
+            "valid": 162,
+            "total": 192,
+            "rate": 0.84375
+          },
+          "43": {
+            "valid": 164,
+            "total": 192,
+            "rate": 0.8541666666666666
+          },
+          "44": {
+            "valid": 166,
+            "total": 192,
+            "rate": 0.8645833333333334
+          }
+        }
+      },
+      "compatibility": {
+        "pooled": {
+          "valid": 499,
+          "total": 576,
+          "rate": 0.8663194444444444
+        },
+        "by_seed": {
+          "42": {
+            "valid": 164,
+            "total": 192,
+            "rate": 0.8541666666666666
+          },
+          "43": {
+            "valid": 166,
+            "total": 192,
+            "rate": 0.8645833333333334
+          },
+          "44": {
+            "valid": 169,
+            "total": 192,
+            "rate": 0.8802083333333334
+          }
+        }
+      }
+    },
+    "original_gold_valid": {
+      "original": {
+        "pooled": {
+          "valid": 489,
+          "total": 546,
+          "rate": 0.8956043956043956
+        },
+        "by_seed": {
+          "42": {
+            "valid": 161,
+            "total": 182,
+            "rate": 0.8846153846153846
+          },
+          "43": {
+            "valid": 163,
+            "total": 182,
+            "rate": 0.8956043956043956
+          },
+          "44": {
+            "valid": 165,
+            "total": 182,
+            "rate": 0.9065934065934066
+          }
+        }
+      },
+      "compatibility": {
+        "pooled": {
+          "valid": 489,
+          "total": 546,
+          "rate": 0.8956043956043956
+        },
+        "by_seed": {
+          "42": {
+            "valid": 161,
+            "total": 182,
+            "rate": 0.8846153846153846
+          },
+          "43": {
+            "valid": 163,
+            "total": 182,
+            "rate": 0.8956043956043956
+          },
+          "44": {
+            "valid": 165,
+            "total": 182,
+            "rate": 0.9065934065934066
+          }
+        }
+      }
+    },
+    "compatibility_gold_valid": {
+      "original": {
+        "pooled": {
+          "valid": 492,
+          "total": 573,
+          "rate": 0.8586387434554974
+        },
+        "by_seed": {
+          "42": {
+            "valid": 162,
+            "total": 191,
+            "rate": 0.8481675392670157
+          },
+          "43": {
+            "valid": 164,
+            "total": 191,
+            "rate": 0.8586387434554974
+          },
+          "44": {
+            "valid": 166,
+            "total": 191,
+            "rate": 0.8691099476439791
+          }
+        }
+      },
+      "compatibility": {
+        "pooled": {
+          "valid": 499,
+          "total": 573,
+          "rate": 0.8708551483420593
+        },
+        "by_seed": {
+          "42": {
+            "valid": 164,
+            "total": 191,
+            "rate": 0.8586387434554974
+          },
+          "43": {
+            "valid": 166,
+            "total": 191,
+            "rate": 0.8691099476439791
+          },
+          "44": {
+            "valid": 169,
+            "total": 191,
+            "rate": 0.8848167539267016
+          }
+        }
+      }
+    }
+  },
+  "cohort_sizes": {
+    "all_192": 192,
+    "original_gold_valid": 182,
+    "compatibility_gold_valid": 191
+  },
+  "model_validation_changes": [
+    {
+      "seed": 42,
+      "id": 3841,
+      "extracted_sql": "SELECT T2.fname, T2.lname, COUNT(*) FROM Faculty AS T1 JOIN Faculty_participates_in AS T2 ON T1.facID = T2.facID GROUP BY fname, lname",
+      "original_sqlite_error": "duplicate column name: facID",
+      "compatibility_sqlite_error": "no such column: T2.fname",
+      "schema_repaired": true,
+      "query_rule": null,
+      "query_after_repair": null
+    },
+    {
+      "seed": 42,
+      "id": 3118,
+      "extracted_sql": "SELECT DISTINCT LName FROM STUDENT WHERE Presidnet_Vote = 'yes' AND Advisor != 2192;",
+      "original_sqlite_error": "table STUDENT already exists",
+      "compatibility_sqlite_error": "no such column: Presidnet_Vote",
+      "schema_repaired": true,
+      "query_rule": null,
+      "query_after_repair": null
+    },
+    {
+      "seed": 42,
+      "id": 3843,
+      "extracted_sql": "SELECT T2.fname, T2.lname FROM Faculty AS T1 JOIN Faculty_participates_in AS T2 ON T1.facid = T2.facid WHERE T2.facid IN (SELECT facID FROM Faculty_participates_in GROUP BY facID ORDER BY COUNT(*) DESC LIMIT 1)",
+      "original_sqlite_error": "duplicate column name: facID",
+      "compatibility_sqlite_error": "no such column: T2.fname",
+      "schema_repaired": true,
+      "query_rule": null,
+      "query_after_repair": null
+    },
+    {
+      "seed": 42,
+      "id": 368,
+      "extracted_sql": "SELECT T1.editor_id, T1.Name, COUNT(*) FROM editor AS T1 JOIN journal_committee AS T2 ON T1.Editor_ID = T2.Editor_ID GROUP BY T1.editor_id, T1.Name",
+      "original_sqlite_error": "duplicate column name: Editor_ID",
+      "compatibility_sqlite_error": null,
+      "schema_repaired": true,
+      "query_rule": null,
+      "query_after_repair": null
+    },
+    {
+      "seed": 42,
+      "id": 3119,
+      "extracted_sql": "SELECT DISTINCT LName FROM STUDENT WHERE Presidnet_Vote = 'Yes' AND Advisor = 8741",
+      "original_sqlite_error": "table STUDENT already exists",
+      "compatibility_sqlite_error": "no such column: Presidnet_Vote",
+      "schema_repaired": true,
+      "query_rule": null,
+      "query_after_repair": null
+    },
+    {
+      "seed": 42,
+      "id": 3167,
+      "extracted_sql": "SELECT T1.characteristic_name, T1.other_characteristic_details, T1.characteristic_data_type FROM CHARACTERISTICS AS T1 JOIN product_characteristics AS T2 ON T1.characteristic_id = T2.characteristic_id WHERE T2.product_id IS NULL",
+      "original_sqlite_error": "table CHARACTERISTICS already exists",
+      "compatibility_sqlite_error": "no such column: T2.product_id",
+      "schema_repaired": true,
+      "query_rule": null,
+      "query_after_repair": null
+    },
+    {
+      "seed": 42,
+      "id": 71992,
+      "extracted_sql": "SELECT COUNT(female) FROM table_name_65 WHERE total_population < 2 OFFSET 195",
+      "original_sqlite_error": "near \"OFFSET\": syntax error",
+      "compatibility_sqlite_error": null,
+      "schema_repaired": false,
+      "query_rule": "add_unbounded_limit_before_bare_offset",
+      "query_after_repair": "SELECT COUNT(female) FROM table_name_65 WHERE total_population < 2 LIMIT -1 OFFSET 195"
+    },
+    {
+      "seed": 43,
+      "id": 3841,
+      "extracted_sql": "SELECT T2.fname, T2.lname, COUNT(*) FROM Faculty AS T1 JOIN Faculty_participates_in AS T2 ON T1.facid = T2.facid GROUP BY T1.facid",
+      "original_sqlite_error": "duplicate column name: facID",
+      "compatibility_sqlite_error": "no such column: T2.fname",
+      "schema_repaired": true,
+      "query_rule": null,
+      "query_after_repair": null
+    },
+    {
+      "seed": 43,
+      "id": 3118,
+      "extracted_sql": "SELECT DISTINCT T3.LName FROM VOTING_RECORD AS T1 JOIN STUDENT AS T2 ON T1.StuID = T2.StuID JOIN STAFF AS T3 ON T2.Advisor = T3.SSN WHERE T1.President_vote = 'yes' AND T2.StuID NOT IN ('2192'))",
+      "original_sqlite_error": "table STUDENT already exists",
+      "compatibility_sqlite_error": "near \")\": syntax error",
+      "schema_repaired": true,
+      "query_rule": null,
+      "query_after_repair": null
+    },
+    {
+      "seed": 43,
+      "id": 3843,
+      "extracted_sql": "SELECT T2.fname, T2.lname FROM Faculty AS T1 JOIN Faculty_participates_in AS T2 ON T1.facid = T2.facid ORDER BY COUNT(*) DESC LIMIT 1",
+      "original_sqlite_error": "duplicate column name: facID",
+      "compatibility_sqlite_error": "no such column: T2.fname",
+      "schema_repaired": true,
+      "query_rule": null,
+      "query_after_repair": null
+    },
+    {
+      "seed": 43,
+      "id": 368,
+      "extracted_sql": "SELECT T1.editor_id, T1.Name, COUNT(*) FROM editor AS T1 JOIN journal_committee AS T2 ON T1.Editor_ID = T2.Editor_ID GROUP BY T1.editor_id, T1.Name",
+      "original_sqlite_error": "duplicate column name: Editor_ID",
+      "compatibility_sqlite_error": null,
+      "schema_repaired": true,
+      "query_rule": null,
+      "query_after_repair": null
+    },
+    {
+      "seed": 43,
+      "id": 3119,
+      "extracted_sql": "SELECT DISTINCT T2.LName FROM VOTING_RECORD AS T1 JOIN STUDENT AS T2 ON T1.StuID = T2.StuID WHERE T1.President_Vote > '0' AND T2.Advisor = 8741",
+      "original_sqlite_error": "table STUDENT already exists",
+      "compatibility_sqlite_error": "no such column: T1.President_Vote",
+      "schema_repaired": true,
+      "query_rule": null,
+      "query_after_repair": null
+    },
+    {
+      "seed": 43,
+      "id": 3167,
+      "extracted_sql": "SELECT T1.characteristic_name, T1.other_characteristic_details, T1.characteristic_data_type FROM CHARACTERISTICS AS T1 JOIN product_characteristics AS T2 ON T1.characteristic_id = T2.characteristic_id WHERE NOT T2.product_characteristic_id IS NULL",
+      "original_sqlite_error": "table CHARACTERISTICS already exists",
+      "compatibility_sqlite_error": "no such column: T2.product_characteristic_id",
+      "schema_repaired": true,
+      "query_rule": null,
+      "query_after_repair": null
+    },
+    {
+      "seed": 43,
+      "id": 71992,
+      "extracted_sql": "SELECT COUNT(female) FROM table_name_65 WHERE total_population < 2 OFFSET 195",
+      "original_sqlite_error": "near \"OFFSET\": syntax error",
+      "compatibility_sqlite_error": null,
+      "schema_repaired": false,
+      "query_rule": "add_unbounded_limit_before_bare_offset",
+      "query_after_repair": "SELECT COUNT(female) FROM table_name_65 WHERE total_population < 2 LIMIT -1 OFFSET 195"
+    },
+    {
+      "seed": 44,
+      "id": 3841,
+      "extracted_sql": "SELECT T1.fname, T1.lname, COUNT(*) FROM Faculty AS T1 JOIN Faculty_participates_in AS T2 ON T1.facid = T2.facid GROUP BY T1.facid",
+      "original_sqlite_error": "duplicate column name: facID",
+      "compatibility_sqlite_error": null,
+      "schema_repaired": true,
+      "query_rule": null,
+      "query_after_repair": null
+    },
+    {
+      "seed": 44,
+      "id": 3118,
+      "extracted_sql": "SELECT DISTINCT T3.LName FROM VOTING_RECORD AS T1 JOIN STUDENT AS T2 ON T1.Id = T2.StuID JOIN ADVISOR AS T3 ON T2.Advisor = T3.id WHERE T1.President_Vote = 'Yes' AND T3.Advisor <> '2192'",
+      "original_sqlite_error": "table STUDENT already exists",
+      "compatibility_sqlite_error": "no such table: ADVISOR",
+      "schema_repaired": true,
+      "query_rule": null,
+      "query_after_repair": null
+    },
+    {
+      "seed": 44,
+      "id": 3843,
+      "extracted_sql": "SELECT T1.fname, T1.lname FROM Faculty AS T1 JOIN Faculty_participates_in AS T2 ON T1.facID = T2.facID ORDER BY COUNT(*) DESC LIMIT 1",
+      "original_sqlite_error": "duplicate column name: facID",
+      "compatibility_sqlite_error": "misuse of aggregate: COUNT()",
+      "schema_repaired": true,
+      "query_rule": null,
+      "query_after_repair": null
+    },
+    {
+      "seed": 44,
+      "id": 368,
+      "extracted_sql": "SELECT T1.editor_id, T1.Name, COUNT(*) FROM editor AS T1 JOIN journal_committee AS T2 ON T1.Editor_ID = T2.Editor_ID GROUP BY T1.editor_id, T1.Name",
+      "original_sqlite_error": "duplicate column name: Editor_ID",
+      "compatibility_sqlite_error": null,
+      "schema_repaired": true,
+      "query_rule": null,
+      "query_after_repair": null
+    },
+    {
+      "seed": 44,
+      "id": 3119,
+      "extracted_sql": "SELECT DISTINCT T3.LName FROM VOTING_RECORD AS T1 JOIN STUDENT AS T2 ON T1.StuID = T2.StuID JOIN STUDENT AS T3 ON T2.LName = T3.LName WHERE T1.President_Vote = 'yes' AND T2.Advisor = 8741",
+      "original_sqlite_error": "table STUDENT already exists",
+      "compatibility_sqlite_error": "no such column: T1.President_Vote",
+      "schema_repaired": true,
+      "query_rule": null,
+      "query_after_repair": null
+    },
+    {
+      "seed": 44,
+      "id": 3167,
+      "extracted_sql": "SELECT T1.characteristic_name, T1.other_characteristic_details, T1.characteristic_data_type FROM CHARACTERISTICS AS T1 JOIN product_characteristics AS T2 ON T1.characteristic_id = T2.characteristic_id WHERE T2.product_id IS NULL",
+      "original_sqlite_error": "table CHARACTERISTICS already exists",
+      "compatibility_sqlite_error": "no such column: T2.product_id",
+      "schema_repaired": true,
+      "query_rule": null,
+      "query_after_repair": null
+    },
+    {
+      "seed": 44,
+      "id": 71992,
+      "extracted_sql": "SELECT COUNT(female) FROM table_name_65 WHERE total_population < 2 OFFSET 195",
+      "original_sqlite_error": "near \"OFFSET\": syntax error",
+      "compatibility_sqlite_error": null,
+      "schema_repaired": false,
+      "query_rule": "add_unbounded_limit_before_bare_offset",
+      "query_after_repair": "SELECT COUNT(female) FROM table_name_65 WHERE total_population < 2 LIMIT -1 OFFSET 195"
+    }
+  ]
+}

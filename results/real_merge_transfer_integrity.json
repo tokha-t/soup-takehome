@@ -1,0 +1,9 @@
+{
+  "kaggle_script_version": 368224256,
+  "verified_sha256": {
+    "merged_fp16/model.safetensors": "7fae1b5b6b9477c163f3011f20583e7b7707ac34899c2bf42692bb5c2730e44a",
+    "merged_fp32/model-00001-of-00002.safetensors": "878939501d3e7fad5a12d584c97fb8584f8f8a47597ceba0584be32d9873f59b",
+    "merged_fp32/model-00002-of-00002.safetensors": "79f336db0d7b52dad91d2e41579701b4e62cb81093b336ff18bffbb5d06f43ff",
+    "merged_bf16/model.safetensors": "d3e5023c1af718ec54ce5b7a3cf3d1154129b50ba36b6ebacda9e51a29935803"
+  }
+}

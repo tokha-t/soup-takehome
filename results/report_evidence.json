@@ -1,0 +1,24 @@
+{
+  "training_max_padded_tokens": 1912,
+  "training_max_padded_tokens_source": "results/train_real.json:step_metrics[].padded_tokens",
+  "predicted_at_max_observed_padded_tokens_gib": [
+    6.174843749999999,
+    7.2578125
+  ],
+  "prediction_source": "results/memory_grid.json:fits.on",
+  "training_peak_reserved_minus_allocated_gib": 5.238218307495117,
+  "training_peak_sampled_minus_reserved_gib": 0.1396484375,
+  "training_peak_gap_source": "results/memory_phases.json:real_training, differences between phase maxima",
+  "recomputed_non_pad_tokens_per_second": 974.120426756483,
+  "reported_non_pad_tokens_per_second_including_eval": 736.8288388179747,
+  "shuffled_first_and_last_step_loss": [
+    3.3226232528686523,
+    1.564733862876892
+  ],
+  "fp16_module_delta_relative_error_min_max": [
+    0.014561373393771044,
+    0.054236224130583315
+  ],
+  "bakeoff_sql_sampled_peak_gib": 10.3291015625,
+  "bakeoff_source": "logs/bakeoff/bakeoff_results.json"
+}

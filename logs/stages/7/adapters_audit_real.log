@@ -1,0 +1,88 @@
+2026-11-11T01:11:38.159+00:00 INFO $ /kaggle/temp/soup-patch-diagnostic-soup/bin/soup adapters audit /kaggle/working/soup-takehome/check-local-5xmoqwd4/real --config /kaggle/working/soup-takehome/configs/patch_soup_real.yaml --json
+2026-11-11T01:11:38.812+00:00 INFO {
+2026-11-11T01:11:38.812+00:00 INFO   "record_kind": "peft",
+2026-11-11T01:11:38.812+00:00 INFO   "diverged_count": 0,
+2026-11-11T01:11:38.812+00:00 INFO   "unknown_count": 9,
+2026-11-11T01:11:38.812+00:00 INFO   "checked_count": 2,
+2026-11-11T01:11:38.812+00:00 INFO   "rows": [
+2026-11-11T01:11:38.812+00:00 INFO     {
+2026-11-11T01:11:38.812+00:00 INFO       "setting": "optimizer",
+2026-11-11T01:11:38.812+00:00 INFO       "asked": "adamw_torch",
+2026-11-11T01:11:38.812+00:00 INFO       "ran": null,
+2026-11-11T01:11:38.812+00:00 INFO       "status": "unknown",
+2026-11-11T01:11:38.812+00:00 INFO       "detail": "not in the record"
+2026-11-11T01:11:38.812+00:00 INFO     },
+2026-11-11T01:11:38.812+00:00 INFO     {
+2026-11-11T01:11:38.812+00:00 INFO       "setting": "learning_rate",
+2026-11-11T01:11:38.812+00:00 INFO       "asked": 0.0002,
+2026-11-11T01:11:38.812+00:00 INFO       "ran": null,
+2026-11-11T01:11:38.812+00:00 INFO       "status": "unknown",
+2026-11-11T01:11:38.812+00:00 INFO       "detail": "effective learning rate was not checked: PEFT's adapter_config.json does not record the optimizer schedule or its peak learning rate on the transformers backend"
+2026-11-11T01:11:38.812+00:00 INFO     },
+2026-11-11T01:11:38.812+00:00 INFO     {
+2026-11-11T01:11:38.812+00:00 INFO       "setting": "scheduler",
+2026-11-11T01:11:38.812+00:00 INFO       "asked": "cosine",
+2026-11-11T01:11:38.812+00:00 INFO       "ran": null,
+2026-11-11T01:11:38.812+00:00 INFO       "status": "unknown",
+2026-11-11T01:11:38.812+00:00 INFO       "detail": "not in the record"
+2026-11-11T01:11:38.812+00:00 INFO     },
+2026-11-11T01:11:38.812+00:00 INFO     {
+2026-11-11T01:11:38.812+00:00 INFO       "setting": "warmup_ratio",
+2026-11-11T01:11:38.812+00:00 INFO       "asked": 0.02659308510638298,
+2026-11-11T01:11:38.812+00:00 INFO       "ran": null,
+2026-11-11T01:11:38.812+00:00 INFO       "status": "unknown",
+2026-11-11T01:11:38.812+00:00 INFO       "detail": "not in the record"
+2026-11-11T01:11:38.812+00:00 INFO     },
+2026-11-11T01:11:38.812+00:00 INFO     {
+2026-11-11T01:11:38.812+00:00 INFO       "setting": "weight_decay",
+2026-11-11T01:11:38.812+00:00 INFO       "asked": 0.0,
+2026-11-11T01:11:38.812+00:00 INFO       "ran": null,
+2026-11-11T01:11:38.812+00:00 INFO       "status": "unknown",
+2026-11-11T01:11:38.812+00:00 INFO       "detail": "not in the record"
+2026-11-11T01:11:38.812+00:00 INFO     },
+2026-11-11T01:11:38.812+00:00 INFO     {
+2026-11-11T01:11:38.812+00:00 INFO       "setting": "max_grad_norm",
+2026-11-11T01:11:38.813+00:00 INFO       "asked": 1.0,
+2026-11-11T01:11:38.813+00:00 INFO       "ran": null,
+2026-11-11T01:11:38.813+00:00 INFO       "status": "unknown",
+2026-11-11T01:11:38.813+00:00 INFO       "detail": "not in the record"
+2026-11-11T01:11:38.813+00:00 INFO     },
+2026-11-11T01:11:38.813+00:00 INFO     {
+2026-11-11T01:11:38.813+00:00 INFO       "setting": "gradient_accumulation_steps",
+2026-11-11T01:11:38.813+00:00 INFO       "asked": 1,
+2026-11-11T01:11:38.813+00:00 INFO       "ran": null,
+2026-11-11T01:11:38.813+00:00 INFO       "status": "unknown",
+2026-11-11T01:11:38.813+00:00 INFO       "detail": "not in the record"
+2026-11-11T01:11:38.813+00:00 INFO     },
+2026-11-11T01:11:38.813+00:00 INFO     {
+2026-11-11T01:11:38.813+00:00 INFO       "setting": "gradient_checkpointing",
+2026-11-11T01:11:38.813+00:00 INFO       "asked": true,
+2026-11-11T01:11:38.813+00:00 INFO       "ran": null,
+2026-11-11T01:11:38.813+00:00 INFO       "status": "unknown",
+2026-11-11T01:11:38.813+00:00 INFO       "detail": "not in the record"
+2026-11-11T01:11:38.813+00:00 INFO     },
+2026-11-11T01:11:38.813+00:00 INFO     {
+2026-11-11T01:11:38.813+00:00 INFO       "setting": "data.train_on_responses_only",
+2026-11-11T01:11:38.813+00:00 INFO       "asked": true,
+2026-11-11T01:11:38.813+00:00 INFO       "ran": null,
+2026-11-11T01:11:38.813+00:00 INFO       "status": "unknown",
+2026-11-11T01:11:38.813+00:00 INFO       "detail": "the record does not carry mask_prompt or response_token_mask, so it cannot say whether masking took effect (adapter predates #683)"
+2026-11-11T01:11:38.813+00:00 INFO     },
+2026-11-11T01:11:38.813+00:00 INFO     {
+2026-11-11T01:11:38.813+00:00 INFO       "setting": "lora.r",
+2026-11-11T01:11:38.813+00:00 INFO       "asked": 16,
+2026-11-11T01:11:38.813+00:00 INFO       "ran": 16,
+2026-11-11T01:11:38.813+00:00 INFO       "status": "ok",
+2026-11-11T01:11:38.813+00:00 INFO       "detail": ""
+2026-11-11T01:11:38.813+00:00 INFO     },
+2026-11-11T01:11:38.813+00:00 INFO     {
+2026-11-11T01:11:38.813+00:00 INFO       "setting": "lora.alpha",
+2026-11-11T01:11:38.813+00:00 INFO       "asked": 32,
+2026-11-11T01:11:38.813+00:00 INFO       "ran": 32,
+2026-11-11T01:11:38.813+00:00 INFO       "status": "ok",
+2026-11-11T01:11:38.813+00:00 INFO       "detail": ""
+2026-11-11T01:11:38.813+00:00 INFO     }
+2026-11-11T01:11:38.813+00:00 INFO   ],
+2026-11-11T01:11:38.813+00:00 INFO   "unknown_reason": "This adapter carries PEFT's own adapter_config.json, which records LoRA shape and nothing about the effective learning rate, optimizer, schedule or masking. Those settings were not checked on the transformers path."
+2026-11-11T01:11:38.813+00:00 INFO }
+2026-11-11T01:11:38.987+00:00 INFO Exit status 0

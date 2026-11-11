@@ -1,0 +1,44 @@
+[
+  {
+    "name": "quant_merged_4bit",
+    "device": "CPU merge, CUDA NF4",
+    "state": "complete",
+    "start_epoch": 1794350857.5495148,
+    "end_epoch": 1794350900.5281217,
+    "wall_seconds": 42.978606939315796,
+    "torch_peak_allocated_gib": 1.0989656448364258,
+    "torch_peak_reserved_gib": 1.14453125,
+    "peak_process_rss_gib": 6.364910125732422,
+    "total_system_ram_gib": 31.346603393554688,
+    "nvidia_smi_peak_mib": 1293,
+    "nvidia_smi_peak_gib": 1.2626953125
+  },
+  {
+    "name": "quant_base_4bit",
+    "device": "CPU merge, CUDA NF4",
+    "state": "complete",
+    "start_epoch": 1794350904.8343182,
+    "end_epoch": 1794350938.589395,
+    "wall_seconds": 33.75507688522339,
+    "torch_peak_allocated_gib": 1.0989656448364258,
+    "torch_peak_reserved_gib": 1.14453125,
+    "peak_process_rss_gib": 6.0346832275390625,
+    "total_system_ram_gib": 31.346603393554688,
+    "nvidia_smi_peak_mib": 1293,
+    "nvidia_smi_peak_gib": 1.2626953125
+  },
+  {
+    "name": "quant_shuffled_4bit",
+    "device": "CPU merge, CUDA NF4",
+    "state": "complete",
+    "start_epoch": 1794350942.855788,
+    "end_epoch": 1794350977.351396,
+    "wall_seconds": 34.49560809135437,
+    "torch_peak_allocated_gib": 1.0989656448364258,
+    "torch_peak_reserved_gib": 1.14453125,
+    "peak_process_rss_gib": 6.666313171386719,
+    "total_system_ram_gib": 31.346603393554688,
+    "nvidia_smi_peak_mib": 1293,
+    "nvidia_smi_peak_gib": 1.2626953125
+  }
+]

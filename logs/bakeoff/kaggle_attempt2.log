@@ -1,0 +1,644 @@
+2026-11-10T19:02:56.586+00:00 $ nvidia-smi
+2026-11-10T19:02:56.619+00:00 Tue Nov 10 19:02:56 2026       
+2026-11-10T19:02:56.619+00:00 +-----------------------------------------------------------------------------------------+
+2026-11-10T19:02:56.619+00:00 | NVIDIA-SMI 580.178.04             Driver Version: 580.178.04     CUDA Version: 13.0     |
+2026-11-10T19:02:56.619+00:00 +-----------------------------------------+------------------------+----------------------+
+2026-11-10T19:02:56.619+00:00 | GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+2026-11-10T19:02:56.619+00:00 | Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+2026-11-10T19:02:56.619+00:00 |                                         |                        |               MIG M. |
+2026-11-10T19:02:56.619+00:00 |=========================================+========================+======================|
+2026-11-10T19:02:56.666+00:00 |   0  Tesla T4                       Off |   00000000:00:04.0 Off |                    0 |
+2026-11-10T19:02:56.667+00:00 | N/A   55C    P8             11W /   70W |       0MiB /  15360MiB |      0%      Default |
+2026-11-10T19:02:56.667+00:00 |                                         |                        |                  N/A |
+2026-11-10T19:02:56.667+00:00 +-----------------------------------------+------------------------+----------------------+
+2026-11-10T19:02:56.667+00:00 |   1  Tesla T4                       Off |   00000000:00:05.0 Off |                    0 |
+2026-11-10T19:02:56.667+00:00 | N/A   54C    P8             10W /   70W |       0MiB /  15360MiB |      0%      Default |
+2026-11-10T19:02:56.667+00:00 |                                         |                        |                  N/A |
+2026-11-10T19:02:56.667+00:00 +-----------------------------------------+------------------------+----------------------+
+2026-11-10T19:02:56.667+00:00 
+2026-11-10T19:02:56.667+00:00 +-----------------------------------------------------------------------------------------+
+2026-11-10T19:02:56.667+00:00 | Processes:                                                                              |
+2026-11-10T19:02:56.667+00:00 |  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+2026-11-10T19:02:56.667+00:00 |        ID   ID                                                               Usage      |
+2026-11-10T19:02:56.667+00:00 |=========================================================================================|
+2026-11-10T19:02:56.669+00:00 |  No running processes found                                                             |
+2026-11-10T19:02:56.669+00:00 +-----------------------------------------------------------------------------------------+
+2026-11-10T19:02:56.988+00:00 $ /usr/bin/python3 --version
+2026-11-10T19:02:56.990+00:00 Python 3.13.16
+2026-11-10T19:02:57.011+00:00 $ /usr/local/bin/uv venv --seed --system-site-packages --python /usr/bin/python3 /kaggle/temp/soup_bakeoff/probe-venv
+2026-11-10T19:02:57.141+00:00 warning: The `--system` flag has no effect, `uv venv` always ignores virtual environments when finding a Python interpreter; did you mean `--no-managed-python`?
+2026-11-10T19:02:57.259+00:00 Using CPython 3.13.16 interpreter at: /usr/bin/python3
+2026-11-10T19:02:57.261+00:00 Creating virtual environment with seed packages at: /kaggle/temp/soup_bakeoff/probe-venv
+2026-11-10T19:02:57.573+00:00  + pip==26.3
+2026-11-10T19:02:57.573+00:00 Activate with: source /kaggle/temp/soup_bakeoff/probe-venv/bin/activate
+2026-11-10T19:02:57.576+00:00 $ /kaggle/temp/soup_bakeoff/probe-venv/bin/python -m pip --disable-pip-version-check install -c /kaggle/temp/soup_bakeoff/constraints.txt transformers==4.57.1 peft==0.18.0 accelerate==1.11.0 sqlglot==28.0.0
+2026-11-10T19:02:58.765+00:00 Collecting transformers==4.57.1
+2026-11-10T19:02:58.848+00:00   Downloading transformers-4.57.1-py3-none-any.whl.metadata (43 kB)
+2026-11-10T19:02:59.030+00:00 Collecting peft==0.18.0
+2026-11-10T19:02:59.038+00:00   Downloading peft-0.18.0-py3-none-any.whl.metadata (14 kB)
+2026-11-10T19:02:59.102+00:00 Collecting accelerate==1.11.0
+2026-11-10T19:02:59.110+00:00   Downloading accelerate-1.11.0-py3-none-any.whl.metadata (19 kB)
+2026-11-10T19:02:59.330+00:00 Collecting sqlglot==28.0.0
+2026-11-10T19:02:59.339+00:00   Downloading sqlglot-28.0.0-py3-none-any.whl.metadata (20 kB)
+2026-11-10T19:02:59.362+00:00 Requirement already satisfied: filelock in /usr/local/lib/python3.13/dist-packages (from transformers==4.57.1) (4.2.4)
+2026-11-10T19:02:59.453+00:00 Collecting huggingface-hub<1.0,>=0.34.0 (from transformers==4.57.1)
+2026-11-10T19:02:59.460+00:00   Downloading huggingface_hub-0.36.2-py3-none-any.whl.metadata (15 kB)
+2026-11-10T19:02:59.492+00:00 Requirement already satisfied: numpy>=1.17 in /usr/local/lib/python3.13/dist-packages (from transformers==4.57.1) (2.1.3)
+2026-11-10T19:02:59.493+00:00 Requirement already satisfied: packaging>=20.0 in /usr/local/lib/python3.13/dist-packages (from transformers==4.57.1) (26.3)
+2026-11-10T19:02:59.493+00:00 Requirement already satisfied: pyyaml>=5.1 in /usr/local/lib/python3.13/dist-packages (from transformers==4.57.1) (6.0.3)
+2026-11-10T19:02:59.494+00:00 Requirement already satisfied: regex!=2019.12.17 in /usr/local/lib/python3.13/dist-packages (from transformers==4.57.1) (2025.11.3)
+2026-11-10T19:02:59.495+00:00 Requirement already satisfied: requests in /usr/local/lib/python3.13/dist-packages (from transformers==4.57.1) (2.34.2)
+2026-11-10T19:02:59.801+00:00 Collecting tokenizers<=0.23.0,>=0.22.0 (from transformers==4.57.1)
+2026-11-10T19:02:59.811+00:00   Downloading tokenizers-0.22.2-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (7.3 kB)
+2026-11-10T19:02:59.832+00:00 Requirement already satisfied: safetensors>=0.4.3 in /usr/local/lib/python3.13/dist-packages (from transformers==4.57.1) (0.8.0)
+2026-11-10T19:02:59.833+00:00 Requirement already satisfied: tqdm>=4.27 in /usr/local/lib/python3.13/dist-packages (from transformers==4.57.1) (4.67.3)
+2026-11-10T19:02:59.836+00:00 Requirement already satisfied: psutil in /usr/local/lib/python3.13/dist-packages (from peft==0.18.0) (5.9.5)
+2026-11-10T19:02:59.837+00:00 Requirement already satisfied: torch>=1.13.0 in /usr/local/lib/python3.13/dist-packages (from peft==0.18.0) (2.11.0+cu130)
+2026-11-10T19:02:59.844+00:00 Requirement already satisfied: fsspec>=2023.5.0 in /usr/local/lib/python3.13/dist-packages (from huggingface-hub<1.0,>=0.34.0->transformers==4.57.1) (2025.12.0)
+2026-11-10T19:02:59.846+00:00 Requirement already satisfied: hf-xet<2.0.0,>=1.1.3 in /usr/local/lib/python3.13/dist-packages (from huggingface-hub<1.0,>=0.34.0->transformers==4.57.1) (1.7.0)
+2026-11-10T19:02:59.847+00:00 Requirement already satisfied: typing-extensions>=3.7.4.3 in /usr/local/lib/python3.13/dist-packages (from huggingface-hub<1.0,>=0.34.0->transformers==4.57.1) (4.16.0)
+2026-11-10T19:02:59.873+00:00 Requirement already satisfied: setuptools<82 in /usr/local/lib/python3.13/dist-packages (from torch>=1.13.0->peft==0.18.0) (81.0.0)
+2026-11-10T19:02:59.874+00:00 Requirement already satisfied: sympy>=1.13.3 in /usr/local/lib/python3.13/dist-packages (from torch>=1.13.0->peft==0.18.0) (1.14.0)
+2026-11-10T19:02:59.875+00:00 Requirement already satisfied: networkx>=2.5.1 in /usr/local/lib/python3.13/dist-packages (from torch>=1.13.0->peft==0.18.0) (3.7)
+2026-11-10T19:02:59.876+00:00 Requirement already satisfied: jinja2 in /usr/local/lib/python3.13/dist-packages (from torch>=1.13.0->peft==0.18.0) (3.1.6)
+2026-11-10T19:02:59.877+00:00 Requirement already satisfied: cuda-toolkit==13.0.2 in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == "Linux"->torch>=1.13.0->peft==0.18.0) (13.0.2)
+2026-11-10T19:02:59.878+00:00 Requirement already satisfied: cuda-bindings<14,>=13.0.3 in /usr/local/lib/python3.13/dist-packages (from torch>=1.13.0->peft==0.18.0) (13.0.3)
+2026-11-10T19:02:59.879+00:00 Requirement already satisfied: nvidia-cudnn-cu13==9.19.0.56 in /usr/local/lib/python3.13/dist-packages (from torch>=1.13.0->peft==0.18.0) (9.19.0.56)
+2026-11-10T19:02:59.880+00:00 Requirement already satisfied: nvidia-cusparselt-cu13==0.8.0 in /usr/local/lib/python3.13/dist-packages (from torch>=1.13.0->peft==0.18.0) (0.8.0)
+2026-11-10T19:02:59.881+00:00 Requirement already satisfied: nvidia-nccl-cu13==2.28.9 in /usr/local/lib/python3.13/dist-packages (from torch>=1.13.0->peft==0.18.0) (2.28.9)
+2026-11-10T19:02:59.882+00:00 Requirement already satisfied: nvidia-nvshmem-cu13==3.4.5 in /usr/local/lib/python3.13/dist-packages (from torch>=1.13.0->peft==0.18.0) (3.4.5)
+2026-11-10T19:02:59.883+00:00 Requirement already satisfied: triton==3.6.0 in /usr/local/lib/python3.13/dist-packages (from torch>=1.13.0->peft==0.18.0) (3.6.0)
+2026-11-10T19:02:59.893+00:00 Requirement already satisfied: nvidia-cublas==13.1.0.3.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == "Linux"->torch>=1.13.0->peft==0.18.0) (13.1.0.3)
+2026-11-10T19:02:59.895+00:00 Requirement already satisfied: nvidia-cuda-runtime==13.0.96.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == "Linux"->torch>=1.13.0->peft==0.18.0) (13.0.96)
+2026-11-10T19:02:59.896+00:00 Requirement already satisfied: nvidia-cufft==12.0.0.61.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == "Linux"->torch>=1.13.0->peft==0.18.0) (12.0.0.61)
+2026-11-10T19:02:59.897+00:00 Requirement already satisfied: nvidia-cufile==1.15.1.6.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == "Linux"->torch>=1.13.0->peft==0.18.0) (1.15.1.6)
+2026-11-10T19:02:59.899+00:00 Requirement already satisfied: nvidia-cuda-cupti==13.0.85.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == "Linux"->torch>=1.13.0->peft==0.18.0) (13.0.85)
+2026-11-10T19:02:59.900+00:00 Requirement already satisfied: nvidia-curand==10.4.0.35.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == "Linux"->torch>=1.13.0->peft==0.18.0) (10.4.0.35)
+2026-11-10T19:02:59.901+00:00 Requirement already satisfied: nvidia-cusolver==12.0.4.66.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == "Linux"->torch>=1.13.0->peft==0.18.0) (12.0.4.66)
+2026-11-10T19:02:59.902+00:00 Requirement already satisfied: nvidia-cusparse==12.6.3.3.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == "Linux"->torch>=1.13.0->peft==0.18.0) (12.6.3.3)
+2026-11-10T19:02:59.904+00:00 Requirement already satisfied: nvidia-nvjitlink==13.0.88.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == "Linux"->torch>=1.13.0->peft==0.18.0) (13.0.88)
+2026-11-10T19:02:59.905+00:00 Requirement already satisfied: nvidia-cuda-nvrtc==13.0.88.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == "Linux"->torch>=1.13.0->peft==0.18.0) (13.0.88)
+2026-11-10T19:02:59.906+00:00 Requirement already satisfied: nvidia-nvtx==13.0.85.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == "Linux"->torch>=1.13.0->peft==0.18.0) (13.0.85)
+2026-11-10T19:02:59.918+00:00 Requirement already satisfied: cuda-pathfinder~=1.1 in /usr/local/lib/python3.13/dist-packages (from cuda-bindings<14,>=13.0.3->torch>=1.13.0->peft==0.18.0) (1.8.4)
+2026-11-10T19:02:59.950+00:00 Requirement already satisfied: mpmath<1.4,>=1.1.0 in /usr/local/lib/python3.13/dist-packages (from sympy>=1.13.3->torch>=1.13.0->peft==0.18.0) (1.3.0)
+2026-11-10T19:02:59.962+00:00 Requirement already satisfied: MarkupSafe>=2.0 in /usr/local/lib/python3.13/dist-packages (from jinja2->torch>=1.13.0->peft==0.18.0) (3.0.4)
+2026-11-10T19:02:59.970+00:00 Requirement already satisfied: charset_normalizer<4,>=2 in /usr/local/lib/python3.13/dist-packages (from requests->transformers==4.57.1) (3.4.9)
+2026-11-10T19:02:59.971+00:00 Requirement already satisfied: idna<4,>=2.5 in /usr/local/lib/python3.13/dist-packages (from requests->transformers==4.57.1) (3.20)
+2026-11-10T19:02:59.972+00:00 Requirement already satisfied: urllib3<3,>=1.26 in /usr/local/lib/python3.13/dist-packages (from requests->transformers==4.57.1) (2.8.0)
+2026-11-10T19:02:59.972+00:00 Requirement already satisfied: certifi>=2023.5.7 in /usr/local/lib/python3.13/dist-packages (from requests->transformers==4.57.1) (2026.10.23)
+2026-11-10T19:02:59.992+00:00 Downloading transformers-4.57.1-py3-none-any.whl (12.0 MB)
+2026-11-10T19:03:00.662+00:00    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.0/12.0 MB 19.0 MB/s  0:00:00
+2026-11-10T19:03:00.672+00:00 Downloading peft-0.18.0-py3-none-any.whl (556 kB)
+2026-11-10T19:03:00.707+00:00    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 556.4/556.4 kB 11.0 MB/s  0:00:00
+2026-11-10T19:03:00.716+00:00 Downloading accelerate-1.11.0-py3-none-any.whl (375 kB)
+2026-11-10T19:03:00.750+00:00 Downloading sqlglot-28.0.0-py3-none-any.whl (536 kB)
+2026-11-10T19:03:00.790+00:00    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 536.1/536.1 kB 8.5 MB/s  0:00:00
+2026-11-10T19:03:00.798+00:00 Downloading huggingface_hub-0.36.2-py3-none-any.whl (566 kB)
+2026-11-10T19:03:00.838+00:00    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 566.4/566.4 kB 9.6 MB/s  0:00:00
+2026-11-10T19:03:00.844+00:00 Downloading tokenizers-0.22.2-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.3 MB)
+2026-11-10T19:03:00.959+00:00    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.3/3.3 MB 28.4 MB/s  0:00:00
+2026-11-10T19:03:02.855+00:00 Installing collected packages: sqlglot, huggingface-hub, tokenizers, transformers, accelerate, peft
+2026-11-10T19:03:02.856+00:00   Attempting uninstall: sqlglot
+2026-11-10T19:03:02.868+00:00     Found existing installation: sqlglot 25.20.2
+2026-11-10T19:03:02.868+00:00     Not uninstalling sqlglot at /usr/local/lib/python3.13/dist-packages, outside environment /kaggle/temp/soup_bakeoff/probe-venv
+2026-11-10T19:03:02.869+00:00     Can't uninstall 'sqlglot'. No files were found to uninstall.
+2026-11-10T19:03:03.353+00:00   Attempting uninstall: huggingface-hub
+2026-11-10T19:03:03.374+00:00     Found existing installation: huggingface_hub 1.33.0
+2026-11-10T19:03:03.374+00:00     Not uninstalling huggingface-hub at /usr/local/lib/python3.13/dist-packages, outside environment /kaggle/temp/soup_bakeoff/probe-venv
+2026-11-10T19:03:03.374+00:00     Can't uninstall 'huggingface_hub'. No files were found to uninstall.
+2026-11-10T19:03:03.697+00:00   Attempting uninstall: tokenizers
+2026-11-10T19:03:03.711+00:00     Found existing installation: tokenizers 0.23.3
+2026-11-10T19:03:03.712+00:00     Not uninstalling tokenizers at /usr/local/lib/python3.13/dist-packages, outside environment /kaggle/temp/soup_bakeoff/probe-venv
+2026-11-10T19:03:03.712+00:00     Can't uninstall 'tokenizers'. No files were found to uninstall.
+2026-11-10T19:03:03.790+00:00   Attempting uninstall: transformers
+2026-11-10T19:03:03.804+00:00     Found existing installation: transformers 5.20.2
+2026-11-10T19:03:03.804+00:00     Not uninstalling transformers at /usr/local/lib/python3.13/dist-packages, outside environment /kaggle/temp/soup_bakeoff/probe-venv
+2026-11-10T19:03:03.805+00:00     Can't uninstall 'transformers'. No files were found to uninstall.
+2026-11-10T19:03:11.707+00:00   Attempting uninstall: accelerate
+2026-11-10T19:03:11.719+00:00     Found existing installation: accelerate 1.15.0
+2026-11-10T19:03:11.720+00:00     Not uninstalling accelerate at /usr/local/lib/python3.13/dist-packages, outside environment /kaggle/temp/soup_bakeoff/probe-venv
+2026-11-10T19:03:11.720+00:00     Can't uninstall 'accelerate'. No files were found to uninstall.
+2026-11-10T19:03:11.962+00:00   Attempting uninstall: peft
+2026-11-10T19:03:11.973+00:00     Found existing installation: peft 0.21.2
+2026-11-10T19:03:11.973+00:00     Not uninstalling peft at /usr/local/lib/python3.13/dist-packages, outside environment /kaggle/temp/soup_bakeoff/probe-venv
+2026-11-10T19:03:11.974+00:00     Can't uninstall 'peft'. No files were found to uninstall.
+2026-11-10T19:03:12.336+00:00 
+2026-11-10T19:03:12.337+00:00 ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+2026-11-10T19:03:12.337+00:00 ibis-framework 9.5.0 requires sqlglot<25.21,>=23.4, but you have sqlglot 28.0.0 which is incompatible.
+2026-11-10T19:03:12.337+00:00 gradio-client 2.7.2 requires huggingface-hub<3.0,>=1.16.0, but you have huggingface-hub 0.36.2 which is incompatible.
+2026-11-10T19:03:12.337+00:00 gradio 6.30.0 requires huggingface-hub<3.0,>=1.16.0, but you have huggingface-hub 0.36.2 which is incompatible.
+2026-11-10T19:03:12.337+00:00 gradio 6.30.0 requires pillow<13.0,>=8.0, but you have pillow 13.0.0 which is incompatible.
+2026-11-10T19:03:12.337+00:00 diffusers 0.42.0 requires huggingface-hub<3.0,>=1.32.0, but you have huggingface-hub 0.36.2 which is incompatible.
+2026-11-10T19:03:12.338+00:00 Successfully installed accelerate-1.11.0 huggingface-hub-0.36.2 peft-0.18.0 sqlglot-28.0.0 tokenizers-0.22.2 transformers-4.57.1
+2026-11-10T19:03:12.511+00:00 $ /kaggle/temp/soup_bakeoff/probe-venv/bin/python /kaggle/temp/soup_bakeoff/run_probe.py
+2026-11-10T19:03:12.588+00:00 Runtime deadline (UTC epoch seconds) 1794341821
+2026-11-10T19:03:12.591+00:00 Python 3.13.16
+2026-11-10T19:03:12.609+00:00 torch 2.11.0+cu130
+2026-11-10T19:03:12.611+00:00 transformers 4.57.1
+2026-11-10T19:03:12.612+00:00 peft 0.18.0
+2026-11-10T19:03:12.613+00:00 datasets 4.8.5
+2026-11-10T19:03:12.614+00:00 sqlglot 28.0.0
+2026-11-10T19:03:43.912+00:00 WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+2026-11-10T19:03:43.912+00:00 I0000 00:00:1794337423.912082      91 cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+2026-11-10T19:03:49.796+00:00 A main | Preparing dataset
+2026-11-10T19:04:22.139+00:00 {"dataset": "b-mc2/sql-create-context", "revision": "9d80a6a118b838d9defc3798d659a54a2ac2ff37", "file": "sql_create_context_v4.json", "license": "cc-by-4.0", "gated": false, "task": "sql", "pool": "train", "context_definition": "normalized table schema", "category_field": null, "mapping": "Instruction: fixed SQL system prompt. Input: CREATE TABLE context and question. Output: SQL answer.", "source_rows": 78577, "excluded_by_source_pool": 0, "source_url": "https://huggingface.co/datasets/b-mc2/sql-create-context/tree/9d80a6a118b838d9defc3798d659a54a2ac2ff37", "candidate": "A", "harder_sql_slice": false, "rows_in_slice": 78577, "unusable_rows": 0, "duplicates_dropped": 4, "usable_dedup_rows": 78573, "duplicate_prompts_with_conflicting_references": 1, "near_duplicate_source_index_pairs": [], "train_rows": 500, "heldout_rows": 100, "heldout_prompt_overlap_count": 0, "heldout_context_seen_train_count": 0, "heldout_context_seen_train_fraction": 0.0, "pool_lengths": {"full": {"p50": 105, "p95": 139, "max": 483}, "answer": {"p50": 24, "p95": 39, "max": 214}}, "sampled_lengths": {"full": {"p50": 105, "p95": 138, "max": 244}, "answer": {"p50": 24, "p95": 38, "max": 75}}, "train_over_512": 0, "heldout_over_512": 0, "max_new_tokens": 78, "h2_review": {"source_indices_zero_based": [14592, 3278, 36048, 32098, 29256, 18289, 13434, 71482, 11395, 77397], "note": "Ten English questions and SQL answers checked for readability. Row 71482 compares a VARCHAR column to a numeric literal, which may depend on SQL dialect."}, "n1_answer_5_to_100_fraction": 0.9993127410179069, "n2_prompt_copy_fraction": 1.0, "hard_requirements": {"H1": true, "H2": true, "H3": true, "H4": true, "H5": true, "H6": null, "H7": null}, "nice_to_have": {"N1": true, "N2": true, "N3": false, "N4": true}}
+2026-11-10T19:04:22.139+00:00 Fully rendered training example
+2026-11-10T19:04:22.139+00:00 <|im_start|>system
+2026-11-10T19:04:22.139+00:00 Write one SQL query that answers the question using the supplied table schemas. Use the supplied table and column names. Return only the SQL query.<|im_end|>
+2026-11-10T19:04:22.139+00:00 <|im_start|>user
+2026-11-10T19:04:22.139+00:00 Schema:
+2026-11-10T19:04:22.139+00:00 CREATE TABLE table_name_65 (school VARCHAR, nationality VARCHAR, pick VARCHAR)
+2026-11-10T19:04:22.139+00:00 
+2026-11-10T19:04:22.139+00:00 Question:
+2026-11-10T19:04:22.139+00:00 Which school's nationality was United States when its pick was 595?<|im_end|>
+2026-11-10T19:04:22.139+00:00 <|im_start|>assistant
+2026-11-10T19:04:22.139+00:00 SELECT school FROM table_name_65 WHERE nationality = "united states" AND pick = "595"<|im_end|>
+2026-11-10T19:04:22.139+00:00 
+2026-11-10T19:04:22.139+00:00 Rendered evaluation prompt
+2026-11-10T19:04:22.139+00:00 <|im_start|>system
+2026-11-10T19:04:22.139+00:00 Write one SQL query that answers the question using the supplied table schemas. Use the supplied table and column names. Return only the SQL query.<|im_end|>
+2026-11-10T19:04:22.139+00:00 <|im_start|>user
+2026-11-10T19:04:22.139+00:00 Schema:
+2026-11-10T19:04:22.139+00:00 CREATE TABLE table_name_56 (streak VARCHAR, game INTEGER)
+2026-11-10T19:04:22.139+00:00 
+2026-11-10T19:04:22.139+00:00 Question:
+2026-11-10T19:04:22.139+00:00 Which Streak has a Game larger than 49?<|im_end|>
+2026-11-10T19:04:22.139+00:00 <|im_start|>assistant
+2026-11-10T19:04:22.139+00:00 
+2026-11-10T19:04:22.139+00:00 A main | Base evaluation
+2026-11-10T19:04:46.142+00:00 Greedy generation completed 16/100 held-out rows.
+2026-11-10T19:04:47.545+00:00 Greedy generation completed 32/100 held-out rows.
+2026-11-10T19:04:49.633+00:00 Greedy generation completed 48/100 held-out rows.
+2026-11-10T19:04:51.320+00:00 Greedy generation completed 64/100 held-out rows.
+2026-11-10T19:04:53.191+00:00 Greedy generation completed 80/100 held-out rows.
+2026-11-10T19:04:55.466+00:00 Greedy generation completed 96/100 held-out rows.
+2026-11-10T19:04:57.861+00:00 Greedy generation completed 100/100 held-out rows.
+2026-11-10T19:04:59.781+00:00 {"score": 0.0, "stop_rate": 1.0, "answer_loss": 0.6479387065664954, "answer_tokens": 2366, "wall_seconds": 16.83011342499998, "generation_seconds": 14.911017055999991, "teacher_forced_seconds": 1.9190963689999876, "scorer_rates": {"parses": 0.0}}
+2026-11-10T19:04:59.781+00:00 A main | LoRA probe
+2026-11-10T19:05:00.243+00:00 Running /usr/local/bin/uv venv --seed --system-site-packages --python /kaggle/temp/soup_bakeoff/probe-venv/bin/python /tmp/dataset_bakeoff_soup_env
+2026-11-10T19:05:00.252+00:00 warning: The `--system` flag has no effect, `uv venv` always ignores virtual environments when finding a Python interpreter; did you mean `--no-managed-python`?
+2026-11-10T19:05:00.345+00:00 Using CPython 3.13.16 interpreter at: /kaggle/temp/soup_bakeoff/probe-venv/bin/python
+2026-11-10T19:05:00.345+00:00 Creating virtual environment with seed packages at: /tmp/dataset_bakeoff_soup_env
+2026-11-10T19:05:00.363+00:00  + pip==26.3
+2026-11-10T19:05:00.363+00:00 Activate with: source /tmp/dataset_bakeoff_soup_env/bin/activate
+2026-11-10T19:05:00.367+00:00 Running /tmp/dataset_bakeoff_soup_env/bin/python -m pip install -c /kaggle/temp/soup_bakeoff/soup_environment/soup_constraints.txt 'soup-cli[train]==0.77.2'
+2026-11-10T19:05:01.576+00:00 Collecting soup-cli==0.77.2 (from soup-cli[train]==0.77.2)
+2026-11-10T19:05:01.664+00:00   Downloading soup_cli-0.77.2-py3-none-any.whl.metadata (33 kB)
+2026-11-10T19:05:01.742+00:00 Collecting click<8.5,>=8.0.0 (from soup-cli==0.77.2->soup-cli[train]==0.77.2)
+2026-11-10T19:05:01.749+00:00   Downloading click-8.4.2-py3-none-any.whl.metadata (2.6 kB)
+2026-11-10T19:05:01.763+00:00 Requirement already satisfied: huggingface-hub>=0.16.0 in /usr/local/lib/python3.13/dist-packages (from soup-cli==0.77.2->soup-cli[train]==0.77.2) (1.33.0)
+2026-11-10T19:05:01.764+00:00 Requirement already satisfied: packaging>=21.0 in /usr/local/lib/python3.13/dist-packages (from soup-cli==0.77.2->soup-cli[train]==0.77.2) (26.3)
+2026-11-10T19:05:01.799+00:00 Collecting plotext>=5.2.0 (from soup-cli==0.77.2->soup-cli[train]==0.77.2)
+2026-11-10T19:05:01.812+00:00   Downloading plotext-6.1.0-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (7.9 kB)
+2026-11-10T19:05:01.833+00:00 Requirement already satisfied: pydantic>=2.0.0 in /usr/local/lib/python3.13/dist-packages (from soup-cli==0.77.2->soup-cli[train]==0.77.2) (2.14.1)
+2026-11-10T19:05:01.834+00:00 Requirement already satisfied: pyyaml>=6.0 in /usr/local/lib/python3.13/dist-packages (from soup-cli==0.77.2->soup-cli[train]==0.77.2) (6.0.3)
+2026-11-10T19:05:01.834+00:00 Requirement already satisfied: rich>=13.0.0 in /usr/local/lib/python3.13/dist-packages (from soup-cli==0.77.2->soup-cli[train]==0.77.2) (13.9.4)
+2026-11-10T19:05:01.835+00:00 Requirement already satisfied: typer<0.28,>=0.15.4 in /usr/local/lib/python3.13/dist-packages (from soup-cli==0.77.2->soup-cli[train]==0.77.2) (0.27.3)
+2026-11-10T19:05:01.838+00:00 Requirement already satisfied: accelerate>=0.27.0 in /usr/local/lib/python3.13/dist-packages (from soup-cli[train]==0.77.2) (1.15.0)
+2026-11-10T19:05:01.881+00:00 Collecting bitsandbytes>=0.41.0 (from soup-cli[train]==0.77.2)
+2026-11-10T19:05:01.889+00:00   Downloading bitsandbytes-0.50.2-py3-none-manylinux_2_24_x86_64.whl.metadata (10 kB)
+2026-11-10T19:05:01.907+00:00 Requirement already satisfied: datasets>=2.14.0 in /usr/local/lib/python3.13/dist-packages (from soup-cli[train]==0.77.2) (4.8.5)
+2026-11-10T19:05:01.908+00:00 Requirement already satisfied: peft<1.0.0,>=0.20.0 in /usr/local/lib/python3.13/dist-packages (from soup-cli[train]==0.77.2) (0.21.2)
+2026-11-10T19:05:01.909+00:00 Requirement already satisfied: requests>=2.32.2 in /usr/local/lib/python3.13/dist-packages (from soup-cli[train]==0.77.2) (2.34.2)
+2026-11-10T19:05:01.910+00:00 Requirement already satisfied: torch>=2.6.0 in /usr/local/lib/python3.13/dist-packages (from soup-cli[train]==0.77.2) (2.11.0+cu130)
+2026-11-10T19:05:01.911+00:00 Requirement already satisfied: transformers<6.0.0,>=5.16.1 in /usr/local/lib/python3.13/dist-packages (from soup-cli[train]==0.77.2) (5.20.2)
+2026-11-10T19:05:01.958+00:00 Collecting trl<1.0.0,>=0.29.0 (from soup-cli[train]==0.77.2)
+2026-11-10T19:05:01.966+00:00   Downloading trl-0.29.1-py3-none-any.whl.metadata (11 kB)
+2026-11-10T19:05:01.992+00:00 Requirement already satisfied: numpy>=1.17 in /usr/local/lib/python3.13/dist-packages (from peft<1.0.0,>=0.20.0->soup-cli[train]==0.77.2) (2.1.3)
+2026-11-10T19:05:01.993+00:00 Requirement already satisfied: psutil in /usr/local/lib/python3.13/dist-packages (from peft<1.0.0,>=0.20.0->soup-cli[train]==0.77.2) (5.9.5)
+2026-11-10T19:05:01.994+00:00 Requirement already satisfied: tqdm in /usr/local/lib/python3.13/dist-packages (from peft<1.0.0,>=0.20.0->soup-cli[train]==0.77.2) (4.67.3)
+2026-11-10T19:05:01.995+00:00 Requirement already satisfied: safetensors in /usr/local/lib/python3.13/dist-packages (from peft<1.0.0,>=0.20.0->soup-cli[train]==0.77.2) (0.8.0)
+2026-11-10T19:05:01.999+00:00 Requirement already satisfied: regex>=2025.10.22 in /usr/local/lib/python3.13/dist-packages (from transformers<6.0.0,>=5.16.1->soup-cli[train]==0.77.2) (2025.11.3)
+2026-11-10T19:05:02.000+00:00 Requirement already satisfied: tokenizers<0.24.0,>=0.23.1 in /usr/local/lib/python3.13/dist-packages (from transformers<6.0.0,>=5.16.1->soup-cli[train]==0.77.2) (0.23.3)
+2026-11-10T19:05:02.015+00:00 Requirement already satisfied: filelock>=3.10.0 in /usr/local/lib/python3.13/dist-packages (from huggingface-hub>=0.16.0->soup-cli==0.77.2->soup-cli[train]==0.77.2) (4.2.4)
+2026-11-10T19:05:02.016+00:00 Requirement already satisfied: fsspec>=2023.5.0 in /usr/local/lib/python3.13/dist-packages (from huggingface-hub>=0.16.0->soup-cli==0.77.2->soup-cli[train]==0.77.2) (2025.12.0)
+2026-11-10T19:05:02.017+00:00 Requirement already satisfied: hf-xet<2.0.0,>=1.6.0 in /usr/local/lib/python3.13/dist-packages (from huggingface-hub>=0.16.0->soup-cli==0.77.2->soup-cli[train]==0.77.2) (1.7.0)
+2026-11-10T19:05:02.018+00:00 Requirement already satisfied: httpx<1,>=0.23.0 in /usr/local/lib/python3.13/dist-packages (from huggingface-hub>=0.16.0->soup-cli==0.77.2->soup-cli[train]==0.77.2) (0.28.1)
+2026-11-10T19:05:02.019+00:00 Requirement already satisfied: typing-extensions>=4.1.0 in /usr/local/lib/python3.13/dist-packages (from huggingface-hub>=0.16.0->soup-cli==0.77.2->soup-cli[train]==0.77.2) (4.16.0)
+2026-11-10T19:05:02.026+00:00 Requirement already satisfied: anyio in /usr/local/lib/python3.13/dist-packages (from httpx<1,>=0.23.0->huggingface-hub>=0.16.0->soup-cli==0.77.2->soup-cli[train]==0.77.2) (4.15.1)
+2026-11-10T19:05:02.027+00:00 Requirement already satisfied: certifi in /usr/local/lib/python3.13/dist-packages (from httpx<1,>=0.23.0->huggingface-hub>=0.16.0->soup-cli==0.77.2->soup-cli[train]==0.77.2) (2026.10.23)
+2026-11-10T19:05:02.028+00:00 Requirement already satisfied: httpcore==1.* in /usr/local/lib/python3.13/dist-packages (from httpx<1,>=0.23.0->huggingface-hub>=0.16.0->soup-cli==0.77.2->soup-cli[train]==0.77.2) (1.0.9)
+2026-11-10T19:05:02.029+00:00 Requirement already satisfied: idna in /usr/local/lib/python3.13/dist-packages (from httpx<1,>=0.23.0->huggingface-hub>=0.16.0->soup-cli==0.77.2->soup-cli[train]==0.77.2) (3.20)
+2026-11-10T19:05:02.031+00:00 Requirement already satisfied: h11>=0.16 in /usr/local/lib/python3.13/dist-packages (from httpcore==1.*->httpx<1,>=0.23.0->huggingface-hub>=0.16.0->soup-cli==0.77.2->soup-cli[train]==0.77.2) (0.16.0)
+2026-11-10T19:05:02.036+00:00 Requirement already satisfied: shellingham>=1.3.0 in /usr/local/lib/python3.13/dist-packages (from typer<0.28,>=0.15.4->soup-cli==0.77.2->soup-cli[train]==0.77.2) (1.5.4)
+2026-11-10T19:05:02.037+00:00 Requirement already satisfied: annotated-doc>=0.0.2 in /usr/local/lib/python3.13/dist-packages (from typer<0.28,>=0.15.4->soup-cli==0.77.2->soup-cli[train]==0.77.2) (0.0.5)
+2026-11-10T19:05:02.046+00:00 Requirement already satisfied: setuptools<82 in /usr/local/lib/python3.13/dist-packages (from torch>=2.6.0->soup-cli[train]==0.77.2) (81.0.0)
+2026-11-10T19:05:02.047+00:00 Requirement already satisfied: sympy>=1.13.3 in /usr/local/lib/python3.13/dist-packages (from torch>=2.6.0->soup-cli[train]==0.77.2) (1.14.0)
+2026-11-10T19:05:02.048+00:00 Requirement already satisfied: networkx>=2.5.1 in /usr/local/lib/python3.13/dist-packages (from torch>=2.6.0->soup-cli[train]==0.77.2) (3.7)
+2026-11-10T19:05:02.048+00:00 Requirement already satisfied: jinja2 in /usr/local/lib/python3.13/dist-packages (from torch>=2.6.0->soup-cli[train]==0.77.2) (3.1.6)
+2026-11-10T19:05:02.050+00:00 Requirement already satisfied: cuda-toolkit==13.0.2 in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == "Linux"->torch>=2.6.0->soup-cli[train]==0.77.2) (13.0.2)
+2026-11-10T19:05:02.051+00:00 Requirement already satisfied: cuda-bindings<14,>=13.0.3 in /usr/local/lib/python3.13/dist-packages (from torch>=2.6.0->soup-cli[train]==0.77.2) (13.0.3)
+2026-11-10T19:05:02.053+00:00 Requirement already satisfied: nvidia-cudnn-cu13==9.19.0.56 in /usr/local/lib/python3.13/dist-packages (from torch>=2.6.0->soup-cli[train]==0.77.2) (9.19.0.56)
+2026-11-10T19:05:02.054+00:00 Requirement already satisfied: nvidia-cusparselt-cu13==0.8.0 in /usr/local/lib/python3.13/dist-packages (from torch>=2.6.0->soup-cli[train]==0.77.2) (0.8.0)
+2026-11-10T19:05:02.055+00:00 Requirement already satisfied: nvidia-nccl-cu13==2.28.9 in /usr/local/lib/python3.13/dist-packages (from torch>=2.6.0->soup-cli[train]==0.77.2) (2.28.9)
+2026-11-10T19:05:02.056+00:00 Requirement already satisfied: nvidia-nvshmem-cu13==3.4.5 in /usr/local/lib/python3.13/dist-packages (from torch>=2.6.0->soup-cli[train]==0.77.2) (3.4.5)
+2026-11-10T19:05:02.057+00:00 Requirement already satisfied: triton==3.6.0 in /usr/local/lib/python3.13/dist-packages (from torch>=2.6.0->soup-cli[train]==0.77.2) (3.6.0)
+2026-11-10T19:05:02.067+00:00 Requirement already satisfied: nvidia-cublas==13.1.0.3.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == "Linux"->torch>=2.6.0->soup-cli[train]==0.77.2) (13.1.0.3)
+2026-11-10T19:05:02.069+00:00 Requirement already satisfied: nvidia-cuda-runtime==13.0.96.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == "Linux"->torch>=2.6.0->soup-cli[train]==0.77.2) (13.0.96)
+2026-11-10T19:05:02.070+00:00 Requirement already satisfied: nvidia-cufft==12.0.0.61.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == "Linux"->torch>=2.6.0->soup-cli[train]==0.77.2) (12.0.0.61)
+2026-11-10T19:05:02.071+00:00 Requirement already satisfied: nvidia-cufile==1.15.1.6.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == "Linux"->torch>=2.6.0->soup-cli[train]==0.77.2) (1.15.1.6)
+2026-11-10T19:05:02.073+00:00 Requirement already satisfied: nvidia-cuda-cupti==13.0.85.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == "Linux"->torch>=2.6.0->soup-cli[train]==0.77.2) (13.0.85)
+2026-11-10T19:05:02.074+00:00 Requirement already satisfied: nvidia-curand==10.4.0.35.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == "Linux"->torch>=2.6.0->soup-cli[train]==0.77.2) (10.4.0.35)
+2026-11-10T19:05:02.075+00:00 Requirement already satisfied: nvidia-cusolver==12.0.4.66.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == "Linux"->torch>=2.6.0->soup-cli[train]==0.77.2) (12.0.4.66)
+2026-11-10T19:05:02.076+00:00 Requirement already satisfied: nvidia-cusparse==12.6.3.3.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == "Linux"->torch>=2.6.0->soup-cli[train]==0.77.2) (12.6.3.3)
+2026-11-10T19:05:02.078+00:00 Requirement already satisfied: nvidia-nvjitlink==13.0.88.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == "Linux"->torch>=2.6.0->soup-cli[train]==0.77.2) (13.0.88)
+2026-11-10T19:05:02.080+00:00 Requirement already satisfied: nvidia-cuda-nvrtc==13.0.88.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == "Linux"->torch>=2.6.0->soup-cli[train]==0.77.2) (13.0.88)
+2026-11-10T19:05:02.081+00:00 Requirement already satisfied: nvidia-nvtx==13.0.85.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == "Linux"->torch>=2.6.0->soup-cli[train]==0.77.2) (13.0.85)
+2026-11-10T19:05:02.089+00:00 Requirement already satisfied: cuda-pathfinder~=1.1 in /usr/local/lib/python3.13/dist-packages (from cuda-bindings<14,>=13.0.3->torch>=2.6.0->soup-cli[train]==0.77.2) (1.8.4)
+2026-11-10T19:05:02.110+00:00 Requirement already satisfied: pyarrow>=21.0.0 in /usr/local/lib/python3.13/dist-packages (from datasets>=2.14.0->soup-cli[train]==0.77.2) (23.0.1)
+2026-11-10T19:05:02.110+00:00 Requirement already satisfied: dill<0.4.2,>=0.3.0 in /usr/local/lib/python3.13/dist-packages (from datasets>=2.14.0->soup-cli[train]==0.77.2) (0.4.1)
+2026-11-10T19:05:02.111+00:00 Requirement already satisfied: pandas in /usr/local/lib/python3.13/dist-packages (from datasets>=2.14.0->soup-cli[train]==0.77.2) (2.3.3)
+2026-11-10T19:05:02.113+00:00 Requirement already satisfied: xxhash in /usr/local/lib/python3.13/dist-packages (from datasets>=2.14.0->soup-cli[train]==0.77.2) (4.0.2)
+2026-11-10T19:05:02.113+00:00 Requirement already satisfied: multiprocess<0.70.20 in /usr/local/lib/python3.13/dist-packages (from datasets>=2.14.0->soup-cli[train]==0.77.2) (0.70.19)
+2026-11-10T19:05:02.130+00:00 Requirement already satisfied: aiohttp!=4.0.0a0,!=4.0.0a1 in /usr/local/lib/python3.13/dist-packages (from fsspec[http]<=2026.2.0,>=2023.1.0->datasets>=2.14.0->soup-cli[train]==0.77.2) (3.14.5)
+2026-11-10T19:05:02.134+00:00 Requirement already satisfied: aiohappyeyeballs>=2.5.0 in /usr/local/lib/python3.13/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2026.2.0,>=2023.1.0->datasets>=2.14.0->soup-cli[train]==0.77.2) (2.7.1)
+2026-11-10T19:05:02.135+00:00 Requirement already satisfied: aiosignal>=1.4.0 in /usr/local/lib/python3.13/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2026.2.0,>=2023.1.0->datasets>=2.14.0->soup-cli[train]==0.77.2) (1.4.0)
+2026-11-10T19:05:02.136+00:00 Requirement already satisfied: attrs>=17.3.0 in /usr/local/lib/python3.13/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2026.2.0,>=2023.1.0->datasets>=2.14.0->soup-cli[train]==0.77.2) (26.1.0)
+2026-11-10T19:05:02.137+00:00 Requirement already satisfied: frozenlist>=1.1.1 in /usr/local/lib/python3.13/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2026.2.0,>=2023.1.0->datasets>=2.14.0->soup-cli[train]==0.77.2) (1.8.0)
+2026-11-10T19:05:02.138+00:00 Requirement already satisfied: multidict<8.0,>=4.5 in /usr/local/lib/python3.13/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2026.2.0,>=2023.1.0->datasets>=2.14.0->soup-cli[train]==0.77.2) (6.9.1)
+2026-11-10T19:05:02.138+00:00 Requirement already satisfied: propcache>=0.2.0 in /usr/local/lib/python3.13/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2026.2.0,>=2023.1.0->datasets>=2.14.0->soup-cli[train]==0.77.2) (0.5.4)
+2026-11-10T19:05:02.139+00:00 Requirement already satisfied: yarl<2.0,>=1.25.1 in /usr/local/lib/python3.13/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2026.2.0,>=2023.1.0->datasets>=2.14.0->soup-cli[train]==0.77.2) (1.25.1)
+2026-11-10T19:05:02.171+00:00 Requirement already satisfied: annotated-types>=0.6.0 in /usr/local/lib/python3.13/dist-packages (from pydantic>=2.0.0->soup-cli==0.77.2->soup-cli[train]==0.77.2) (0.8.0)
+2026-11-10T19:05:02.171+00:00 Requirement already satisfied: pydantic-core==2.50.1 in /usr/local/lib/python3.13/dist-packages (from pydantic>=2.0.0->soup-cli==0.77.2->soup-cli[train]==0.77.2) (2.50.1)
+2026-11-10T19:05:02.172+00:00 Requirement already satisfied: typing-inspection>=0.4.4 in /usr/local/lib/python3.13/dist-packages (from pydantic>=2.0.0->soup-cli==0.77.2->soup-cli[train]==0.77.2) (0.4.4)
+2026-11-10T19:05:02.181+00:00 Requirement already satisfied: charset_normalizer<4,>=2 in /usr/local/lib/python3.13/dist-packages (from requests>=2.32.2->soup-cli[train]==0.77.2) (3.4.9)
+2026-11-10T19:05:02.182+00:00 Requirement already satisfied: urllib3<3,>=1.26 in /usr/local/lib/python3.13/dist-packages (from requests>=2.32.2->soup-cli[train]==0.77.2) (2.8.0)
+2026-11-10T19:05:02.190+00:00 Requirement already satisfied: markdown-it-py>=2.2.0 in /usr/local/lib/python3.13/dist-packages (from rich>=13.0.0->soup-cli==0.77.2->soup-cli[train]==0.77.2) (4.2.0)
+2026-11-10T19:05:02.191+00:00 Requirement already satisfied: pygments<3.0.0,>=2.13.0 in /usr/local/lib/python3.13/dist-packages (from rich>=13.0.0->soup-cli==0.77.2->soup-cli[train]==0.77.2) (2.21.0)
+2026-11-10T19:05:02.195+00:00 Requirement already satisfied: mdurl~=0.1 in /usr/local/lib/python3.13/dist-packages (from markdown-it-py>=2.2.0->rich>=13.0.0->soup-cli==0.77.2->soup-cli[train]==0.77.2) (0.1.2)
+2026-11-10T19:05:02.206+00:00 Requirement already satisfied: mpmath<1.4,>=1.1.0 in /usr/local/lib/python3.13/dist-packages (from sympy>=1.13.3->torch>=2.6.0->soup-cli[train]==0.77.2) (1.3.0)
+2026-11-10T19:05:02.218+00:00 Requirement already satisfied: MarkupSafe>=2.0 in /usr/local/lib/python3.13/dist-packages (from jinja2->torch>=2.6.0->soup-cli[train]==0.77.2) (3.0.4)
+2026-11-10T19:05:02.227+00:00 Requirement already satisfied: python-dateutil>=2.8.2 in /usr/local/lib/python3.13/dist-packages (from pandas->datasets>=2.14.0->soup-cli[train]==0.77.2) (2.9.0.post0)
+2026-11-10T19:05:02.228+00:00 Requirement already satisfied: pytz>=2020.1 in /usr/local/lib/python3.13/dist-packages (from pandas->datasets>=2.14.0->soup-cli[train]==0.77.2) (2025.2)
+2026-11-10T19:05:02.229+00:00 Requirement already satisfied: tzdata>=2022.7 in /usr/local/lib/python3.13/dist-packages (from pandas->datasets>=2.14.0->soup-cli[train]==0.77.2) (2026.5)
+2026-11-10T19:05:02.235+00:00 Requirement already satisfied: six>=1.5 in /usr/local/lib/python3.13/dist-packages (from python-dateutil>=2.8.2->pandas->datasets>=2.14.0->soup-cli[train]==0.77.2) (1.17.0)
+2026-11-10T19:05:02.255+00:00 Downloading soup_cli-0.77.2-py3-none-any.whl (3.0 MB)
+2026-11-10T19:05:02.458+00:00    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.0/3.0 MB 18.0 MB/s  0:00:00
+2026-11-10T19:05:02.466+00:00 Downloading click-8.4.2-py3-none-any.whl (119 kB)
+2026-11-10T19:05:02.493+00:00 Downloading trl-0.29.1-py3-none-any.whl (530 kB)
+2026-11-10T19:05:02.526+00:00    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 531.0/531.0 kB 10.5 MB/s  0:00:00
+2026-11-10T19:05:02.536+00:00 Downloading bitsandbytes-0.50.2-py3-none-manylinux_2_24_x86_64.whl (43.1 MB)
+2026-11-10T19:05:03.180+00:00    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 43.1/43.1 MB 67.3 MB/s  0:00:00
+2026-11-10T19:05:03.190+00:00 Downloading plotext-6.1.0-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (475 kB)
+2026-11-10T19:05:04.376+00:00 Installing collected packages: plotext, click, soup-cli, bitsandbytes, trl
+2026-11-10T19:05:04.605+00:00   Attempting uninstall: click
+2026-11-10T19:05:04.625+00:00     Found existing installation: click 8.5.0
+2026-11-10T19:05:04.626+00:00     Not uninstalling click at /usr/local/lib/python3.13/dist-packages, outside environment /tmp/dataset_bakeoff_soup_env
+2026-11-10T19:05:04.626+00:00     Can't uninstall 'click'. No files were found to uninstall.
+2026-11-10T19:05:07.349+00:00 
+2026-11-10T19:05:07.351+00:00 Successfully installed bitsandbytes-0.50.2 click-8.4.2 plotext-6.1.0 soup-cli-0.77.2 trl-0.29.1
+2026-11-10T19:05:07.506+00:00 Running /tmp/dataset_bakeoff_soup_env/bin/soup --version
+2026-11-10T19:05:08.279+00:00 soup v0.77.2
+2026-11-10T19:05:08.279+00:00 https://github.com/MakazhanAlpamys/Soup
+2026-11-10T19:05:08.452+00:00 Running /tmp/dataset_bakeoff_soup_env/bin/python -c 'import sys, torch, transformers, peft, trl;print(sys.version);print('"'"'torch'"'"', torch.__version__, '"'"'transformers'"'"', transformers.__version__,'"'"'peft'"'"', peft.__version__, '"'"'trl'"'"', trl.__version__)'
+2026-11-10T19:05:31.987+00:00 3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]
+2026-11-10T19:05:31.987+00:00 torch 2.11.0+cu130 transformers 5.20.2 peft 0.21.2 trl 0.29.1
+2026-11-10T19:05:35.559+00:00 Running /tmp/dataset_bakeoff_soup_env/bin/soup init --template chat
+2026-11-10T19:05:36.211+00:00 Using template: chat
+2026-11-10T19:05:36.212+00:00 ╭─────────────────────────────────── Ready! ───────────────────────────────────╮
+2026-11-10T19:05:36.212+00:00 │ Config saved to soup.yaml                                                    │
+2026-11-10T19:05:36.212+00:00 │                                                                              │
+2026-11-10T19:05:36.212+00:00 │ Next step: soup train --config soup.yaml                                     │
+2026-11-10T19:05:36.212+00:00 ╰──────────────────────────────────────────────────────────────────────────────╯
+2026-11-10T19:05:36.392+00:00 Running /tmp/dataset_bakeoff_soup_env/bin/soup data doctor /kaggle/temp/soup_bakeoff/soup_A_main/soup_train.jsonl --model Qwen/Qwen2.5-1.5B-Instruct --max-length 512 --train-on-eot
+2026-11-10T19:05:45.775+00:00 [transformers] return_assistant_tokens_mask==True but chat template does not contain `{% generation %}` keyword.
+2026-11-10T19:05:46.176+00:00                                 soup data doctor                                
+2026-11-10T19:05:46.176+00:00 ┏━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━┓
+2026-11-10T19:05:46.176+00:00 ┃ Check              ┃ Verdict ┃ Message               ┃ Evidence              ┃
+2026-11-10T19:05:46.176+00:00 ┡━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━┩
+2026-11-10T19:05:46.176+00:00 │ chat_template      │ OK      │ tokenizer has a       │ 2507 chars            │
+2026-11-10T19:05:46.176+00:00 │                    │         │ chat_template         │                       │
+2026-11-10T19:05:46.176+00:00 │ template_render    │ OK      │ 0/200 rows failed to  │                       │
+2026-11-10T19:05:46.176+00:00 │                    │         │ render through the    │                       │
+2026-11-10T19:05:46.176+00:00 │                    │         │ chat template         │                       │
+2026-11-10T19:05:46.176+00:00 │ generation_markers │ MINOR   │ template lacks {%     │                       │
+2026-11-10T19:05:46.176+00:00 │                    │         │ generation %} markers │                       │
+2026-11-10T19:05:46.176+00:00 │                    │         │ — assistant-only      │                       │
+2026-11-10T19:05:46.176+00:00 │                    │         │ masking falls back to │                       │
+2026-11-10T19:05:46.176+00:00 │                    │         │ a heuristic that may  │                       │
+2026-11-10T19:05:46.176+00:00 │                    │         │ include role-prefix   │                       │
+2026-11-10T19:05:46.176+00:00 │                    │         │ tokens in the loss    │                       │
+2026-11-10T19:05:46.176+00:00 │ eos_in_labels      │ OK      │ 0/200 rows (0.0%)     │ eos_token_id=[151645] │
+2026-11-10T19:05:46.176+00:00 │                    │         │ never train an        │                       │
+2026-11-10T19:05:46.176+00:00 │                    │         │ EOS/EOT token — the   │                       │
+2026-11-10T19:05:46.176+00:00 │                    │         │ model will not learn  │                       │
+2026-11-10T19:05:46.176+00:00 │                    │         │ to stop generating    │                       │
+2026-11-10T19:05:46.176+00:00 │ bos_duplication    │ OK      │ tokenizer has no      │                       │
+2026-11-10T19:05:46.176+00:00 │                    │         │ bos_token_id          │                       │
+2026-11-10T19:05:46.176+00:00 │ system_role        │ OK      │ template supports the │                       │
+2026-11-10T19:05:46.176+00:00 │                    │         │ system role (200 rows │                       │
+2026-11-10T19:05:46.176+00:00 │                    │         │ use one)              │                       │
+2026-11-10T19:05:46.176+00:00 │ unknown_roles      │ OK      │ 0/200 rows (0.0%)     │                       │
+2026-11-10T19:05:46.176+00:00 │                    │         │ contain a message     │                       │
+2026-11-10T19:05:46.177+00:00 │                    │         │ role outside          │                       │
+2026-11-10T19:05:46.177+00:00 │                    │         │ ['assistant',         │                       │
+2026-11-10T19:05:46.177+00:00 │                    │         │ 'function', 'system', │                       │
+2026-11-10T19:05:46.177+00:00 │                    │         │ 'tool', 'user']       │                       │
+2026-11-10T19:05:46.177+00:00 │ truncation_risk    │ OK      │ p95 length = 138      │ p50=107, max=163      │
+2026-11-10T19:05:46.177+00:00 │                    │         │ tokens vs             │                       │
+2026-11-10T19:05:46.177+00:00 │                    │         │ max_length=512; 0/200 │                       │
+2026-11-10T19:05:46.177+00:00 │                    │         │ rows (0.0%) would be  │                       │
+2026-11-10T19:05:46.177+00:00 │                    │         │ truncated             │                       │
+2026-11-10T19:05:46.177+00:00 └────────────────────┴─────────┴───────────────────────┴───────────────────────┘
+2026-11-10T19:05:46.178+00:00 ╭────────── overall ───────────╮
+2026-11-10T19:05:46.178+00:00 │ MINOR — 200/500 rows scanned │
+2026-11-10T19:05:46.178+00:00 ╰──────────────────────────────╯
+2026-11-10T19:05:47.665+00:00 Verified equivalent Qwen rendering and answer/EOT masks for 500 rows.
+2026-11-10T19:05:47.665+00:00 Soup training uses 500 rows. Rendered rows over 512: 0. Rows cropped before the last target: 0. Supervised tokens lost: 0.
+2026-11-10T19:05:47.665+00:00 Running /tmp/dataset_bakeoff_soup_env/bin/soup train --yes
+2026-11-10T19:05:48.310+00:00 Loading config from soup.yaml...
+2026-11-10T19:05:50.108+00:00 ╭───────────────────────────── Hardware-fit gate ──────────────────────────────╮
+2026-11-10T19:05:50.108+00:00 │ Predicted peak VRAM 28.7 GB (+10% margin = 31.6 GB) exceeds 15.6 GB          │
+2026-11-10T19:05:50.108+00:00 │ available.                                                                   │
+2026-11-10T19:05:50.109+00:00 │ weights 3.1 | optim 0.1 | grads 0.1 | activations 16.0 | adapters 0.1 |      │
+2026-11-10T19:05:50.109+00:00 │ logits 7.5 | overhead 1.8 GB                                                 │
+2026-11-10T19:05:50.109+00:00 │                                                                              │
+2026-11-10T19:05:50.109+00:00 │ Reduce batch_size / max_length, enable gradient_checkpointing or             │
+2026-11-10T19:05:50.109+00:00 │ quantization, or pass --allow-oom-attempt to try anyway.                     │
+2026-11-10T19:05:50.109+00:00 │ This run is inside the calibrated range (dense models of 3B and below on one │
+2026-11-10T19:05:50.109+00:00 │ 6 GB card); --allow-oom-attempt launches it anyway.                          │
+2026-11-10T19:05:50.109+00:00 ╰──────────────────────────────────────────────────────────────────────────────╯
+2026-11-10T19:05:50.661+00:00 Traceback (most recent call last):
+2026-11-10T19:05:50.661+00:00   File "/kaggle/temp/soup_bakeoff/run_probe.py", line 122, in test
+2026-11-10T19:05:50.661+00:00     adapter = train_soup(
+2026-11-10T19:05:50.661+00:00         prepared, soup_directory,
+2026-11-10T19:05:50.661+00:00     ...<3 lines>...
+2026-11-10T19:05:50.661+00:00         timeout_seconds=max(1, deadline - time.time()),
+2026-11-10T19:05:50.661+00:00     )
+2026-11-10T19:05:50.661+00:00   File "/kaggle/temp/soup_bakeoff/soup_probe.py", line 338, in train_soup
+2026-11-10T19:05:50.661+00:00     training_seen, finished = _run(
+2026-11-10T19:05:50.661+00:00                               ~~~~^
+2026-11-10T19:05:50.661+00:00         [soup, "train", "--yes"],
+2026-11-10T19:05:50.661+00:00         ^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-11-10T19:05:50.661+00:00     ...<3 lines>...
+2026-11-10T19:05:50.661+00:00         startup_deadline=startup_deadline,
+2026-11-10T19:05:50.661+00:00         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-11-10T19:05:50.661+00:00     )
+2026-11-10T19:05:50.661+00:00     ^
+2026-11-10T19:05:50.661+00:00   File "/kaggle/temp/soup_bakeoff/soup_probe.py", line 138, in _run
+2026-11-10T19:05:50.661+00:00     raise SoupProbeError(f"{display} exited {status}. Last output:\n{recent_output}")
+2026-11-10T19:05:50.661+00:00 soup_probe.SoupProbeError: /tmp/dataset_bakeoff_soup_env/bin/soup train --yes exited 1. Last output:
+2026-11-10T19:05:50.661+00:00 Loading config from soup.yaml...
+2026-11-10T19:05:50.661+00:00 ╭───────────────────────────── Hardware-fit gate ──────────────────────────────╮
+2026-11-10T19:05:50.661+00:00 │ Predicted peak VRAM 28.7 GB (+10% margin = 31.6 GB) exceeds 15.6 GB          │
+2026-11-10T19:05:50.661+00:00 │ available.                                                                   │
+2026-11-10T19:05:50.661+00:00 │ weights 3.1 | optim 0.1 | grads 0.1 | activations 16.0 | adapters 0.1 |      │
+2026-11-10T19:05:50.661+00:00 │ logits 7.5 | overhead 1.8 GB                                                 │
+2026-11-10T19:05:50.661+00:00 │                                                                              │
+2026-11-10T19:05:50.662+00:00 │ Reduce batch_size / max_length, enable gradient_checkpointing or             │
+2026-11-10T19:05:50.662+00:00 │ quantization, or pass --allow-oom-attempt to try anyway.                     │
+2026-11-10T19:05:50.662+00:00 │ This run is inside the calibrated range (dense models of 3B and below on one │
+2026-11-10T19:05:50.662+00:00 │ 6 GB card); --allow-oom-attempt launches it anyway.                          │
+2026-11-10T19:05:50.662+00:00 ╰──────────────────────────────────────────────────────────────────────────────╯
+2026-11-10T19:05:50.662+00:00 
+2026-11-10T19:05:50.662+00:00 First Soup attempt failed after 50.4 s: SoupProbeError: /tmp/dataset_bakeoff_soup_env/bin/soup train --yes exited 1. Last output:
+2026-11-10T19:05:50.662+00:00 Loading config from soup.yaml...
+2026-11-10T19:05:50.662+00:00 ╭───────────────────────────── Hardware-fit gate ──────────────────────────────╮
+2026-11-10T19:05:50.662+00:00 │ Predicted peak VRAM 28.7 GB (+10% margin = 31.6 GB) exceeds 15.6 GB          │
+2026-11-10T19:05:50.662+00:00 │ available.                                                                   │
+2026-11-10T19:05:50.662+00:00 │ weights 3.1 | optim 0.1 | grads 0.1 | activations 16.0 | adapters 0.1 |      │
+2026-11-10T19:05:50.662+00:00 │ logits 7.5 | overhead 1.8 GB                                                 │
+2026-11-10T19:05:50.662+00:00 │                                                                              │
+2026-11-10T19:05:50.662+00:00 │ Reduce batch_size / max_length, enable gradient_checkpointing or             │
+2026-11-10T19:05:50.662+00:00 │ quantization, or pass --allow-oom-attempt to try anyway.                     │
+2026-11-10T19:05:50.662+00:00 │ This run is inside the calibrated range (dense models of 3B and below on one │
+2026-11-10T19:05:50.662+00:00 │ 6 GB card); --allow-oom-attempt launches it anyway.                          │
+2026-11-10T19:05:50.662+00:00 ╰──────────────────────────────────────────────────────────────────────────────╯. Switched all probes to Transformers + PEFT.
+2026-11-10T19:05:51.734+00:00 PEFT training uses 500 rows. Rendered rows over 512: 0. Rows cropped before the last target: 0. Supervised tokens lost: 0.
+2026-11-10T19:05:58.925+00:00 PEFT trained 80/500 rows. Batch answer loss 0.0251.
+2026-11-10T19:06:05.716+00:00 PEFT trained 160/500 rows. Batch answer loss 0.0814.
+2026-11-10T19:06:12.741+00:00 PEFT trained 240/500 rows. Batch answer loss 0.0338.
+2026-11-10T19:06:20.110+00:00 PEFT trained 320/500 rows. Batch answer loss 0.0664.
+2026-11-10T19:06:28.218+00:00 PEFT trained 400/500 rows. Batch answer loss 0.0436.
+2026-11-10T19:06:35.524+00:00 PEFT trained 480/500 rows. Batch answer loss 0.0316.
+2026-11-10T19:06:37.706+00:00 PEFT trained 500/500 rows. Batch answer loss 0.0660.
+2026-11-10T19:06:37.723+00:00 {"wall_seconds": 45.998191118240356, "optimizer_steps": 63, "overflow_retries": 0, "rendered_rows_over_max_length": 0, "truncated_rows": 0, "supervised_tokens_dropped": 0, "trainable_parameters": 18464768, "backend": "Transformers + PEFT", "peak_gpu_mib": 13669}
+2026-11-10T19:06:37.723+00:00 A main | Adapted evaluation
+2026-11-10T19:06:39.533+00:00 Greedy generation completed 16/100 held-out rows.
+2026-11-10T19:06:41.499+00:00 Greedy generation completed 32/100 held-out rows.
+2026-11-10T19:06:44.732+00:00 Greedy generation completed 48/100 held-out rows.
+2026-11-10T19:06:47.288+00:00 Greedy generation completed 64/100 held-out rows.
+2026-11-10T19:06:50.386+00:00 Greedy generation completed 80/100 held-out rows.
+2026-11-10T19:06:53.750+00:00 Greedy generation completed 96/100 held-out rows.
+2026-11-10T19:06:57.265+00:00 Greedy generation completed 100/100 held-out rows.
+2026-11-10T19:07:01.203+00:00 {"score": 0.77, "stop_rate": 1.0, "answer_loss": 0.053442345971488794, "answer_tokens": 2366, "wall_seconds": 23.477866405999976, "generation_seconds": 19.540688236999983, "teacher_forced_seconds": 3.937178168999992, "scorer_rates": {"parses": 1.0}}
+2026-11-10T19:07:01.203+00:00 {"wrong_to_right": 77, "right_to_wrong": 0}
+2026-11-10T19:07:01.887+00:00 A main | Complete
+2026-11-10T19:07:01.888+00:00 B main | Preparing dataset
+2026-11-10T19:07:11.128+00:00 {"dataset": "google/mobile-actions", "revision": "e920309bc2acbc2e99a5e3201cf37df2b9fd9151", "file": "dataset.jsonl", "license": "cc-by-4.0", "gated": false, "task": "function", "pool": "metadata=train, exactly one tool call", "context_definition": "normalized available tool set", "category_field": "reference function name", "mapping": "Instruction: fixed one-call JSON system prompt with seven tool signatures. Input: date/time, weekday and user utterance. Output: reference function name and argument object.", "source_rows": 9654, "excluded_by_source_pool": 3860, "source_url": "https://huggingface.co/datasets/google/mobile-actions/tree/e920309bc2acbc2e99a5e3201cf37df2b9fd9151", "candidate": "B", "harder_sql_slice": false, "rows_in_slice": 5794, "unusable_rows": 0, "duplicates_dropped": 0, "usable_dedup_rows": 5794, "duplicate_prompts_with_conflicting_references": 0, "near_duplicate_source_index_pairs": [[7375, 7945]], "train_rows": 500, "heldout_rows": 100, "heldout_prompt_overlap_count": 0, "heldout_context_seen_train_count": 100, "heldout_context_seen_train_fraction": 1.0, "pool_lengths": {"full": {"p50": 316, "p95": 369, "max": 428}, "answer": {"p50": 38, "p95": 62, "max": 87}}, "sampled_lengths": {"full": {"p50": 317, "p95": 368, "max": 398}, "answer": {"p50": 38, "p95": 60, "max": 73}}, "train_over_512": 0, "heldout_over_512": 0, "max_new_tokens": 124, "h2_review": {"source_indices_zero_based": [8137, 912, 204, 2253, 2006, 1828, 1143, 839, 8442, 7366], "note": "Ten English requests and reference call names and argument objects checked for readability."}, "n1_answer_5_to_100_fraction": 1.0, "n2_prompt_copy_fraction": 0.7191922678633069, "hard_requirements": {"H1": true, "H2": true, "H3": true, "H4": true, "H5": true, "H6": null, "H7": null}, "nice_to_have": {"N1": true, "N2": true, "N3": true, "N4": true}}
+2026-11-10T19:07:11.128+00:00 Fully rendered training example
+2026-11-10T19:07:11.128+00:00 <|im_start|>system
+2026-11-10T19:07:11.128+00:00 Select one of the available functions to fulfill the user's request. Use the given date and weekday for relative times. Return exactly one JSON object with a string key "name" and an object key "arguments". Use the function's exact name and argument keys. Return only JSON. All arguments are strings. Omit optional arguments when no value is given. Calendar datetime uses YYYY-MM-DDTHH:MM:SS. A map query can be a place, business, or address.
+2026-11-10T19:07:11.128+00:00 
+2026-11-10T19:07:11.128+00:00 Available functions (optional arguments have a ?):
+2026-11-10T19:07:11.128+00:00 create_calendar_event(datetime, title): Creates a new calendar event.
+2026-11-10T19:07:11.128+00:00 create_contact(email?, first_name, last_name, phone_number?): Creates a contact in the phone's contact list.
+2026-11-10T19:07:11.128+00:00 open_wifi_settings(): Opens the Wi-Fi settings.
+2026-11-10T19:07:11.128+00:00 send_email(body?, subject, to): Sends an email.
+2026-11-10T19:07:11.128+00:00 show_map(query): Shows a location on the map.
+2026-11-10T19:07:11.128+00:00 turn_off_flashlight(): Turns the flashlight off.
+2026-11-10T19:07:11.128+00:00 turn_on_flashlight(): Turns the flashlight on.<|im_end|>
+2026-11-10T19:07:11.128+00:00 <|im_start|>user
+2026-11-10T19:07:11.128+00:00 Current date/time: 2026-06-17T10:14:26
+2026-11-10T19:07:11.128+00:00 Day of week: Wednesday
+2026-11-10T19:07:11.128+00:00 
+2026-11-10T19:07:11.128+00:00 User request:
+2026-11-10T19:07:11.128+00:00 Can you turn off my phone's flashlight, please?<|im_end|>
+2026-11-10T19:07:11.128+00:00 <|im_start|>assistant
+2026-11-10T19:07:11.128+00:00 {"arguments":{},"name":"turn_off_flashlight"}<|im_end|>
+2026-11-10T19:07:11.128+00:00 
+2026-11-10T19:07:11.128+00:00 Rendered evaluation prompt
+2026-11-10T19:07:11.128+00:00 <|im_start|>system
+2026-11-10T19:07:11.128+00:00 Select one of the available functions to fulfill the user's request. Use the given date and weekday for relative times. Return exactly one JSON object with a string key "name" and an object key "arguments". Use the function's exact name and argument keys. Return only JSON. All arguments are strings. Omit optional arguments when no value is given. Calendar datetime uses YYYY-MM-DDTHH:MM:SS. A map query can be a place, business, or address.
+2026-11-10T19:07:11.128+00:00 
+2026-11-10T19:07:11.128+00:00 Available functions (optional arguments have a ?):
+2026-11-10T19:07:11.128+00:00 create_calendar_event(datetime, title): Creates a new calendar event.
+2026-11-10T19:07:11.128+00:00 create_contact(email?, first_name, last_name, phone_number?): Creates a contact in the phone's contact list.
+2026-11-10T19:07:11.128+00:00 open_wifi_settings(): Opens the Wi-Fi settings.
+2026-11-10T19:07:11.128+00:00 send_email(body?, subject, to): Sends an email.
+2026-11-10T19:07:11.128+00:00 show_map(query): Shows a location on the map.
+2026-11-10T19:07:11.128+00:00 turn_off_flashlight(): Turns the flashlight off.
+2026-11-10T19:07:11.128+00:00 turn_on_flashlight(): Turns the flashlight on.<|im_end|>
+2026-11-10T19:07:11.128+00:00 <|im_start|>user
+2026-11-10T19:07:11.128+00:00 Current date/time: 2024-10-21T03:58:05
+2026-11-10T19:07:11.128+00:00 Day of week: Monday
+2026-11-10T19:07:11.128+00:00 
+2026-11-10T19:07:11.128+00:00 User request:
+2026-11-10T19:07:11.128+00:00 It's quite dark in here. Can you turn on the flashlight, please?<|im_end|>
+2026-11-10T19:07:11.128+00:00 <|im_start|>assistant
+2026-11-10T19:07:11.128+00:00 
+2026-11-10T19:07:11.128+00:00 B main | Base evaluation
+2026-11-10T19:07:13.955+00:00 Greedy generation completed 16/100 held-out rows.
+2026-11-10T19:07:16.072+00:00 Greedy generation completed 32/100 held-out rows.
+2026-11-10T19:07:19.087+00:00 Greedy generation completed 48/100 held-out rows.
+2026-11-10T19:07:22.439+00:00 Greedy generation completed 64/100 held-out rows.
+2026-11-10T19:07:26.052+00:00 Greedy generation completed 80/100 held-out rows.
+2026-11-10T19:07:30.318+00:00 Greedy generation completed 96/100 held-out rows.
+2026-11-10T19:07:33.946+00:00 Greedy generation completed 100/100 held-out rows.
+2026-11-10T19:07:40.550+00:00 {"score": 0.85, "stop_rate": 1.0, "answer_loss": 0.9260456814690426, "answer_tokens": 3284, "wall_seconds": 28.32704151400003, "generation_seconds": 21.723431081, "teacher_forced_seconds": 6.6036104330000285, "scorer_rates": {"arguments_correct": 0.85, "json_valid": 1.0, "name_correct": 1.0}}
+2026-11-10T19:07:40.550+00:00 B main | LoRA probe
+2026-11-10T19:07:40.580+00:00 PEFT training uses 500 rows. Rendered rows over 512: 0. Rows cropped before the last target: 0. Supervised tokens lost: 0.
+2026-11-10T19:07:41.595+00:00 Traceback (most recent call last):
+2026-11-10T19:07:41.596+00:00   File "/kaggle/temp/soup_bakeoff/run_probe.py", line 177, in run
+2026-11-10T19:07:41.596+00:00     test(prepared, row)
+2026-11-10T19:07:41.596+00:00     ~~~~^^^^^^^^^^^^^^^
+2026-11-10T19:07:41.596+00:00   File "/kaggle/temp/soup_bakeoff/run_probe.py", line 148, in test
+2026-11-10T19:07:41.596+00:00     model, metrics = train_peft(model, tokenizer, prepared.train, log)
+2026-11-10T19:07:41.596+00:00                      ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-11-10T19:07:41.596+00:00   File "/kaggle/temp/soup_bakeoff/probe_runtime.py", line 223, in train_peft
+2026-11-10T19:07:41.596+00:00     nll, tokens = _answer_nll(adapted, tokenizer, batch)
+2026-11-10T19:07:41.596+00:00                   ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-11-10T19:07:41.596+00:00   File "/kaggle/temp/soup_bakeoff/probe_runtime.py", line 77, in _answer_nll
+2026-11-10T19:07:41.596+00:00     logits = model(
+2026-11-10T19:07:41.596+00:00              ~~~~~^
+2026-11-10T19:07:41.596+00:00         input_ids=input_ids[:, :-1],
+2026-11-10T19:07:41.596+00:00         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-11-10T19:07:41.596+00:00     ...<3 lines>...
+2026-11-10T19:07:41.596+00:00         logits_to_keep=answer_width,
+2026-11-10T19:07:41.596+00:00         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-11-10T19:07:41.596+00:00     ).logits
+2026-11-10T19:07:41.596+00:00     ^
+2026-11-10T19:07:41.596+00:00   File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+2026-11-10T19:07:41.596+00:00     return self._call_impl(*args, **kwargs)
+2026-11-10T19:07:41.596+00:00            ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+2026-11-10T19:07:41.596+00:00   File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+2026-11-10T19:07:41.596+00:00     return forward_call(*args, **kwargs)
+2026-11-10T19:07:41.596+00:00   File "/kaggle/temp/soup_bakeoff/probe-venv/lib/python3.13/site-packages/peft/peft_model.py", line 1923, in forward
+2026-11-10T19:07:41.596+00:00     return self.base_model(
+2026-11-10T19:07:41.596+00:00            ~~~~~~~~~~~~~~~^
+2026-11-10T19:07:41.596+00:00         input_ids=input_ids,
+2026-11-10T19:07:41.596+00:00         ^^^^^^^^^^^^^^^^^^^^
+2026-11-10T19:07:41.596+00:00     ...<6 lines>...
+2026-11-10T19:07:41.596+00:00         **kwargs,
+2026-11-10T19:07:41.596+00:00         ^^^^^^^^^
+2026-11-10T19:07:41.596+00:00     )
+2026-11-10T19:07:41.596+00:00     ^
+2026-11-10T19:07:41.596+00:00   File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+2026-11-10T19:07:41.596+00:00     return self._call_impl(*args, **kwargs)
+2026-11-10T19:07:41.596+00:00            ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+2026-11-10T19:07:41.596+00:00   File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+2026-11-10T19:07:41.596+00:00     return forward_call(*args, **kwargs)
+2026-11-10T19:07:41.596+00:00   File "/kaggle/temp/soup_bakeoff/probe-venv/lib/python3.13/site-packages/peft/tuners/tuners_utils.py", line 308, in forward
+2026-11-10T19:07:41.596+00:00     return self.model.forward(*args, **kwargs)
+2026-11-10T19:07:41.596+00:00            ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+2026-11-10T19:07:41.596+00:00   File "/kaggle/temp/soup_bakeoff/probe-venv/lib/python3.13/site-packages/transformers/utils/generic.py", line 918, in wrapper
+2026-11-10T19:07:41.596+00:00     output = func(self, *args, **kwargs)
+2026-11-10T19:07:41.596+00:00   File "/kaggle/temp/soup_bakeoff/probe-venv/lib/python3.13/site-packages/transformers/models/qwen2/modeling_qwen2.py", line 449, in forward
+2026-11-10T19:07:41.596+00:00     outputs: BaseModelOutputWithPast = self.model(
+2026-11-10T19:07:41.596+00:00                                        ~~~~~~~~~~^
+2026-11-10T19:07:41.596+00:00         input_ids=input_ids,
+2026-11-10T19:07:41.596+00:00         ^^^^^^^^^^^^^^^^^^^^
+2026-11-10T19:07:41.596+00:00     ...<6 lines>...
+2026-11-10T19:07:41.596+00:00         **kwargs,
+2026-11-10T19:07:41.596+00:00         ^^^^^^^^^
+2026-11-10T19:07:41.596+00:00     )
+2026-11-10T19:07:41.596+00:00     ^
+2026-11-10T19:07:41.596+00:00   File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+2026-11-10T19:07:41.596+00:00     return self._call_impl(*args, **kwargs)
+2026-11-10T19:07:41.596+00:00            ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+2026-11-10T19:07:41.596+00:00   File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+2026-11-10T19:07:41.596+00:00     return forward_call(*args, **kwargs)
+2026-11-10T19:07:41.596+00:00   File "/kaggle/temp/soup_bakeoff/probe-venv/lib/python3.13/site-packages/transformers/utils/generic.py", line 1064, in wrapper
+2026-11-10T19:07:41.596+00:00     outputs = func(self, *args, **kwargs)
+2026-11-10T19:07:41.596+00:00   File "/kaggle/temp/soup_bakeoff/probe-venv/lib/python3.13/site-packages/transformers/models/qwen2/modeling_qwen2.py", line 384, in forward
+2026-11-10T19:07:41.596+00:00     hidden_states = decoder_layer(
+2026-11-10T19:07:41.596+00:00         hidden_states,
+2026-11-10T19:07:41.596+00:00     ...<6 lines>...
+2026-11-10T19:07:41.596+00:00         **kwargs,
+2026-11-10T19:07:41.596+00:00     )
+2026-11-10T19:07:41.596+00:00   File "/kaggle/temp/soup_bakeoff/probe-venv/lib/python3.13/site-packages/transformers/modeling_layers.py", line 94, in __call__
+2026-11-10T19:07:41.596+00:00     return super().__call__(*args, **kwargs)
+2026-11-10T19:07:41.596+00:00            ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+2026-11-10T19:07:41.596+00:00   File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+2026-11-10T19:07:41.596+00:00     return self._call_impl(*args, **kwargs)
+2026-11-10T19:07:41.596+00:00            ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+2026-11-10T19:07:41.596+00:00   File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+2026-11-10T19:07:41.596+00:00     return forward_call(*args, **kwargs)
+2026-11-10T19:07:41.596+00:00   File "/kaggle/temp/soup_bakeoff/probe-venv/lib/python3.13/site-packages/transformers/utils/deprecation.py", line 172, in wrapped_func
+2026-11-10T19:07:41.596+00:00     return func(*args, **kwargs)
+2026-11-10T19:07:41.596+00:00   File "/kaggle/temp/soup_bakeoff/probe-venv/lib/python3.13/site-packages/transformers/models/qwen2/modeling_qwen2.py", line 249, in forward
+2026-11-10T19:07:41.596+00:00     hidden_states = self.mlp(hidden_states)
+2026-11-10T19:07:41.596+00:00   File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+2026-11-10T19:07:41.596+00:00     return self._call_impl(*args, **kwargs)
+2026-11-10T19:07:41.596+00:00            ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+2026-11-10T19:07:41.596+00:00   File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+2026-11-10T19:07:41.596+00:00     return forward_call(*args, **kwargs)
+2026-11-10T19:07:41.596+00:00   File "/kaggle/temp/soup_bakeoff/probe-venv/lib/python3.13/site-packages/transformers/models/qwen2/modeling_qwen2.py", line 46, in forward
+2026-11-10T19:07:41.596+00:00     down_proj = self.down_proj(self.act_fn(self.gate_proj(x)) * self.up_proj(x))
+2026-11-10T19:07:41.596+00:00                                            ~~~~~~~~~~~~~~^^^
+2026-11-10T19:07:41.596+00:00   File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+2026-11-10T19:07:41.596+00:00     return self._call_impl(*args, **kwargs)
+2026-11-10T19:07:41.596+00:00            ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+2026-11-10T19:07:41.596+00:00   File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+2026-11-10T19:07:41.596+00:00     return forward_call(*args, **kwargs)
+2026-11-10T19:07:41.596+00:00   File "/kaggle/temp/soup_bakeoff/probe-venv/lib/python3.13/site-packages/peft/tuners/lora/layer.py", line 807, in forward
+2026-11-10T19:07:41.596+00:00     result = result + lora_B(lora_A(dropout(x))) * scaling
+2026-11-10T19:07:41.596+00:00                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+2026-11-10T19:07:41.596+00:00 torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 104.00 MiB. GPU 0 has a total capacity of 14.56 GiB of which 78.81 MiB is free. Including non-PyTorch memory, this process has 14.48 GiB memory in use. Of the allocated memory 13.95 GiB is allocated by PyTorch, and 401.31 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)
+2026-11-10T19:07:41.596+00:00 
+2026-11-10T19:07:41.975+00:00 B main | Failed
+2026-11-10T19:07:41.987+00:00 C main | Preparing dataset
+2026-11-10T19:07:50.936+00:00 {"dataset": "AmazonScience/massive", "revision": "ed58ac423a2f4121720918bf5301577edce4ffd3", "source_revision": "ff6bd8e4b27c3543e4f8fe2108f32bb95a6f8740", "file": "en-US/train/0000.parquet", "license": "cc-by-4.0", "gated": false, "task": "function", "pool": "en-US train, at least one annotated slot", "context_definition": "normalized published intent", "category_field": "published intent", "mapping": "Instruction: fixed slot extraction JSON system prompt with allowed slot names. Input: published intent and utterance. Output: extract_slots call with exact annotated text spans grouped by slot name in arrays.", "source_rows": 11514, "excluded_by_source_pool": 3755, "source_url": "https://huggingface.co/datasets/AmazonScience/massive/tree/ff6bd8e4b27c3543e4f8fe2108f32bb95a6f8740", "candidate": "C", "harder_sql_slice": false, "rows_in_slice": 7759, "unusable_rows": 0, "duplicates_dropped": 25, "usable_dedup_rows": 7734, "duplicate_prompts_with_conflicting_references": 0, "near_duplicate_source_index_pairs": [], "train_rows": 500, "heldout_rows": 100, "heldout_prompt_overlap_count": 0, "heldout_context_seen_train_count": 99, "heldout_context_seen_train_fraction": 0.99, "pool_lengths": {"full": {"p50": 294, "p95": 310, "max": 367}, "answer": {"p50": 16, "p95": 26, "max": 58}}, "sampled_lengths": {"full": {"p50": 295, "p95": 311, "max": 333}, "answer": {"p50": 16, "p95": 27, "max": 39}}, "train_over_512": 0, "heldout_over_512": 0, "max_new_tokens": 52, "h2_review": {"published_row_ids": ["11680", "1992", "543", "13448", "5018", "4427", "4035", "2509", "13276", "1844"], "note": "Ten English requests and reference slot annotations checked for readable, verbatim spans."}, "n1_answer_5_to_100_fraction": 1.0, "n2_prompt_copy_fraction": 1.0, "hard_requirements": {"H1": true, "H2": true, "H3": true, "H4": true, "H5": true, "H6": null, "H7": null}, "nice_to_have": {"N1": true, "N2": true, "N3": true, "N4": true}}
+2026-11-10T19:07:50.936+00:00 Fully rendered training example
+2026-11-10T19:07:50.936+00:00 <|im_start|>system
+2026-11-10T19:07:50.936+00:00 Extract the slot values from the request using the supplied intent. Return exactly one JSON object with "name": "extract_slots" and an "arguments" object. Each argument key is a slot name from the list below. Its value is an array of verbatim text spans from the request, in their original order. Use arrays even for a single span. Include only slots present in the request. Return only JSON.
+2026-11-10T19:07:50.936+00:00 
+2026-11-10T19:07:50.936+00:00 Allowed slots: alarm_type, app_name, artist_name, audiobook_author, audiobook_name, business_name, business_type, change_amount, coffee_type, color_type, cooking_type, currency_name, date, definition_word, device_type, drink_type, email_address, email_folder, event_name, food_type, game_name, game_type, general_frequency, house_place, ingredient, joke_type, list_name, meal_type, media_type, movie_name, movie_type, music_album, music_descriptor, music_genre, news_topic, order_type, person, personal_info, place_name, player_setting, playlist_name, podcast_descriptor, podcast_name, radio_name, relation, song_name, sport_type, time, time_zone, timeofday, transport_agency, transport_descriptor, transport_name, transport_type, weather_descriptor<|im_end|>
+2026-11-10T19:07:50.936+00:00 <|im_start|>user
+2026-11-10T19:07:50.936+00:00 Intent: recommendation_locations
+2026-11-10T19:07:50.936+00:00 Request: markets near by<|im_end|>
+2026-11-10T19:07:50.936+00:00 <|im_start|>assistant
+2026-11-10T19:07:50.936+00:00 {"arguments":{"business_type":["markets"]},"name":"extract_slots"}<|im_end|>
+2026-11-10T19:07:50.936+00:00 
+2026-11-10T19:07:50.936+00:00 Rendered evaluation prompt
+2026-11-10T19:07:50.936+00:00 <|im_start|>system
+2026-11-10T19:07:50.936+00:00 Extract the slot values from the request using the supplied intent. Return exactly one JSON object with "name": "extract_slots" and an "arguments" object. Each argument key is a slot name from the list below. Its value is an array of verbatim text spans from the request, in their original order. Use arrays even for a single span. Include only slots present in the request. Return only JSON.
+2026-11-10T19:07:50.936+00:00 
+2026-11-10T19:07:50.936+00:00 Allowed slots: alarm_type, app_name, artist_name, audiobook_author, audiobook_name, business_name, business_type, change_amount, coffee_type, color_type, cooking_type, currency_name, date, definition_word, device_type, drink_type, email_address, email_folder, event_name, food_type, game_name, game_type, general_frequency, house_place, ingredient, joke_type, list_name, meal_type, media_type, movie_name, movie_type, music_album, music_descriptor, music_genre, news_topic, order_type, person, personal_info, place_name, player_setting, playlist_name, podcast_descriptor, podcast_name, radio_name, relation, song_name, sport_type, time, time_zone, timeofday, transport_agency, transport_descriptor, transport_name, transport_type, weather_descriptor<|im_end|>
+2026-11-10T19:07:50.936+00:00 <|im_start|>user
+2026-11-10T19:07:50.936+00:00 Intent: qa_stock
+2026-11-10T19:07:50.936+00:00 Request: what is a stock price of tata<|im_end|>
+2026-11-10T19:07:50.936+00:00 <|im_start|>assistant
+2026-11-10T19:07:50.936+00:00 
+2026-11-10T19:07:50.936+00:00 C main | Base evaluation
+2026-11-10T19:07:54.847+00:00 Greedy generation completed 16/100 held-out rows.
+2026-11-10T19:07:57.647+00:00 Greedy generation completed 32/100 held-out rows.
+2026-11-10T19:08:00.473+00:00 Greedy generation completed 48/100 held-out rows.
+2026-11-10T19:08:03.326+00:00 Greedy generation completed 64/100 held-out rows.
+2026-11-10T19:08:06.197+00:00 Greedy generation completed 80/100 held-out rows.
+2026-11-10T19:08:09.121+00:00 Greedy generation completed 96/100 held-out rows.
+2026-11-10T19:08:11.257+00:00 Greedy generation completed 100/100 held-out rows.
+2026-11-10T19:08:17.440+00:00 {"score": 0.08, "stop_rate": 0.77, "answer_loss": 1.8036959962348718, "answer_tokens": 1730, "wall_seconds": 25.430082029000005, "generation_seconds": 19.24708547900002, "teacher_forced_seconds": 6.182996549999984, "scorer_rates": {"arguments_correct": 0.08, "json_valid": 0.78, "name_correct": 0.78}}
+2026-11-10T19:08:17.440+00:00 C main | LoRA probe
+2026-11-10T19:08:17.472+00:00 PEFT training uses 500 rows. Rendered rows over 512: 0. Rows cropped before the last target: 0. Supervised tokens lost: 0.
+2026-11-10T19:08:35.325+00:00 PEFT trained 80/500 rows. Batch answer loss 0.3942.
+2026-11-10T19:08:51.875+00:00 PEFT trained 160/500 rows. Batch answer loss 0.1562.
+2026-11-10T19:08:56.029+00:00 Traceback (most recent call last):
+2026-11-10T19:08:56.029+00:00   File "/kaggle/temp/soup_bakeoff/run_probe.py", line 177, in run
+2026-11-10T19:08:56.029+00:00     test(prepared, row)
+2026-11-10T19:08:56.029+00:00     ~~~~^^^^^^^^^^^^^^^
+2026-11-10T19:08:56.029+00:00   File "/kaggle/temp/soup_bakeoff/run_probe.py", line 148, in test
+2026-11-10T19:08:56.029+00:00     model, metrics = train_peft(model, tokenizer, prepared.train, log)
+2026-11-10T19:08:56.029+00:00                      ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-11-10T19:08:56.029+00:00   File "/kaggle/temp/soup_bakeoff/probe_runtime.py", line 223, in train_peft
+2026-11-10T19:08:56.029+00:00     nll, tokens = _answer_nll(adapted, tokenizer, batch)
+2026-11-10T19:08:56.029+00:00                   ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-11-10T19:08:56.029+00:00   File "/kaggle/temp/soup_bakeoff/probe_runtime.py", line 84, in _answer_nll
+2026-11-10T19:08:56.029+00:00     nll = F.cross_entropy(
+2026-11-10T19:08:56.029+00:00         logits.flatten(0, 1).float(),
+2026-11-10T19:08:56.029+00:00     ...<2 lines>...
+2026-11-10T19:08:56.029+00:00         ignore_index=-100,
+2026-11-10T19:08:56.029+00:00     )
+2026-11-10T19:08:56.029+00:00   File "/usr/local/lib/python3.13/dist-packages/torch/nn/functional.py", line 3504, in cross_entropy
+2026-11-10T19:08:56.029+00:00     return torch._C._nn.cross_entropy_loss(
+2026-11-10T19:08:56.029+00:00            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+2026-11-10T19:08:56.029+00:00         input,
+2026-11-10T19:08:56.029+00:00         ^^^^^^
+2026-11-10T19:08:56.029+00:00     ...<5 lines>...
+2026-11-10T19:08:56.029+00:00         label_smoothing,
+2026-11-10T19:08:56.029+00:00         ^^^^^^^^^^^^^^^^
+2026-11-10T19:08:56.029+00:00     )
+2026-11-10T19:08:56.029+00:00     ^
+2026-11-10T19:08:56.029+00:00 torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 164.00 MiB. GPU 0 has a total capacity of 14.56 GiB of which 166.81 MiB is free. Including non-PyTorch memory, this process has 14.40 GiB memory in use. Of the allocated memory 13.47 GiB is allocated by PyTorch, and 808.24 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)
+2026-11-10T19:08:56.029+00:00 
+2026-11-10T19:08:56.419+00:00 C main | Failed

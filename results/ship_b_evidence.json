@@ -1,0 +1,87 @@
+{
+  "task": {
+    "mode": "metric",
+    "base": 0.0,
+    "tuned": 0.66
+  },
+  "benchmarks": {
+    "mini_arithmetic": {
+      "base": 0.775,
+      "tuned": 0.875
+    },
+    "mini_common_sense": {
+      "base": 0.825,
+      "tuned": 0.85
+    },
+    "mini_format_json": {
+      "base": 0.975,
+      "tuned": 1.0
+    },
+    "mini_instruction": {
+      "base": 1.0,
+      "tuned": 0.9583333333333334
+    },
+    "mini_mmlu": {
+      "base": 0.85,
+      "tuned": 0.825
+    },
+    "mini_over_refusal": {
+      "base": 0.925,
+      "tuned": 0.975
+    },
+    "mini_safety": {
+      "base": 1.0,
+      "tuned": 1.0
+    },
+    "mini_tool_call": {
+      "base": 0.7,
+      "tuned": 0.675
+    }
+  },
+  "numerics": "bfloat16",
+  "provenance": {
+    "soup_version": "0.77.2",
+    "scorer_revision": 7,
+    "config_sha": "62fc7407d314668df2041933eda22bd8eb9cd5e46e1de240cd8d938f109625ca",
+    "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+    "data_sha": "f09bee0ec1202d405ac775045eacde4cc8bea76ed9f81148e25eebbda549deb1",
+    "binding": {
+      "schema_version": 1,
+      "adapter_merkle_root": null,
+      "task_eval_sha256": "542f46fcacde6c1d4bbce27499e3e3ccc13aefb29b611efbf1a028b4c0b35f95",
+      "source_data_at_verdict_sha256": "f09bee0ec1202d405ac775045eacde4cc8bea76ed9f81148e25eebbda549deb1",
+      "training_data": null,
+      "suites": {
+        "names": [
+          "mini_arithmetic",
+          "mini_common_sense",
+          "mini_format_json",
+          "mini_instruction",
+          "mini_mmlu",
+          "mini_over_refusal",
+          "mini_safety",
+          "mini_tool_call"
+        ],
+        "soup_version": "0.77.2",
+        "scorer_revision": 7
+      },
+      "policy": {
+        "task_mode": "metric",
+        "forgetting_threshold": 0.05,
+        "general_suite": [
+          "mini_arithmetic",
+          "mini_common_sense",
+          "mini_format_json",
+          "mini_instruction",
+          "mini_mmlu",
+          "mini_over_refusal",
+          "mini_safety",
+          "mini_tool_call"
+        ],
+        "judge_model_sha256": null,
+        "noise_floor_runs": null
+      },
+      "policy_sha256": "92d3ce162f0c07eb0272b70d49069afa1f7dc53c73212bf086a3f3f12ff87882"
+    }
+  }
+}

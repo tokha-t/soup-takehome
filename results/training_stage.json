@@ -1,0 +1,20 @@
+{
+  "soup_status": "real exited 1; using PEFT for all runs",
+  "runs": {
+    "real": {
+      "backend": "Transformers + PEFT",
+      "exit_code": 0,
+      "attempts": 1
+    },
+    "placebo": {
+      "backend": "Transformers + PEFT",
+      "exit_code": 0,
+      "attempts": 1
+    },
+    "shuffled": {
+      "backend": "Transformers + PEFT",
+      "exit_code": 0,
+      "attempts": 1
+    }
+  }
+}

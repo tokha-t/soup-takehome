@@ -1,0 +1,5 @@
+2026-11-11T01:32:58.027+00:00 INFO $ /kaggle/temp/soup-patch-optional-soup/bin/soup eval quant-check --before /kaggle/input/notebooks/toktarkhan/soup-patch-stage-2a-real-merges/soup-takehome/artifacts/merged_fp16 --after /kaggle/input/notebooks/toktarkhan/soup-patch-stage-4-core-verification/soup-takehome/artifacts/merged_4bit_portable --tasks /kaggle/working/soup-takehome/data/ship_task_amended.jsonl --format json
+2026-11-11T01:32:58.670+00:00 INFO --before 
+2026-11-11T01:32:58.670+00:00 INFO '/kaggle/input/notebooks/toktarkhan/soup-patch-stage-2a-real-merges/soup-takehom
+2026-11-11T01:32:58.670+00:00 INFO e/artifacts/merged_fp16' is outside cwd - refusing
+2026-11-11T01:32:58.844+00:00 INFO Exit status 3

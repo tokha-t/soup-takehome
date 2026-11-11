@@ -1,0 +1,15 @@
+{
+  "total_rows": 1500,
+  "corrupt_rows": 750,
+  "exit_codes": {
+    "clean_strict": 0,
+    "half_default": 0,
+    "half_strict": 0
+  },
+  "gate_logs": {
+    "clean_strict": "logs/stages/7/validate_clean_strict.log",
+    "half_default": "logs/stages/7/validate_half_default.log",
+    "half_strict": "logs/stages/7/validate_half_strict.log"
+  },
+  "finished": "2026-11-11T06:27:34+05:00"
+}

@@ -1,0 +1,47 @@
+2026-11-11T01:32:38.919+00:00 INFO $ /kaggle/temp/soup-patch-optional-soup/bin/soup profile --help
+2026-11-11T01:32:39.694+00:00 INFO                                                                                 
+2026-11-11T01:32:39.694+00:00 INFO  Usage: soup profile [OPTIONS]                                                  
+2026-11-11T01:32:39.694+00:00 INFO                                                                                 
+2026-11-11T01:32:39.694+00:00 INFO  Estimate memory, speed, and GPU requirements BEFORE training.                  
+2026-11-11T01:32:39.694+00:00 INFO                                                                                 
+2026-11-11T01:32:39.706+00:00 INFO ╭─ Options ────────────────────────────────────────────────────────────────────╮
+2026-11-11T01:32:39.706+00:00 INFO │ --config                -c      <str>                  Path to soup.yaml     │
+2026-11-11T01:32:39.706+00:00 INFO │                                                        config file (default  │
+2026-11-11T01:32:39.706+00:00 INFO │                                                        soup.yaml)            │
+2026-11-11T01:32:39.706+00:00 INFO │ --gpu                   -g      <str>                  Target GPU for        │
+2026-11-11T01:32:39.706+00:00 INFO │                                                        recommendations       │
+2026-11-11T01:32:39.706+00:00 INFO │                                                        (e.g., rtx3090,       │
+2026-11-11T01:32:39.706+00:00 INFO │                                                        rtx4090, a100, h100). │
+2026-11-11T01:32:39.706+00:00 INFO │                                                        Auto-detects if not   │
+2026-11-11T01:32:39.706+00:00 INFO │                                                        set.                  │
+2026-11-11T01:32:39.706+00:00 INFO │ --json                                                 Output as JSON for    │
+2026-11-11T01:32:39.706+00:00 INFO │                                                        scripting             │
+2026-11-11T01:32:39.706+00:00 INFO │ --model                 -m      <str>                  A Hugging Face model  │
+2026-11-11T01:32:39.706+00:00 INFO │                                                        id or a local model   │
+2026-11-11T01:32:39.706+00:00 INFO │                                                        directory, priced     │
+2026-11-11T01:32:39.706+00:00 INFO │                                                        without a soup.yaml   │
+2026-11-11T01:32:39.706+00:00 INFO │                                                        from its config.json  │
+2026-11-11T01:32:39.706+00:00 INFO │                                                        (works offline once   │
+2026-11-11T01:32:39.706+00:00 INFO │                                                        cached).              │
+2026-11-11T01:32:39.706+00:00 INFO │ --seq                           <int range>            With --model:         │
+2026-11-11T01:32:39.706+00:00 INFO │                                 [64<=x<=1048576]       sequence length       │
+2026-11-11T01:32:39.706+00:00 INFO │                                                        (default 2048)        │
+2026-11-11T01:32:39.706+00:00 INFO │ --batch                         <int range>            With --model: batch   │
+2026-11-11T01:32:39.706+00:00 INFO │                                 [1<=x<=1024]           size (default 4)      │
+2026-11-11T01:32:39.706+00:00 INFO │ --method                        <str>                  With --model: lora,   │
+2026-11-11T01:32:39.706+00:00 INFO │                                                        qlora (default) or    │
+2026-11-11T01:32:39.706+00:00 INFO │                                                        full                  │
+2026-11-11T01:32:39.706+00:00 INFO │ --lora-r                        <int range>            With --model: LoRA    │
+2026-11-11T01:32:39.706+00:00 INFO │                                 [1<=x<=4096]           rank (default 64)     │
+2026-11-11T01:32:39.706+00:00 INFO │ --optimizer                     <str>                  With --model:         │
+2026-11-11T01:32:39.707+00:00 INFO │                                                        optimizer (default    │
+2026-11-11T01:32:39.707+00:00 INFO │                                                        adamw_torch)          │
+2026-11-11T01:32:39.707+00:00 INFO │ --gradient-checkpoint…          <str>                  With --model: off     │
+2026-11-11T01:32:39.707+00:00 INFO │                                                        (default), full,      │
+2026-11-11T01:32:39.707+00:00 INFO │                                                        medium, selective or  │
+2026-11-11T01:32:39.707+00:00 INFO │                                                        auto                  │
+2026-11-11T01:32:39.707+00:00 INFO │ --help                                                 Show this message and │
+2026-11-11T01:32:39.707+00:00 INFO │                                                        exit.                 │
+2026-11-11T01:32:39.707+00:00 INFO ╰──────────────────────────────────────────────────────────────────────────────╯
+2026-11-11T01:32:39.707+00:00 INFO 
+2026-11-11T01:32:39.884+00:00 INFO Exit status 0

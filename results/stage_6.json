@@ -1,0 +1,128 @@
+{
+  "status": "complete",
+  "finished": "2026-11-11T05:56:02+05:00",
+  "amendment": "298548aedf93ab81ce182328108d79bed20b7dd54e9e6fc862b956c3797ada02",
+  "outcomes": {
+    "b": {
+      "exit_code": 0,
+      "finished": "2026-11-11T05:35:23+05:00",
+      "verdict_file": "ship_b.json",
+      "evidence_file": "ship_b_evidence.json",
+      "provenance": {
+        "soup_version": "0.77.2",
+        "scorer_revision": 7,
+        "config_sha": "62fc7407d314668df2041933eda22bd8eb9cd5e46e1de240cd8d938f109625ca",
+        "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+        "data_sha": "f09bee0ec1202d405ac775045eacde4cc8bea76ed9f81148e25eebbda549deb1",
+        "binding": {
+          "schema_version": 1,
+          "adapter_merkle_root": null,
+          "task_eval_sha256": "542f46fcacde6c1d4bbce27499e3e3ccc13aefb29b611efbf1a028b4c0b35f95",
+          "source_data_at_verdict_sha256": "f09bee0ec1202d405ac775045eacde4cc8bea76ed9f81148e25eebbda549deb1",
+          "training_data": null,
+          "suites": {
+            "names": [
+              "mini_arithmetic",
+              "mini_common_sense",
+              "mini_format_json",
+              "mini_instruction",
+              "mini_mmlu",
+              "mini_over_refusal",
+              "mini_safety",
+              "mini_tool_call"
+            ],
+            "soup_version": "0.77.2",
+            "scorer_revision": 7
+          },
+          "policy": {
+            "task_mode": "metric",
+            "forgetting_threshold": 0.05,
+            "general_suite": [
+              "mini_arithmetic",
+              "mini_common_sense",
+              "mini_format_json",
+              "mini_instruction",
+              "mini_mmlu",
+              "mini_over_refusal",
+              "mini_safety",
+              "mini_tool_call"
+            ],
+            "judge_model_sha256": null,
+            "noise_floor_runs": null
+          },
+          "policy_sha256": "92d3ce162f0c07eb0272b70d49069afa1f7dc53c73212bf086a3f3f12ff87882"
+        }
+      },
+      "target_safetensors_sha256": {
+        "model.safetensors": "483fd9ab9ae745da787a627e7c8e3ad23e7343b978a32a3d59976d1874090525"
+      },
+      "task_sha256": "542f46fcacde6c1d4bbce27499e3e3ccc13aefb29b611efbf1a028b4c0b35f95"
+    },
+    "a": {
+      "exit_code": 0,
+      "finished": "2026-11-11T05:56:00+05:00",
+      "verdict_file": "ship_a.json",
+      "evidence_file": "ship_a_evidence.json",
+      "provenance": {
+        "soup_version": "0.77.2",
+        "scorer_revision": 7,
+        "config_sha": "62fc7407d314668df2041933eda22bd8eb9cd5e46e1de240cd8d938f109625ca",
+        "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+        "data_sha": "f09bee0ec1202d405ac775045eacde4cc8bea76ed9f81148e25eebbda549deb1",
+        "binding": {
+          "schema_version": 1,
+          "adapter_merkle_root": "0b337fee8453bbe9b0f778ce4cd3b3dde6426c34ed2a7a954f07d9ea68c6f9d1",
+          "task_eval_sha256": "542f46fcacde6c1d4bbce27499e3e3ccc13aefb29b611efbf1a028b4c0b35f95",
+          "source_data_at_verdict_sha256": "f09bee0ec1202d405ac775045eacde4cc8bea76ed9f81148e25eebbda549deb1",
+          "training_data": null,
+          "suites": {
+            "names": [
+              "mini_arithmetic",
+              "mini_common_sense",
+              "mini_format_json",
+              "mini_instruction",
+              "mini_mmlu",
+              "mini_over_refusal",
+              "mini_safety",
+              "mini_tool_call"
+            ],
+            "soup_version": "0.77.2",
+            "scorer_revision": 7
+          },
+          "policy": {
+            "task_mode": "metric",
+            "forgetting_threshold": 0.05,
+            "general_suite": [
+              "mini_arithmetic",
+              "mini_common_sense",
+              "mini_format_json",
+              "mini_instruction",
+              "mini_mmlu",
+              "mini_over_refusal",
+              "mini_safety",
+              "mini_tool_call"
+            ],
+            "judge_model_sha256": null,
+            "noise_floor_runs": null
+          },
+          "policy_sha256": "92d3ce162f0c07eb0272b70d49069afa1f7dc53c73212bf086a3f3f12ff87882"
+        }
+      },
+      "target_safetensors_sha256": {
+        "adapter_model.safetensors": "3ffb665f1c6358f06d6b77268872463af4de734a07b48733bdb6a75ffd495b27"
+      },
+      "task_sha256": "542f46fcacde6c1d4bbce27499e3e3ccc13aefb29b611efbf1a028b4c0b35f95"
+    },
+    "c": {
+      "exit_code": 2,
+      "finished": "2026-11-11T05:56:02+05:00",
+      "verdict_file": "ship_c.json",
+      "evidence_file": null,
+      "provenance": null,
+      "target_safetensors_sha256": {
+        "adapter_model.safetensors": "3c8130c9a68c8f9f4e89d7acac8e07e480493c2c4f286be73c82b1371cde2cb5"
+      },
+      "task_sha256": "542f46fcacde6c1d4bbce27499e3e3ccc13aefb29b611efbf1a028b4c0b35f95"
+    }
+  }
+}

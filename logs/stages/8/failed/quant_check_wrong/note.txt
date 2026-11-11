@@ -1,0 +1,2 @@
+2026-11-11T06:32:59+05:00 Exit 3 from quant_check_wrong.
+Retain the raw log and follow the stage fallback or next check.

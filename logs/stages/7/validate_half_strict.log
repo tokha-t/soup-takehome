@@ -1,0 +1,8 @@
+2026-11-11T01:27:33.193+00:00 INFO $ /kaggle/temp/soup-patch-diagnostic-soup/bin/soup data validate /kaggle/working/soup-takehome/data/train_soup_half_broken.jsonl --min-valid-fraction 1.0
+2026-11-11T01:27:33.829+00:00 INFO Auto-detected format: chatml
+2026-11-11T01:27:33.845+00:00 INFO Issues found:
+2026-11-11T01:27:33.845+00:00 INFO   ! 749 duplicate rows found
+2026-11-11T01:27:33.845+00:00 INFO   ! 750 samples are very short (<10 chars)
+2026-11-11T01:27:33.846+00:00 INFO 
+2026-11-11T01:27:33.846+00:00 INFO 1500/1500 rows valid for chatml format
+2026-11-11T01:27:34.017+00:00 INFO Exit status 0

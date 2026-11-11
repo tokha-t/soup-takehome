@@ -1,0 +1,3 @@
+2026-11-10T22:47:28.028+00:00 INFO $ /kaggle/temp/soup-patch-quant-peft/bin/python -c 'import sys; from safetensors import safe_open; f=safe_open(sys.argv[1],framework='"'"'pt'"'"'); b=[n for n in f.keys() if '"'"'.lora_B.'"'"' in n]; assert len(b)==196; assert all(not f.get_tensor(k).count_nonzero().item() for k in b); print('"'"'196 LoRA B tensors are zero'"'"')' /kaggle/input/notebooks/toktarkhan/soup-take-home-training-and-controls/soup-takehome/runs/placebo/adapter/adapter_model.safetensors
+2026-11-10T22:47:33.396+00:00 INFO 196 LoRA B tensors are zero
+2026-11-10T22:47:35.330+00:00 INFO Exit status 0

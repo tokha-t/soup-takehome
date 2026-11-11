@@ -1,0 +1,16 @@
+[
+  {
+    "name": "probe_decoding_4bit",
+    "device": "CUDA",
+    "state": "complete",
+    "start_epoch": 1794355295.932377,
+    "end_epoch": 1794355761.6294436,
+    "wall_seconds": 465.69706654548645,
+    "torch_peak_allocated_gib": 1.4376959800720215,
+    "torch_peak_reserved_gib": 1.533203125,
+    "peak_process_rss_gib": 2.1443214416503906,
+    "total_system_ram_gib": 31.346603393554688,
+    "nvidia_smi_peak_mib": 1705,
+    "nvidia_smi_peak_gib": 1.6650390625
+  }
+]

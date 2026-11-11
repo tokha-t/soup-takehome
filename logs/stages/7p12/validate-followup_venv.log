@@ -1,0 +1,7 @@
+2026-11-11T01:39:42.096+00:00 INFO $ /usr/local/bin/uv venv --seed --system-site-packages --python /usr/bin/python3 /kaggle/temp/soup-patch-validate-followup
+2026-11-11T01:39:42.278+00:00 INFO warning: The `--system` flag has no effect, `uv venv` always ignores virtual environments when finding a Python interpreter; did you mean `--no-managed-python`?
+2026-11-11T01:39:42.435+00:00 INFO Using CPython 3.13.18 interpreter at: /usr/bin/python3
+2026-11-11T01:39:42.436+00:00 INFO Creating virtual environment with seed packages at: /kaggle/temp/soup-patch-validate-followup
+2026-11-11T01:39:43.539+00:00 INFO  + pip==26.3
+2026-11-11T01:39:43.539+00:00 INFO Activate with: source /kaggle/temp/soup-patch-validate-followup/bin/activate
+2026-11-11T01:39:43.542+00:00 INFO Exit status 0

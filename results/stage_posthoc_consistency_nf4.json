@@ -1,0 +1,13 @@
+{
+  "label": "POST-HOC",
+  "deadline": "2026-11-11T14:45:00+05:00",
+  "base_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "base_exit": 0,
+  "adapter_sha256": "3ffb665f1c6358f06d6b77268872463af4de734a07b48733bdb6a75ffd495b27",
+  "command": "/kaggle/temp/soup-patch-consistency-soup/bin/soup merge --adapter /kaggle/input/notebooks/toktarkhan/soup-take-home-training-and-controls/soup-takehome/runs/real/adapter --base /root/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306 --output /kaggle/temp/posthoc-s5-consistency/merged_4bit_repeat --dtype float16 --save-format 4bit",
+  "merge_exit": 0,
+  "hashes_exit": 0,
+  "greedy_exit": 0,
+  "finished": "2026-11-11T14:16:17+05:00",
+  "status": "complete"
+}

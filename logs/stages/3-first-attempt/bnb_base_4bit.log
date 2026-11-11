@@ -1,0 +1,14 @@
+2026-11-10T22:38:39.352+00:00 INFO $ /kaggle/temp/soup-patch-quant-peft/bin/python /kaggle/working/soup-takehome/artifacts_stage.py bnb_quantize quant_base_4bit /kaggle/input/notebooks/toktarkhan/soup-patch-stage-2b-control-merges/soup-takehome/artifacts/placebo_fp16 /kaggle/working/soup-takehome/artifacts/base_4bit
+2026-11-10T22:38:50.167+00:00 INFO 2026-11-10T22:38:50.167 INFO NumExpr defaulting to 4 threads.
+2026-11-10T22:38:50.812+00:00 INFO 2026-11-10T22:38:50.812 INFO bitsandbytes 0.48.2 configuration {
+2026-11-10T22:38:50.812+00:00 INFO   "_load_in_4bit": true,
+2026-11-10T22:38:50.812+00:00 INFO   "bnb_4bit_compute_dtype": "float16",
+2026-11-10T22:38:50.812+00:00 INFO   "bnb_4bit_quant_type": "nf4",
+2026-11-10T22:38:50.813+00:00 INFO   "bnb_4bit_use_double_quant": true,
+2026-11-10T22:38:50.813+00:00 INFO   "load_in_4bit": true
+2026-11-10T22:38:50.813+00:00 INFO }
+2026-11-10T22:38:50.813+00:00 INFO 
+2026-11-10T22:38:57.775+00:00 INFO /kaggle/temp/soup-patch-quant-peft/lib/python3.13/site-packages/bitsandbytes/backends/cuda/ops.py:212: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+2026-11-10T22:38:57.775+00:00 INFO   torch._check_is_size(blocksize)
+2026-11-10T22:39:12.166+00:00 INFO 2026-11-10T22:39:12.166 INFO Memory phase {"name": "quant_base_4bit", "device": "CUDA", "state": "complete", "start_epoch": 1794350331.2318256, "end_epoch": 1794350351.931175, "wall_seconds": 20.699349403381348, "torch_peak_allocated_gib": 1.4376959800720215, "torch_peak_reserved_gib": 1.47265625, "peak_process_rss_gib": 4.003959655761719, "total_system_ram_gib": 31.346603393554688, "nvidia_smi_peak_mib": 1629, "nvidia_smi_peak_gib": 1.5908203125}
+2026-11-10T22:39:13.700+00:00 INFO Exit status 0

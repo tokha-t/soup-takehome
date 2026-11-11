@@ -1,0 +1,17 @@
+{
+  "training": "https://www.kaggle.com/code/toktarkhan/soup-take-home-training-and-controls?scriptVersionId=368195915",
+  "1": "https://www.kaggle.com/code/toktarkhan/soup-patch-stage-1-amendment-and-split?scriptVersionId=368212358",
+  "2a": "https://www.kaggle.com/code/toktarkhan/soup-patch-stage-2a-real-merges?scriptVersionId=368212862",
+  "2b": "https://www.kaggle.com/code/toktarkhan/soup-patch-stage-2b-control-merges?scriptVersionId=368212888",
+  "3_first_attempt": "https://www.kaggle.com/code/toktarkhan/soup-patch-stage-3-nf4-export?scriptVersionId=368215926",
+  "3": "https://www.kaggle.com/code/toktarkhan/soup-patch-stage-3-nf4-export?scriptVersionId=368217419",
+  "4_first_attempt": "https://www.kaggle.com/code/toktarkhan/soup-patch-stage-4-core-verification?scriptVersionId=368221722",
+  "4": "https://www.kaggle.com/code/toktarkhan/soup-patch-stage-4-core-verification?scriptVersionId=368224256",
+  "5": "https://www.kaggle.com/code/toktarkhan/soup-patch-stage-5-decoding-probes?scriptVersionId=368231043",
+  "6": "https://www.kaggle.com/code/toktarkhan/soup-patch-stage-6-soup-ship?scriptVersionId=368234412",
+  "7": "https://www.kaggle.com/code/toktarkhan/soup-patch-stage-7-diagnostics?scriptVersionId=368244280",
+  "8": "https://www.kaggle.com/code/toktarkhan/soup-patch-stage-8-remaining-probes?scriptVersionId=368251275",
+  "7p12": "https://www.kaggle.com/code/toktarkhan/soup-patch-p12-type-validation?scriptVersionId=368253002",
+  "8p11": "https://www.kaggle.com/code/toktarkhan/soup-patch-p11-sql-execution?scriptVersionId=368264249",
+  "8q": "https://www.kaggle.com/code/toktarkhan/soup-patch-stage-8-quant-check-retry?scriptVersionId=368273101"
+}

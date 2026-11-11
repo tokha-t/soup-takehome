@@ -1,0 +1,15 @@
+2026-11-11T02:14:15.532+00:00 INFO $ /kaggle/temp/soup-patch-optional-peft/bin/python /kaggle/working/soup-takehome/probes/run_probes.py precision
+2026-11-11T02:14:26.894+00:00 INFO 
+2026-11-11T02:14:26.894+00:00 INFO Fetching 7 files:   0%|          | 0/7 [00:00<?, ?it/s]
+2026-11-11T02:14:26.894+00:00 INFO Fetching 7 files: 100%|██████████| 7/7 [00:00<00:00, 89240.51it/s]
+2026-11-11T02:14:27.194+00:00 INFO 2026-11-11T02:14:27.194 INFO SHA256 946b053ffe6b2206ae447ab77168ed56bbd718553f6b9bde7aba6519ef8ecbe3  /kaggle/working/soup-takehome/data/eval_amended.jsonl
+2026-11-11T02:14:27.736+00:00 INFO 2026-11-11T02:14:27.736 INFO SHA256 98d2ff8cc47488d08a2b0b3acf4eb99ef210779b42bd48605f6b8e36acdbf670  /root/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/blobs/f81ead14ab072d65a07817f83a3ee0e5a1890d10
+2026-11-11T02:14:27.736+00:00 INFO 2026-11-11T02:14:27.736 INFO SHA256 e558847a8b4402616f1273797b015104dc266fe4b520056fca88823ba8f8ebe6  /root/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/blobs/dfc11073787daf1b0f9c0f1499487ab5f4c93738
+2026-11-11T02:14:27.741+00:00 INFO 2026-11-11T02:14:27.741 INFO SHA256 599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3  /root/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/blobs/20024bfe7c83998e9aeaf98a0cd6a2ce6306c2f0
+2026-11-11T02:14:35.706+00:00 INFO 2026-11-11T02:14:35.706 INFO SHA256 dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee  /root/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/blobs/dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee
+2026-11-11T02:14:35.725+00:00 INFO 2026-11-11T02:14:35.724 INFO SHA256 c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539  /root/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/blobs/443909a61d429dff23010e5bddd28ff530edda00
+2026-11-11T02:14:35.725+00:00 INFO 2026-11-11T02:14:35.725 INFO SHA256 5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583  /root/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/blobs/07bfe0640cb5a0037f9322287fbfc682806cf672
+2026-11-11T02:14:35.733+00:00 INFO 2026-11-11T02:14:35.733 INFO SHA256 ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910  /root/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/blobs/4783fe10ac3adce15ac8f358ef5462739852c569
+2026-11-11T02:14:49.080+00:00 INFO 2026-11-11T02:14:49.080 INFO Memory phase {"name": "probe_P9_precision", "device": "CUDA", "state": "complete", "start_epoch": 1794363267.7358007, "end_epoch": 1794363288.7567003, "wall_seconds": 21.020899534225464, "torch_peak_allocated_gib": 8.849238395690918, "torch_peak_reserved_gib": 9.529296875, "peak_process_rss_gib": 3.890247344970703, "total_system_ram_gib": 31.346599578857422, "nvidia_smi_peak_mib": 9891, "nvidia_smi_peak_gib": 9.6591796875}
+2026-11-11T02:14:49.085+00:00 INFO 2026-11-11T02:14:49.085 INFO Probe P9 recorded
+2026-11-11T02:14:50.405+00:00 INFO Exit status 0

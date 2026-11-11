@@ -1,0 +1,1769 @@
+{
+  "modules": {
+    "model.layers.0.mlp.down_proj": {
+      "code_flip_rate": 0.012730044410342261,
+      "code_flips": 175198,
+      "code_count": 13762560,
+      "cosine_delta": 0.12933529577599154,
+      "subspace_retention": 0.9980234703900482,
+      "outside_subspace_energy": 10.2418527853583,
+      "dequantized_delta_energy": 10.416297389220063
+    },
+    "model.layers.0.mlp.gate_proj": {
+      "code_flip_rate": 0.024625433058965775,
+      "code_flips": 338909,
+      "code_count": 13762560,
+      "cosine_delta": 0.1770508275473576,
+      "subspace_retention": 0.9924659568917481,
+      "outside_subspace_energy": 24.787187666050485,
+      "dequantized_delta_energy": 25.589843506314537
+    },
+    "model.layers.0.mlp.up_proj": {
+      "code_flip_rate": 0.029617236909412203,
+      "code_flips": 407609,
+      "code_count": 13762560,
+      "cosine_delta": 0.19681227185126754,
+      "subspace_retention": 0.9956200515825289,
+      "outside_subspace_energy": 21.116020545771615,
+      "dequantized_delta_energy": 21.967336857437658
+    },
+    "model.layers.0.self_attn.k_proj": {
+      "code_flip_rate": 0.014180501302083334,
+      "code_flips": 5576,
+      "code_count": 393216,
+      "cosine_delta": 0.13137877710039275,
+      "subspace_retention": 1.015954274703758,
+      "outside_subspace_energy": 1.2410143611402622,
+      "dequantized_delta_energy": 1.2636757851310563
+    },
+    "model.layers.0.self_attn.o_proj": {
+      "code_flip_rate": 0.03667789035373264,
+      "code_flips": 86534,
+      "code_count": 2359296,
+      "cosine_delta": 0.20929453313674207,
+      "subspace_retention": 1.002842456279966,
+      "outside_subspace_energy": 2.928353797044962,
+      "dequantized_delta_energy": 3.0628179394266795
+    },
+    "model.layers.0.self_attn.q_proj": {
+      "code_flip_rate": 0.025634341769748263,
+      "code_flips": 60479,
+      "code_count": 2359296,
+      "cosine_delta": 0.16260082663614403,
+      "subspace_retention": 0.9995719960279442,
+      "outside_subspace_energy": 6.657574940833633,
+      "dequantized_delta_energy": 6.8391939481628015
+    },
+    "model.layers.0.self_attn.v_proj": {
+      "code_flip_rate": 0.036181131998697914,
+      "code_flips": 14227,
+      "code_count": 393216,
+      "cosine_delta": 0.22125506040241677,
+      "subspace_retention": 0.9969831010297605,
+      "outside_subspace_energy": 0.4050476946230164,
+      "dequantized_delta_energy": 0.42615183957481406
+    },
+    "model.layers.1.mlp.down_proj": {
+      "code_flip_rate": 0.011732991536458333,
+      "code_flips": 161476,
+      "code_count": 13762560,
+      "cosine_delta": 0.13904426500636044,
+      "subspace_retention": 0.9898545885939996,
+      "outside_subspace_energy": 10.42166550606241,
+      "dequantized_delta_energy": 10.627363656785803
+    },
+    "model.layers.1.mlp.gate_proj": {
+      "code_flip_rate": 0.02211092994326637,
+      "code_flips": 304303,
+      "code_count": 13762560,
+      "cosine_delta": 0.17332035159739603,
+      "subspace_retention": 0.9973180775518836,
+      "outside_subspace_energy": 24.685680152073687,
+      "dequantized_delta_energy": 25.45073636122106
+    },
+    "model.layers.1.mlp.up_proj": {
+      "code_flip_rate": 0.026635378882998512,
+      "code_flips": 366571,
+      "code_count": 13762560,
+      "cosine_delta": 0.19003930887846304,
+      "subspace_retention": 0.996318791707549,
+      "outside_subspace_energy": 22.52542460246121,
+      "dequantized_delta_energy": 23.369880598413374
+    },
+    "model.layers.1.self_attn.k_proj": {
+      "code_flip_rate": 0.02439117431640625,
+      "code_flips": 9591,
+      "code_count": 393216,
+      "cosine_delta": 0.16859031409076095,
+      "subspace_retention": 1.0221680516031986,
+      "outside_subspace_energy": 1.143090088383344,
+      "dequantized_delta_energy": 1.1774429049228843
+    },
+    "model.layers.1.self_attn.o_proj": {
+      "code_flip_rate": 0.033280266655815974,
+      "code_flips": 78518,
+      "code_count": 2359296,
+      "cosine_delta": 0.2133861479405749,
+      "subspace_retention": 0.9875040397084645,
+      "outside_subspace_energy": 3.0770507681858126,
+      "dequantized_delta_energy": 3.224241638874048
+    },
+    "model.layers.1.self_attn.q_proj": {
+      "code_flip_rate": 0.027405632866753474,
+      "code_flips": 64658,
+      "code_count": 2359296,
+      "cosine_delta": 0.179745834437571,
+      "subspace_retention": 0.9931314478149013,
+      "outside_subspace_energy": 4.7286456329624675,
+      "dequantized_delta_energy": 4.887229431981325
+    },
+    "model.layers.1.self_attn.v_proj": {
+      "code_flip_rate": 0.040384928385416664,
+      "code_flips": 15880,
+      "code_count": 393216,
+      "cosine_delta": 0.2402671403309147,
+      "subspace_retention": 1.00519145283138,
+      "outside_subspace_energy": 0.5043443611550555,
+      "dequantized_delta_energy": 0.5355845722465489
+    },
+    "model.layers.10.mlp.down_proj": {
+      "code_flip_rate": 0.013596380324590774,
+      "code_flips": 187121,
+      "code_count": 13762560,
+      "cosine_delta": 0.13454996945565775,
+      "subspace_retention": 0.9910545609538701,
+      "outside_subspace_energy": 11.079469099774315,
+      "dequantized_delta_energy": 11.283971563506384
+    },
+    "model.layers.10.mlp.gate_proj": {
+      "code_flip_rate": 0.026886494954427083,
+      "code_flips": 370027,
+      "code_count": 13762560,
+      "cosine_delta": 0.1860726885409914,
+      "subspace_retention": 0.9947663084548002,
+      "outside_subspace_energy": 23.567230576241954,
+      "dequantized_delta_energy": 24.413000216890396
+    },
+    "model.layers.10.mlp.up_proj": {
+      "code_flip_rate": 0.02580631801060268,
+      "code_flips": 355161,
+      "code_count": 13762560,
+      "cosine_delta": 0.18396160847124676,
+      "subspace_retention": 0.9949560581283118,
+      "outside_subspace_energy": 22.122455383364834,
+      "dequantized_delta_energy": 22.89780704312784
+    },
+    "model.layers.10.self_attn.k_proj": {
+      "code_flip_rate": 0.026784261067708332,
+      "code_flips": 10532,
+      "code_count": 393216,
+      "cosine_delta": 0.1793448758839543,
+      "subspace_retention": 0.9890744253899084,
+      "outside_subspace_energy": 0.6270763657430507,
+      "dequantized_delta_energy": 0.6483765734077593
+    },
+    "model.layers.10.self_attn.o_proj": {
+      "code_flip_rate": 0.032992045084635414,
+      "code_flips": 77838,
+      "code_count": 2359296,
+      "cosine_delta": 0.19295724672956832,
+      "subspace_retention": 0.9925737478567608,
+      "outside_subspace_energy": 3.542121968690714,
+      "dequantized_delta_energy": 3.6795567005930394
+    },
+    "model.layers.10.self_attn.q_proj": {
+      "code_flip_rate": 0.02903196546766493,
+      "code_flips": 68495,
+      "code_count": 2359296,
+      "cosine_delta": 0.18822788313136704,
+      "subspace_retention": 1.0073092275475979,
+      "outside_subspace_energy": 3.7957422270249372,
+      "dequantized_delta_energy": 3.9356135330535835
+    },
+    "model.layers.10.self_attn.v_proj": {
+      "code_flip_rate": 0.022905985514322918,
+      "code_flips": 9007,
+      "code_count": 393216,
+      "cosine_delta": 0.17672853535158267,
+      "subspace_retention": 1.012618122955131,
+      "outside_subspace_energy": 0.597144401474546,
+      "dequantized_delta_energy": 0.6169356999587059
+    },
+    "model.layers.11.mlp.down_proj": {
+      "code_flip_rate": 0.013837687174479167,
+      "code_flips": 190442,
+      "code_count": 13762560,
+      "cosine_delta": 0.1358092912687665,
+      "subspace_retention": 0.9977382143184069,
+      "outside_subspace_energy": 10.604560736787683,
+      "dequantized_delta_energy": 10.80405200614365
+    },
+    "model.layers.11.mlp.gate_proj": {
+      "code_flip_rate": 0.02633209228515625,
+      "code_flips": 362397,
+      "code_count": 13762560,
+      "cosine_delta": 0.1830500198896955,
+      "subspace_retention": 0.9943823714176315,
+      "outside_subspace_energy": 23.591613160823044,
+      "dequantized_delta_energy": 24.409942186759736
+    },
+    "model.layers.11.mlp.up_proj": {
+      "code_flip_rate": 0.02729426792689732,
+      "code_flips": 375639,
+      "code_count": 13762560,
+      "cosine_delta": 0.18925089171559337,
+      "subspace_retention": 0.9975372471772962,
+      "outside_subspace_energy": 22.862705165517525,
+      "dequantized_delta_energy": 23.712505492279888
+    },
+    "model.layers.11.self_attn.k_proj": {
+      "code_flip_rate": 0.02745819091796875,
+      "code_flips": 10797,
+      "code_count": 393216,
+      "cosine_delta": 0.18262003524256684,
+      "subspace_retention": 0.9809649319631034,
+      "outside_subspace_energy": 0.6987115052737207,
+      "dequantized_delta_energy": 0.7233205226791064
+    },
+    "model.layers.11.self_attn.o_proj": {
+      "code_flip_rate": 0.03469551934136285,
+      "code_flips": 81857,
+      "code_count": 2359296,
+      "cosine_delta": 0.20011877726049915,
+      "subspace_retention": 0.9893684312048068,
+      "outside_subspace_energy": 3.3921164172663936,
+      "dequantized_delta_energy": 3.5339804541167865
+    },
+    "model.layers.11.self_attn.q_proj": {
+      "code_flip_rate": 0.030671437581380207,
+      "code_flips": 72363,
+      "code_count": 2359296,
+      "cosine_delta": 0.18310798517756305,
+      "subspace_retention": 0.9835473806399425,
+      "outside_subspace_energy": 3.7388351549130965,
+      "dequantized_delta_energy": 3.8689905470778854
+    },
+    "model.layers.11.self_attn.v_proj": {
+      "code_flip_rate": 0.025698343912760418,
+      "code_flips": 10105,
+      "code_count": 393216,
+      "cosine_delta": 0.1900434718750134,
+      "subspace_retention": 1.0111182711926454,
+      "outside_subspace_energy": 0.5692107009527427,
+      "dequantized_delta_energy": 0.5910182787388862
+    },
+    "model.layers.12.mlp.down_proj": {
+      "code_flip_rate": 0.014192780994233632,
+      "code_flips": 195329,
+      "code_count": 13762560,
+      "cosine_delta": 0.1387740808468942,
+      "subspace_retention": 0.9926419183104895,
+      "outside_subspace_energy": 11.28549244965221,
+      "dequantized_delta_energy": 11.507344301089915
+    },
+    "model.layers.12.mlp.gate_proj": {
+      "code_flip_rate": 0.027819388253348214,
+      "code_flips": 382866,
+      "code_count": 13762560,
+      "cosine_delta": 0.18984001669306236,
+      "subspace_retention": 0.9993076509033442,
+      "outside_subspace_energy": 24.05492438676491,
+      "dequantized_delta_energy": 24.954720990444912
+    },
+    "model.layers.12.mlp.up_proj": {
+      "code_flip_rate": 0.026448204403831846,
+      "code_flips": 363995,
+      "code_count": 13762560,
+      "cosine_delta": 0.1865489712871305,
+      "subspace_retention": 0.9961619409944462,
+      "outside_subspace_energy": 22.193262748409833,
+      "dequantized_delta_energy": 22.993960095684315
+    },
+    "model.layers.12.self_attn.k_proj": {
+      "code_flip_rate": 0.03577423095703125,
+      "code_flips": 14067,
+      "code_count": 393216,
+      "cosine_delta": 0.18916370815547862,
+      "subspace_retention": 1.01386010882783,
+      "outside_subspace_energy": 0.7343335957756112,
+      "dequantized_delta_energy": 0.7621188461603765
+    },
+    "model.layers.12.self_attn.o_proj": {
+      "code_flip_rate": 0.03654607137044271,
+      "code_flips": 86223,
+      "code_count": 2359296,
+      "cosine_delta": 0.2057267556771432,
+      "subspace_retention": 0.9915490512554783,
+      "outside_subspace_energy": 3.428833012925998,
+      "dequantized_delta_energy": 3.580767745720678
+    },
+    "model.layers.12.self_attn.q_proj": {
+      "code_flip_rate": 0.032680511474609375,
+      "code_flips": 77103,
+      "code_count": 2359296,
+      "cosine_delta": 0.19413737464453806,
+      "subspace_retention": 0.997719768565563,
+      "outside_subspace_energy": 4.054252332044143,
+      "dequantized_delta_energy": 4.2134844795673985
+    },
+    "model.layers.12.self_attn.v_proj": {
+      "code_flip_rate": 0.030375162760416668,
+      "code_flips": 11944,
+      "code_count": 393216,
+      "cosine_delta": 0.20150879809774808,
+      "subspace_retention": 1.011601768678286,
+      "outside_subspace_energy": 0.5740951922169868,
+      "dequantized_delta_energy": 0.5987644345401009
+    },
+    "model.layers.13.mlp.down_proj": {
+      "code_flip_rate": 0.014023699079241071,
+      "code_flips": 193002,
+      "code_count": 13762560,
+      "cosine_delta": 0.13705778716471254,
+      "subspace_retention": 0.996837523725916,
+      "outside_subspace_energy": 10.807007751768097,
+      "dequantized_delta_energy": 11.014113589528506
+    },
+    "model.layers.13.mlp.gate_proj": {
+      "code_flip_rate": 0.027483694893973214,
+      "code_flips": 378246,
+      "code_count": 13762560,
+      "cosine_delta": 0.18802581063718143,
+      "subspace_retention": 0.9966356739217422,
+      "outside_subspace_energy": 22.820568896981253,
+      "dequantized_delta_energy": 23.657418318913415
+    },
+    "model.layers.13.mlp.up_proj": {
+      "code_flip_rate": 0.026918320428757442,
+      "code_flips": 370465,
+      "code_count": 13762560,
+      "cosine_delta": 0.1883334184670449,
+      "subspace_retention": 0.9938022493053558,
+      "outside_subspace_energy": 22.3669249479518,
+      "dequantized_delta_energy": 23.18995664864474
+    },
+    "model.layers.13.self_attn.k_proj": {
+      "code_flip_rate": 0.026972452799479168,
+      "code_flips": 10606,
+      "code_count": 393216,
+      "cosine_delta": 0.17854193778196814,
+      "subspace_retention": 1.005217187691475,
+      "outside_subspace_energy": 0.8018348873199892,
+      "dequantized_delta_energy": 0.8288632750414173
+    },
+    "model.layers.13.self_attn.o_proj": {
+      "code_flip_rate": 0.03673977322048611,
+      "code_flips": 86680,
+      "code_count": 2359296,
+      "cosine_delta": 0.20579199527078737,
+      "subspace_retention": 1.002812121138576,
+      "outside_subspace_energy": 3.499996127427507,
+      "dequantized_delta_energy": 3.655271977838325
+    },
+    "model.layers.13.self_attn.q_proj": {
+      "code_flip_rate": 0.032538519965277776,
+      "code_flips": 76768,
+      "code_count": 2359296,
+      "cosine_delta": 0.19815316158006854,
+      "subspace_retention": 0.9919634872701623,
+      "outside_subspace_energy": 4.634232080025466,
+      "dequantized_delta_energy": 4.82413388898658
+    },
+    "model.layers.13.self_attn.v_proj": {
+      "code_flip_rate": 0.028470357259114582,
+      "code_flips": 11195,
+      "code_count": 393216,
+      "cosine_delta": 0.19875992301561893,
+      "subspace_retention": 0.9973986266489486,
+      "outside_subspace_energy": 0.5956387420261942,
+      "dequantized_delta_energy": 0.6205326988197477
+    },
+    "model.layers.14.mlp.down_proj": {
+      "code_flip_rate": 0.013535853794642857,
+      "code_flips": 186288,
+      "code_count": 13762560,
+      "cosine_delta": 0.13643366130659626,
+      "subspace_retention": 0.9915004730453397,
+      "outside_subspace_energy": 10.677535582613231,
+      "dequantized_delta_energy": 10.880318133808998
+    },
+    "model.layers.14.mlp.gate_proj": {
+      "code_flip_rate": 0.029478236607142858,
+      "code_flips": 405696,
+      "code_count": 13762560,
+      "cosine_delta": 0.19451593702832629,
+      "subspace_retention": 0.9963018687124592,
+      "outside_subspace_energy": 22.515841425830544,
+      "dequantized_delta_energy": 23.401762405796944
+    },
+    "model.layers.14.mlp.up_proj": {
+      "code_flip_rate": 0.028256443568638392,
+      "code_flips": 388881,
+      "code_count": 13762560,
+      "cosine_delta": 0.19247299143807828,
+      "subspace_retention": 0.9940787875612626,
+      "outside_subspace_energy": 22.615366634852304,
+      "dequantized_delta_energy": 23.485899287025177
+    },
+    "model.layers.14.self_attn.k_proj": {
+      "code_flip_rate": 0.040590922037760414,
+      "code_flips": 15961,
+      "code_count": 393216,
+      "cosine_delta": 0.20460999210301284,
+      "subspace_retention": 0.9996336103934057,
+      "outside_subspace_energy": 0.6087688627319032,
+      "dequantized_delta_energy": 0.6358397221151932
+    },
+    "model.layers.14.self_attn.o_proj": {
+      "code_flip_rate": 0.039885626898871526,
+      "code_flips": 94102,
+      "code_count": 2359296,
+      "cosine_delta": 0.21156582941234045,
+      "subspace_retention": 0.9953687298825912,
+      "outside_subspace_energy": 3.400133788940092,
+      "dequantized_delta_energy": 3.5599950880096145
+    },
+    "model.layers.14.self_attn.q_proj": {
+      "code_flip_rate": 0.039699554443359375,
+      "code_flips": 93663,
+      "code_count": 2359296,
+      "cosine_delta": 0.2072248584480992,
+      "subspace_retention": 0.9888719346304703,
+      "outside_subspace_energy": 3.820443863749545,
+      "dequantized_delta_energy": 3.992345660554065
+    },
+    "model.layers.14.self_attn.v_proj": {
+      "code_flip_rate": 0.030390421549479168,
+      "code_flips": 11950,
+      "code_count": 393216,
+      "cosine_delta": 0.2066851156779163,
+      "subspace_retention": 1.001510721119549,
+      "outside_subspace_energy": 0.5581386857958159,
+      "dequantized_delta_energy": 0.5834431074456461
+    },
+    "model.layers.15.mlp.down_proj": {
+      "code_flip_rate": 0.013465954008556548,
+      "code_flips": 185326,
+      "code_count": 13762560,
+      "cosine_delta": 0.13858363338826604,
+      "subspace_retention": 0.9961854064391475,
+      "outside_subspace_energy": 10.408894945887653,
+      "dequantized_delta_energy": 10.612974121634181
+    },
+    "model.layers.15.mlp.gate_proj": {
+      "code_flip_rate": 0.0282927740187872,
+      "code_flips": 389381,
+      "code_count": 13762560,
+      "cosine_delta": 0.1902532681026693,
+      "subspace_retention": 0.9951069685656401,
+      "outside_subspace_energy": 23.065765813110247,
+      "dequantized_delta_energy": 23.93250571565295
+    },
+    "model.layers.15.mlp.up_proj": {
+      "code_flip_rate": 0.026726858956473216,
+      "code_flips": 367830,
+      "code_count": 13762560,
+      "cosine_delta": 0.1882533764116402,
+      "subspace_retention": 0.9922799611204457,
+      "outside_subspace_energy": 22.127477562392173,
+      "dequantized_delta_energy": 22.940906643789504
+    },
+    "model.layers.15.self_attn.k_proj": {
+      "code_flip_rate": 0.02857208251953125,
+      "code_flips": 11235,
+      "code_count": 393216,
+      "cosine_delta": 0.18907760832180376,
+      "subspace_retention": 1.0127445758020963,
+      "outside_subspace_energy": 0.6806745554814206,
+      "dequantized_delta_energy": 0.7064138940441786
+    },
+    "model.layers.15.self_attn.o_proj": {
+      "code_flip_rate": 0.03459506564670139,
+      "code_flips": 81620,
+      "code_count": 2359296,
+      "cosine_delta": 0.19907045729869627,
+      "subspace_retention": 1.0027109267418985,
+      "outside_subspace_energy": 3.5307011978387726,
+      "dequantized_delta_energy": 3.67685981195406
+    },
+    "model.layers.15.self_attn.q_proj": {
+      "code_flip_rate": 0.0323028564453125,
+      "code_flips": 76212,
+      "code_count": 2359296,
+      "cosine_delta": 0.1978808165795118,
+      "subspace_retention": 0.9953810698910549,
+      "outside_subspace_energy": 4.095468925300984,
+      "dequantized_delta_energy": 4.262853703041003
+    },
+    "model.layers.15.self_attn.v_proj": {
+      "code_flip_rate": 0.025255839029947918,
+      "code_flips": 9931,
+      "code_count": 393216,
+      "cosine_delta": 0.1842193269694047,
+      "subspace_retention": 1.0065352658895985,
+      "outside_subspace_energy": 0.6359243022558834,
+      "dequantized_delta_energy": 0.6587580775346602
+    },
+    "model.layers.16.mlp.down_proj": {
+      "code_flip_rate": 0.013640194847470238,
+      "code_flips": 187724,
+      "code_count": 13762560,
+      "cosine_delta": 0.1383689154415194,
+      "subspace_retention": 0.9889999405076718,
+      "outside_subspace_energy": 10.378169545236858,
+      "dequantized_delta_energy": 10.580983850337589
+    },
+    "model.layers.16.mlp.gate_proj": {
+      "code_flip_rate": 0.028988865443638392,
+      "code_flips": 398961,
+      "code_count": 13762560,
+      "cosine_delta": 0.19613880669689845,
+      "subspace_retention": 0.9951702983424537,
+      "outside_subspace_energy": 22.857582776526655,
+      "dequantized_delta_energy": 23.772631803951526
+    },
+    "model.layers.16.mlp.up_proj": {
+      "code_flip_rate": 0.027619861421130952,
+      "code_flips": 380120,
+      "code_count": 13762560,
+      "cosine_delta": 0.19186524375565342,
+      "subspace_retention": 0.9948872892874803,
+      "outside_subspace_energy": 22.606761384067326,
+      "dequantized_delta_energy": 23.471195274378488
+    },
+    "model.layers.16.self_attn.k_proj": {
+      "code_flip_rate": 0.0394287109375,
+      "code_flips": 15504,
+      "code_count": 393216,
+      "cosine_delta": 0.2043710302943781,
+      "subspace_retention": 0.9996583869199189,
+      "outside_subspace_energy": 0.6214320930324921,
+      "dequantized_delta_energy": 0.6489462042048366
+    },
+    "model.layers.16.self_attn.o_proj": {
+      "code_flip_rate": 0.035797966851128474,
+      "code_flips": 84458,
+      "code_count": 2359296,
+      "cosine_delta": 0.20413327201290887,
+      "subspace_retention": 0.9942860616606569,
+      "outside_subspace_energy": 3.4967226765192683,
+      "dequantized_delta_energy": 3.649168270961937
+    },
+    "model.layers.16.self_attn.q_proj": {
+      "code_flip_rate": 0.0301361083984375,
+      "code_flips": 71100,
+      "code_count": 2359296,
+      "cosine_delta": 0.19065718242890195,
+      "subspace_retention": 0.9889910835181489,
+      "outside_subspace_energy": 3.5270214067196974,
+      "dequantized_delta_energy": 3.660533656507198
+    },
+    "model.layers.16.self_attn.v_proj": {
+      "code_flip_rate": 0.029576619466145832,
+      "code_flips": 11630,
+      "code_count": 393216,
+      "cosine_delta": 0.2039514170665588,
+      "subspace_retention": 1.0042852912791718,
+      "outside_subspace_energy": 0.6068426974576999,
+      "dequantized_delta_energy": 0.6336562403239441
+    },
+    "model.layers.17.mlp.down_proj": {
+      "code_flip_rate": 0.013517979213169643,
+      "code_flips": 186042,
+      "code_count": 13762560,
+      "cosine_delta": 0.13509750123261727,
+      "subspace_retention": 0.9946688859249235,
+      "outside_subspace_energy": 10.852763832750863,
+      "dequantized_delta_energy": 11.05473587870165
+    },
+    "model.layers.17.mlp.gate_proj": {
+      "code_flip_rate": 0.03136160714285714,
+      "code_flips": 431616,
+      "code_count": 13762560,
+      "cosine_delta": 0.20346164399097202,
+      "subspace_retention": 0.9950338598375399,
+      "outside_subspace_energy": 24.641005801756137,
+      "dequantized_delta_energy": 25.705602839124367
+    },
+    "model.layers.17.mlp.up_proj": {
+      "code_flip_rate": 0.02876092819940476,
+      "code_flips": 395824,
+      "code_count": 13762560,
+      "cosine_delta": 0.19583878932404847,
+      "subspace_retention": 0.9963648938914239,
+      "outside_subspace_energy": 24.49713909798933,
+      "dequantized_delta_energy": 25.474576453490045
+    },
+    "model.layers.17.self_attn.k_proj": {
+      "code_flip_rate": 0.0411224365234375,
+      "code_flips": 16170,
+      "code_count": 393216,
+      "cosine_delta": 0.22054657093628977,
+      "subspace_retention": 0.9978754844564469,
+      "outside_subspace_energy": 0.49824880336849375,
+      "dequantized_delta_energy": 0.5240701591748262
+    },
+    "model.layers.17.self_attn.o_proj": {
+      "code_flip_rate": 0.03447172376844618,
+      "code_flips": 81329,
+      "code_count": 2359296,
+      "cosine_delta": 0.2018825648383845,
+      "subspace_retention": 0.997169555932765,
+      "outside_subspace_energy": 3.8316132254179784,
+      "dequantized_delta_energy": 3.99490232860677
+    },
+    "model.layers.17.self_attn.q_proj": {
+      "code_flip_rate": 0.03973515828450521,
+      "code_flips": 93747,
+      "code_count": 2359296,
+      "cosine_delta": 0.21261571964621528,
+      "subspace_retention": 1.0060223648594082,
+      "outside_subspace_energy": 3.661067338273276,
+      "dequantized_delta_energy": 3.834891245183499
+    },
+    "model.layers.17.self_attn.v_proj": {
+      "code_flip_rate": 0.02616119384765625,
+      "code_flips": 10287,
+      "code_count": 393216,
+      "cosine_delta": 0.18768543080008326,
+      "subspace_retention": 1.004903712855434,
+      "outside_subspace_energy": 0.6827579021169112,
+      "dequantized_delta_energy": 0.708183015478486
+    },
+    "model.layers.18.mlp.down_proj": {
+      "code_flip_rate": 0.012840488978794643,
+      "code_flips": 176718,
+      "code_count": 13762560,
+      "cosine_delta": 0.13228382208433803,
+      "subspace_retention": 0.9986585040905182,
+      "outside_subspace_energy": 10.52207206889997,
+      "dequantized_delta_energy": 10.70969811146648
+    },
+    "model.layers.18.mlp.gate_proj": {
+      "code_flip_rate": 0.030418904622395833,
+      "code_flips": 418642,
+      "code_count": 13762560,
+      "cosine_delta": 0.20020212671937399,
+      "subspace_retention": 0.9932585491276054,
+      "outside_subspace_energy": 24.135026595229064,
+      "dequantized_delta_energy": 25.143255783768836
+    },
+    "model.layers.18.mlp.up_proj": {
+      "code_flip_rate": 0.02638186500186012,
+      "code_flips": 363082,
+      "code_count": 13762560,
+      "cosine_delta": 0.18844489269645234,
+      "subspace_retention": 0.9958906348396478,
+      "outside_subspace_energy": 22.867121801833434,
+      "dequantized_delta_energy": 23.709514874008164
+    },
+    "model.layers.18.self_attn.k_proj": {
+      "code_flip_rate": 0.034291585286458336,
+      "code_flips": 13484,
+      "code_count": 393216,
+      "cosine_delta": 0.202294668799388,
+      "subspace_retention": 1.0038448538365872,
+      "outside_subspace_energy": 0.6923233180237849,
+      "dequantized_delta_energy": 0.7223423829219797
+    },
+    "model.layers.18.self_attn.o_proj": {
+      "code_flip_rate": 0.0359450446234809,
+      "code_flips": 84805,
+      "code_count": 2359296,
+      "cosine_delta": 0.20472854100012158,
+      "subspace_retention": 0.9978174663472011,
+      "outside_subspace_energy": 3.794858120370093,
+      "dequantized_delta_energy": 3.961358861719887
+    },
+    "model.layers.18.self_attn.q_proj": {
+      "code_flip_rate": 0.03996107313368055,
+      "code_flips": 94280,
+      "code_count": 2359296,
+      "cosine_delta": 0.21503375790744014,
+      "subspace_retention": 1.0069112656417831,
+      "outside_subspace_energy": 4.20677047150809,
+      "dequantized_delta_energy": 4.411149233339756
+    },
+    "model.layers.18.self_attn.v_proj": {
+      "code_flip_rate": 0.02721405029296875,
+      "code_flips": 10701,
+      "code_count": 393216,
+      "cosine_delta": 0.1932008349938357,
+      "subspace_retention": 0.9953900240256215,
+      "outside_subspace_energy": 0.6575752922025513,
+      "dequantized_delta_energy": 0.683514643167328
+    },
+    "model.layers.19.mlp.down_proj": {
+      "code_flip_rate": 0.012079584030877976,
+      "code_flips": 166246,
+      "code_count": 13762560,
+      "cosine_delta": 0.12952015177228432,
+      "subspace_retention": 1.0009970744038477,
+      "outside_subspace_energy": 10.872725027628576,
+      "dequantized_delta_energy": 11.058427044053133
+    },
+    "model.layers.19.mlp.gate_proj": {
+      "code_flip_rate": 0.03211103166852679,
+      "code_flips": 441930,
+      "code_count": 13762560,
+      "cosine_delta": 0.20614246787546145,
+      "subspace_retention": 0.9964540835729427,
+      "outside_subspace_energy": 25.177224771574046,
+      "dequantized_delta_energy": 26.29513472211329
+    },
+    "model.layers.19.mlp.up_proj": {
+      "code_flip_rate": 0.026082066127232142,
+      "code_flips": 358956,
+      "code_count": 13762560,
+      "cosine_delta": 0.18530384589620963,
+      "subspace_retention": 0.9958834578542781,
+      "outside_subspace_energy": 23.985817777822376,
+      "dequantized_delta_energy": 24.83919336744384
+    },
+    "model.layers.19.self_attn.k_proj": {
+      "code_flip_rate": 0.040789286295572914,
+      "code_flips": 16039,
+      "code_count": 393216,
+      "cosine_delta": 0.2130683521629036,
+      "subspace_retention": 0.9975139962204316,
+      "outside_subspace_energy": 0.4984208308859399,
+      "dequantized_delta_energy": 0.5225134507663967
+    },
+    "model.layers.19.self_attn.o_proj": {
+      "code_flip_rate": 0.03336800469292535,
+      "code_flips": 78725,
+      "code_count": 2359296,
+      "cosine_delta": 0.2019299426940306,
+      "subspace_retention": 0.9952729689293716,
+      "outside_subspace_energy": 3.6638433535536796,
+      "dequantized_delta_energy": 3.819979226092883
+    },
+    "model.layers.19.self_attn.q_proj": {
+      "code_flip_rate": 0.03592046101888021,
+      "code_flips": 84747,
+      "code_count": 2359296,
+      "cosine_delta": 0.20550909629771622,
+      "subspace_retention": 1.0055891915353237,
+      "outside_subspace_energy": 3.8977561351725276,
+      "dequantized_delta_energy": 4.070188576690498
+    },
+    "model.layers.19.self_attn.v_proj": {
+      "code_flip_rate": 0.0254974365234375,
+      "code_flips": 10026,
+      "code_count": 393216,
+      "cosine_delta": 0.18845651447302753,
+      "subspace_retention": 1.0079023173990518,
+      "outside_subspace_energy": 0.7159750331773649,
+      "dequantized_delta_energy": 0.7428829665714751
+    },
+    "model.layers.2.mlp.down_proj": {
+      "code_flip_rate": 0.01322602771577381,
+      "code_flips": 182024,
+      "code_count": 13762560,
+      "cosine_delta": 0.13968471922226935,
+      "subspace_retention": 0.9987023521222239,
+      "outside_subspace_energy": 10.818616495309495,
+      "dequantized_delta_energy": 11.03411126878342
+    },
+    "model.layers.2.mlp.gate_proj": {
+      "code_flip_rate": 0.022825113932291665,
+      "code_flips": 314132,
+      "code_count": 13762560,
+      "cosine_delta": 0.17296326261481726,
+      "subspace_retention": 0.998340928991709,
+      "outside_subspace_energy": 27.371015315371494,
+      "dequantized_delta_energy": 28.215675189713693
+    },
+    "model.layers.2.mlp.up_proj": {
+      "code_flip_rate": 0.028421819777715775,
+      "code_flips": 391157,
+      "code_count": 13762560,
+      "cosine_delta": 0.19713799102890953,
+      "subspace_retention": 0.9952416215259166,
+      "outside_subspace_energy": 21.092001028434524,
+      "dequantized_delta_energy": 21.945252623441775
+    },
+    "model.layers.2.self_attn.k_proj": {
+      "code_flip_rate": 0.024220784505208332,
+      "code_flips": 9524,
+      "code_count": 393216,
+      "cosine_delta": 0.176260049718104,
+      "subspace_retention": 1.0191891836482545,
+      "outside_subspace_energy": 0.8548660744089887,
+      "dequantized_delta_energy": 0.8828944031379571
+    },
+    "model.layers.2.self_attn.o_proj": {
+      "code_flip_rate": 0.0314682854546441,
+      "code_flips": 74243,
+      "code_count": 2359296,
+      "cosine_delta": 0.19732450066746168,
+      "subspace_retention": 1.0009616959552623,
+      "outside_subspace_energy": 3.412630445211544,
+      "dequantized_delta_energy": 3.5513470901436364
+    },
+    "model.layers.2.self_attn.q_proj": {
+      "code_flip_rate": 0.030401865641276043,
+      "code_flips": 71727,
+      "code_count": 2359296,
+      "cosine_delta": 0.19086622679586945,
+      "subspace_retention": 1.000968809578874,
+      "outside_subspace_energy": 4.198606869687857,
+      "dequantized_delta_energy": 4.357879620076574
+    },
+    "model.layers.2.self_attn.v_proj": {
+      "code_flip_rate": 0.030804951985677082,
+      "code_flips": 12113,
+      "code_count": 393216,
+      "cosine_delta": 0.2073113832768215,
+      "subspace_retention": 1.0061606412353634,
+      "outside_subspace_energy": 0.5048592721570768,
+      "dequantized_delta_energy": 0.5279653907378226
+    },
+    "model.layers.20.mlp.down_proj": {
+      "code_flip_rate": 0.012348792666480654,
+      "code_flips": 169951,
+      "code_count": 13762560,
+      "cosine_delta": 0.13028859331996115,
+      "subspace_retention": 0.9945181511414016,
+      "outside_subspace_energy": 10.733028346169917,
+      "dequantized_delta_energy": 10.918569118212474
+    },
+    "model.layers.20.mlp.gate_proj": {
+      "code_flip_rate": 0.029202851795014882,
+      "code_flips": 401906,
+      "code_count": 13762560,
+      "cosine_delta": 0.1991384787180455,
+      "subspace_retention": 0.9949802253462927,
+      "outside_subspace_energy": 24.093878998326144,
+      "dequantized_delta_energy": 25.08940091912882
+    },
+    "model.layers.20.mlp.up_proj": {
+      "code_flip_rate": 0.025813729422433037,
+      "code_flips": 355263,
+      "code_count": 13762560,
+      "cosine_delta": 0.18754737115706502,
+      "subspace_retention": 0.9944875845606491,
+      "outside_subspace_energy": 23.724424418788885,
+      "dequantized_delta_energy": 24.589866090638907
+    },
+    "model.layers.20.self_attn.k_proj": {
+      "code_flip_rate": 0.040311177571614586,
+      "code_flips": 15851,
+      "code_count": 393216,
+      "cosine_delta": 0.2109089376765403,
+      "subspace_retention": 0.9867971195129245,
+      "outside_subspace_energy": 0.5856179107050954,
+      "dequantized_delta_energy": 0.6133046244261919
+    },
+    "model.layers.20.self_attn.o_proj": {
+      "code_flip_rate": 0.03377532958984375,
+      "code_flips": 79686,
+      "code_count": 2359296,
+      "cosine_delta": 0.20124534700584226,
+      "subspace_retention": 0.9927462559091118,
+      "outside_subspace_energy": 4.032506853526101,
+      "dequantized_delta_energy": 4.203120550173708
+    },
+    "model.layers.20.self_attn.q_proj": {
+      "code_flip_rate": 0.03369479709201389,
+      "code_flips": 79496,
+      "code_count": 2359296,
+      "cosine_delta": 0.20533295480960376,
+      "subspace_retention": 0.997789753385747,
+      "outside_subspace_energy": 4.166163100720993,
+      "dequantized_delta_energy": 4.3500004293960615
+    },
+    "model.layers.20.self_attn.v_proj": {
+      "code_flip_rate": 0.018511454264322918,
+      "code_flips": 7279,
+      "code_count": 393216,
+      "cosine_delta": 0.15685937993776566,
+      "subspace_retention": 1.0059042345109008,
+      "outside_subspace_energy": 0.7622736235020076,
+      "dequantized_delta_energy": 0.7820909500427184
+    },
+    "model.layers.21.mlp.down_proj": {
+      "code_flip_rate": 0.01207246326264881,
+      "code_flips": 166148,
+      "code_count": 13762560,
+      "cosine_delta": 0.12998522673570512,
+      "subspace_retention": 0.9926581696611678,
+      "outside_subspace_energy": 10.753953271500208,
+      "dequantized_delta_energy": 10.938994038748206
+    },
+    "model.layers.21.mlp.gate_proj": {
+      "code_flip_rate": 0.03152872721354167,
+      "code_flips": 433916,
+      "code_count": 13762560,
+      "cosine_delta": 0.2060303423108857,
+      "subspace_retention": 0.9933732026219312,
+      "outside_subspace_energy": 26.110951740416795,
+      "dequantized_delta_energy": 27.268941649954513
+    },
+    "model.layers.21.mlp.up_proj": {
+      "code_flip_rate": 0.025942775181361608,
+      "code_flips": 357039,
+      "code_count": 13762560,
+      "cosine_delta": 0.18708488693803202,
+      "subspace_retention": 0.9943620045959992,
+      "outside_subspace_energy": 24.489583680724408,
+      "dequantized_delta_energy": 25.378317370632658
+    },
+    "model.layers.21.self_attn.k_proj": {
+      "code_flip_rate": 0.0447998046875,
+      "code_flips": 17616,
+      "code_count": 393216,
+      "cosine_delta": 0.23283635489101498,
+      "subspace_retention": 1.0167145842855498,
+      "outside_subspace_energy": 0.5362065811874073,
+      "dequantized_delta_energy": 0.5673729956640869
+    },
+    "model.layers.21.self_attn.o_proj": {
+      "code_flip_rate": 0.027985042995876737,
+      "code_flips": 66025,
+      "code_count": 2359296,
+      "cosine_delta": 0.1848529300128195,
+      "subspace_retention": 0.9947978238401841,
+      "outside_subspace_energy": 3.614650279087339,
+      "dequantized_delta_energy": 3.7429372894909108
+    },
+    "model.layers.21.self_attn.q_proj": {
+      "code_flip_rate": 0.03453487820095486,
+      "code_flips": 81478,
+      "code_count": 2359296,
+      "cosine_delta": 0.20236570533764153,
+      "subspace_retention": 0.9924790482662206,
+      "outside_subspace_energy": 3.7543023663080524,
+      "dequantized_delta_energy": 3.915082136964898
+    },
+    "model.layers.21.self_attn.v_proj": {
+      "code_flip_rate": 0.021550496419270832,
+      "code_flips": 8474,
+      "code_count": 393216,
+      "cosine_delta": 0.17260040949532093,
+      "subspace_retention": 1.0183322624886237,
+      "outside_subspace_energy": 0.7842760539075746,
+      "dequantized_delta_energy": 0.8089499445688944
+    },
+    "model.layers.22.mlp.down_proj": {
+      "code_flip_rate": 0.01226043701171875,
+      "code_flips": 168735,
+      "code_count": 13762560,
+      "cosine_delta": 0.13055038764587718,
+      "subspace_retention": 0.9917529642027942,
+      "outside_subspace_energy": 10.863513971082483,
+      "dequantized_delta_energy": 11.05211216463573
+    },
+    "model.layers.22.mlp.gate_proj": {
+      "code_flip_rate": 0.029539998372395834,
+      "code_flips": 406546,
+      "code_count": 13762560,
+      "cosine_delta": 0.19694946606804653,
+      "subspace_retention": 0.9989219854388228,
+      "outside_subspace_energy": 25.871473828665543,
+      "dequantized_delta_energy": 26.916192154752935
+    },
+    "model.layers.22.mlp.up_proj": {
+      "code_flip_rate": 0.025986735026041666,
+      "code_flips": 357644,
+      "code_count": 13762560,
+      "cosine_delta": 0.1862898933211863,
+      "subspace_retention": 0.9947189076403488,
+      "outside_subspace_energy": 24.654016802182568,
+      "dequantized_delta_energy": 25.540847315125802
+    },
+    "model.layers.22.self_attn.k_proj": {
+      "code_flip_rate": 0.037015279134114586,
+      "code_flips": 14555,
+      "code_count": 393216,
+      "cosine_delta": 0.21353456141881672,
+      "subspace_retention": 1.0157295533044643,
+      "outside_subspace_energy": 0.7283613495982193,
+      "dequantized_delta_energy": 0.7636691173210899
+    },
+    "model.layers.22.self_attn.o_proj": {
+      "code_flip_rate": 0.0339859856499566,
+      "code_flips": 80183,
+      "code_count": 2359296,
+      "cosine_delta": 0.20278088807742176,
+      "subspace_retention": 1.0049509426053533,
+      "outside_subspace_energy": 4.317440688991837,
+      "dequantized_delta_energy": 4.503198601320037
+    },
+    "model.layers.22.self_attn.q_proj": {
+      "code_flip_rate": 0.033528645833333336,
+      "code_flips": 79104,
+      "code_count": 2359296,
+      "cosine_delta": 0.20219503798692565,
+      "subspace_retention": 1.003552433752127,
+      "outside_subspace_energy": 4.522595715343439,
+      "dequantized_delta_energy": 4.715919494244702
+    },
+    "model.layers.22.self_attn.v_proj": {
+      "code_flip_rate": 0.026980082194010418,
+      "code_flips": 10609,
+      "code_count": 393216,
+      "cosine_delta": 0.19823029752842578,
+      "subspace_retention": 0.9708433806523518,
+      "outside_subspace_energy": 1.0135310143439398,
+      "dequantized_delta_energy": 1.0557626879551805
+    },
+    "model.layers.23.mlp.down_proj": {
+      "code_flip_rate": 0.011857822963169644,
+      "code_flips": 163194,
+      "code_count": 13762560,
+      "cosine_delta": 0.12659254655500107,
+      "subspace_retention": 0.9985623472908931,
+      "outside_subspace_energy": 10.655985799029395,
+      "dequantized_delta_energy": 10.829773252190535
+    },
+    "model.layers.23.mlp.gate_proj": {
+      "code_flip_rate": 0.028838312058221727,
+      "code_flips": 396889,
+      "code_count": 13762560,
+      "cosine_delta": 0.19513028446338274,
+      "subspace_retention": 0.9964641579515464,
+      "outside_subspace_energy": 25.469333631567437,
+      "dequantized_delta_energy": 26.478017247878597
+    },
+    "model.layers.23.mlp.up_proj": {
+      "code_flip_rate": 0.02579563685825893,
+      "code_flips": 355014,
+      "code_count": 13762560,
+      "cosine_delta": 0.18506064519470197,
+      "subspace_retention": 0.9968547366022475,
+      "outside_subspace_energy": 25.222613832485475,
+      "dequantized_delta_energy": 26.117574340082683
+    },
+    "model.layers.23.self_attn.k_proj": {
+      "code_flip_rate": 0.040117899576822914,
+      "code_flips": 15775,
+      "code_count": 393216,
+      "cosine_delta": 0.21520331514784627,
+      "subspace_retention": 0.9989569025314164,
+      "outside_subspace_energy": 0.5088369297174855,
+      "dequantized_delta_energy": 0.5339331404270666
+    },
+    "model.layers.23.self_attn.o_proj": {
+      "code_flip_rate": 0.02984068128797743,
+      "code_flips": 70403,
+      "code_count": 2359296,
+      "cosine_delta": 0.19568163249056758,
+      "subspace_retention": 0.9847801830572747,
+      "outside_subspace_energy": 3.981978988927195,
+      "dequantized_delta_energy": 4.141025456829595
+    },
+    "model.layers.23.self_attn.q_proj": {
+      "code_flip_rate": 0.04296323988172743,
+      "code_flips": 101363,
+      "code_count": 2359296,
+      "cosine_delta": 0.22317612162764122,
+      "subspace_retention": 0.9952676263530426,
+      "outside_subspace_energy": 4.72171941216817,
+      "dequantized_delta_energy": 4.969832802462918
+    },
+    "model.layers.23.self_attn.v_proj": {
+      "code_flip_rate": 0.021418253580729168,
+      "code_flips": 8422,
+      "code_count": 393216,
+      "cosine_delta": 0.17348716605197714,
+      "subspace_retention": 1.0150771306661774,
+      "outside_subspace_energy": 0.8599051548234369,
+      "dequantized_delta_energy": 0.8872147130207395
+    },
+    "model.layers.24.mlp.down_proj": {
+      "code_flip_rate": 0.011812191917782738,
+      "code_flips": 162566,
+      "code_count": 13762560,
+      "cosine_delta": 0.12487302110386611,
+      "subspace_retention": 0.9919930118637471,
+      "outside_subspace_energy": 10.687353841686686,
+      "dequantized_delta_energy": 10.856865243164293
+    },
+    "model.layers.24.mlp.gate_proj": {
+      "code_flip_rate": 0.030396234421502976,
+      "code_flips": 418330,
+      "code_count": 13762560,
+      "cosine_delta": 0.20518472399523402,
+      "subspace_retention": 0.9924835885263245,
+      "outside_subspace_energy": 26.284088230301094,
+      "dequantized_delta_energy": 27.43990018306158
+    },
+    "model.layers.24.mlp.up_proj": {
+      "code_flip_rate": 0.027303277878534225,
+      "code_flips": 375763,
+      "code_count": 13762560,
+      "cosine_delta": 0.1907100507316943,
+      "subspace_retention": 0.9955327476889414,
+      "outside_subspace_energy": 26.667991193846305,
+      "dequantized_delta_energy": 27.67500700202072
+    },
+    "model.layers.24.self_attn.k_proj": {
+      "code_flip_rate": 0.04132843017578125,
+      "code_flips": 16251,
+      "code_count": 393216,
+      "cosine_delta": 0.2269093280738021,
+      "subspace_retention": 1.0096869564852589,
+      "outside_subspace_energy": 0.6320458382328731,
+      "dequantized_delta_energy": 0.6668241135253403
+    },
+    "model.layers.24.self_attn.o_proj": {
+      "code_flip_rate": 0.02662107679578993,
+      "code_flips": 62807,
+      "code_count": 2359296,
+      "cosine_delta": 0.18295483950771832,
+      "subspace_retention": 0.9985790901846173,
+      "outside_subspace_energy": 4.292104799135678,
+      "dequantized_delta_energy": 4.44123298861291
+    },
+    "model.layers.24.self_attn.q_proj": {
+      "code_flip_rate": 0.03408092922634549,
+      "code_flips": 80407,
+      "code_count": 2359296,
+      "cosine_delta": 0.20089508477527812,
+      "subspace_retention": 0.9995628579195321,
+      "outside_subspace_energy": 4.0550874847235,
+      "dequantized_delta_energy": 4.226132129828386
+    },
+    "model.layers.24.self_attn.v_proj": {
+      "code_flip_rate": 0.017885843912760418,
+      "code_flips": 7033,
+      "code_count": 393216,
+      "cosine_delta": 0.15530416819191464,
+      "subspace_retention": 1.002240951014266,
+      "outside_subspace_energy": 1.0383264023745509,
+      "dequantized_delta_energy": 1.0647557124089104
+    },
+    "model.layers.25.mlp.down_proj": {
+      "code_flip_rate": 0.012227521623883929,
+      "code_flips": 168282,
+      "code_count": 13762560,
+      "cosine_delta": 0.12574632154245138,
+      "subspace_retention": 0.9953727928876762,
+      "outside_subspace_energy": 11.300356947108021,
+      "dequantized_delta_energy": 11.482151826739084
+    },
+    "model.layers.25.mlp.gate_proj": {
+      "code_flip_rate": 0.03161570231119792,
+      "code_flips": 435113,
+      "code_count": 13762560,
+      "cosine_delta": 0.20673541254172334,
+      "subspace_retention": 0.9949944619439592,
+      "outside_subspace_energy": 26.427732288369896,
+      "dequantized_delta_energy": 27.60826101299608
+    },
+    "model.layers.25.mlp.up_proj": {
+      "code_flip_rate": 0.026746913364955358,
+      "code_flips": 368106,
+      "code_count": 13762560,
+      "cosine_delta": 0.1882552907053593,
+      "subspace_retention": 0.995581365199004,
+      "outside_subspace_energy": 26.958529908718102,
+      "dequantized_delta_energy": 27.949648240930628
+    },
+    "model.layers.25.self_attn.k_proj": {
+      "code_flip_rate": 0.0454864501953125,
+      "code_flips": 17886,
+      "code_count": 393216,
+      "cosine_delta": 0.2363354209693166,
+      "subspace_retention": 0.9920853897790659,
+      "outside_subspace_energy": 0.4994871645333452,
+      "dequantized_delta_energy": 0.5294191628515286
+    },
+    "model.layers.25.self_attn.o_proj": {
+      "code_flip_rate": 0.03454759385850695,
+      "code_flips": 81508,
+      "code_count": 2359296,
+      "cosine_delta": 0.19440196555425251,
+      "subspace_retention": 1.0063375462375759,
+      "outside_subspace_energy": 4.092527931143279,
+      "dequantized_delta_energy": 4.253713490762493
+    },
+    "model.layers.25.self_attn.q_proj": {
+      "code_flip_rate": 0.034590827094184026,
+      "code_flips": 81610,
+      "code_count": 2359296,
+      "cosine_delta": 0.20695518410923608,
+      "subspace_retention": 0.9928914489567134,
+      "outside_subspace_energy": 4.2691900314597495,
+      "dequantized_delta_energy": 4.460763497817425
+    },
+    "model.layers.25.self_attn.v_proj": {
+      "code_flip_rate": 0.020444234212239582,
+      "code_flips": 8039,
+      "code_count": 393216,
+      "cosine_delta": 0.1694094593716447,
+      "subspace_retention": 1.0090372504165608,
+      "outside_subspace_energy": 0.826281917710382,
+      "dequantized_delta_energy": 0.8512850746217602
+    },
+    "model.layers.26.mlp.down_proj": {
+      "code_flip_rate": 0.012107122512090774,
+      "code_flips": 166625,
+      "code_count": 13762560,
+      "cosine_delta": 0.12707877325770156,
+      "subspace_retention": 0.9883412496808198,
+      "outside_subspace_energy": 11.475195462931133,
+      "dequantized_delta_energy": 11.663817367927777
+    },
+    "model.layers.26.mlp.gate_proj": {
+      "code_flip_rate": 0.030408586774553572,
+      "code_flips": 418500,
+      "code_count": 13762560,
+      "cosine_delta": 0.20066420616843103,
+      "subspace_retention": 0.9972656576853035,
+      "outside_subspace_energy": 24.378930012150803,
+      "dequantized_delta_energy": 25.402262919364148
+    },
+    "model.layers.26.mlp.up_proj": {
+      "code_flip_rate": 0.02670680454799107,
+      "code_flips": 367554,
+      "code_count": 13762560,
+      "cosine_delta": 0.18846095526560439,
+      "subspace_retention": 0.9974109302285845,
+      "outside_subspace_energy": 26.870852731509544,
+      "dequantized_delta_energy": 27.86104285751776
+    },
+    "model.layers.26.self_attn.k_proj": {
+      "code_flip_rate": 0.04351043701171875,
+      "code_flips": 17109,
+      "code_count": 393216,
+      "cosine_delta": 0.2272252459632653,
+      "subspace_retention": 1.0043844460385385,
+      "outside_subspace_energy": 0.5355329962562505,
+      "dequantized_delta_energy": 0.5650600348487309
+    },
+    "model.layers.26.self_attn.o_proj": {
+      "code_flip_rate": 0.024694654676649306,
+      "code_flips": 58262,
+      "code_count": 2359296,
+      "cosine_delta": 0.1766422069278494,
+      "subspace_retention": 0.9986832682512594,
+      "outside_subspace_energy": 4.924932702363917,
+      "dequantized_delta_energy": 5.08418899215053
+    },
+    "model.layers.26.self_attn.q_proj": {
+      "code_flip_rate": 0.04091856214735243,
+      "code_flips": 96539,
+      "code_count": 2359296,
+      "cosine_delta": 0.21127880992577905,
+      "subspace_retention": 1.0022148910583293,
+      "outside_subspace_energy": 4.03793438966477,
+      "dequantized_delta_energy": 4.227130094209826
+    },
+    "model.layers.26.self_attn.v_proj": {
+      "code_flip_rate": 0.01477813720703125,
+      "code_flips": 5811,
+      "code_count": 393216,
+      "cosine_delta": 0.14384036765782648,
+      "subspace_retention": 1.0193251330539599,
+      "outside_subspace_energy": 1.2531248563992265,
+      "dequantized_delta_energy": 1.2806068348165809
+    },
+    "model.layers.27.mlp.down_proj": {
+      "code_flip_rate": 0.013259306408110119,
+      "code_flips": 182482,
+      "code_count": 13762560,
+      "cosine_delta": 0.13710726549998445,
+      "subspace_retention": 0.993878749839229,
+      "outside_subspace_energy": 9.640166240327737,
+      "dequantized_delta_energy": 9.825033620931208
+    },
+    "model.layers.27.mlp.gate_proj": {
+      "code_flip_rate": 0.03147495814732143,
+      "code_flips": 433176,
+      "code_count": 13762560,
+      "cosine_delta": 0.20551819986508024,
+      "subspace_retention": 0.996469429863797,
+      "outside_subspace_energy": 25.24646008951163,
+      "dequantized_delta_energy": 26.36032399474152
+    },
+    "model.layers.27.mlp.up_proj": {
+      "code_flip_rate": 0.028935096377418156,
+      "code_flips": 398221,
+      "code_count": 13762560,
+      "cosine_delta": 0.19626604838661502,
+      "subspace_retention": 0.9969936403748669,
+      "outside_subspace_energy": 25.087699421194642,
+      "dequantized_delta_energy": 26.093303650423195
+    },
+    "model.layers.27.self_attn.k_proj": {
+      "code_flip_rate": 0.054570515950520836,
+      "code_flips": 21458,
+      "code_count": 393216,
+      "cosine_delta": 0.2442701820485405,
+      "subspace_retention": 1.0060849470154,
+      "outside_subspace_energy": 0.4401467740320706,
+      "dequantized_delta_energy": 0.46844157357393
+    },
+    "model.layers.27.self_attn.o_proj": {
+      "code_flip_rate": 0.029311286078559026,
+      "code_flips": 69154,
+      "code_count": 2359296,
+      "cosine_delta": 0.18179430154660128,
+      "subspace_retention": 1.0038708687351765,
+      "outside_subspace_energy": 4.475230078585567,
+      "dequantized_delta_energy": 4.628781892201971
+    },
+    "model.layers.27.self_attn.q_proj": {
+      "code_flip_rate": 0.04136827256944445,
+      "code_flips": 97600,
+      "code_count": 2359296,
+      "cosine_delta": 0.2174701345686809,
+      "subspace_retention": 1.0018602784375035,
+      "outside_subspace_energy": 3.9490028872525746,
+      "dequantized_delta_energy": 4.145451390295932
+    },
+    "model.layers.27.self_attn.v_proj": {
+      "code_flip_rate": 0.0161895751953125,
+      "code_flips": 6366,
+      "code_count": 393216,
+      "cosine_delta": 0.14770161502048695,
+      "subspace_retention": 1.0047523412574308,
+      "outside_subspace_energy": 1.2522210239109732,
+      "dequantized_delta_energy": 1.2810229060096958
+    },
+    "model.layers.3.mlp.down_proj": {
+      "code_flip_rate": 0.014018903459821428,
+      "code_flips": 192936,
+      "code_count": 13762560,
+      "cosine_delta": 0.1372603383692413,
+      "subspace_retention": 0.9982608390848328,
+      "outside_subspace_energy": 10.367901276370567,
+      "dequantized_delta_energy": 10.56720857631467
+    },
+    "model.layers.3.mlp.gate_proj": {
+      "code_flip_rate": 0.022810218447730655,
+      "code_flips": 313927,
+      "code_count": 13762560,
+      "cosine_delta": 0.17203066846163642,
+      "subspace_retention": 0.9977307899671609,
+      "outside_subspace_energy": 28.94342743319893,
+      "dequantized_delta_energy": 29.82682260088245
+    },
+    "model.layers.3.mlp.up_proj": {
+      "code_flip_rate": 0.030279613676525298,
+      "code_flips": 416725,
+      "code_count": 13762560,
+      "cosine_delta": 0.2034742994999616,
+      "subspace_retention": 0.9967404333168328,
+      "outside_subspace_energy": 21.44147459623865,
+      "dequantized_delta_energy": 22.367956529589947
+    },
+    "model.layers.3.self_attn.k_proj": {
+      "code_flip_rate": 0.0263671875,
+      "code_flips": 10368,
+      "code_count": 393216,
+      "cosine_delta": 0.1870592192700612,
+      "subspace_retention": 1.0052929377311632,
+      "outside_subspace_energy": 0.8754143943805088,
+      "dequantized_delta_energy": 0.9077757739324319
+    },
+    "model.layers.3.self_attn.o_proj": {
+      "code_flip_rate": 0.031845940483940974,
+      "code_flips": 75134,
+      "code_count": 2359296,
+      "cosine_delta": 0.19903803381769422,
+      "subspace_retention": 0.9962989635402331,
+      "outside_subspace_energy": 3.52225314686975,
+      "dequantized_delta_energy": 3.6679850849566407
+    },
+    "model.layers.3.self_attn.q_proj": {
+      "code_flip_rate": 0.02583016289605035,
+      "code_flips": 60941,
+      "code_count": 2359296,
+      "cosine_delta": 0.17705870791128597,
+      "subspace_retention": 0.9912172559973239,
+      "outside_subspace_energy": 4.180526421899358,
+      "dequantized_delta_energy": 4.316325674387883
+    },
+    "model.layers.3.self_attn.v_proj": {
+      "code_flip_rate": 0.02764892578125,
+      "code_flips": 10872,
+      "code_count": 393216,
+      "cosine_delta": 0.2036588006821264,
+      "subspace_retention": 1.0031748798444884,
+      "outside_subspace_energy": 0.586940615563285,
+      "dequantized_delta_energy": 0.612825981685333
+    },
+    "model.layers.4.mlp.down_proj": {
+      "code_flip_rate": 0.013796125139508928,
+      "code_flips": 189870,
+      "code_count": 13762560,
+      "cosine_delta": 0.13593712331643612,
+      "subspace_retention": 0.9959509789550327,
+      "outside_subspace_energy": 10.414161121443783,
+      "dequantized_delta_energy": 10.610443752744914
+    },
+    "model.layers.4.mlp.gate_proj": {
+      "code_flip_rate": 0.024444507417224703,
+      "code_flips": 336419,
+      "code_count": 13762560,
+      "cosine_delta": 0.17784210944057136,
+      "subspace_retention": 0.9975623381398512,
+      "outside_subspace_energy": 27.817121439911997,
+      "dequantized_delta_energy": 28.726202255006683
+    },
+    "model.layers.4.mlp.up_proj": {
+      "code_flip_rate": 0.027502586728050595,
+      "code_flips": 378506,
+      "code_count": 13762560,
+      "cosine_delta": 0.18931755274353726,
+      "subspace_retention": 0.9931360377531205,
+      "outside_subspace_energy": 20.307932818746192,
+      "dequantized_delta_energy": 21.06331721216179
+    },
+    "model.layers.4.self_attn.k_proj": {
+      "code_flip_rate": 0.024876912434895832,
+      "code_flips": 9782,
+      "code_count": 393216,
+      "cosine_delta": 0.17581674881646842,
+      "subspace_retention": 0.9892283823793697,
+      "outside_subspace_energy": 0.7697972551482779,
+      "dequantized_delta_energy": 0.7949613178115875
+    },
+    "model.layers.4.self_attn.o_proj": {
+      "code_flip_rate": 0.03305477566189236,
+      "code_flips": 77986,
+      "code_count": 2359296,
+      "cosine_delta": 0.20123924354425515,
+      "subspace_retention": 0.9970418075008369,
+      "outside_subspace_energy": 3.7088834207368384,
+      "dequantized_delta_energy": 3.8658842884195934
+    },
+    "model.layers.4.self_attn.q_proj": {
+      "code_flip_rate": 0.028503841824001737,
+      "code_flips": 67249,
+      "code_count": 2359296,
+      "cosine_delta": 0.18172218412841998,
+      "subspace_retention": 0.9909410178859321,
+      "outside_subspace_energy": 4.066869549980196,
+      "dequantized_delta_energy": 4.206224966179036
+    },
+    "model.layers.4.self_attn.v_proj": {
+      "code_flip_rate": 0.02613067626953125,
+      "code_flips": 10275,
+      "code_count": 393216,
+      "cosine_delta": 0.19089720825736894,
+      "subspace_retention": 1.0104090237684318,
+      "outside_subspace_energy": 0.6167910275085278,
+      "dequantized_delta_energy": 0.6406102299255423
+    },
+    "model.layers.5.mlp.down_proj": {
+      "code_flip_rate": 0.016768391927083334,
+      "code_flips": 230776,
+      "code_count": 13762560,
+      "cosine_delta": 0.15424096972190698,
+      "subspace_retention": 1.0007950462436297,
+      "outside_subspace_energy": 12.313299861152355,
+      "dequantized_delta_energy": 12.613621932877322
+    },
+    "model.layers.5.mlp.gate_proj": {
+      "code_flip_rate": 0.024149504162016368,
+      "code_flips": 332359,
+      "code_count": 13762560,
+      "cosine_delta": 0.17762788104177143,
+      "subspace_retention": 0.9958579092013017,
+      "outside_subspace_energy": 28.10633656994275,
+      "dequantized_delta_energy": 29.022564740808775
+    },
+    "model.layers.5.mlp.up_proj": {
+      "code_flip_rate": 0.028841727120535714,
+      "code_flips": 396936,
+      "code_count": 13762560,
+      "cosine_delta": 0.1960901151333325,
+      "subspace_retention": 0.9955411276419588,
+      "outside_subspace_energy": 21.528116339661608,
+      "dequantized_delta_energy": 22.389417557883462
+    },
+    "model.layers.5.self_attn.k_proj": {
+      "code_flip_rate": 0.023681640625,
+      "code_flips": 9312,
+      "code_count": 393216,
+      "cosine_delta": 0.16712124899711564,
+      "subspace_retention": 1.0016913367489728,
+      "outside_subspace_energy": 0.6015140961404866,
+      "dequantized_delta_energy": 0.619314775300527
+    },
+    "model.layers.5.self_attn.o_proj": {
+      "code_flip_rate": 0.03439288669162326,
+      "code_flips": 81143,
+      "code_count": 2359296,
+      "cosine_delta": 0.19776814676475798,
+      "subspace_retention": 0.9989692383998497,
+      "outside_subspace_energy": 3.7978822656182416,
+      "dequantized_delta_energy": 3.9529774342770594
+    },
+    "model.layers.5.self_attn.q_proj": {
+      "code_flip_rate": 0.030160268147786457,
+      "code_flips": 71157,
+      "code_count": 2359296,
+      "cosine_delta": 0.18624613838322787,
+      "subspace_retention": 0.998618436984494,
+      "outside_subspace_energy": 3.8243367354649784,
+      "dequantized_delta_energy": 3.962178414612083
+    },
+    "model.layers.5.self_attn.v_proj": {
+      "code_flip_rate": 0.022715250651041668,
+      "code_flips": 8932,
+      "code_count": 393216,
+      "cosine_delta": 0.17060839694185836,
+      "subspace_retention": 0.9930907274309881,
+      "outside_subspace_energy": 0.6385722986939049,
+      "dequantized_delta_energy": 0.6581873471525945
+    },
+    "model.layers.6.mlp.down_proj": {
+      "code_flip_rate": 0.014770144507998512,
+      "code_flips": 203275,
+      "code_count": 13762560,
+      "cosine_delta": 0.14403371772234871,
+      "subspace_retention": 0.9953058681973092,
+      "outside_subspace_energy": 12.38254580322467,
+      "dequantized_delta_energy": 12.645124089877072
+    },
+    "model.layers.6.mlp.gate_proj": {
+      "code_flip_rate": 0.02695276169549851,
+      "code_flips": 370939,
+      "code_count": 13762560,
+      "cosine_delta": 0.1893086105605211,
+      "subspace_retention": 0.9949479285651919,
+      "outside_subspace_energy": 26.43975328605495,
+      "dequantized_delta_energy": 27.42308243248067
+    },
+    "model.layers.6.mlp.up_proj": {
+      "code_flip_rate": 0.026606532505580358,
+      "code_flips": 366174,
+      "code_count": 13762560,
+      "cosine_delta": 0.18671121452983297,
+      "subspace_retention": 0.9970810979197218,
+      "outside_subspace_energy": 22.474919468290054,
+      "dequantized_delta_energy": 23.287157717205446
+    },
+    "model.layers.6.self_attn.k_proj": {
+      "code_flip_rate": 0.024322509765625,
+      "code_flips": 9564,
+      "code_count": 393216,
+      "cosine_delta": 0.17508199591263,
+      "subspace_retention": 1.0055932491433546,
+      "outside_subspace_energy": 0.7841226994120711,
+      "dequantized_delta_energy": 0.8094797993721592
+    },
+    "model.layers.6.self_attn.o_proj": {
+      "code_flip_rate": 0.03605821397569445,
+      "code_flips": 85072,
+      "code_count": 2359296,
+      "cosine_delta": 0.20986286331681261,
+      "subspace_retention": 0.9991495700819057,
+      "outside_subspace_energy": 3.342095851497155,
+      "dequantized_delta_energy": 3.496432790245777
+    },
+    "model.layers.6.self_attn.q_proj": {
+      "code_flip_rate": 0.03443951076931424,
+      "code_flips": 81253,
+      "code_count": 2359296,
+      "cosine_delta": 0.1876608273291846,
+      "subspace_retention": 1.0057777692940268,
+      "outside_subspace_energy": 4.108012218635437,
+      "dequantized_delta_energy": 4.258450141358082
+    },
+    "model.layers.6.self_attn.v_proj": {
+      "code_flip_rate": 0.027643839518229168,
+      "code_flips": 10870,
+      "code_count": 393216,
+      "cosine_delta": 0.19253809045423578,
+      "subspace_retention": 0.9724733568363343,
+      "outside_subspace_energy": 0.6050523946788287,
+      "dequantized_delta_energy": 0.6287734432038725
+    },
+    "model.layers.7.mlp.down_proj": {
+      "code_flip_rate": 0.01401824951171875,
+      "code_flips": 192927,
+      "code_count": 13762560,
+      "cosine_delta": 0.13856436533077132,
+      "subspace_retention": 0.9954896677241294,
+      "outside_subspace_energy": 12.397347335783536,
+      "dequantized_delta_energy": 12.640308953087015
+    },
+    "model.layers.7.mlp.gate_proj": {
+      "code_flip_rate": 0.026810128348214286,
+      "code_flips": 368976,
+      "code_count": 13762560,
+      "cosine_delta": 0.1872055819992079,
+      "subspace_retention": 0.9966141779024414,
+      "outside_subspace_energy": 24.973062077787233,
+      "dequantized_delta_energy": 25.880643754980156
+    },
+    "model.layers.7.mlp.up_proj": {
+      "code_flip_rate": 0.025848897298177083,
+      "code_flips": 355747,
+      "code_count": 13762560,
+      "cosine_delta": 0.18546485453695763,
+      "subspace_retention": 0.9992830063826645,
+      "outside_subspace_energy": 22.986044799402578,
+      "dequantized_delta_energy": 23.805340775658124
+    },
+    "model.layers.7.self_attn.k_proj": {
+      "code_flip_rate": 0.025914510091145832,
+      "code_flips": 10190,
+      "code_count": 393216,
+      "cosine_delta": 0.17885650591750193,
+      "subspace_retention": 1.0099227616737176,
+      "outside_subspace_energy": 0.7157245614288028,
+      "dequantized_delta_energy": 0.739906283514987
+    },
+    "model.layers.7.self_attn.o_proj": {
+      "code_flip_rate": 0.03218841552734375,
+      "code_flips": 75942,
+      "code_count": 2359296,
+      "cosine_delta": 0.19842754637403484,
+      "subspace_retention": 0.9977212178736532,
+      "outside_subspace_energy": 3.3651563631708363,
+      "dequantized_delta_energy": 3.5034792900576264
+    },
+    "model.layers.7.self_attn.q_proj": {
+      "code_flip_rate": 0.03199428982204861,
+      "code_flips": 75484,
+      "code_count": 2359296,
+      "cosine_delta": 0.1861958487355001,
+      "subspace_retention": 0.9973615398653141,
+      "outside_subspace_energy": 3.852731546836992,
+      "dequantized_delta_energy": 3.9916101626224645
+    },
+    "model.layers.7.self_attn.v_proj": {
+      "code_flip_rate": 0.0274200439453125,
+      "code_flips": 10782,
+      "code_count": 393216,
+      "cosine_delta": 0.188117654149376,
+      "subspace_retention": 0.9965827108535434,
+      "outside_subspace_energy": 0.6291014179735859,
+      "dequantized_delta_energy": 0.6527171640341436
+    },
+    "model.layers.8.mlp.down_proj": {
+      "code_flip_rate": 0.013866751534598215,
+      "code_flips": 190842,
+      "code_count": 13762560,
+      "cosine_delta": 0.13725818802090867,
+      "subspace_retention": 0.9967851574073392,
+      "outside_subspace_energy": 11.568442921846778,
+      "dequantized_delta_energy": 11.79080057023043
+    },
+    "model.layers.8.mlp.gate_proj": {
+      "code_flip_rate": 0.025844610305059523,
+      "code_flips": 355688,
+      "code_count": 13762560,
+      "cosine_delta": 0.1833476281987169,
+      "subspace_retention": 0.9955153023249369,
+      "outside_subspace_energy": 23.68139409539225,
+      "dequantized_delta_energy": 24.50560914365292
+    },
+    "model.layers.8.mlp.up_proj": {
+      "code_flip_rate": 0.026220703125,
+      "code_flips": 360864,
+      "code_count": 13762560,
+      "cosine_delta": 0.18440787198210104,
+      "subspace_retention": 0.9963338375689279,
+      "outside_subspace_energy": 22.459202748032055,
+      "dequantized_delta_energy": 23.250364473005902
+    },
+    "model.layers.8.self_attn.k_proj": {
+      "code_flip_rate": 0.027453104654947918,
+      "code_flips": 10795,
+      "code_count": 393216,
+      "cosine_delta": 0.18094238321444886,
+      "subspace_retention": 0.9848077868727104,
+      "outside_subspace_energy": 0.7020774551695881,
+      "dequantized_delta_energy": 0.7263909873114613
+    },
+    "model.layers.8.self_attn.o_proj": {
+      "code_flip_rate": 0.032051934136284724,
+      "code_flips": 75620,
+      "code_count": 2359296,
+      "cosine_delta": 0.19665874550231505,
+      "subspace_retention": 0.997751876774977,
+      "outside_subspace_energy": 3.385557657880099,
+      "dequantized_delta_energy": 3.522148026045002
+    },
+    "model.layers.8.self_attn.q_proj": {
+      "code_flip_rate": 0.030735015869140625,
+      "code_flips": 72513,
+      "code_count": 2359296,
+      "cosine_delta": 0.1851071850882576,
+      "subspace_retention": 0.991405883764427,
+      "outside_subspace_energy": 3.887540989712477,
+      "dequantized_delta_energy": 4.025823174752304
+    },
+    "model.layers.8.self_attn.v_proj": {
+      "code_flip_rate": 0.02756500244140625,
+      "code_flips": 10839,
+      "code_count": 393216,
+      "cosine_delta": 0.19556286495120237,
+      "subspace_retention": 1.0069006321092093,
+      "outside_subspace_energy": 0.5999342313144103,
+      "dequantized_delta_energy": 0.6242814287891782
+    },
+    "model.layers.9.mlp.down_proj": {
+      "code_flip_rate": 0.012996346609933035,
+      "code_flips": 178863,
+      "code_count": 13762560,
+      "cosine_delta": 0.13205520622558212,
+      "subspace_retention": 0.9892631118265452,
+      "outside_subspace_energy": 10.829892801875303,
+      "dequantized_delta_energy": 11.022336232849796
+    },
+    "model.layers.9.mlp.gate_proj": {
+      "code_flip_rate": 0.026106407528831845,
+      "code_flips": 359291,
+      "code_count": 13762560,
+      "cosine_delta": 0.1841835889826023,
+      "subspace_retention": 0.9943109198308775,
+      "outside_subspace_energy": 22.844854318614907,
+      "dequantized_delta_energy": 23.6475067412548
+    },
+    "model.layers.9.mlp.up_proj": {
+      "code_flip_rate": 0.02573024204799107,
+      "code_flips": 354114,
+      "code_count": 13762560,
+      "cosine_delta": 0.18297922253271337,
+      "subspace_retention": 0.9964736677298711,
+      "outside_subspace_energy": 22.154648717407554,
+      "dequantized_delta_energy": 22.922575230046505
+    },
+    "model.layers.9.self_attn.k_proj": {
+      "code_flip_rate": 0.023404439290364582,
+      "code_flips": 9203,
+      "code_count": 393216,
+      "cosine_delta": 0.16858734784581897,
+      "subspace_retention": 1.0102254178180827,
+      "outside_subspace_energy": 0.6618614679782711,
+      "dequantized_delta_energy": 0.6817262308118757
+    },
+    "model.layers.9.self_attn.o_proj": {
+      "code_flip_rate": 0.03294160630967882,
+      "code_flips": 77719,
+      "code_count": 2359296,
+      "cosine_delta": 0.19583405145734445,
+      "subspace_retention": 0.9985569492543854,
+      "outside_subspace_energy": 3.281448907111283,
+      "dequantized_delta_energy": 3.4127372629289
+    },
+    "model.layers.9.self_attn.q_proj": {
+      "code_flip_rate": 0.029921637641059026,
+      "code_flips": 70594,
+      "code_count": 2359296,
+      "cosine_delta": 0.18323219549171843,
+      "subspace_retention": 1.0037443038565637,
+      "outside_subspace_energy": 4.043358669324093,
+      "dequantized_delta_energy": 4.184346448245378
+    },
+    "model.layers.9.self_attn.v_proj": {
+      "code_flip_rate": 0.025744120279947918,
+      "code_flips": 10123,
+      "code_count": 393216,
+      "cosine_delta": 0.18328625994649753,
+      "subspace_retention": 1.0003387088836728,
+      "outside_subspace_energy": 0.5477597595646229,
+      "dequantized_delta_energy": 0.5671732229307089
+    }
+  },
+  "total_code_flip_rate": 0.023899237124048837
+}

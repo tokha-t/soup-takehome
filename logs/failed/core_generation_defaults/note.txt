@@ -1,0 +1,3 @@
+Source: Kaggle core verification version 368221722, log row 104 (first Stage 4 attempt).
+The saved model's generation defaults took precedence over the global false/1.0 defaults in GenerationConfig. This violated the registered greedy decoding settings. Cancelled the attempt and excluded its outputs. The retry disables inheriting model defaults and passes sampling, beam count, and repetition penalty explicitly. No model tensors or datasets were modified.
+Reference: https://huggingface.co/docs/transformers/v4.57.1/en/main_classes/text_generation#transformers.GenerationMixin.generate

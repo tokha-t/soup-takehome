@@ -1,0 +1,7 @@
+2026-11-11T00:58:15.971+00:00 INFO $ /usr/local/bin/uv venv --seed --system-site-packages --python /usr/bin/python3 /kaggle/temp/soup-patch-diagnostic-peft
+2026-11-11T00:58:16.076+00:00 INFO warning: The `--system` flag has no effect, `uv venv` always ignores virtual environments when finding a Python interpreter; did you mean `--no-managed-python`?
+2026-11-11T00:58:16.190+00:00 INFO Using CPython 3.13.16 interpreter at: /usr/bin/python3
+2026-11-11T00:58:16.191+00:00 INFO Creating virtual environment with seed packages at: /kaggle/temp/soup-patch-diagnostic-peft
+2026-11-11T00:58:17.190+00:00 INFO  + pip==26.3
+2026-11-11T00:58:17.190+00:00 INFO Activate with: source /kaggle/temp/soup-patch-diagnostic-peft/bin/activate
+2026-11-11T00:58:17.193+00:00 INFO Exit status 0

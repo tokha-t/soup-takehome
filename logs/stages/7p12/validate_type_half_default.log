@@ -1,0 +1,11 @@
+2026-11-11T01:39:52.962+00:00 INFO $ /kaggle/temp/soup-patch-validate-followup/bin/soup data validate /kaggle/working/soup-takehome/data/train_soup_type_broken.jsonl
+2026-11-11T01:39:53.803+00:00 INFO Auto-detected format: chatml
+2026-11-11T01:39:53.826+00:00 INFO Issues found:
+2026-11-11T01:39:53.827+00:00 INFO   ! 750 rows fail to convert for 'chatml' format (load_dataset would drop them)
+2026-11-11T01:39:53.827+00:00 INFO   ! row 750: chatml row 'messages' must be a list
+2026-11-11T01:39:53.828+00:00 INFO   ! row 751: chatml row 'messages' must be a list
+2026-11-11T01:39:53.829+00:00 INFO   ! row 752: chatml row 'messages' must be a list
+2026-11-11T01:39:53.829+00:00 INFO   ! ... and 747 more
+2026-11-11T01:39:53.830+00:00 INFO 
+2026-11-11T01:39:53.830+00:00 INFO 750/1500 rows valid for chatml format
+2026-11-11T01:39:54.042+00:00 INFO Exit status 0

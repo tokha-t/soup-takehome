@@ -1,0 +1,44 @@
+2026-11-10T22:49:56.365+00:00 INFO $ /kaggle/temp/soup-patch-quant-peft/bin/python /kaggle/working/soup-takehome/artifacts_stage.py standalone /kaggle/working/soup-takehome/artifacts/merged_4bit /root/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306
+2026-11-10T22:50:07.014+00:00 INFO 2026-11-10T22:50:07.014 INFO NumExpr defaulting to 4 threads.
+2026-11-10T22:50:08.284+00:00 INFO Traceback (most recent call last):
+2026-11-10T22:50:08.285+00:00 INFO   File "/kaggle/working/soup-takehome/artifacts_stage.py", line 115, in <module>
+2026-11-10T22:50:08.285+00:00 INFO     globals()[opts.mode](opts.args)
+2026-11-10T22:50:08.285+00:00 INFO     ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+2026-11-10T22:50:08.285+00:00 INFO   File "/kaggle/working/soup-takehome/artifacts_stage.py", line 79, in standalone
+2026-11-10T22:50:08.285+00:00 INFO     tokenizer = AutoTokenizer.from_pretrained(source, local_files_only=True)
+2026-11-10T22:50:08.285+00:00 INFO   File "/kaggle/temp/soup-patch-quant-peft/lib/python3.13/site-packages/transformers/models/auto/tokenization_auto.py", line 1140, in from_pretrained
+2026-11-10T22:50:08.285+00:00 INFO     return tokenizer_class.from_pretrained(pretrained_model_name_or_path, *inputs, **kwargs)
+2026-11-10T22:50:08.285+00:00 INFO            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-11-10T22:50:08.285+00:00 INFO   File "/kaggle/temp/soup-patch-quant-peft/lib/python3.13/site-packages/transformers/tokenization_utils_base.py", line 2097, in from_pretrained
+2026-11-10T22:50:08.285+00:00 INFO     return cls._from_pretrained(
+2026-11-10T22:50:08.285+00:00 INFO            ~~~~~~~~~~~~~~~~~~~~^
+2026-11-10T22:50:08.285+00:00 INFO         resolved_vocab_files,
+2026-11-10T22:50:08.285+00:00 INFO         ^^^^^^^^^^^^^^^^^^^^^
+2026-11-10T22:50:08.285+00:00 INFO     ...<9 lines>...
+2026-11-10T22:50:08.285+00:00 INFO         **kwargs,
+2026-11-10T22:50:08.285+00:00 INFO         ^^^^^^^^^
+2026-11-10T22:50:08.285+00:00 INFO     )
+2026-11-10T22:50:08.285+00:00 INFO     ^
+2026-11-10T22:50:08.285+00:00 INFO   File "/kaggle/temp/soup-patch-quant-peft/lib/python3.13/site-packages/transformers/tokenization_utils_base.py", line 2343, in _from_pretrained
+2026-11-10T22:50:08.285+00:00 INFO     tokenizer = cls(*init_inputs, **init_kwargs)
+2026-11-10T22:50:08.285+00:00 INFO   File "/kaggle/temp/soup-patch-quant-peft/lib/python3.13/site-packages/transformers/models/qwen2/tokenization_qwen2_fast.py", line 120, in __init__
+2026-11-10T22:50:08.285+00:00 INFO     super().__init__(
+2026-11-10T22:50:08.285+00:00 INFO     ~~~~~~~~~~~~~~~~^
+2026-11-10T22:50:08.285+00:00 INFO         vocab_file=vocab_file,
+2026-11-10T22:50:08.285+00:00 INFO         ^^^^^^^^^^^^^^^^^^^^^^
+2026-11-10T22:50:08.286+00:00 INFO     ...<6 lines>...
+2026-11-10T22:50:08.286+00:00 INFO         **kwargs,
+2026-11-10T22:50:08.286+00:00 INFO         ^^^^^^^^^
+2026-11-10T22:50:08.286+00:00 INFO     )
+2026-11-10T22:50:08.286+00:00 INFO     ^
+2026-11-10T22:50:08.286+00:00 INFO   File "/kaggle/temp/soup-patch-quant-peft/lib/python3.13/site-packages/transformers/tokenization_utils_fast.py", line 178, in __init__
+2026-11-10T22:50:08.286+00:00 INFO     super().__init__(**kwargs)
+2026-11-10T22:50:08.286+00:00 INFO     ~~~~~~~~~~~~~~~~^^^^^^^^^^
+2026-11-10T22:50:08.286+00:00 INFO   File "/kaggle/temp/soup-patch-quant-peft/lib/python3.13/site-packages/transformers/tokenization_utils_base.py", line 1471, in __init__
+2026-11-10T22:50:08.286+00:00 INFO     self._set_model_specific_special_tokens(special_tokens=self.extra_special_tokens)
+2026-11-10T22:50:08.286+00:00 INFO     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-11-10T22:50:08.286+00:00 INFO   File "/kaggle/temp/soup-patch-quant-peft/lib/python3.13/site-packages/transformers/tokenization_utils_base.py", line 1209, in _set_model_specific_special_tokens
+2026-11-10T22:50:08.286+00:00 INFO     self.SPECIAL_TOKENS_ATTRIBUTES = self.SPECIAL_TOKENS_ATTRIBUTES + list(special_tokens.keys())
+2026-11-10T22:50:08.286+00:00 INFO                                                                            ^^^^^^^^^^^^^^^^^^^
+2026-11-10T22:50:08.286+00:00 INFO AttributeError: 'list' object has no attribute 'keys'
+2026-11-10T22:50:09.537+00:00 INFO Exit status 1

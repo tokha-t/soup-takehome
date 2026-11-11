@@ -1,0 +1,20 @@
+{
+  "total_rows": 1500,
+  "corrupt_rows": 750,
+  "corruption": "messages is a string rather than a list",
+  "clean_sha256": "f09bee0ec1202d405ac775045eacde4cc8bea76ed9f81148e25eebbda549deb1",
+  "corrupt_sha256": "45d24cbe6636bb91ba21bf6cac56cb0f155f8f0a069cfa3949b69d9ab0af4b40",
+  "exit_codes": {
+    "clean_strict": 0,
+    "half_default": 0,
+    "half_strict": 2
+  },
+  "gate_logs": {
+    "clean_strict": "logs/stages/7p12/validate_type_clean_strict.log",
+    "half_default": "logs/stages/7p12/validate_type_half_default.log",
+    "half_strict": "logs/stages/7p12/validate_type_half_strict.log"
+  },
+  "initial_fixture": "results/probe_P12.json",
+  "reason": "The initial empty-message fixture remained structurally valid to Soup. Preserve that result and test the threshold with type-invalid rows.",
+  "finished": "2026-11-11T06:39:55+05:00"
+}

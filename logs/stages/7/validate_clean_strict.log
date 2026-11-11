@@ -1,0 +1,6 @@
+2026-11-11T01:27:31.516+00:00 INFO $ /kaggle/temp/soup-patch-diagnostic-soup/bin/soup data validate /kaggle/working/soup-takehome/data/train_soup.jsonl --min-valid-fraction 1.0
+2026-11-11T01:27:32.168+00:00 INFO Auto-detected format: chatml
+2026-11-11T01:27:32.192+00:00 INFO Dataset is valid!
+2026-11-11T01:27:32.192+00:00 INFO 
+2026-11-11T01:27:32.192+00:00 INFO 1500/1500 rows valid for chatml format
+2026-11-11T01:27:32.365+00:00 INFO Exit status 0

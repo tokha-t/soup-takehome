@@ -1,0 +1,188 @@
+{
+  "memory_grid": {
+    "exit_code": 0,
+    "finished": "2026-11-11T06:32:38+05:00",
+    "log": "logs/stages/8/memory_grid.log"
+  },
+  "soup_profile_help": {
+    "exit_code": 0,
+    "finished": "2026-11-11T06:32:39+05:00",
+    "log": "logs/stages/8/soup_profile_help.log"
+  },
+  "profile_on_1_256": {
+    "exit_code": 0,
+    "finished": "2026-11-11T06:32:43+05:00",
+    "log": "logs/stages/8/profile_on_1_256.log"
+  },
+  "profile_on_4_256": {
+    "exit_code": 0,
+    "finished": "2026-11-11T06:32:46+05:00",
+    "log": "logs/stages/8/profile_on_4_256.log"
+  },
+  "profile_on_8_256": {
+    "exit_code": 0,
+    "finished": "2026-11-11T06:32:49+05:00",
+    "log": "logs/stages/8/profile_on_8_256.log"
+  },
+  "profile_off_1_256": {
+    "exit_code": 0,
+    "finished": "2026-11-11T06:32:52+05:00",
+    "log": "logs/stages/8/profile_off_1_256.log"
+  },
+  "profile_off_2_256": {
+    "exit_code": 0,
+    "finished": "2026-11-11T06:32:55+05:00",
+    "log": "logs/stages/8/profile_off_2_256.log"
+  },
+  "quant_check_real": {
+    "exit_code": 3,
+    "finished": "2026-11-11T06:32:58+05:00",
+    "log": "logs/stages/8/quant_check_real.log"
+  },
+  "quant_check_wrong": {
+    "exit_code": 3,
+    "finished": "2026-11-11T06:32:59+05:00",
+    "log": "logs/stages/8/quant_check_wrong.log"
+  },
+  "ship_d": {
+    "exit_code": 2,
+    "finished": "2026-11-11T06:53:22+05:00",
+    "verdict_file": "ship_d.json",
+    "evidence_file": "ship_d_evidence.json",
+    "provenance": {
+      "soup_version": "0.77.2",
+      "scorer_revision": 7,
+      "config_sha": "b9cf1b76df191f9fca3e08ba7ab281b8170a273259e2571932bfe47290d6e34f",
+      "base_model": "/root/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+      "data_sha": "f09bee0ec1202d405ac775045eacde4cc8bea76ed9f81148e25eebbda549deb1",
+      "binding": {
+        "schema_version": 1,
+        "adapter_merkle_root": null,
+        "task_eval_sha256": "542f46fcacde6c1d4bbce27499e3e3ccc13aefb29b611efbf1a028b4c0b35f95",
+        "source_data_at_verdict_sha256": "f09bee0ec1202d405ac775045eacde4cc8bea76ed9f81148e25eebbda549deb1",
+        "training_data": null,
+        "suites": {
+          "names": [
+            "mini_arithmetic",
+            "mini_common_sense",
+            "mini_format_json",
+            "mini_instruction",
+            "mini_mmlu",
+            "mini_over_refusal",
+            "mini_safety",
+            "mini_tool_call"
+          ],
+          "soup_version": "0.77.2",
+          "scorer_revision": 7
+        },
+        "policy": {
+          "task_mode": "metric",
+          "forgetting_threshold": 0.05,
+          "general_suite": [
+            "mini_arithmetic",
+            "mini_common_sense",
+            "mini_format_json",
+            "mini_instruction",
+            "mini_mmlu",
+            "mini_over_refusal",
+            "mini_safety",
+            "mini_tool_call"
+          ],
+          "judge_model_sha256": null,
+          "noise_floor_runs": null
+        },
+        "policy_sha256": "92d3ce162f0c07eb0272b70d49069afa1f7dc53c73212bf086a3f3f12ff87882"
+      }
+    },
+    "target_safetensors_sha256": {
+      "model.safetensors": "95bb455bbf8aa1e577ee79fe1562519f9a5090f03b1463332d1de928f7e42fc8"
+    },
+    "task_sha256": "542f46fcacde6c1d4bbce27499e3e3ccc13aefb29b611efbf1a028b4c0b35f95"
+  },
+  "ship_weak_001": {
+    "exit_code": 2,
+    "finished": "2026-11-11T07:12:20+05:00",
+    "verdict_file": "ship_weak_001.json",
+    "evidence_file": "ship_weak_001_evidence.json",
+    "provenance": {
+      "soup_version": "0.77.2",
+      "scorer_revision": 7,
+      "config_sha": "b9cf1b76df191f9fca3e08ba7ab281b8170a273259e2571932bfe47290d6e34f",
+      "base_model": "/root/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+      "data_sha": "f09bee0ec1202d405ac775045eacde4cc8bea76ed9f81148e25eebbda549deb1",
+      "binding": {
+        "schema_version": 1,
+        "adapter_merkle_root": "f4f56f011941f226392d6964e9d6d479ba4ad86d94f1bc7707ce2ea743652f7f",
+        "task_eval_sha256": "542f46fcacde6c1d4bbce27499e3e3ccc13aefb29b611efbf1a028b4c0b35f95",
+        "source_data_at_verdict_sha256": "f09bee0ec1202d405ac775045eacde4cc8bea76ed9f81148e25eebbda549deb1",
+        "training_data": null,
+        "suites": {
+          "names": [
+            "mini_arithmetic",
+            "mini_common_sense",
+            "mini_format_json",
+            "mini_instruction",
+            "mini_mmlu",
+            "mini_over_refusal",
+            "mini_safety",
+            "mini_tool_call"
+          ],
+          "soup_version": "0.77.2",
+          "scorer_revision": 7
+        },
+        "policy": {
+          "task_mode": "metric",
+          "forgetting_threshold": 0.05,
+          "general_suite": [
+            "mini_arithmetic",
+            "mini_common_sense",
+            "mini_format_json",
+            "mini_instruction",
+            "mini_mmlu",
+            "mini_over_refusal",
+            "mini_safety",
+            "mini_tool_call"
+          ],
+          "judge_model_sha256": null,
+          "noise_floor_runs": null
+        },
+        "policy_sha256": "92d3ce162f0c07eb0272b70d49069afa1f7dc53c73212bf086a3f3f12ff87882"
+      }
+    },
+    "target_safetensors_sha256": {
+      "adapter_model.safetensors": "cd2602dec37387902b834c777eb02c6abf12b6659b673178671339875eecb6fb"
+    },
+    "task_sha256": "542f46fcacde6c1d4bbce27499e3e3ccc13aefb29b611efbf1a028b4c0b35f95"
+  },
+  "A3_and_secondary_probes": {
+    "exit_code": 0,
+    "finished": "2026-11-11T07:14:00+05:00",
+    "log": "logs/stages/8/A3_and_secondary_probes.log"
+  },
+  "probe_P2_doctor": {
+    "exit_code": 0,
+    "finished": "2026-11-11T07:14:15+05:00",
+    "log": "logs/stages/8/probe_P2_doctor.log"
+  },
+  "probe_P9_precision": {
+    "exit_code": 0,
+    "finished": "2026-11-11T07:14:50+05:00",
+    "log": "logs/stages/8/probe_P9_precision.log"
+  },
+  "probe_P11_execution": {
+    "exit_code": 1,
+    "finished": "2026-11-11T07:14:50+05:00",
+    "log": "logs/stages/8/probe_P11_execution.log"
+  },
+  "ship_noise_floor_3": {
+    "exit_code": -15,
+    "finished": "2026-11-11T08:14:51+05:00",
+    "verdict_file": null,
+    "evidence_file": null,
+    "provenance": null,
+    "target_safetensors_sha256": {
+      "adapter_model.safetensors": "3ffb665f1c6358f06d6b77268872463af4de734a07b48733bdb6a75ffd495b27"
+    },
+    "task_sha256": "542f46fcacde6c1d4bbce27499e3e3ccc13aefb29b611efbf1a028b4c0b35f95"
+  }
+}

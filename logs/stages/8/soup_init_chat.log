@@ -1,0 +1,10 @@
+2026-11-11T01:31:31.556+00:00 INFO $ /kaggle/temp/soup-patch-optional-soup/bin/soup init --template chat --output /kaggle/working/soup-takehome/configs/patch_soup_generated.yaml --force
+2026-11-11T01:31:44.613+00:00 INFO Using template: chat
+2026-11-11T01:31:44.614+00:00 INFO ╭─────────────────────────────────── Ready! ───────────────────────────────────╮
+2026-11-11T01:31:44.614+00:00 INFO │ Config saved to                                                              │
+2026-11-11T01:31:44.614+00:00 INFO │ /kaggle/working/soup-takehome/configs/patch_soup_generated.yaml              │
+2026-11-11T01:31:44.614+00:00 INFO │                                                                              │
+2026-11-11T01:31:44.614+00:00 INFO │ Next step: soup train --config                                               │
+2026-11-11T01:31:44.614+00:00 INFO │ /kaggle/working/soup-takehome/configs/patch_soup_generated.yaml              │
+2026-11-11T01:31:44.614+00:00 INFO ╰──────────────────────────────────────────────────────────────────────────────╯
+2026-11-11T01:31:44.787+00:00 INFO Exit status 0

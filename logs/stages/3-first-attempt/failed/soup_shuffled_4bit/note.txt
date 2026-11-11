@@ -1,0 +1,2 @@
+2026-11-11T03:38:06+05:00 Exit 1 from soup_shuffled_4bit.
+Retain the raw log and follow the stage fallback or next check.

@@ -1,0 +1,17 @@
+{
+  "status": "complete",
+  "finished": "2026-11-11T03:25:24+05:00",
+  "amendment": "298548aedf93ab81ce182328108d79bed20b7dd54e9e6fc862b956c3797ada02",
+  "artifacts": {
+    "placebo_fp16": "artifacts/placebo_fp16",
+    "shuffled_fp16": "artifacts/shuffled_fp16",
+    "weak_001_fp16": "artifacts/weak_001_fp16",
+    "weak_01_fp16": "artifacts/weak_01_fp16"
+  },
+  "procedures": {
+    "placebo_fp16": "PEFT fallback",
+    "shuffled_fp16": "PEFT fallback",
+    "weak_001_fp16": "PEFT fallback",
+    "weak_01_fp16": "PEFT fallback"
+  }
+}

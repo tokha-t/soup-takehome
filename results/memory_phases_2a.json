@@ -1,0 +1,72 @@
+[
+  {
+    "name": "merge_merged_fp16",
+    "device": "CPU",
+    "state": "failed",
+    "start_epoch": 1794349246.9303498,
+    "end_epoch": 1794349281.823519,
+    "wall_seconds": 34.89316916465759,
+    "torch_peak_allocated_gib": null,
+    "torch_peak_reserved_gib": null,
+    "peak_process_rss_gib": 5.7776947021484375,
+    "total_system_ram_gib": 31.346603393554688,
+    "nvidia_smi_peak_mib": null,
+    "nvidia_smi_peak_gib": null
+  },
+  {
+    "name": "merge_merged_fp16",
+    "device": "CPU",
+    "state": "complete",
+    "start_epoch": 1794349296.5482492,
+    "end_epoch": 1794349313.0430415,
+    "wall_seconds": 16.494792222976685,
+    "torch_peak_allocated_gib": null,
+    "torch_peak_reserved_gib": null,
+    "peak_process_rss_gib": 5.8697509765625,
+    "total_system_ram_gib": 31.346603393554688,
+    "nvidia_smi_peak_mib": null,
+    "nvidia_smi_peak_gib": null
+  },
+  {
+    "name": "merge_merged_fp32",
+    "device": "CPU",
+    "state": "complete",
+    "start_epoch": 1794349324.9736207,
+    "end_epoch": 1794349336.959269,
+    "wall_seconds": 11.985648393630981,
+    "torch_peak_allocated_gib": null,
+    "torch_peak_reserved_gib": null,
+    "peak_process_rss_gib": 9.046974182128906,
+    "total_system_ram_gib": 31.346603393554688,
+    "nvidia_smi_peak_mib": null,
+    "nvidia_smi_peak_gib": null
+  },
+  {
+    "name": "merge_merged_bf16",
+    "device": "CPU",
+    "state": "failed",
+    "start_epoch": 1794349340.4416208,
+    "end_epoch": 1794349357.5772138,
+    "wall_seconds": 17.135592937469482,
+    "torch_peak_allocated_gib": null,
+    "torch_peak_reserved_gib": null,
+    "peak_process_rss_gib": 0.5849418640136719,
+    "total_system_ram_gib": 31.346603393554688,
+    "nvidia_smi_peak_mib": null,
+    "nvidia_smi_peak_gib": null
+  },
+  {
+    "name": "merge_merged_bf16",
+    "device": "CPU",
+    "state": "complete",
+    "start_epoch": 1794349369.1842742,
+    "end_epoch": 1794349384.2541091,
+    "wall_seconds": 15.06983494758606,
+    "torch_peak_allocated_gib": null,
+    "torch_peak_reserved_gib": null,
+    "peak_process_rss_gib": 3.6198081970214844,
+    "total_system_ram_gib": 31.346603393554688,
+    "nvidia_smi_peak_mib": null,
+    "nvidia_smi_peak_gib": null
+  }
+]

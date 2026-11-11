@@ -1,0 +1,16 @@
+{
+  "source": "Kaggle script version 368234412, live notebook log; superseded by the complete archived Soup evidence",
+  "finished": "2026-11-11T05:35:18+05:00",
+  "decision": "SHIP",
+  "metric_exact_match": {"base": 0.0, "tuned": 0.66, "items": 100},
+  "benchmarks_displayed": {
+    "mini_arithmetic": {"base": 0.775, "tuned": 0.875, "items": 40},
+    "mini_common_sense": {"base": 0.825, "tuned": 0.85, "items": 40},
+    "mini_format_json": {"base": 0.975, "tuned": 1.0, "items": 40},
+    "mini_instruction": {"base": 1.0, "tuned": 0.9583, "items": 24},
+    "mini_mmlu": {"base": 0.85, "tuned": 0.825, "items": 40},
+    "mini_over_refusal": {"base": 0.925, "tuned": 0.975, "items": 40},
+    "mini_safety": {"base": 1.0, "tuned": 1.0, "items": 40},
+    "mini_tool_call": {"base": 0.7, "tuned": 0.675, "items": 40}
+  }
+}

@@ -1,0 +1,21 @@
+2026-11-11T03:21:01.731+00:00 INFO $ /kaggle/temp/soup-patch-quant-check-soup/bin/python /kaggle/working/soup-takehome/patch_stage_quant_check.py invoke /kaggle/temp/soup-patch-quant-check-soup/bin/soup quant_check_real /kaggle/working/soup-takehome/quant-check-wfo9dgyj/merged_fp16 /kaggle/working/soup-takehome/quant-check-wfo9dgyj/merged_4bit_portable /kaggle/working/soup-takehome/data/ship_task_amended.jsonl
+2026-11-11T03:21:12.463+00:00 INFO 2026-11-11T03:21:12.462 INFO Soup command argv: ['/kaggle/temp/soup-patch-quant-check-soup/bin/soup', 'eval', 'quant-check', '--before', '/kaggle/working/soup-takehome/quant-check-wfo9dgyj/merged_fp16', '--after', '/kaggle/working/soup-takehome/quant-check-wfo9dgyj/merged_4bit_portable', '--tasks', '/kaggle/working/soup-takehome/data/ship_task_amended.jsonl', '--format', 'json']
+2026-11-11T03:21:35.660+00:00 INFO 
+2026-11-11T03:21:35.762+00:00 INFO Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]
+2026-11-11T03:21:35.865+00:00 INFO Loading weights:   4%|▍         | 15/338 [00:00<00:02, 146.49it/s]
+2026-11-11T03:21:35.971+00:00 INFO Loading weights:  19%|█▉        | 65/338 [00:00<00:00, 346.44it/s]
+2026-11-11T03:21:36.072+00:00 INFO Loading weights:  37%|███▋      | 124/338 [00:00<00:00, 443.83it/s]
+2026-11-11T03:21:36.182+00:00 INFO Loading weights:  53%|█████▎    | 179/338 [00:00<00:00, 482.84it/s]
+2026-11-11T03:21:36.291+00:00 INFO Loading weights:  69%|██████▊   | 232/338 [00:00<00:00, 482.69it/s]
+2026-11-11T03:21:36.369+00:00 INFO Loading weights:  86%|████████▌ | 291/338 [00:00<00:00, 503.09it/s]
+2026-11-11T03:21:36.369+00:00 INFO Loading weights: 100%|██████████| 338/338 [00:00<00:00, 476.58it/s]
+2026-11-11T03:21:41.659+00:00 INFO 
+2026-11-11T03:21:41.759+00:00 INFO Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]
+2026-11-11T03:21:41.865+00:00 INFO Loading weights:  17%|█▋        | 58/338 [00:00<00:00, 579.78it/s]
+2026-11-11T03:21:41.969+00:00 INFO Loading weights:  34%|███▍      | 116/338 [00:00<00:00, 560.47it/s]
+2026-11-11T03:21:42.072+00:00 INFO Loading weights:  51%|█████     | 173/338 [00:00<00:00, 554.85it/s]
+2026-11-11T03:21:42.174+00:00 INFO Loading weights:  68%|██████▊   | 231/338 [00:00<00:00, 556.53it/s]
+2026-11-11T03:21:42.260+00:00 INFO Loading weights:  85%|████████▍ | 287/338 [00:00<00:00, 555.55it/s]
+2026-11-11T03:21:42.260+00:00 INFO Loading weights: 100%|██████████| 338/338 [00:00<00:00, 562.27it/s]
+2026-11-11T03:21:42.279+00:00 INFO [transformers] The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+2026-11-11T03:30:00.203+00:00 INFO Exit status -15

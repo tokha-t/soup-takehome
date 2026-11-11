@@ -1,0 +1,86 @@
+{
+  "train_rows": 1500,
+  "original_eval_rows": 200,
+  "shared_statement_count": 8,
+  "shared_statements": [
+    "create table class (prof_num varchar)",
+    "create table customer_orders (customer_id varchar, order_id varchar)",
+    "create table customers (customer_name varchar, customer_id varchar)",
+    "create table employee (emp_fname varchar, emp_num varchar)",
+    "create table order_items (order_id varchar, product_id varchar)",
+    "create table player (hs integer, pid varchar)",
+    "create table products (product_name varchar, product_id varchar)",
+    "create table storm (name varchar, storm_id varchar)"
+  ],
+  "excluded_eval_rows": [
+    {
+      "source_index": 1950,
+      "category": "complex",
+      "shared": [
+        "create table class (prof_num varchar)",
+        "create table employee (emp_fname varchar, emp_num varchar)"
+      ]
+    },
+    {
+      "source_index": 1603,
+      "category": "complex",
+      "shared": [
+        "create table storm (name varchar, storm_id varchar)"
+      ]
+    },
+    {
+      "source_index": 1904,
+      "category": "complex",
+      "shared": [
+        "create table class (prof_num varchar)"
+      ]
+    },
+    {
+      "source_index": 3479,
+      "category": "complex",
+      "shared": [
+        "create table customers (customer_name varchar, customer_id varchar)"
+      ]
+    },
+    {
+      "source_index": 2759,
+      "category": "complex",
+      "shared": [
+        "create table order_items (order_id varchar, product_id varchar)",
+        "create table products (product_name varchar, product_id varchar)"
+      ]
+    },
+    {
+      "source_index": 2880,
+      "category": "complex",
+      "shared": [
+        "create table player (hs integer, pid varchar)"
+      ]
+    },
+    {
+      "source_index": 2867,
+      "category": "complex",
+      "shared": [
+        "create table player (hs integer, pid varchar)"
+      ]
+    },
+    {
+      "source_index": 3473,
+      "category": "complex",
+      "shared": [
+        "create table customer_orders (customer_id varchar, order_id varchar)",
+        "create table customers (customer_name varchar, customer_id varchar)"
+      ]
+    }
+  ],
+  "remaining_eval_rows": 192,
+  "eval_leaky_rows": 100,
+  "eval_leaky_without_shared_statement": [],
+  "source_sha256": {
+    "train": "3a2ec25929442e9e1bd955ad435429f0539cec6cc9643202dcc3bc0bb2be3c17",
+    "eval": "75237ff27b2c0adf4cf70d8d536668ffd78de126e6ec189c144ddc69dbd1e7b2",
+    "eval_leaky": "b4234874d5f19cf12a3cdfb7ee0b832d6cc3c8bb56cc3b19d677c3816d2b9c1d",
+    "eval_amended": "946b053ffe6b2206ae447ab77168ed56bbd718553f6b9bde7aba6519ef8ecbe3",
+    "ship_task_amended": "542f46fcacde6c1d4bbce27499e3e3ccc13aefb29b611efbf1a028b4c0b35f95"
+  }
+}

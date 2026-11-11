@@ -1,0 +1,78 @@
+2026-11-10T22:36:37.575+00:00 INFO $ /kaggle/temp/soup-patch-quant-soup/bin/soup merge --help
+2026-11-10T22:36:38.531+00:00 INFO                                                                                 
+2026-11-10T22:36:38.531+00:00 INFO  Usage: soup merge [OPTIONS]                                                    
+2026-11-10T22:36:38.531+00:00 INFO                                                                                 
+2026-11-10T22:36:38.531+00:00 INFO  Merge a LoRA adapter with its base model into a full model.                    
+2026-11-10T22:36:38.531+00:00 INFO                                                                                 
+2026-11-10T22:36:38.545+00:00 INFO ╭─ Options ────────────────────────────────────────────────────────────────────╮
+2026-11-10T22:36:38.545+00:00 INFO │ *  --adapter            -a                       <str>  Path to the LoRA     │
+2026-11-10T22:36:38.546+00:00 INFO │                                                         adapter directory    │
+2026-11-10T22:36:38.546+00:00 INFO │                                                         [required]           │
+2026-11-10T22:36:38.546+00:00 INFO │    --base               -b                       <str>  Base model ID.       │
+2026-11-10T22:36:38.546+00:00 INFO │                                                         Auto-detected from   │
+2026-11-10T22:36:38.546+00:00 INFO │                                                         adapter_config.json  │
+2026-11-10T22:36:38.546+00:00 INFO │                                                         if not set.          │
+2026-11-10T22:36:38.546+00:00 INFO │    --output             -o                       <str>  Output directory for │
+2026-11-10T22:36:38.546+00:00 INFO │                                                         the merged model     │
+2026-11-10T22:36:38.546+00:00 INFO │                                                         [default: ./merged]  │
+2026-11-10T22:36:38.546+00:00 INFO │    --dtype                                       <str>  Data type for the    │
+2026-11-10T22:36:38.546+00:00 INFO │                                                         merged model:        │
+2026-11-10T22:36:38.546+00:00 INFO │                                                         float16, bfloat16,   │
+2026-11-10T22:36:38.546+00:00 INFO │                                                         float32              │
+2026-11-10T22:36:38.546+00:00 INFO │                                                         [default: float16]   │
+2026-11-10T22:36:38.546+00:00 INFO │    --trust-remote-code                                  Allow loading models │
+2026-11-10T22:36:38.546+00:00 INFO │                                                         that ship custom     │
+2026-11-10T22:36:38.546+00:00 INFO │                                                         Python via auto_map. │
+2026-11-10T22:36:38.546+00:00 INFO │                                                         Default deny         │
+2026-11-10T22:36:38.546+00:00 INFO │                                                         (v0.36.0). Only      │
+2026-11-10T22:36:38.546+00:00 INFO │                                                         enable if you trust  │
+2026-11-10T22:36:38.546+00:00 INFO │                                                         the source.          │
+2026-11-10T22:36:38.546+00:00 INFO │    --save-format                                 <str>  Merged-checkpoint    │
+2026-11-10T22:36:38.546+00:00 INFO │                                                         save format. fp16    │
+2026-11-10T22:36:38.546+00:00 INFO │                                                         (default) writes a   │
+2026-11-10T22:36:38.546+00:00 INFO │                                                         standard fp16 merge. │
+2026-11-10T22:36:38.546+00:00 INFO │                                                         4bit / 4bit_forced   │
+2026-11-10T22:36:38.546+00:00 INFO │                                                         write a single       │
+2026-11-10T22:36:38.546+00:00 INFO │                                                         BNB-4bit-quantized   │
+2026-11-10T22:36:38.546+00:00 INFO │                                                         merge without the    │
+2026-11-10T22:36:38.546+00:00 INFO │                                                         dequant-merge-requa… │
+2026-11-10T22:36:38.546+00:00 INFO │                                                         cycle (v0.53.1       │
+2026-11-10T22:36:38.546+00:00 INFO │                                                         #142).               │
+2026-11-10T22:36:38.546+00:00 INFO │                                                         [default: fp16]      │
+2026-11-10T22:36:38.546+00:00 INFO │    --double-quant           --no-double-quant           BNB                  │
+2026-11-10T22:36:38.546+00:00 INFO │                                                         double-quantization  │
+2026-11-10T22:36:38.546+00:00 INFO │                                                         for the 4bit /       │
+2026-11-10T22:36:38.546+00:00 INFO │                                                         4bit_forced save     │
+2026-11-10T22:36:38.546+00:00 INFO │                                                         formats (#321).      │
+2026-11-10T22:36:38.546+00:00 INFO │                                                         Default on, matching │
+2026-11-10T22:36:38.546+00:00 INFO │                                                         the training         │
+2026-11-10T22:36:38.546+00:00 INFO │                                                         loaders; pass        │
+2026-11-10T22:36:38.546+00:00 INFO │                                                         --no-double-quant to │
+2026-11-10T22:36:38.546+00:00 INFO │                                                         disable. Ignored for │
+2026-11-10T22:36:38.546+00:00 INFO │                                                         the fp16 save        │
+2026-11-10T22:36:38.546+00:00 INFO │                                                         format.              │
+2026-11-10T22:36:38.546+00:00 INFO │                                                         [default:            │
+2026-11-10T22:36:38.546+00:00 INFO │                                                         double-quant]        │
+2026-11-10T22:36:38.546+00:00 INFO │    --low-memory                                         Merge tensor by      │
+2026-11-10T22:36:38.547+00:00 INFO │                                                         tensor straight from │
+2026-11-10T22:36:38.547+00:00 INFO │                                                         the base safetensors │
+2026-11-10T22:36:38.547+00:00 INFO │                                                         files instead of     │
+2026-11-10T22:36:38.547+00:00 INFO │                                                         loading the whole    │
+2026-11-10T22:36:38.547+00:00 INFO │                                                         model into RAM.      │
+2026-11-10T22:36:38.547+00:00 INFO │                                                         Needs the fp16 save  │
+2026-11-10T22:36:38.547+00:00 INFO │                                                         format and a plain   │
+2026-11-10T22:36:38.547+00:00 INFO │                                                         LoRA adapter.        │
+2026-11-10T22:36:38.547+00:00 INFO │    --hub                                         <str>  Source hub for the   │
+2026-11-10T22:36:38.547+00:00 INFO │                                                         base model: hf       │
+2026-11-10T22:36:38.547+00:00 INFO │                                                         (default) /          │
+2026-11-10T22:36:38.547+00:00 INFO │                                                         modelscope /         │
+2026-11-10T22:36:38.547+00:00 INFO │                                                         modelers. Non-HF     │
+2026-11-10T22:36:38.547+00:00 INFO │                                                         hubs require the     │
+2026-11-10T22:36:38.547+00:00 INFO │                                                         matching SDK         │
+2026-11-10T22:36:38.547+00:00 INFO │                                                         (v0.53.10 #152).     │
+2026-11-10T22:36:38.547+00:00 INFO │                                                         [default: hf]        │
+2026-11-10T22:36:38.547+00:00 INFO │    --help                                               Show this message    │
+2026-11-10T22:36:38.547+00:00 INFO │                                                         and exit.            │
+2026-11-10T22:36:38.547+00:00 INFO ╰──────────────────────────────────────────────────────────────────────────────╯
+2026-11-10T22:36:38.547+00:00 INFO 
+2026-11-10T22:36:38.729+00:00 INFO Exit status 0

@@ -1,0 +1,15 @@
+{
+  "status": "complete",
+  "finished": "2026-11-11T03:23:11+05:00",
+  "amendment": "298548aedf93ab81ce182328108d79bed20b7dd54e9e6fc862b956c3797ada02",
+  "artifacts": {
+    "merged_fp16": "artifacts/merged_fp16",
+    "merged_fp32": "artifacts/merged_fp32",
+    "merged_bf16": "artifacts/merged_bf16"
+  },
+  "procedures": {
+    "merged_fp16": "PEFT fallback",
+    "merged_fp32": "PEFT fp32 reference",
+    "merged_bf16": "PEFT fallback"
+  }
+}

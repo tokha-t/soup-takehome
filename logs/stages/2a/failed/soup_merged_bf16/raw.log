@@ -1,0 +1,26 @@
+2026-11-10T22:22:19.007+00:00 INFO $ /kaggle/temp/soup-patch-merge-soup/bin/python /kaggle/working/soup-takehome/artifacts_stage.py soup_merge /kaggle/temp/soup-patch-merge-soup/bin/soup merge_merged_bf16 /kaggle/input/notebooks/toktarkhan/soup-take-home-training-and-controls/soup-takehome/runs/real/adapter /root/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306 /kaggle/working/soup-takehome/artifacts/merged_bf16 bfloat16 fp16
+2026-11-10T22:22:21.075+00:00 INFO ╭───────────────────────────────── Merge Plan ─────────────────────────────────╮
+2026-11-10T22:22:21.075+00:00 INFO │ Adapter:                                                                     │
+2026-11-10T22:22:21.075+00:00 INFO │ /kaggle/input/notebooks/toktarkhan/soup-take-home-training-and-controls/soup │
+2026-11-10T22:22:21.075+00:00 INFO │ -takehome/runs/real/adapter                                                  │
+2026-11-10T22:22:21.075+00:00 INFO │ Base:                                                                        │
+2026-11-10T22:22:21.075+00:00 INFO │ /root/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/9 │
+2026-11-10T22:22:21.075+00:00 INFO │ 89aa7980e4cf806f80c7fef2b1adb7bc71aa306                                      │
+2026-11-10T22:22:21.075+00:00 INFO │ Output:  /kaggle/working/soup-takehome/artifacts/merged_bf16                 │
+2026-11-10T22:22:21.075+00:00 INFO │ Dtype:   bfloat16                                                            │
+2026-11-10T22:22:21.075+00:00 INFO ╰──────────────────────────────────────────────────────────────────────────────╯
+2026-11-10T22:22:37.144+00:00 INFO Loading base model: 
+2026-11-10T22:22:37.144+00:00 INFO /root/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa
+2026-11-10T22:22:37.144+00:00 INFO 7980e4cf806f80c7fef2b1adb7bc71aa306...
+2026-11-10T22:22:37.144+00:00 INFO Base revision: unknown (legacy, local source or base override)
+2026-11-10T22:22:37.320+00:00 INFO 
+2026-11-10T22:22:37.421+00:00 INFO Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]
+2026-11-10T22:22:37.429+00:00 INFO Loading weights:  92%|█████████▏| 312/338 [00:00<00:00, 3105.53it/s]
+2026-11-10T22:22:37.430+00:00 INFO Loading weights: 100%|██████████| 338/338 [00:00<00:00, 3086.46it/s]
+2026-11-10T22:22:37.442+00:00 INFO Loading LoRA adapter: 
+2026-11-10T22:22:37.442+00:00 INFO /kaggle/input/notebooks/toktarkhan/soup-take-home-training-and-controls/soup-tak
+2026-11-10T22:22:37.442+00:00 INFO ehome/runs/real/adapter...
+2026-11-10T22:22:37.465+00:00 INFO Missing dependency: Found an incompatible version of torchao. Found version 
+2026-11-10T22:22:37.465+00:00 INFO 0.10.0, but only versions above 0.16.0 are supported
+2026-11-10T22:22:37.466+00:00 INFO Run: pip install torch transformers peft
+2026-11-10T22:22:39.259+00:00 INFO Exit status 1

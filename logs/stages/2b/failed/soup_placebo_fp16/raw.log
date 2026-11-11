@@ -1,0 +1,31 @@
+2026-11-10T22:20:46.635+00:00 INFO $ /kaggle/temp/soup-patch-merge-soup/bin/python /kaggle/working/soup-takehome/artifacts_stage.py soup_merge /kaggle/temp/soup-patch-merge-soup/bin/soup merge_placebo_fp16 /kaggle/input/notebooks/toktarkhan/soup-take-home-training-and-controls/soup-takehome/runs/placebo/adapter /root/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306 /kaggle/working/soup-takehome/artifacts/placebo_fp16 float16 fp16
+2026-11-10T22:20:49.162+00:00 INFO ╭───────────────────────────────── Merge Plan ─────────────────────────────────╮
+2026-11-10T22:20:49.163+00:00 INFO │ Adapter:                                                                     │
+2026-11-10T22:20:49.163+00:00 INFO │ /kaggle/input/notebooks/toktarkhan/soup-take-home-training-and-controls/soup │
+2026-11-10T22:20:49.163+00:00 INFO │ -takehome/runs/placebo/adapter                                               │
+2026-11-10T22:20:49.163+00:00 INFO │ Base:                                                                        │
+2026-11-10T22:20:49.163+00:00 INFO │ /root/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/9 │
+2026-11-10T22:20:49.163+00:00 INFO │ 89aa7980e4cf806f80c7fef2b1adb7bc71aa306                                      │
+2026-11-10T22:20:49.163+00:00 INFO │ Output:  /kaggle/working/soup-takehome/artifacts/placebo_fp16                │
+2026-11-10T22:20:49.163+00:00 INFO │ Dtype:   float16                                                             │
+2026-11-10T22:20:49.163+00:00 INFO ╰──────────────────────────────────────────────────────────────────────────────╯
+2026-11-10T22:21:18.523+00:00 INFO Loading base model: 
+2026-11-10T22:21:18.523+00:00 INFO /root/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa
+2026-11-10T22:21:18.523+00:00 INFO 7980e4cf806f80c7fef2b1adb7bc71aa306...
+2026-11-10T22:21:18.524+00:00 INFO Base revision: unknown (legacy, local source or base override)
+2026-11-10T22:21:18.826+00:00 INFO 
+2026-11-10T22:21:19.515+00:00 INFO Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]
+2026-11-10T22:21:19.616+00:00 INFO Loading weights:   0%|          | 1/338 [00:00<03:52,  1.45it/s]
+2026-11-10T22:21:19.927+00:00 INFO Loading weights:  36%|███▋      | 123/338 [00:00<00:01, 210.21it/s]
+2026-11-10T22:21:20.144+00:00 INFO Loading weights:  58%|█████▊    | 195/338 [00:01<00:00, 219.48it/s]
+2026-11-10T22:21:20.302+00:00 INFO Loading weights:  72%|███████▏  | 245/338 [00:01<00:00, 223.01it/s]
+2026-11-10T22:21:20.467+00:00 INFO Loading weights:  84%|████████▍ | 285/338 [00:01<00:00, 229.95it/s]
+2026-11-10T22:21:20.506+00:00 INFO Loading weights:  95%|█████████▍| 320/338 [00:01<00:00, 225.08it/s]
+2026-11-10T22:21:20.506+00:00 INFO Loading weights: 100%|██████████| 338/338 [00:01<00:00, 201.06it/s]
+2026-11-10T22:21:20.560+00:00 INFO Loading LoRA adapter: 
+2026-11-10T22:21:20.560+00:00 INFO /kaggle/input/notebooks/toktarkhan/soup-take-home-training-and-controls/soup-tak
+2026-11-10T22:21:20.560+00:00 INFO ehome/runs/placebo/adapter...
+2026-11-10T22:21:20.621+00:00 INFO Missing dependency: Found an incompatible version of torchao. Found version 
+2026-11-10T22:21:20.621+00:00 INFO 0.10.0, but only versions above 0.16.0 are supported
+2026-11-10T22:21:20.622+00:00 INFO Run: pip install torch transformers peft
+2026-11-10T22:21:22.670+00:00 INFO Exit status 1

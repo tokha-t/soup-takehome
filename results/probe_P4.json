@@ -1,0 +1,322 @@
+{
+  "shipped_generation_config": {
+    "bos_token_id": 151643,
+    "do_sample": true,
+    "eos_token_id": [
+      151645,
+      151643
+    ],
+    "pad_token_id": 151643,
+    "repetition_penalty": 1.1,
+    "temperature": 0.7,
+    "top_k": 20,
+    "top_p": 0.8,
+    "transformers_version": "5.20.2"
+  },
+  "effective_sampling": {
+    "temperature": 0.7,
+    "top_p": 0.8,
+    "top_k": 20,
+    "repetition_penalty": 1.1
+  },
+  "max_new_tokens": 98,
+  "sampling_by_seed": {
+    "42": {
+      "agg": {
+        "rows": 50,
+        "strict": 0.6,
+        "normalized": 0.7,
+        "lenient": 0.7,
+        "valid_sql": 0.94,
+        "valid_raw_sql": 0.94,
+        "stop": 1.0
+      },
+      "multi_cond": {
+        "rows": 50,
+        "strict": 0.6,
+        "normalized": 0.66,
+        "lenient": 0.66,
+        "valid_sql": 0.96,
+        "valid_raw_sql": 0.96,
+        "stop": 1.0
+      },
+      "complex": {
+        "rows": 42,
+        "strict": 0.21428571428571427,
+        "normalized": 0.23809523809523808,
+        "lenient": 0.23809523809523808,
+        "valid_sql": 0.47619047619047616,
+        "valid_raw_sql": 0.47619047619047616,
+        "stop": 1.0
+      },
+      "simple": {
+        "rows": 50,
+        "strict": 0.74,
+        "normalized": 0.78,
+        "lenient": 0.78,
+        "valid_sql": 0.94,
+        "valid_raw_sql": 0.94,
+        "stop": 1.0
+      },
+      "all": {
+        "rows": 192,
+        "strict": 0.5520833333333334,
+        "normalized": 0.609375,
+        "lenient": 0.609375,
+        "valid_sql": 0.84375,
+        "valid_raw_sql": 0.84375,
+        "stop": 1.0
+      }
+    },
+    "43": {
+      "agg": {
+        "rows": 50,
+        "strict": 0.68,
+        "normalized": 0.76,
+        "lenient": 0.76,
+        "valid_sql": 0.94,
+        "valid_raw_sql": 0.94,
+        "stop": 1.0
+      },
+      "multi_cond": {
+        "rows": 50,
+        "strict": 0.56,
+        "normalized": 0.64,
+        "lenient": 0.64,
+        "valid_sql": 0.94,
+        "valid_raw_sql": 0.94,
+        "stop": 1.0
+      },
+      "complex": {
+        "rows": 42,
+        "strict": 0.30952380952380953,
+        "normalized": 0.3333333333333333,
+        "lenient": 0.3333333333333333,
+        "valid_sql": 0.5476190476190477,
+        "valid_raw_sql": 0.5476190476190477,
+        "stop": 0.9761904761904762
+      },
+      "simple": {
+        "rows": 50,
+        "strict": 0.72,
+        "normalized": 0.78,
+        "lenient": 0.78,
+        "valid_sql": 0.94,
+        "valid_raw_sql": 0.94,
+        "stop": 0.98
+      },
+      "all": {
+        "rows": 192,
+        "strict": 0.578125,
+        "normalized": 0.640625,
+        "lenient": 0.640625,
+        "valid_sql": 0.8541666666666666,
+        "valid_raw_sql": 0.8541666666666666,
+        "stop": 0.9895833333333334
+      }
+    },
+    "44": {
+      "agg": {
+        "rows": 50,
+        "strict": 0.72,
+        "normalized": 0.78,
+        "lenient": 0.78,
+        "valid_sql": 0.96,
+        "valid_raw_sql": 0.96,
+        "stop": 0.98
+      },
+      "multi_cond": {
+        "rows": 50,
+        "strict": 0.58,
+        "normalized": 0.64,
+        "lenient": 0.64,
+        "valid_sql": 0.96,
+        "valid_raw_sql": 0.96,
+        "stop": 1.0
+      },
+      "complex": {
+        "rows": 42,
+        "strict": 0.3333333333333333,
+        "normalized": 0.3333333333333333,
+        "lenient": 0.3333333333333333,
+        "valid_sql": 0.5476190476190477,
+        "valid_raw_sql": 0.5476190476190477,
+        "stop": 0.9761904761904762
+      },
+      "simple": {
+        "rows": 50,
+        "strict": 0.68,
+        "normalized": 0.74,
+        "lenient": 0.74,
+        "valid_sql": 0.94,
+        "valid_raw_sql": 0.94,
+        "stop": 1.0
+      },
+      "all": {
+        "rows": 192,
+        "strict": 0.5885416666666666,
+        "normalized": 0.6354166666666666,
+        "lenient": 0.6354166666666666,
+        "valid_sql": 0.8645833333333334,
+        "valid_raw_sql": 0.8645833333333334,
+        "stop": 0.9895833333333334
+      }
+    }
+  },
+  "sampling_pooled": {
+    "agg": {
+      "rows": 150,
+      "strict": 0.6666666666666666,
+      "normalized": 0.7466666666666667,
+      "lenient": 0.7466666666666667,
+      "valid_sql": 0.9466666666666667,
+      "valid_raw_sql": 0.9466666666666667,
+      "stop": 0.9933333333333333
+    },
+    "multi_cond": {
+      "rows": 150,
+      "strict": 0.58,
+      "normalized": 0.6466666666666666,
+      "lenient": 0.6466666666666666,
+      "valid_sql": 0.9533333333333334,
+      "valid_raw_sql": 0.9533333333333334,
+      "stop": 1.0
+    },
+    "complex": {
+      "rows": 126,
+      "strict": 0.2857142857142857,
+      "normalized": 0.30158730158730157,
+      "lenient": 0.30158730158730157,
+      "valid_sql": 0.5238095238095238,
+      "valid_raw_sql": 0.5238095238095238,
+      "stop": 0.9841269841269841
+    },
+    "simple": {
+      "rows": 150,
+      "strict": 0.7133333333333334,
+      "normalized": 0.7666666666666667,
+      "lenient": 0.7666666666666667,
+      "valid_sql": 0.94,
+      "valid_raw_sql": 0.94,
+      "stop": 0.9933333333333333
+    },
+    "all": {
+      "rows": 576,
+      "strict": 0.5729166666666666,
+      "normalized": 0.6284722222222222,
+      "lenient": 0.6284722222222222,
+      "valid_sql": 0.8541666666666666,
+      "valid_raw_sql": 0.8541666666666666,
+      "stop": 0.9930555555555556
+    }
+  },
+  "greedy_1_0": {
+    "agg": {
+      "rows": 50,
+      "strict": 0.6,
+      "normalized": 0.66,
+      "lenient": 0.66,
+      "valid_sql": 0.94,
+      "valid_raw_sql": 0.94,
+      "stop": 1.0
+    },
+    "multi_cond": {
+      "rows": 50,
+      "strict": 0.6,
+      "normalized": 0.62,
+      "lenient": 0.62,
+      "valid_sql": 0.92,
+      "valid_raw_sql": 0.92,
+      "stop": 1.0
+    },
+    "complex": {
+      "rows": 42,
+      "strict": 0.3333333333333333,
+      "normalized": 0.35714285714285715,
+      "lenient": 0.35714285714285715,
+      "valid_sql": 0.5476190476190477,
+      "valid_raw_sql": 0.5476190476190477,
+      "stop": 1.0
+    },
+    "simple": {
+      "rows": 50,
+      "strict": 0.66,
+      "normalized": 0.72,
+      "lenient": 0.72,
+      "valid_sql": 0.88,
+      "valid_raw_sql": 0.88,
+      "stop": 1.0
+    },
+    "all": {
+      "rows": 192,
+      "strict": 0.5572916666666666,
+      "normalized": 0.5989583333333334,
+      "lenient": 0.5989583333333334,
+      "valid_sql": 0.8333333333333334,
+      "valid_raw_sql": 0.8333333333333334,
+      "stop": 1.0
+    }
+  },
+  "shipped_match_cost": -0.02951388888888884,
+  "gold_valid_sql": 0.9479166666666666,
+  "gold_rows": 192,
+  "soup_gate": {
+    "url": "https://trysoup.dev/docs/soup-ship",
+    "coverage": "Soup ship's metric leg compares base and tuned task accuracy. The prompt ablation, SQL scoring rules, and sampling settings are measured separately here."
+  },
+  "greedy_1_1": {
+    "agg": {
+      "rows": 50,
+      "strict": 0.66,
+      "normalized": 0.74,
+      "lenient": 0.74,
+      "valid_sql": 0.96,
+      "valid_raw_sql": 0.96,
+      "stop": 1.0
+    },
+    "multi_cond": {
+      "rows": 50,
+      "strict": 0.6,
+      "normalized": 0.64,
+      "lenient": 0.64,
+      "valid_sql": 0.92,
+      "valid_raw_sql": 0.92,
+      "stop": 1.0
+    },
+    "complex": {
+      "rows": 42,
+      "strict": 0.35714285714285715,
+      "normalized": 0.38095238095238093,
+      "lenient": 0.38095238095238093,
+      "valid_sql": 0.5952380952380952,
+      "valid_raw_sql": 0.5952380952380952,
+      "stop": 1.0
+    },
+    "simple": {
+      "rows": 50,
+      "strict": 0.74,
+      "normalized": 0.78,
+      "lenient": 0.78,
+      "valid_sql": 0.94,
+      "valid_raw_sql": 0.94,
+      "stop": 1.0
+    },
+    "all": {
+      "rows": 192,
+      "strict": 0.5989583333333334,
+      "normalized": 0.6458333333333334,
+      "lenient": 0.6458333333333334,
+      "valid_sql": 0.8645833333333334,
+      "valid_raw_sql": 0.8645833333333334,
+      "stop": 1.0
+    }
+  },
+  "batching": [
+    {
+      "rows": 10,
+      "equal": true,
+      "mismatch_ids": [],
+      "scoring_batch_size": 8
+    }
+  ]
+}

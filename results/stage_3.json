@@ -1,0 +1,13 @@
+{
+  "status": "partial",
+  "finished": "2026-11-11T03:50:20+05:00",
+  "amendment": "298548aedf93ab81ce182328108d79bed20b7dd54e9e6fc862b956c3797ada02",
+  "procedure": "Soup merge --dtype float16 --save-format 4bit with default double quantization",
+  "artifacts": [
+    "merged_4bit",
+    "base_4bit",
+    "shuffled_4bit"
+  ],
+  "standalone": false,
+  "hashes_verified": true
+}

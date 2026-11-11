@@ -1,0 +1,20 @@
+2026-11-11T00:56:01.075+00:00 INFO $ /kaggle/temp/soup-patch-ship/bin/soup ship --base /root/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306 --adapter /kaggle/working/soup-takehome/ship-local-r7p2cei9/placebo --task-eval /kaggle/working/soup-takehome/data/ship_task_amended.jsonl --device cuda --config /kaggle/working/soup-takehome/configs/patch_soup_real.yaml --emit-evidence /kaggle/working/soup-takehome/results/ship_c_evidence.json --output /kaggle/working/soup-takehome/results/ship_c.json --baseline /kaggle/working/soup-takehome/results/soup_baseline.json
+2026-11-11T00:56:02.483+00:00 INFO ╭───────────────────────────────── soup ship ──────────────────────────────────╮
+2026-11-11T00:56:02.483+00:00 INFO │ DON'T SHIP                                                                   │
+2026-11-11T00:56:02.483+00:00 INFO │ Leg 1 task win (metric): 0.0000 -> 0.0000  [no win]                          │
+2026-11-11T00:56:02.483+00:00 INFO │ Judge numerics: unstamped                                                    │
+2026-11-11T00:56:02.483+00:00 INFO │                                                                              │
+2026-11-11T00:56:02.483+00:00 INFO │ Leg 2 general suite (threshold 5.00%)                                        │
+2026-11-11T00:56:02.483+00:00 INFO │ ┏━━━━━━━━━━━━━━━━━┳━━━━━━┳━━━━━━━┳━━━┳━━━━━━━━━┓                             │
+2026-11-11T00:56:02.483+00:00 INFO │ ┃ Benchmark       ┃ Base ┃ Tuned ┃ Δ ┃ Verdict ┃                             │
+2026-11-11T00:56:02.483+00:00 INFO │ ┡━━━━━━━━━━━━━━━━━╇━━━━━━╇━━━━━━━╇━━━╇━━━━━━━━━┩                             │
+2026-11-11T00:56:02.483+00:00 INFO │ │ (none measured) │    - │     - │ - │ missing │                             │
+2026-11-11T00:56:02.483+00:00 INFO │ └─────────────────┴──────┴───────┴───┴─────────┘                             │
+2026-11-11T00:56:02.483+00:00 INFO │                                                                              │
+2026-11-11T00:56:02.484+00:00 INFO │ Every lora_B tensor in the adapter is zero, so it adds nothing to the base   │
+2026-11-11T00:56:02.484+00:00 INFO │ model (an untrained adapter, or a DPO ref/ folder). No model was loaded or   │
+2026-11-11T00:56:02.484+00:00 INFO │ evaluated.                                                                   │
+2026-11-11T00:56:02.484+00:00 INFO ╰──────────────────────────────────────────────────────────────────────────────╯
+2026-11-11T00:56:02.486+00:00 INFO Wrote /kaggle/working/soup-takehome/results/ship_c.json
+2026-11-11T00:56:02.486+00:00 INFO Warning: no scores were measured; evidence not written
+2026-11-11T00:56:02.686+00:00 INFO Exit status 2

@@ -1,0 +1,7 @@
+{
+  "quant_check_real": {
+    "exit_code": -15,
+    "finished": "2026-11-11T08:30:00+05:00",
+    "log": "logs/stages/8q/quant_check_real.log"
+  }
+}

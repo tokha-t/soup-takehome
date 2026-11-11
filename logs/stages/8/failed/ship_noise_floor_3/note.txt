@@ -1,0 +1,2 @@
+2026-11-11T07:44:51+05:00 Exit -15 from ship_noise_floor_3.
+Retain the raw log and follow the stage fallback or next check.

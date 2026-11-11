@@ -1,0 +1,6 @@
+{
+  "placebo_fp16": {"model.safetensors": {"bytes": 3087466808, "sha256": "6e79254754485249fccaaa091657aec5f5fdff61722c5c17b558d2dd9e1d1658"}},
+  "shuffled_fp16": {"model.safetensors": {"bytes": 3087466808, "sha256": "7fb901767bc47c78e3d398784ad8dc4f83d3d7b894940890bdafd6b2d10505d3"}},
+  "weak_001_fp16": {"model.safetensors": {"bytes": 3087466808, "sha256": "90fa21833a0fd78cd1f8fa25e6ae3b0bcf78d81ebd3e28c619fb4a1b1371e2ae"}},
+  "weak_01_fp16": {"model.safetensors": {"bytes": 3087466808, "sha256": "ce238641867fbe0ef28d28140d5c86349fc77ac24bda7c98e28e3a7d3648b50d"}}
+}

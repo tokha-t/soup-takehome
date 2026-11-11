@@ -1,0 +1,64 @@
+2026-11-10T22:48:22.479+00:00 INFO $ /kaggle/temp/soup-patch-quant-soup/bin/python /kaggle/working/soup-takehome/artifacts_stage.py soup_merge /kaggle/temp/soup-patch-quant-soup/bin/soup quant_base_4bit /kaggle/input/notebooks/toktarkhan/soup-take-home-training-and-controls/soup-takehome/runs/placebo/adapter /root/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306 /kaggle/working/soup-takehome/artifacts/base_4bit float16 4bit
+2026-11-10T22:48:25.521+00:00 INFO ╭───────────────────────────────── Merge Plan ─────────────────────────────────╮
+2026-11-10T22:48:25.521+00:00 INFO │ Adapter:                                                                     │
+2026-11-10T22:48:25.521+00:00 INFO │ /kaggle/input/notebooks/toktarkhan/soup-take-home-training-and-controls/soup │
+2026-11-10T22:48:25.521+00:00 INFO │ -takehome/runs/placebo/adapter                                               │
+2026-11-10T22:48:25.521+00:00 INFO │ Base:                                                                        │
+2026-11-10T22:48:25.521+00:00 INFO │ /root/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/9 │
+2026-11-10T22:48:25.521+00:00 INFO │ 89aa7980e4cf806f80c7fef2b1adb7bc71aa306                                      │
+2026-11-10T22:48:25.521+00:00 INFO │ Output:  /kaggle/working/soup-takehome/artifacts/base_4bit                   │
+2026-11-10T22:48:25.521+00:00 INFO │ Dtype:   float16                                                             │
+2026-11-10T22:48:25.521+00:00 INFO ╰──────────────────────────────────────────────────────────────────────────────╯
+2026-11-10T22:48:40.265+00:00 INFO Loading base model: 
+2026-11-10T22:48:40.265+00:00 INFO /root/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa
+2026-11-10T22:48:40.265+00:00 INFO 7980e4cf806f80c7fef2b1adb7bc71aa306...
+2026-11-10T22:48:40.266+00:00 INFO Base revision: unknown (legacy, local source or base override)
+2026-11-10T22:48:40.469+00:00 INFO 
+2026-11-10T22:48:41.000+00:00 INFO Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]
+2026-11-10T22:48:41.110+00:00 INFO Loading weights:   0%|          | 1/338 [00:00<02:57,  1.89it/s]
+2026-11-10T22:48:41.320+00:00 INFO Loading weights:  36%|███▋      | 123/338 [00:00<00:00, 254.23it/s]
+2026-11-10T22:48:41.501+00:00 INFO Loading weights:  55%|█████▌    | 187/338 [00:00<00:00, 273.49it/s]
+2026-11-10T22:48:41.635+00:00 INFO Loading weights:  70%|██████▉   | 236/338 [00:01<00:00, 272.82it/s]
+2026-11-10T22:48:41.765+00:00 INFO Loading weights:  82%|████████▏ | 277/338 [00:01<00:00, 281.55it/s]
+2026-11-10T22:48:41.832+00:00 INFO Loading weights:  93%|█████████▎| 314/338 [00:01<00:00, 281.92it/s]
+2026-11-10T22:48:41.832+00:00 INFO Loading weights: 100%|██████████| 338/338 [00:01<00:00, 248.02it/s]
+2026-11-10T22:48:41.864+00:00 INFO Loading LoRA adapter: 
+2026-11-10T22:48:41.864+00:00 INFO /kaggle/input/notebooks/toktarkhan/soup-take-home-training-and-controls/soup-tak
+2026-11-10T22:48:41.864+00:00 INFO ehome/runs/placebo/adapter...
+2026-11-10T22:48:43.120+00:00 INFO Merging weights...
+2026-11-10T22:48:52.455+00:00 INFO Staging fp16 merge in .soup_4bit_merge_56r9471b...
+2026-11-10T22:48:52.470+00:00 INFO 
+2026-11-10T22:48:53.437+00:00 INFO Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+2026-11-10T22:48:53.437+00:00 INFO Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.03it/s]
+2026-11-10T22:48:53.437+00:00 INFO Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.03it/s]
+2026-11-10T22:48:54.390+00:00 INFO Re-loading + saving BNB-4bit merge (4bit) to 
+2026-11-10T22:48:54.390+00:00 INFO /kaggle/working/soup-takehome/artifacts/base_4bit...
+2026-11-10T22:48:54.552+00:00 INFO 
+2026-11-10T22:48:54.700+00:00 INFO Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]/kaggle/temp/soup-patch-quant-soup/lib/python3.13/site-packages/bitsandbytes/backends/cuda/ops.py:212: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+2026-11-10T22:48:54.700+00:00 INFO   torch._check_is_size(blocksize)
+2026-11-10T22:48:54.701+00:00 INFO 
+2026-11-10T22:48:54.806+00:00 INFO Loading weights:   1%|          | 3/338 [00:00<00:16, 20.13it/s]
+2026-11-10T22:48:54.910+00:00 INFO Loading weights:  12%|█▏        | 41/338 [00:00<00:01, 191.00it/s]
+2026-11-10T22:48:55.015+00:00 INFO Loading weights:  26%|██▌       | 87/338 [00:00<00:00, 295.53it/s]
+2026-11-10T22:48:55.118+00:00 INFO Loading weights:  37%|███▋      | 125/338 [00:00<00:00, 320.94it/s]
+2026-11-10T22:48:55.223+00:00 INFO Loading weights:  51%|█████     | 171/338 [00:00<00:00, 363.06it/s]
+2026-11-10T22:48:55.326+00:00 INFO Loading weights:  62%|██████▏   | 209/338 [00:00<00:00, 363.16it/s]
+2026-11-10T22:48:55.430+00:00 INFO Loading weights:  75%|███████▌  | 255/338 [00:00<00:00, 390.14it/s]
+2026-11-10T22:48:55.525+00:00 INFO Loading weights:  87%|████████▋ | 295/338 [00:00<00:00, 388.07it/s]
+2026-11-10T22:48:55.525+00:00 INFO Loading weights: 100%|██████████| 338/338 [00:00<00:00, 347.22it/s]
+2026-11-10T22:48:55.694+00:00 INFO 
+2026-11-10T22:48:57.154+00:00 INFO Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+2026-11-10T22:48:57.155+00:00 INFO Writing model shards: 100%|██████████| 1/1 [00:01<00:00,  1.46s/it]
+2026-11-10T22:48:57.155+00:00 INFO Writing model shards: 100%|██████████| 1/1 [00:01<00:00,  1.46s/it]
+2026-11-10T22:48:58.402+00:00 INFO ╭────────────────────────────── Merge Complete! ───────────────────────────────╮
+2026-11-10T22:48:58.402+00:00 INFO │ Output: /kaggle/working/soup-takehome/artifacts/base_4bit                    │
+2026-11-10T22:48:58.402+00:00 INFO │ Size:   1.1 GB                                                               │
+2026-11-10T22:48:58.402+00:00 INFO │                                                                              │
+2026-11-10T22:48:58.402+00:00 INFO │ Next steps:                                                                  │
+2026-11-10T22:48:58.402+00:00 INFO │   soup chat --model /kaggle/working/soup-takehome/artifacts/base_4bit        │
+2026-11-10T22:48:58.402+00:00 INFO │   soup push --model /kaggle/working/soup-takehome/artifacts/base_4bit --repo │
+2026-11-10T22:48:58.402+00:00 INFO │ user/model                                                                   │
+2026-11-10T22:48:58.402+00:00 INFO │   soup export --model /kaggle/working/soup-takehome/artifacts/base_4bit      │
+2026-11-10T22:48:58.402+00:00 INFO │ --format gguf                                                                │
+2026-11-10T22:48:58.402+00:00 INFO ╰──────────────────────────────────────────────────────────────────────────────╯
+2026-11-10T22:49:00.482+00:00 INFO Exit status 0

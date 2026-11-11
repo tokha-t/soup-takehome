@@ -1,0 +1,260 @@
+{
+  "label": "POST-HOC",
+  "official_verdict": "DON'T SHIP",
+  "metric": "valid SQL",
+  "mcnemar": {
+    "base_fp16_vs_base_4bit": {
+      "saved_original_flags_192": {
+        "before_valid": {
+          "count": 177,
+          "total": 192,
+          "rate": 0.921875
+        },
+        "after_valid": {
+          "count": 158,
+          "total": 192,
+          "rate": 0.8229166666666666
+        },
+        "both_valid": 156,
+        "both_invalid": 13,
+        "valid_to_invalid": 21,
+        "invalid_to_valid": 2,
+        "exact_two_sided_p": 6.604194641113281e-05
+      },
+      "compatibility_flags_191": {
+        "before_valid": {
+          "count": 180,
+          "total": 191,
+          "rate": 0.9424083769633508
+        },
+        "after_valid": {
+          "count": 161,
+          "total": 191,
+          "rate": 0.8429319371727748
+        },
+        "both_valid": 157,
+        "both_invalid": 7,
+        "valid_to_invalid": 23,
+        "invalid_to_valid": 4,
+        "exact_two_sided_p": 0.000310748815536499
+      }
+    },
+    "merged_fp16_vs_merged_4bit": {
+      "saved_original_flags_192": {
+        "before_valid": {
+          "count": 177,
+          "total": 192,
+          "rate": 0.921875
+        },
+        "after_valid": {
+          "count": 160,
+          "total": 192,
+          "rate": 0.8333333333333334
+        },
+        "both_valid": 160,
+        "both_invalid": 15,
+        "valid_to_invalid": 17,
+        "invalid_to_valid": 0,
+        "exact_two_sided_p": 1.52587890625e-05
+      },
+      "compatibility_flags_191": {
+        "before_valid": {
+          "count": 183,
+          "total": 191,
+          "rate": 0.9581151832460733
+        },
+        "after_valid": {
+          "count": 165,
+          "total": 191,
+          "rate": 0.8638743455497382
+        },
+        "both_valid": 165,
+        "both_invalid": 8,
+        "valid_to_invalid": 18,
+        "invalid_to_valid": 0,
+        "exact_two_sided_p": 7.62939453125e-06
+      }
+    },
+    "merged_4bit_with_vs_without_system": {
+      "saved_original_flags_192": {
+        "before_valid": {
+          "count": 160,
+          "total": 192,
+          "rate": 0.8333333333333334
+        },
+        "after_valid": {
+          "count": 140,
+          "total": 192,
+          "rate": 0.7291666666666666
+        },
+        "both_valid": 136,
+        "both_invalid": 28,
+        "valid_to_invalid": 24,
+        "invalid_to_valid": 4,
+        "exact_two_sided_p": 0.00017999112606048584
+      },
+      "compatibility_flags_191": {
+        "before_valid": {
+          "count": 165,
+          "total": 191,
+          "rate": 0.8638743455497382
+        },
+        "after_valid": {
+          "count": 147,
+          "total": 191,
+          "rate": 0.7696335078534031
+        },
+        "both_valid": 141,
+        "both_invalid": 20,
+        "valid_to_invalid": 24,
+        "invalid_to_valid": 6,
+        "exact_two_sided_p": 0.001430906355381012
+      }
+    }
+  },
+  "test_method": "Two-sided exact binomial test of the discordant pairs, reported without multiplicity adjustment.",
+  "prompt_comparison": "Removing the task system prompt caused the Qwen chat template to supply its default system message.",
+  "compatibility_scoring": {
+    "sqlite_version": "3.50.4",
+    "rows": 191,
+    "excluded_gold_row": 2961,
+    "validator_reference": "results/s5_posthoc.json"
+  },
+  "fp16_shipped": {
+    "per_seed": {
+      "42": {
+        "stop": {
+          "count": 191,
+          "total": 191,
+          "rate": 1.0
+        },
+        "valid_sql": {
+          "count": 184,
+          "total": 191,
+          "rate": 0.9633507853403142
+        }
+      },
+      "43": {
+        "stop": {
+          "count": 190,
+          "total": 191,
+          "rate": 0.9947643979057592
+        },
+        "valid_sql": {
+          "count": 182,
+          "total": 191,
+          "rate": 0.9528795811518325
+        }
+      },
+      "44": {
+        "stop": {
+          "count": 190,
+          "total": 191,
+          "rate": 0.9947643979057592
+        },
+        "valid_sql": {
+          "count": 181,
+          "total": 191,
+          "rate": 0.9476439790575916
+        }
+      }
+    },
+    "requested_seeds": [
+      42,
+      43,
+      44
+    ],
+    "generated_rows_per_seed": 192,
+    "scored_rows_per_seed": 191,
+    "settings": {
+      "temperature": 0.7,
+      "top_p": 0.8,
+      "top_k": 20,
+      "repetition_penalty": 1.1
+    },
+    "max_new_tokens": 98,
+    "batching": "Generate all 192 prompts in the Stage 5 length-sorted batches of eight, then score the 191-row compatibility cohort.",
+    "pooled": {
+      "stop": {
+        "count": 571,
+        "total": 573,
+        "rate": 0.9965095986038395
+      },
+      "valid_sql": {
+        "count": 547,
+        "total": 573,
+        "rate": 0.9546247818499127
+      }
+    }
+  },
+  "int8_greedy": {
+    "scores_191": {
+      "stop": {
+        "count": 190,
+        "total": 191,
+        "rate": 0.9947643979057592
+      },
+      "valid_sql": {
+        "count": 183,
+        "total": 191,
+        "rate": 0.9581151832460733
+      }
+    },
+    "kaggle_scores_191": {
+      "stop": {
+        "count": 190,
+        "total": 191,
+        "rate": 0.9947643979057592
+      },
+      "valid_sql": {
+        "count": 182,
+        "total": 191,
+        "rate": 0.9528795811518325
+      }
+    },
+    "linear_8bit_modules": 196,
+    "batching": [
+      {
+        "rows": 10,
+        "equal": false,
+        "mismatch_ids": [
+          30748
+        ],
+        "scoring_batch_size": 1
+      }
+    ],
+    "original_flag_disagreements": [
+      {
+        "id": 54393,
+        "sql": "SELECT 2007_08 FROM table_name_60 WHERE city = \"marcianise\"",
+        "local_sqlite_error": null,
+        "local_original_valid": true,
+        "kaggle_original_valid": false
+      }
+    ],
+    "sqlite_version_note": "Local SQLite accepts the numeric literal 2007_08 in row 54393, which Kaggle rejected. SQLite added underscores between digits in numeric literals in version 3.46.0.",
+    "sqlite_reference": "https://www.sqlite.org/releaselog/3_46_0.html"
+  },
+  "kaggle_stage": {
+    "label": "POST-HOC",
+    "deadline": "2026-11-11T13:58:39+05:00",
+    "fp16_exit": 0,
+    "int8_exit": 0,
+    "finished": "2026-11-11T13:52:54+05:00"
+  },
+  "kaggle_run_url": "https://www.kaggle.com/code/toktarkhan/soup-post-hoc-s5-fp16-and-int8?scriptVersionId=368356653",
+  "input_sha256": {
+    "data/eval_amended.jsonl": "946b053ffe6b2206ae447ab77168ed56bbd718553f6b9bde7aba6519ef8ecbe3",
+    "results/s5_posthoc.json": "241d7b6cdd6b96ceb97388323df02f6db5cfdf25531b432d0064147b5b987275",
+    "results/s5_diagnosis.json": "c3cd567aedefe2a5d6dde99a5416c53f96cc6c43eade50b07050a2cf34c89184",
+    "results/summary.json": "b8f1831646c3316e22c398e263548464c12742bda2819b4fc11e9655389428f2",
+    "results/verify_real.json": "2baea9ad7c8a672162270e6eeffdff460a49af4df2ad6bc67456afe5b73f6a72",
+    "results/probe_P3.json": "d8e0a779a7df2e3c3d1468ebe77c105fe366414600e6cae4dca717abf39a7763",
+    "results/probe_P4.json": "a3a92e0046965f4b22d900dae0a0571a0b04d1f3f67a056b554e19f36cead978",
+    "results/stage_posthoc_s5_followup.json": "5d4d60b3674e766dbb023d8143aaddaea504f0e0276ffe3637cbb4b63fb4b76e",
+    "results/posthoc_s5_int8_greedy.json": "94a5b890baf73a74c5e0fab835ecab500f9bedf5e3c50d25ab47da343dc34a52",
+    "results/posthoc_s5_fp16_seed_42.json": "1ac9ced6a36e7c489b83e6e91c7bbfe23d0f48b89db5d187e10f09d75ebbe60b",
+    "results/posthoc_s5_fp16_seed_43.json": "94d9012bafb79d42e5332d0bc071e68d29df78e4d584e18f5a1a93bc52f030db",
+    "results/posthoc_s5_fp16_seed_44.json": "b370ef1269c7f550d0c63c6a13223dcdf44cd97cdcccb0b2835fa70d7c72c5e7"
+  }
+}
